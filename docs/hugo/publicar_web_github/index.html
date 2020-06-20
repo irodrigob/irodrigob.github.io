@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Como publicar una web en Github">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Publicar Web Github" />
+<meta property="og:description" content="Como publicar una web en Github" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/hugo/publicar_web_github/" />
+<meta property="article:modified_time" content="2020-06-20T16:24:19+02:00" />
+<title>Publicar Web Github | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.8b6bb70fa6ed08643a1aeb42f93b408d4383686007468197d59ee967fcd96816.js" integrity="sha256-i2u3D6btCGQ6GutC&#43;TtAjUODaGAHRoGX1Z7pZ/zZaBY="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="active">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigb" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Publicar Web Github</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="motivo">
+  Motivo
+  <a class="anchor" href="#motivo">#</a>
+</h1>
+<p>Para aquellos que no quieren gastarse dinero en productos como Wordpress o no necesitan páginas dinámicas, la opción de crear una de manera gratuíta y usando Hugo es una buena elección.</p>
+<p>Personalmente la clave es escoger un tema que se nos adapte a lo que necesitamos, porque cada tema tiene ciertos comportamientos que no tiene otros.  Por ejemplo, inicialmente había escogido el tema <em>npp-hugo</em>, cuando empece a montar la estructura que quería vi que no era tan flexible en la organización por carpetas como me esperaba (al menos es lo que he visto probandolo). Por ello finalmente y después de revisar unos cuantos temas he optado por el tema 
+  <a href="https://themes.gohugo.io/hugo-book/">book</a> que se ajustaba más lo que buscaba.</p>
+<p>Por ello creo que para usar Hugo es básico escoger con calma el tema que se quiera ya que funcionalidad que tiene un tema no existen en otro. Por ejmeplo, hay páginas template, <em>mardownsyntax.md</em> del tema <em>npp-hugo</em> no son compatibles con el tema <em>book</em> que uso. En mi caso me he dado cuenta mientras hacía pruebas con este tema.</p>
+<p>Aparte he visto que la documentación oficial parece echa para construir template porque realmente lo que me ha servido para construir la página han sido los ejemplos que vienen incluídos en la carpeta <em>exampleSite</em> que suele vernir en cada tema.</p>
+<h1 id="pasos">
+  Pasos
+  <a class="anchor" href="#pasos">#</a>
+</h1>
+<h2 id="pasos-previo">
+  Pasos previo
+  <a class="anchor" href="#pasos-previo">#</a>
+</h2>
+<p>Antes de iniciar el proceso se aconseja instalar la clave RSA en local de Github siguiendo los pasos de este 
+  <a href="/docs/github/generar_rsa_windows/">artículo</a></p>
+<h2 id="instalar-hugo">
+  Instalar Hugo
+  <a class="anchor" href="#instalar-hugo">#</a>
+</h2>
+<p>Hugo se puede descargar de la siguiente página 
+  <a href="https://gohugo.io/getting-started/installing/">web</a>. Una vez instalado es aconsejable poner el directorio donde se ha instalado en el <em>PATH</em> de window para un mejor acceso:</p>
+<p>
+  <img src="/images/hugo/publicar_web/path_hugo.png" alt="path Hugo" /></p>
+<h2 id="crear-los-repositorios-en-el-github">
+  Crear los repositorios en el Github
+  <a class="anchor" href="#crear-los-repositorios-en-el-github">#</a>
+</h2>
+<p>El sitio que se va a crear se tiene que sincronizar con dos repositorios que se han de crear previamente. Estos sitios son:</p>
+<ul>
+<li><em><nombre del sitio></em>  será el encargado de tener los ficheros del sitio que estamos construyendo. El que contendrá los ficheros <em>.md</em></li>
+<li><em><nombre del usuario>.github.io</em> será el encargado guardar las páginas renderizadas por Hugo en base al contenido en el sitio anterior. <strong>Es importante poner el nombre del usuario ya que si no, no funcionara</strong>. En mi caso el repositorio creado es: <em>irodrigob.github.io</em></li>
+</ul>
+<h2 id="crer-el-sitio-en-local">
+  Crer el sitio en local
+  <a class="anchor" href="#crer-el-sitio-en-local">#</a>
+</h2>
+<p>Hay que abrir la consola de Windows e ir al directorio donde vamos crear el sitio web. Una vez en el directorio hay que escribir: <em>hugo new site nombre_sitio</em>:</p>
+<p>
+  <img src="/images/hugo/publicar_web/resultado_crear_sitio.png" alt="Resultado crear sitio" /></p>
+<h2 id="añadir-el-tema">
+  Añadir el tema
+  <a class="anchor" href="#a%c3%b1adir-el-tema">#</a>
+</h2>
+<p>En la página web de los 
+  <a href="https://themes.gohugo.io/">temas</a> se pueden encontrar multitud de temas para descargar. Para este sitio se ha utilizado el tema 
+  <a href="https://themes.gohugo.io/hugo-book/">book</a></p>
+<ul>
+<li>NOTA: Tanto los pantallazos como en las explicación sale el tema npp-hugo, esto es debido a que use incialmente dicho tema para crear el sitio.*</li>
+</ul>
+<p>Para instalarlo hay que hacerlo desde la consola hay que hacer los siguientes pasos:</p>
+<ul>
+<li><code>git init</code>, Crea los archivos para poder sincronizar el sitio con Git</li>
+<li><code>git submodule add https://github.com/saadnpq/npq-hugo themes/npqq-hugo</code>, Añade como submodulo el tema y lo descargará  en el directorio <em>themes/npqq-hugo</em></li>
+<li>Editar el fichero <em>config.toml</em> que esta en el directorio raíz del sitio y poner el contenido del mismo fichero, que hay en el directorio <em>themes/npqq-hugo/example-config.toml</em>. Una vez copiado se ajustarán los datos de configuración básicos.</li>
+</ul>
+<p>En consola se irá viendo lo siguiente:</p>
+<p>
+  <img src="/images/hugo/publicar_web/anaydir_tema.png" alt="Añadir tema" /></p>
+<p>Con esto ya se tiene un primer esbozo del sitio, para ver cómo queda en la consola hay que escribir: <code>hugo server -D</code></p>
+<p>Si abrimos una navegador e introducimos la url: <code>http://localhost:1313/</code> veremos como queda el sitio.</p>
+<h2 id="sincronizar-el-sitio-local-con-gihub">
+  Sincronizar el sitio local con Gihub
+  <a class="anchor" href="#sincronizar-el-sitio-local-con-gihub">#</a>
+</h2>
+<p>Esta es la parte que mas me ha costado por no estar acostumbrado a trabajar con Git. Esta es la parte es la que he aprendido que hacer que hacerlo en consola, ya que aunque puedes hacer los push con la aplicación de escritorio de Github o con el VS Code(que es el que uso para crear las páginas) he descubierto, seguramente por desconocimiento, que no funciona igual y se jode de tal manera los archivos de Git que he tenido que borrar sitio y repositorios más de una vez. Ahora, todo lo hago con la consola y ya no tengo errores.</p>
+<p>Personalmente creo que si los submodulos (solo hemos creado el primero de ellos, el del tema) se hubiesen sincronizado con el Github Desktop no hubiese habido problemas. Pero ahora mismo no tengo ganas de más experimentos.</p>
+<p>Los dos sitios del github los hemos creado en el paso anterior, aunque también es posible crearlo justo en este momento, pero así es como lo he hecho yo. Una vez creados hay que seguir los siguientes pasos para sincronizalos en local.</p>
+<p>Desde la consola de Windows y estando en el directorio del sitio hay que ejecutar los siguientes comandos git:</p>
+<ul>
+<li><code>git remote add origin git@github.com:irodrigob/navi-developer.git</code> Añade el repositorio que guardará las páginas que vamos creando</li>
+<li><code>git add .</code> Le decimos que queremos añdir todas las carpetas del sitio en el git</li>
+<li><code>git commit -m &quot;Commit inicial del sitio&quot;</code> Guarda los ficheros añadidos en el paso anterior en el git local.</li>
+</ul>
+<p>A nivel de consolo iremos viendo algo parecido a esto:</p>
+<p>
+  <img src="/images/hugo/publicar_web/resultado_git_repositorio_hugo.png" alt="Resultado Git repositorio" /></p>
+<p>Ahora hay que añadir el repositorio donde se guardarán las páginas renderizadas por Hugo:</p>
+<ul>
+<li><code>git submodule add git@github.com:irodrigob/irodrigob.github.io.git</code> En este sentencia aparecerá la pregunta de la frase de la clave RSA que hemos hecho previamente para poder subir a Github:</li>
+</ul>
+<p>
+  <img src="/images/hugo/publicar_web/frase_rsa_submodulo.png" alt="Frase RSA submódulo" /></p>
+<p>Aunque en la imagen no se vé, hay una pregunta que pide poner: <em>Yes/No/Phrase</em>. Como no se ha puesto frase, para ser más comodo las subidas, hay que poner <em>Yes</em> para confirmar la clave y así no volverá a realizar la misma pregunta.</p>
+<p>Una vez añadido hay que hacer los siguientes pasos:</p>
+<ul>
+<li><code>git add .</code></li>
+<li><code>git commit -m &quot;Commit inicial&quot;</code></li>
+<li><code>git push –u origin master</code> Este sube los archivos del repositorio local al remoto</li>
+</ul>
+<p>A nivel de consola deberá aparecer algo parecido a esto:</p>
+<p>
+  <img src="/images/hugo/publicar_web/resultado_git_submodulo.png" alt="Resultado Git submodulo" /></p>
+<p>Hasta ahora solo hemos subido datos del repositorio que hemos creado para el sitio. Ahora hay que cambiar la configuración para que Hugo publique las páginas en nuestro repositorio de <em>github.io</em></p>
+<h2 id="publicando-en-githubio">
+  Publicando en <em>github.io</em>
+  <a class="anchor" href="#publicando-en-githubio">#</a>
+</h2>
+<p>El archivo de configuración <em>config.toml</em> hay que realizar los siguientes cambios:</p>
+<ul>
+<li>Al parámetro <em>baseURL</em> se le tiene que poner nuestra dirección del repositorio creado con el nombre <em>github.io</em></li>
+<li>Se añade el parámetro <em>publisDir</em> con el nombre de la carpeta que se ha creado al crear el submodulo del repositorio *github.io&rdquo;. Este directorio es donde Hugo rendizara las páginas <em>markdow</em> a <em>HTML</em></li>
+</ul>
+<p>Así es como quedaría(<em>Nota: Ejemplo del fichero que estoy usando con tema que estoy usando actualmente</em>):</p>
+<p><code>baseURL = &quot;https://irodrigob.github.io/&quot;</code>
+<code>languageCode = &quot;es-es&quot;</code>
+<code>title = &quot;Navi-developer&quot;</code>
+<code>theme = &quot;hugo-book&quot;</code>
+<code>publishDir = &quot;irodrigob.github.io&quot; </code></p>
+<p>Ahora de nuevo vía consola, y en el directorio del sitio, con el comando <code>hugo</code> se creará la página Web en el directorio del submodulo <em>github.io</em></p>
+<p>Ahora y antes de hacer el pull para subir los archivos al repositorio *github.io&rdquo; vamos a comprobar que la configuración sea la correcta. Para ello de nuevo desde la consola se escribirá: <code>git remote -v</code>:</p>
+<p>
+  <img src="/images/hugo/publicar_web/resultado_git_remote.png" alt="Resultado git remote" /></p>
+<p>Si el resultado es como el de la imagen es que todo es correcto.</p>
+<p>Ahora para poder subir los archivos generados a nuestro repositorio <em>github.io</em> hay que ir al directorio de dicho repositorio y lanzar los siguientes comandos en la consola de windows:</p>
+<p><code>git add .</code>
+<code>git commit -m &quot;Primera subida!!&quot;</code>
+<code>git push origin master</code></p>
+<p>En consola aparecerá algo parecido a esto:</p>
+<p>
+  <img src="/images/hugo/publicar_web/resultado_pull_githubio.png" alt="Resultado pull github.io" /></p>
+<p>Y ahora si se accede la siguiente página: <code>http://irodrigob.github.io/</code> se verá el contenido publicado.</p>
+<h1 id="bibliografía">
+  Bibliografía
+  <a class="anchor" href="#bibliograf%c3%ada">#</a>
+</h1>
+<p>Para poder este artículo me he bsado en el siguiente 
+  <a href="https://inside.getambassador.com/creating-and-deploying-your-first-hugo-site-to-github-pages-1e1f496cf88d">artículo</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Generar clave RSA en Windows">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Generar clave RSA" />
+<meta property="og:description" content="Generar clave RSA en Windows" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/github/generar_rsa_windows/" />
+<meta property="article:modified_time" content="2020-06-20T16:24:19+02:00" />
+<title>Generar clave RSA | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.8b6bb70fa6ed08643a1aeb42f93b408d4383686007468197d59ee967fcd96816.js" integrity="sha256-i2u3D6btCGQ6GutC&#43;TtAjUODaGAHRoGX1Z7pZ/zZaBY="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/enlaces_interesantes/" class="">Enlaces interesantes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/generar_rsa_windows/" class="active">Generar clave RSA</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigb" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Generar clave RSA</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="motivo">
+  Motivo
+  <a class="anchor" href="#motivo">#</a>
+</h1>
+<p>El motivo de crear una clave RSA es poder hacer deploy a Github mediante consola y evitar el siguiente error:</p>
+<p>
+  <img src="/images/github/generar_clave_rsa/error_sin_rsa.png" alt="Error sin clave RSA" /></p>
+<p>Digo consola porque es el único momento que lo he necesitado, ya que usando VS Code o la propia aplicación de Github no lo he necesitado.</p>
+<h1 id="pasos-a-seguir">
+  Pasos a seguir
+  <a class="anchor" href="#pasos-a-seguir">#</a>
+</h1>
+<ol>
+<li>Abrir el git Bash. Para eso hay que tener el instalado el Git para windos y al pulsar la tecla win y al escribir git aparecerá la opción:</li>
+</ol>
+<p>
+  <img src="/images/github/generar_clave_rsa/abrir_git_bash.png" alt="Abrir Git Bash" /></p>
+<ol start="2">
+<li>En el terminal que aparecerá escribir: ssh-key -t rsa -b 4096 -C &ldquo;mail que nos hemos registrado en github&rdquo; y al pulsar enter nos aparecerá esto:</li>
+</ol>
+<p>
+  <img src="/images/github/generar_clave_rsa/generar_rsa.png" alt="Generar RSA" /></p>
+<p>Pulsaremos <em>Enter</em></p>
+<p>Se nos pedirá introducir una frase:</p>
+<p>
+  <img src="/images/github/generar_clave_rsa/introducir_frase.png" alt="Introducir frase" /></p>
+<p>La frase se dejará en blanco para no tener que introducirla en todos los sitios que se haga push.</p>
+<ol start="3">
+<li>Ahora hay que añadir la clave generada al ssh-agent. Pero para eso primero hay que valir que este en marcha. Para ello hay que introducir: 	eval $(ssh-agent –s):</li>
+</ol>
+<p>
+  <img src="/images/github/generar_clave_rsa/ssh_agent.png" alt="SSH Agent" /></p>
+<ol start="4">
+<li>Y con la siguiente instrucción se añade la clave al agente: ssh-add  ~/.ssh/id_rsa nos pedirá la frase introducida en el paso 2 y si es correcta la añadirá.</li>
+</ol>
+<p>
+  <img src="/images/github/generar_clave_rsa/anyadir_clave.png" alt="Añadir clave" /></p>
+<ol start="5">
+<li>Ahora hay que obtener la key para poderla incluirla en nuestra cuenta github, para eso hay que escribir el siguiente comando:c cat ~/.ssh/id_rsa.pub</li>
+</ol>
+<p>
+  <img src="/images/github/generar_clave_rsa/clave_generada.png" alt="Clave generada" /></p>
+<p><em>Nota: Imagen cortada por seguridad.</em>
+Todo lo que nos aparezca hay que copiarlo en un notepad para luego asociarlo a nuestra cuenta.</p>
+<h1 id="asociar-clave-a-nuestra-cuenta-github">
+  Asociar clave a nuestra cuenta Github
+  <a class="anchor" href="#asociar-clave-a-nuestra-cuenta-github">#</a>
+</h1>
+<p>Ahora hay que ir al github y acceder a los Settings de nuestro usuario e ir a la opción SSH and GPG keys:</p>
+<p>
+  <img src="/images/github/generar_clave_rsa/ssh_cuenta_usuario.png" alt="SSH de la cuenta de usuario" /></p>
+<p>Y pulsar sobre el botón <em>New SSH Key</em>:</p>
+<p>
+  <img src="/images/github/generar_clave_rsa/anayadir_clave_rsa_cuenta.png" alt="Introducir SSH Key" /></p>
+<p>El en título se puede poner lo que sea, ejemplo el ordenador donde has generado la clave, y la clave generada es la rista que hemos obtenido del comando <em>cat ~/.ssh/id_rsa.pub</em>. Una vez introducida nos aparecerá lo siguiente:</p>
+<p>
+  <img src="/images/github/generar_clave_rsa/resultado_anyadir_clave_usuario.png" alt="Introducir frase" /></p>
+<h1 id="bibliografía">
+  Bibliografía
+  <a class="anchor" href="#bibliograf%c3%ada">#</a>
+</h1>
+<p>Para poder este artículo me he bsado en el siguiente 
+  <a href="https://medium.com/@ancizj393/crear-una-clave-ssh-en-git-y-vincular-en-tu-cuenta-de-github-e7a6b22bc93f">artículo</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

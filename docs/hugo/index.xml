@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/hugo/</link>
+    <description>Recent content in Hugo on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publicar Web Github</title>
+      <link>https://irodrigob.github.io/docs/hugo/publicar_web_github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/hugo/publicar_web_github/</guid>
+      <description>Motivo#Para aquellos que no quieren gastarse dinero en productos como Wordpress o no necesitan páginas dinámicas, la opción de crear una de manera gratuíta y usando Hugo es una buena elección.
+Personalmente la clave es escoger un tema que se nos adapte a lo que necesitamos, porque cada tema tiene ciertos comportamientos que no tiene otros. Por ejemplo, inicialmente había escogido el tema npp-hugo, cuando empece a montar la estructura que quería vi que no era tan flexible en la organización por carpetas como me esperaba (al menos es lo que he visto probandolo).</description>
+    </item>
+    
+  </channel>
+</rss>
