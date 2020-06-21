@@ -1,44 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bienvenidos on Navi-developer</title>
-    <link>https://irodrigob.github.io/</link>
-    <description>Recent content in Bienvenidos on Navi-developer</description>
+    <title>Sentencías 7.4 on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/</link>
+    <description>Recent content in Sentencías 7.4 on Navi-developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     
-	<atom:link href="https://irodrigob.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/sentencias_74/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Enlaces interesantes</title>
-      <link>https://irodrigob.github.io/docs/github/enlaces_interesantes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/github/enlaces_interesantes/</guid>
-      <description>Enlaces# Comandos en Git &amp;ndash;&amp;gt; https://www.hostinger.es/tutoriales/comandos-de-git  </description>
-    </item>
-    
-    <item>
-      <title>Generar clave RSA</title>
-      <link>https://irodrigob.github.io/docs/github/generar_rsa_windows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/github/generar_rsa_windows/</guid>
-      <description>Motivo#El motivo de crear una clave RSA es poder hacer deploy a Github mediante consola y evitar el siguiente error:
-Digo consola porque es el único momento que lo he necesitado, ya que usando VS Code o la propia aplicación de Github no lo he necesitado.
-Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git para windos y al pulsar la tecla win y al escribir git aparecerá la opción:  En el terminal que aparecerá escribir: ssh-key -t rsa -b 4096 -C &amp;ldquo;mail que nos hemos registrado en github&amp;rdquo; y al pulsar enter nos aparecerá esto:  Pulsaremos Enter</description>
-    </item>
-    
-    <item>
-      <title>Publicar Web Github</title>
-      <link>https://irodrigob.github.io/docs/hugo/publicar_web_github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/hugo/publicar_web_github/</guid>
-      <description>Motivo#Para aquellos que no quieren gastarse dinero en productos como Wordpress o no necesitan páginas dinámicas, la opción de crear una de manera gratuíta y usando Hugo es una buena elección.
-Personalmente la clave es escoger un tema que se nos adapte a lo que necesitamos, porque cada tema tiene ciertos comportamientos que no tiene otros. Por ejemplo, inicialmente había escogido el tema npp-hugo, cuando empece a montar la estructura que quería vi que no era tan flexible en la organización por carpetas como me esperaba (al menos es lo que he visto probandolo).</description>
-    </item>
     
     <item>
       <title></title>

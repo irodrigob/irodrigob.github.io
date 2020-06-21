@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/</loc>
-    <lastmod>2020-06-17T22:40:56+02:00</lastmod>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +29,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/hugo/publicar_web_github/</loc>
-    <lastmod>2020-06-20T16:24:19+02:00</lastmod>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
   
   <url>
@@ -38,8 +38,23 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/conversiones/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/</loc>
     <lastmod>2020-06-17T22:40:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/bucles/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
   
   <url>
@@ -47,8 +62,38 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-06-20T16:24:19+02:00</lastmod>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/filtros/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/mapeo_campos/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/relleno_valores/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/string_templates/</loc>
+    <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
   
   <url>

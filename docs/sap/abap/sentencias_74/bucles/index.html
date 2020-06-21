@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sentencias sobre proceso de tablas internas">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Bucles" />
+<meta property="og:description" content="Sentencias sobre proceso de tablas internas" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/bucles/" />
+<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
+<title>Bucles | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.0043d97a5920b23a017e2550798090059457ff97e33fdd2c47dade873d5687ca.js" integrity="sha256-AEPZelkgsjoBfiVQeYCQBZRX/5fjP90sR9rehz1Wh8o="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/" class="">Sentencías 7.4</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/bucles/" class="active">Bucles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/filtros/" class="">Filtros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/" class="">Lectura tablas del diccionario</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/" class="">Mapeo de camos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/relleno_valores/" class="">Relleno de valores</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/string_templates/" class="">String template</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigb" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Bucles</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>En este grupo se irán poniendo las distintas sentencias que nos permiten procesar tablas internas. Este artículo esta muy relacionado con el del 
+  <a href="/docs/sap/abap/sentencias_74/relleno_valores/">relleno de valores</a> ya que se usán
+las mismas sentencias para procesar tablas internas. Aún asi, lo separo en dos artículos según la finalidad en que se use.</p>
+<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
+<h1 id="ejemplo-1">
+  Ejemplo 1
+  <a class="anchor" href="#ejemplo-1">#</a>
+</h1>
+<p>El siguiente ejemplo se usa la cláusula GROUP BY de los LOOP que sustituye a los AT NEW. 
+En el primer loop nos devuelve la clave de registros únicos que se va agrupando y que informa en el field-symbol <em><group></em>. Y el <em>loop at group <group></em> nos devuelve los registros que conforman dicha clave.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">LOOP AT mt_level_agr_type ASSIGNING FIELD-SYMBOL(&lt;ls_level_agr_type&gt;) WHERE id_nivel1 = &#39;OFF&#39;
+                         GROUP BY ( id_nivel1 = &lt;ls_level_agr_type&gt;-id_nivel1 id_nivel_inf = &lt;ls_level_agr_type&gt;-id_nivel_inf boart = &lt;ls_level_agr_type&gt;-boart
+                                    size = GROUP SIZE index = GROUP INDEX  )
+                         ASSIGNING FIELD-SYMBOL(&lt;group&gt;).
+  .
+
+write:/ &lt;group&gt;-id_nivel1, &lt;group&gt;-id_nivel_inf, &lt;group&gt;-boart.
+
+  LOOP AT GROUP &lt;group&gt; ASSIGNING FIELD-SYMBOL(&lt;ls_level_agr_type_row&gt;).
+    WRITE:/ &lt;ls_level_agr_type_row&gt;-boart_agr.
+
+  ENDLOOP.
+
+ENDLOOP.
+</code></pre></div><h1 id="ejemplo-2">
+  Ejemplo 2
+  <a class="anchor" href="#ejemplo-2">#</a>
+</h1>
+<p>En este ejemplo es similar al anterior la diferencia es que dentro del loop ya tendremos los registros únicos según lo que se indique en el GROUP BY.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">        LOOP AT mt_key_field_text_cond ASSIGNING FIELD-SYMBOL(&lt;ls_key_field_text_cond_group&gt;)
+                                       WHERE kschl = &lt;ls_kschl&gt;-kschl
+                                             AND field_cust_is_hier = zcl_rtn_customer_data=&gt;is_customer_hierarchy( iv_customer )
+                                             AND field_cust IS NOT INITIAL
+                                       GROUP BY &lt;ls_key_field_text_cond_group&gt;-kotab.
+</code></pre></div><p>En la clausula GROUP BY se indica los campos que se quiere hacer la agrupación</p>
+<h1 id="ejemplo-3">
+  Ejemplo 3
+  <a class="anchor" href="#ejemplo-3">#</a>
+</h1>
+<p>Ejemplo encontrado de como hacer un collect:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">actual_collect = VALUE #( FOR GROUPS group OF &lt;flight&gt; IN original_table
+                            GROUP BY ( carrid = &lt;flight&gt;-carrid
+                                       connid = &lt;flight&gt;-connid )
+                            ( REDUCE #( INIT sum_aux TYPE sflight
+                                FOR line IN GROUP group
+                                NEXT sum_aux = VALUE #( BASE sum_aux
+                                   carrid     = line-carrid
+                                   connid     = line-connid
+                                   price      = sum_aux-price      + line-price
+                                   seatsmax   = sum_aux-seatsmax   + line-seatsmax
+                                   seatsocc   = sum_aux-seatsocc   + line-seatsocc
+                                   paymentsum = sum_aux-paymentsum + line-paymentsum
+                                   seatsmax_b = sum_aux-seatsmax_b + line-seatsmax_b
+                                   seatsocc_b = sum_aux-seatsocc_b + line-seatsocc_b
+                                   seatsmax_f = sum_aux-seatsmax_f + line-seatsmax_f
+                                   seatsocc_f = sum_aux-seatsocc_f + line-seatsocc_f ) ) ) ).
+
+</code></pre></div><h1 id="ejemplo-collect">
+  Ejemplo collect
+  <a class="anchor" href="#ejemplo-collect">#</a>
+</h1>
+<p>En este ejemplo es propio y permite saber cuantas repeticiones que hay de las price list(PLTYP)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> TYPES: BEGIN OF ts_pltyp_count,
+             pltyp TYPE knvv-pltyp,
+             count TYPE i,
+           END OF ts_pltyp_count.
+    TYPES: tt_pltyp_count TYPE STANDARD TABLE OF ts_pltyp_count WITH EMPTY KEY.
+
+        &#34; Se cuenta cuantas price list hay repetidas
+        DATA(lt_count) = VALUE tt_pltyp_count( FOR GROUPS lt_group OF &lt;wa1&gt; IN lt_customer_sales
+                                          GROUP BY ( pltyp = &lt;wa1&gt;-pltyp )
+                                          ( REDUCE #( INIT ls_count TYPE ts_pltyp_count
+                                                      FOR ls_group IN GROUP lt_group
+                                                      NEXT ls_count = VALUE #( BASE ls_count
+                                                                               pltyp = ls_group-pltyp
+                                                                               count = ls_count-count + 1 ) ) ) ).
+</code></pre></div><p>Este es un caso, cuya legibilidad no queda clara y tengas que leer la sentencias varias veces para entenderla. Sobretodo porque son cosas que, al menos a mi, no se usan muy a menudo.</p>
+<h1 id="ejemplo-de-un-delete-adjacent-duplicates-con-la-sentencia-reduce">
+  Ejemplo de un <em>DELETE ADJACENT DUPLICATES</em> con la sentencia <em>REDUCE</em>
+  <a class="anchor" href="#ejemplo-de-un-delete-adjacent-duplicates-con-la-sentencia-reduce">#</a>
+</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">TYPES: BEGIN OF ts_dates_intervals,
+         datab TYPE datab,
+         datbi TYPE datab,
+       END OF ts_dates_intervals.
+TYPES: tt_dates_intervals TYPE STANDARD TABLE OF ts_dates_intervals WITH EMPTY KEY.
+
+DATA(lt_dates_intervals) = VALUE tt_dates_intervals(
+                    ( datab = &#39;20200101&#39; datbi = &#39;20201231&#39; )
+                    ( datab = &#39;20200101&#39; datbi = &#39;20201231&#39; )
+                    ( datab = &#39;20200101&#39; datbi = &#39;20211231&#39; )
+                    ( datab = &#39;2190301&#39; datbi = &#39;20211231&#39; )
+                    ( datab = &#39;2190301&#39; datbi = &#39;20200830&#39; )  ).
+
+DATA(lt_dates) = VALUE tt_dates_intervals( FOR GROUPS lt_group OF &lt;wa&gt; IN lt_dates_intervals
+                                           GROUP BY ( datab = &lt;wa&gt;-datab datbi = &lt;wa&gt;-datbi )
+                                           ( REDUCE #( INIT ls_dates TYPE ts_dates_intervals FOR ls_group IN GROUP lt_group NEXT ls_dates = VALUE #( BASE ls_dates datab = ls_group-datab datbi = ls_group-datbi ) ) ) ).
+</code></pre></div><p>Otra sentencia que usando las sentences de siempre quedan más claras para cualquiera que las lea.</p>
+<h1 id="contar-el-valor-de-un-campo-en-una-tabla-interna">
+  Contar el valor de un campo en una tabla interna
+  <a class="anchor" href="#contar-el-valor-de-un-campo-en-una-tabla-interna">#</a>
+</h1>
+<p>Ejemplo que cuenta los registros que cumplen unas determinas condiciones:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">cs_layout_options-number_columns_fixed = REDUCE #( INIT x = 0 FOR &lt;fcat_ui5&gt; IN it_fieldcatalog_ui5 WHERE ( fixed_column = abap_true ) NEXT x = x + 1 ).
+</code></pre></div><h1 id="concatenar-todos-los-valores-de-un-campo-de-una-tabla-separandolos-por-un-cáracter-separador">
+  Concatenar todos los valores de un campo de una tabla separandolos por un cáracter separador
+  <a class="anchor" href="#concatenar-todos-los-valores-de-un-campo-de-una-tabla-separandolos-por-un-c%c3%a1racter-separador">#</a>
+</h1>
+<p>Se puede hacer de tres formas:</p>
+<ol>
+<li>Ejemplo 1</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_sql) = REDUCE string( INIT sql TYPE string 
+                              FOR &lt;ls_fields&gt; IN lt_fields 
+                              NEXT sql = sql &amp;&amp; COND #( LET sep = &#39;,&#39; IN WHEN sql IS NOT INITIAL 
+                                                        THEN |<span style="color:#75715e">{</span> <span style="color:#a6e22e">sep</span> <span style="color:#75715e">}</span> <span style="color:#75715e">{</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ls_fields</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">}</span>| 
+                                                        ELSE |<span style="color:#75715e">{</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ls_fields</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">}</span>| ) ).
+</code></pre></div><ol start="2">
+<li>Ejemplo 2</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_sql) = REDUCE string( INIT sql TYPE string 
+                              FOR &lt;ls_fields&gt; IN lt_fields 
+                              NEXT sql = sql &amp;&amp; COND #( WHEN sql IS NOT INITIAL 
+                                                        THEN |, <span style="color:#75715e">{</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ls_fields</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">}</span>| 
+                                                        ELSE |<span style="color:#75715e">{</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ls_fields</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">}</span>| ) ).
+</code></pre></div><ol start="3">
+<li>Ejemplo 3</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_sql) = REDUCE string( INIT sql TYPE string 
+                              FOR &lt;ls_fields&gt; IN lt_fields 
+                              NEXT sql = sql &amp;&amp; CONV string( LET sep = COND #( WHEN sql IS NOT INITIAL 
+                                                                               THEN &#39;,&#39; 
+                                                                               ELSE &#39;&#39; ) IN |<span style="color:#75715e">{</span> <span style="color:#a6e22e">sep</span> <span style="color:#75715e">}</span> <span style="color:#75715e">{</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ls_fields</span><span style="color:#f92672">&gt;</span> <span style="color:#75715e">}</span>| ) ).
+</code></pre></div><p>Todas ellas casi funcionan de la misma manera, la diferencia es como se concatena los campos. Casi, porque el ejemplo 3 pone un espacio en blanco antes del primer campo.</p>
+<p>Como nota personal el código que finalmente use para el desarrollo que estaba haciendo es el número 2.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

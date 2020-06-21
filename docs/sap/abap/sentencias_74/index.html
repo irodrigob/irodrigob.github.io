@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lenguaje de desarrollo ABAP">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="ABAP" />
-<meta property="og:description" content="Lenguaje de desarrollo ABAP" />
+<meta name="description" content="Nuevas sentencias aparecidas en la versión 7.4">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Sentencías 7.4" />
+<meta property="og:description" content="Nuevas sentencias aparecidas en la versión 7.4" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/" />
 
-<title>ABAP | Navi-developer</title>
+<title>Sentencías 7.4 | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.0043d97a5920b23a017e2550798090059457ff97e33fdd2c47dade873d5687ca.js" integrity="sha256-AEPZelkgsjoBfiVQeYCQBZRX/5fjP90sR9rehz1Wh8o="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/index.xml" title="Navi-developer" />
+<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/sentencias_74/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -133,7 +133,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/" class="collapsed active">ABAP</a>
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
   
 
           
@@ -148,7 +148,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/" class="">Sentencías 7.4</a>
+    <a href="/docs/sap/abap/sentencias_74/" class="active">Sentencías 7.4</a>
   
 
           
@@ -297,7 +297,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>ABAP</strong>
+  <strong>Sentencías 7.4</strong>
 
   <label for="toc-control">
     
@@ -311,11 +311,14 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="abap">
-  ABAP
-  <a class="anchor" href="#abap">#</a>
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
 </h1>
-<p>Se aglutina todo lo referente al lenguaje de programación de SAP.</p>
+<p>A partir de la versión 7.4 de ABAP aparecerán nuevas sentencia, que se demoninan in-line, que permiten una mayor flexibilidad a la hora de desarrollar. Se demoninan in-line porque se puede combinar varias sentencias en una sola línea, incluso, se puede poner dichas sentencias a la hora de pasar parámetros en clases. Lamentablemente, las funciones no permiten dicha funcionalidad.</p>
+<p>Hay que destacar que estas sentencias van mejorando en cada versión, en la versión 7.5 apareciendo nuevas funcionalidades.</p>
+<p>Aunque tengo que reconocer que usar estas sentencias son muy guays y parece que sabes, muchas veces su legibilidad queda en entredicho. Y hay veces que hay que usar un mix de sentencias de <em>&ldquo;siempre&rdquo;</em> son más legibles tanto para uno propio, como para la persona que lo va a mantener.</p>
+<p>Iré creando páginas para ir clasificando los distintos tipo de sentencias.</p>
 <h1 id="publicaciones">
   Publicaciones
   <a class="anchor" href="#publicaciones">#</a>
@@ -323,10 +326,59 @@ https://github.com/alex-shpak/hugo-book
 <dl>
 
   <dt>
-    <a href="/docs/sap/abap/sentencias_74/">Sentencías 7.4</a>
+    <a href="/docs/sap/abap/sentencias_74/conversiones/">Conversiones</a>
   </dt>
   <dd>
-    Nuevas sentencias aparecidas en la versión 7.4
+    
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/bucles/">Bucles</a>
+  </dt>
+  <dd>
+    Sentencias sobre proceso de tablas internas
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/condiciones/">Condiciones</a>
+  </dt>
+  <dd>
+    Sentencias sobre condiciones
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/filtros/">Filtros</a>
+  </dt>
+  <dd>
+    Sentencias sobre el filtrado de datos
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/">Lectura tablas del diccionario</a>
+  </dt>
+  <dd>
+    Formas nuevas de leer en las tablas del diccionario
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/">Mapeo de camos</a>
+  </dt>
+  <dd>
+    Sentencias sobre mapeo de campos
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/relleno_valores/">Relleno de valores</a>
+  </dt>
+  <dd>
+    Sentencias para informar tablas internas
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/sentencias_74/string_templates/">String template</a>
+  </dt>
+  <dd>
+    Sentencias sobre el tratamiento de string
   </dd>
 
 </dl>

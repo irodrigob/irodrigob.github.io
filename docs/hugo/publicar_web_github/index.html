@@ -9,12 +9,12 @@
 <meta property="og:description" content="Como publicar una web en Github" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/hugo/publicar_web_github/" />
-<meta property="article:modified_time" content="2020-06-20T16:24:19+02:00" />
+<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
 <title>Publicar Web Github | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.8b6bb70fa6ed08643a1aeb42f93b408d4383686007468197d59ee967fcd96816.js" integrity="sha256-i2u3D6btCGQ6GutC&#43;TtAjUODaGAHRoGX1Z7pZ/zZaBY="></script>
+<script defer src="/en.search.min.0043d97a5920b23a017e2550798090059457ff97e33fdd2c47dade873d5687ca.js" integrity="sha256-AEPZelkgsjoBfiVQeYCQBZRX/5fjP90sR9rehz1Wh8o="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -132,7 +132,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/" class="">ABAP</a>
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
   
 
           
@@ -140,10 +140,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-  </ul>
   
 
         </li>
@@ -324,21 +320,21 @@ https://github.com/alex-shpak/hugo-book
 <li>Se añade el parámetro <em>publisDir</em> con el nombre de la carpeta que se ha creado al crear el submodulo del repositorio *github.io&rdquo;. Este directorio es donde Hugo rendizara las páginas <em>markdow</em> a <em>HTML</em></li>
 </ul>
 <p>Así es como quedaría(<em>Nota: Ejemplo del fichero que estoy usando con tema que estoy usando actualmente</em>):</p>
-<p><code>baseURL = &quot;https://irodrigob.github.io/&quot;</code>
-<code>languageCode = &quot;es-es&quot;</code>
-<code>title = &quot;Navi-developer&quot;</code>
-<code>theme = &quot;hugo-book&quot;</code>
-<code>publishDir = &quot;irodrigob.github.io&quot; </code></p>
-<p>Ahora de nuevo vía consola, y en el directorio del sitio, con el comando <code>hugo</code> se creará la página Web en el directorio del submodulo <em>github.io</em></p>
+<pre><code>baseURL = &quot;https://irodrigob.github.io/&quot;
+languageCode = &quot;es-es&quot;
+title = &quot;Navi-developer&quot;
+theme = &quot;hugo-book&quot;
+publishDir = &quot;irodrigob.github.io&quot; 
+</code></pre><p>Ahora de nuevo vía consola, y en el directorio del sitio, con el comando <code>hugo</code> se creará la página Web en el directorio del submodulo <em>github.io</em></p>
 <p>Ahora y antes de hacer el pull para subir los archivos al repositorio *github.io&rdquo; vamos a comprobar que la configuración sea la correcta. Para ello de nuevo desde la consola se escribirá: <code>git remote -v</code>:</p>
 <p>
   <img src="/images/hugo/publicar_web/resultado_git_remote.png" alt="Resultado git remote" /></p>
 <p>Si el resultado es como el de la imagen es que todo es correcto.</p>
 <p>Ahora para poder subir los archivos generados a nuestro repositorio <em>github.io</em> hay que ir al directorio de dicho repositorio y lanzar los siguientes comandos en la consola de windows:</p>
-<p><code>git add .</code>
-<code>git commit -m &quot;Primera subida!!&quot;</code>
-<code>git push origin master</code></p>
-<p>En consola aparecerá algo parecido a esto:</p>
+<pre><code>git add .
+git commit -m &quot;Primera subida!!&quot;
+git push origin master
+</code></pre><p>En consola aparecerá algo parecido a esto:</p>
 <p>
   <img src="/images/hugo/publicar_web/resultado_pull_githubio.png" alt="Resultado pull github.io" /></p>
 <p>Y ahora si se accede la siguiente página: <code>http://irodrigob.github.io/</code> se verá el contenido publicado.</p>

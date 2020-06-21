@@ -4,20 +4,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lenguaje de desarrollo ABAP">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="ABAP" />
-<meta property="og:description" content="Lenguaje de desarrollo ABAP" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/" />
-
-<title>ABAP | Navi-developer</title>
+<meta name="description" content="Sentencias para informar tablas internas">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Relleno de valores" />
+<meta property="og:description" content="Sentencias para informar tablas internas" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/relleno_valores/" />
+<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
+<title>Relleno de valores | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.0043d97a5920b23a017e2550798090059457ff97e33fdd2c47dade873d5687ca.js" integrity="sha256-AEPZelkgsjoBfiVQeYCQBZRX/5fjP90sR9rehz1Wh8o="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -133,7 +132,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/" class="collapsed active">ABAP</a>
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
   
 
           
@@ -215,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/relleno_valores/" class="">Relleno de valores</a>
+    <a href="/docs/sap/abap/sentencias_74/relleno_valores/" class="active">Relleno de valores</a>
   
 
         </li>
@@ -297,7 +296,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>ABAP</strong>
+  <strong>Relleno de valores</strong>
 
   <label for="toc-control">
     
@@ -311,27 +310,44 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="abap">
-  ABAP
-  <a class="anchor" href="#abap">#</a>
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>Se aglutina todo lo referente al lenguaje de programación de SAP.</p>
-<h1 id="publicaciones">
-  Publicaciones
-  <a class="anchor" href="#publicaciones">#</a>
+<p>En este grupo se irán poniendo las distintas sentencias, que son las que más uso, para poder informar tablas internas en base a otras tablas internas.</p>
+<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
+<p>La sentencia estrella de esta página es la <em>FOR</em>. <strong>Pero ojo: que si usamos field-symbols/variable no tiene que estar declarada previamente.</strong></p>
+<h1 id="ejemplo-1">
+  Ejemplo 1
+  <a class="anchor" href="#ejemplo-1">#</a>
 </h1>
-<dl>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/">Sentencías 7.4</a>
-  </dt>
-  <dd>
-    Nuevas sentencias aparecidas en la versión 7.4
-  </dd>
-
-</dl>
-
-</article>
+<p>Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se rellenando los valores de ET_COND_CRUD con los datos de la estructura leída y de otras variables:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">et_cond_crud = VALUE #( FOR ls_tippqps IN mt_tippqps
+                            WHERE ( pqtyp = is_header-negotiation_type_code
+                                    AND keyfield = lv_keyfield )
+                                    ( kschl = ls_tippqps-kschl
+                                      kotab = ls_tippqps-kotab
+                                      keyvalue = is_header-customer_code
+                                      datab = is_header-validity_to
+                                      datbi = is_header-validity_from
+                                      updkz = zif_rtn_data=&gt;cv_updkz_insert ) ).
+</code></pre></div><p>Nota: Si <em>et_cond_crud</em> tuviera datos se perderían, si se quieren añadir los datos a los existentes hay que añadir la opción <em>BASE</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">et_cond_crud = VALUE #( BASE  ( et_cond_crud ) FOR ls_tippqps IN mt_tippqps
+                                             WHERE ( pqtyp = is_header-negotiation_type_code
+                                                     AND keyfield = lv_keyfield )
+                                            ( kschl = ls_tippqps-kschl
+                                              kotab = ls_tippqps-kotab
+                                              keyvalue = is_header-customer_code
+                                              datab = is_header-validity_to
+                                              datbi = is_header-validity_from
+                                              updkz = zif_rtn_data=&gt;cv_updkz_insert ) ).
+</code></pre></div><h1 id="ejemplo-2">
+  Ejemplo 2
+  <a class="anchor" href="#ejemplo-2">#</a>
+</h1>
+<p>Ampliación de la sentencia INSERT de siempre pero con en este caso no es necesario crear estructuras intermediante o usar el insert/append a un field-symbols y luego informar los valores</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">INSERT VALUE #( sign = &#39;I&#39; option = &#39;EQ&#39; low = abap_false ) INTO TABLE lt_params_sl.
+</code></pre></div></article>
  
       
 
