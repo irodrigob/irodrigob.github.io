@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
-<meta property="og:description" content="" />
+<meta name="description" content="Sentencias sobre conversión de datos">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Conversiones" />
+<meta property="og:description" content="Sentencias sobre conversión de datos" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/conversiones/" />
-<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
+<meta property="article:modified_time" content="2020-06-21T17:54:59+02:00" />
 <title>Conversiones | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.0043d97a5920b23a017e2550798090059457ff97e33fdd2c47dade873d5687ca.js" integrity="sha256-AEPZelkgsjoBfiVQeYCQBZRX/5fjP90sR9rehz1Wh8o="></script>
+<script defer src="/en.search.min.9cfd9ec618b5a5e41de5ccaef3ddc7945773683174e3ba8cc54e80b92ac42628.js" integrity="sha256-nP2exhi1peQd5cyu893HlFdzaDF047qMxU6AuSrEJig="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -159,8 +159,6 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
-    
-      
         <li>
           
   
@@ -175,6 +173,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/conversiones/" class="active">Conversiones</a>
   
 
         </li>
@@ -265,7 +273,7 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="https://github.com/irodrigb" target="_blank" rel="noopener">
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
         Github
       </a>
   </li>
@@ -310,7 +318,35 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"></article>
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>En este grupo se irán poniendo las distintas sentencias que nos permiten convertir valores de un campos a otro.</p>
+<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
+<h1 id="ejemplo-1">
+  Ejemplo 1
+  <a class="anchor" href="#ejemplo-1">#</a>
+</h1>
+<p>Lo que antes se hacia:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">
+DATA lo_elemdesc type ref to cl_abap_elemdescr.
+Lo_elemdesc ?= cl_abap_typedescr=&gt;describe_by_data( iv_abap_value.
+
+Ahora se puede hacer en una sola línea:
+
+DATA(lo_elemdesc) = CAST cl_abap_elemdescr( cl_abap_typedescr=&gt;describe_by_data( iv_abap_value ) ).
+</code></pre></div><h1 id="ejemplo-2">
+  Ejemplo 2
+  <a class="anchor" href="#ejemplo-2">#</a>
+</h1>
+<p>Convertir los valores de un select para adaptarlos a la variable donde se van a guardar:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">    SELECT SINGLE CAST( months_past AS INT2 ), CAST( months_future AS INT2 ) INTO (@ev_months_past, @ev_months_future)
+           FROM zrtn_t_0037
+           WHERE vkorg = @iv_vkorg
+                 AND vtweg = @iv_vtweg
+                 AND spart = @iv_spart.
+</code></pre></div></article>
  
       
 
