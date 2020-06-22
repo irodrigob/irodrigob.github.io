@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CDS on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/cds/</link>
+    <description>Recent content in CDS on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/cds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atajos</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/cds/atajos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/cds/atajos/</guid>
+      <description>Objetivo#Disponer de pequeños trozos de código que al no usarse mucho me cuestan saber como utilizarlo y siempre tengo que estar buscandolos.
+Parámetros#define view ZATRON_CDS_DOMAIN_TEXTS with parameters p_domain :DOMNAME, Valores por defecto#En este ejemplo se usa para pasar por defecto en un parámetro de entrada. Pero la misma variable variable de entorno se puede usar en un WHERE
+@Environment.systemField: #SYSTEM_DATE p_langu :abap.</description>
+    </item>
+    
+  </channel>
+</rss>

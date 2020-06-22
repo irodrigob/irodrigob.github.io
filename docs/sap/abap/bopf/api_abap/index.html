@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Como usar la API de los BOPF desde ABAP">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="API desde ABAP" />
+<meta property="og:description" content="Como usar la API de los BOPF desde ABAP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/bopf/api_abap/" />
+
+<title>API desde ABAP | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.72b2dd943d9f0229be21589fde56caa2d07b4bb544e9c8d67280a645b49d269d.js" integrity="sha256-crLdlD2fAim&#43;IVif3lbKotB7S7VE6cjWcoCmRbSdJp0="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/" class="">BOPF</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/acciones/" class="">Acciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/api_abap/" class="active">API desde ABAP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/determinaciones/" class="">Determinaciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/ejemplos_generales/" class="">Ejemplos generales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/cds/" class="">CDS</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/cds/atajos/" class="">Atajos</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/" class="">Sentencias &gt;= 7.4</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/bucles/" class="">Bucles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/conversiones/" class="">Conversiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/filtros/" class="">Filtros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/" class="">Lectura tablas del diccionario</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/" class="">Mapeo de camos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/relleno_valores/" class="">Relleno de valores</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/string_templates/" class="">String template</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>API desde ABAP</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
+</h1>
+<p>La API de acceso al ABAP es siempre la misma por eso voy a poner los ejemplos de cada tipo de operación que se quiera hacer.</p>
+<p>Yo para estos casos me suelo crear un helper para simplificar las llamadas entre las clases del proceso y del BOPF.</p>
+<h1 id="instanciar-variables-para-acceder-al-bopf">
+  Instanciar variables para acceder al BOPF
+  <a class="anchor" href="#instanciar-variables-para-acceder-al-bopf">#</a>
+</h1>
+<p>Lo primero que se suele hacer es instanciar las variables necesarias para operar con los BOPF.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA mo_svc_mngr TYPE REF TO /bobf/if_tra_service_manager.
+    DATA mo_txn_mngr TYPE REF TO /bobf/if_tra_transaction_mgr.
+    DATA mo_conf_mngr TYPE REF TO /bobf/if_frw_configuration.
+ TRY.
+        &#34; Inicialización del gestor transaccional actualizaciones, bloqueos, etc..
+        mo_txn_mngr = /bobf/cl_tra_trans_mgr_factory=&gt;get_transaction_manager( ).
+
+        &#34; Creación del el gestor de servicios del BOPF. Permite realizar las llamadas al BOPF para ejecutar validaciones, acciones, añadir, etc..
+        &#34; Es la clase más importante ya que toda la gestión CRUD se realiza en esta clase
+        mo_svc_mngr = /bobf/cl_tra_serv_mgr_factory=&gt;get_service_manager( iv_bo_key ).
+
+        &#34; Creación de la configuración del BOPF, permite obtener los metadas del BOPF
+        mo_conf_mngr = /bobf/cl_frw_factory=&gt;get_configuration( iv_bo_key ).
+
+      CATCH /bobf/cx_frw.
+        &#34;TODO: Error handling...
+    ENDTRY.
+</code></pre></div><h1 id="añadir-registro-nuevo">
+  Añadir registro nuevo
+  <a class="anchor" href="#a%c3%b1adir-registro-nuevo">#</a>
+</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> ET_MOD type /BOBF/T_FRW_MODIFICATION
+	
+&#34; Se instancia el objeto donde se guardarán los datos de cabecera.    
+DATA(lo_header) = NEW zsat_bo_sc_orders_header( ).
+“ El puntero es para poder hacer corresponding
+    ASSIGN lo_header-&gt;* TO FIELD-SYMBOL(&lt;ls_header&gt;).
+
+ lv_mode = /bobf/if_frw_c=&gt;sc_modify_create.
+      &lt;ls_header&gt; = CORRESPONDING #( is_header ).
+      &lt;ls_header&gt;-key = /bobf/cl_frw_factory=&gt;get_new_key( ).
+
+INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
+                      change_mode = lv_mode
+                      key = lo_header-&gt;key
+                      data = lo_header )
+             INTO TABLE et_mod.
+</code></pre></div><h1 id="modificar-registro">
+  Modificar registro
+  <a class="anchor" href="#modificar-registro">#</a>
+</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> DATA(lv_mode) = /bobf/if_frw_c=&gt;sc_modify_update.
+
+“ Hay que buscar el registro actualizar con las opciones QUERY del BOPF y actualizar los campos
+
+INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
+                      change_mode = lv_mode
+                      key = lo_header-&gt;key
+                      data = lo_header )
+             INTO TABLE et_mod.
+</code></pre></div><h1 id="informar-estructura-de-modificación-para-subnodo">
+  Informar estructura de modificación para subnodo
+  <a class="anchor" href="#informar-estructura-de-modificaci%c3%b3n-para-subnodo">#</a>
+</h1>
+<p>Esto es cuando se añaden/modifican datos de un subnodo.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> INSERT VALUE #( node = zif_atron_file_engine_c=&gt;sc_node-root
+                change_mode = /bobf/if_frw_c=&gt;sc_modify_create
+                key = lo_header-&gt;key
+                data = lo_content
+                source_node = zif_atron_file_engine_c=&gt;sc_node-root
+                association = zif_atron_file_engine_c=&gt;sc_association-root-content
+                source_key = lo_header-&gt;key ) INTO TABLE lt_mod.
+</code></pre></div><h1 id="modificar-datos-en-bopf">
+  Modificar datos en BOPF
+  <a class="anchor" href="#modificar-datos-en-bopf">#</a>
+</h1>
+<p>Para que los datos del BOPF se graben primero se lanza el proceso de modificación, en este proceso es donde saltarían las validaciones propias.</p>
+<p>En la clase de utilidades del BOPF que se esta indicada en el índice de la sección todo este proceso esta encapsulado para simplificar la operativa.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">   mo_svc_mngr-&gt;modify(
+      EXPORTING
+        it_modification = it_mod
+      IMPORTING
+        eo_change       = DATA(lo_change)
+        eo_message      = eo_message ).
+
+</code></pre></div><h1 id="grabar-datos-en-bopf">
+  Grabar datos en BOPF
+  <a class="anchor" href="#grabar-datos-en-bopf">#</a>
+</h1>
+<p>Una vez la modificación no devuelve errores es cuando se pueden grabar.</p>
+<p>En la clase de utilidades del BOPF que se esta indicada en el índice de la sección todo este proceso esta encapsulado para simplificar la operativa.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> mo_txn_mngr-&gt;save(
+        IMPORTING
+          ev_rejected            = ev_rejected
+          eo_message             = eo_message ).
+</code></pre></div><h1 id="leer-datos-por-el-id-de-nodo">
+  Leer datos por el ID de nodo
+  <a class="anchor" href="#leer-datos-por-el-id-de-nodo">#</a>
+</h1>
+<p><em>LT_HEADER</em> es la tabla interna que se indica en <em>Combinated table type</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> mo_svc_mngr-&gt;retrieve( EXPORTING iv_node_key             = zif_atron_file_engine_c=&gt;sc_node-root
+                              it_key                  = VALUE #( ( key = iv_id_file ) )
+                              iv_fill_data            = abap_false
+                    IMPORTING et_data                 = lt_header ).
+
+</code></pre></div><h1 id="leer-por-asociación">
+  Leer por asociación
+  <a class="anchor" href="#leer-por-asociaci%c3%b3n">#</a>
+</h1>
+<p>En <em>node_key</em> se informa el nodo donde pertenece la clave que se le pasará a <em>IT_KEY</em>. En asociación se indica del nodo de la key a que nodo se quiere recuperar valores. En el ejemplo la key pertenece al nodo <em>root</em> y queremos que recuperar los datos asociados a dicha clave en el nodo <em>content</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> mo_svc_mngr-&gt;retrieve_by_association(
+        EXPORTING
+          iv_node_key             = zif_atron_file_engine_c=&gt;sc_node-root
+          it_key                  =  VALUE #( ( key = iv_id_file ) )
+          iv_association          = zif_atron_file_engine_c=&gt;sc_association-root-content
+          iv_fill_data = abap_true
+        IMPORTING
+           et_data                 = lt_content ).
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

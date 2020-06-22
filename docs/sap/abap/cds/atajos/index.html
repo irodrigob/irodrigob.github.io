@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sentencias sobre condiciones">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Condiciones" />
-<meta property="og:description" content="Sentencias sobre condiciones" />
+<meta name="description" content="Código para ser usado">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Atajos" />
+<meta property="og:description" content="Código para ser usado" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/" />
-<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
-<title>Condiciones | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/cds/atajos/" />
+
+<title>Atajos | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -233,7 +233,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/cds/atajos/" class="">Atajos</a>
+    <a href="/docs/sap/abap/cds/atajos/" class="active">Atajos</a>
   
 
         </li>
@@ -274,7 +274,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="active">Condiciones</a>
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
   
 
         </li>
@@ -406,7 +406,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Condiciones</strong>
+  <strong>Atajos</strong>
 
   <label for="toc-control">
     
@@ -420,37 +420,25 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">#</a>
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
 </h1>
-<p>En este grupo se irán poniendo las distintas sentencias que nos permiten hacer condiciones.</p>
-<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
-<h1 id="ejemplo-1">
-  Ejemplo 1
-  <a class="anchor" href="#ejemplo-1">#</a>
+<p>Disponer de pequeños trozos de código que al no usarse mucho me cuestan saber como utilizarlo y siempre tengo que estar buscandolos.</p>
+<h1 id="parámetros">
+  Parámetros
+  <a class="anchor" href="#par%c3%a1metros">#</a>
 </h1>
-<p>Permite que una variable se inicialice segun una condicion determinada:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn_data=&gt;cv_updkz_insert 
-                         WHEN is_header-has_changed = abap_true THEN zif_rtn_data=&gt;cv_updkz_edit ).
-</code></pre></div><h1 id="ejemplo-2">
-  Ejemplo 2
-  <a class="anchor" href="#ejemplo-2">#</a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">define view ZATRON_CDS_DOMAIN_TEXTS
+  with parameters
+    p_domain :DOMNAME,
+</code></pre></div><h1 id="valores-por-defecto">
+  Valores por defecto
+  <a class="anchor" href="#valores-por-defecto">#</a>
 </h1>
-<p>Uso de SWITCH haciendo una conversion de variable;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> &lt;ls_cond_crud&gt;-value = SWITCH #( &lt;ls_conditions_values_field&gt;-field_type
-                                   WHEN zif_rtn_negotiation_data=&gt;cs_field_types-flex_group THEN &lt;field&gt;
-                                   LSE CONV string( &lt;field&gt; ) ).
-</code></pre></div><h1 id="ejemplo-3">
-  Ejemplo 3
-  <a class="anchor" href="#ejemplo-3">#</a>
-</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA lv_valor TYPE string.
-
-DO 10 TIMES.
-  lv_valor = COND #( LET x = sy-index MOD 2 IN WHEN x = 0 THEN |par| ELSE |impar|  ).
-  WRITE:/ lv_valor.
-ENDDO.
+<p>En este ejemplo se usa para pasar por defecto en un parámetro de entrada. Pero la misma variable variable de entorno se puede usar en un <em>WHERE</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> @Environment.systemField: #SYSTEM_DATE
+    p_langu  :abap.dats
 </code></pre></div></article>
  
       

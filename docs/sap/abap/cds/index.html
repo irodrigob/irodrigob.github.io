@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sentencias sobre condiciones">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Condiciones" />
-<meta property="og:description" content="Sentencias sobre condiciones" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/" />
-<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
-<title>Condiciones | Navi-developer</title>
+<meta name="description" content="Core Data Services">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CDS" />
+<meta property="og:description" content="Core Data Services" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/cds/" />
+
+<title>CDS | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.72b2dd943d9f0229be21589fde56caa2d07b4bb544e9c8d67280a645b49d269d.js" integrity="sha256-crLdlD2fAim&#43;IVif3lbKotB7S7VE6cjWcoCmRbSdJp0="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/cds/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -218,7 +219,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/cds/" class="">CDS</a>
+    <a href="/docs/sap/abap/cds/" class="active">CDS</a>
   
 
           
@@ -274,7 +275,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="active">Condiciones</a>
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
   
 
         </li>
@@ -406,7 +407,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Condiciones</strong>
+  <strong>CDS</strong>
 
   <label for="toc-control">
     
@@ -420,38 +421,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">#</a>
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
 </h1>
-<p>En este grupo se irán poniendo las distintas sentencias que nos permiten hacer condiciones.</p>
-<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
-<h1 id="ejemplo-1">
-  Ejemplo 1
-  <a class="anchor" href="#ejemplo-1">#</a>
+<p>Los de CDS que aparecen, si no recuerdo mal, en la versión 7.4 de ABAP pero es en la versión 7.5, donde creo, tiene ya una funcionalidad madura que permite usarse en multitud de sitios.</p>
+<p>Los CDS están pensados para y por HANA, aunque no es necesario tener HANA para usarlo pero según que funcionalidad de que uses pueden perder rendimiento, ya que disponen de funcionalidades que permite que el trabajo &ldquo;sucio&rdquo; lo haga la base de datos.
+Además, los CDS permiten un Open SQL extendido, que se asemeja cada vez más al standard SQL, que permiten realizar operaciones sin necesidad de tratar a posterior los datos en ABAP.</p>
+<p>Y punto importante como los CDS se ejecutan directamente en base de datos son más óptimos que hacer un SELECT tradicional a la hora de buscar y/o procesar un volumen alto de datos.</p>
+<h1 id="publicaciones">
+  Publicaciones
+  <a class="anchor" href="#publicaciones">#</a>
 </h1>
-<p>Permite que una variable se inicialice segun una condicion determinada:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn_data=&gt;cv_updkz_insert 
-                         WHEN is_header-has_changed = abap_true THEN zif_rtn_data=&gt;cv_updkz_edit ).
-</code></pre></div><h1 id="ejemplo-2">
-  Ejemplo 2
-  <a class="anchor" href="#ejemplo-2">#</a>
-</h1>
-<p>Uso de SWITCH haciendo una conversion de variable;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> &lt;ls_cond_crud&gt;-value = SWITCH #( &lt;ls_conditions_values_field&gt;-field_type
-                                   WHEN zif_rtn_negotiation_data=&gt;cs_field_types-flex_group THEN &lt;field&gt;
-                                   LSE CONV string( &lt;field&gt; ) ).
-</code></pre></div><h1 id="ejemplo-3">
-  Ejemplo 3
-  <a class="anchor" href="#ejemplo-3">#</a>
-</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA lv_valor TYPE string.
+<dl>
 
-DO 10 TIMES.
-  lv_valor = COND #( LET x = sy-index MOD 2 IN WHEN x = 0 THEN |par| ELSE |impar|  ).
-  WRITE:/ lv_valor.
-ENDDO.
-</code></pre></div></article>
+  <dt>
+    <a href="/docs/sap/abap/cds/atajos/">Atajos</a>
+  </dt>
+  <dd>
+    Código para ser usado
+  </dd>
+
+</dl>
+
+</article>
  
       
 

@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sentencias sobre condiciones">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Condiciones" />
-<meta property="og:description" content="Sentencias sobre condiciones" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/" />
-<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
-<title>Condiciones | Navi-developer</title>
+<meta name="description" content="BOPF">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="BOPF" />
+<meta property="og:description" content="BOPF" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/bopf/" />
+
+<title>BOPF | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.72b2dd943d9f0229be21589fde56caa2d07b4bb544e9c8d67280a645b49d269d.js" integrity="sha256-crLdlD2fAim&#43;IVif3lbKotB7S7VE6cjWcoCmRbSdJp0="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/bopf/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -147,7 +148,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/bopf/" class="">BOPF</a>
+    <a href="/docs/sap/abap/bopf/" class="active">BOPF</a>
   
 
           
@@ -274,7 +275,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="active">Condiciones</a>
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
   
 
         </li>
@@ -406,7 +407,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Condiciones</strong>
+  <strong>BOPF</strong>
 
   <label for="toc-control">
     
@@ -420,38 +421,59 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">#</a>
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
 </h1>
-<p>En este grupo se irán poniendo las distintas sentencias que nos permiten hacer condiciones.</p>
-<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
-<h1 id="ejemplo-1">
-  Ejemplo 1
-  <a class="anchor" href="#ejemplo-1">#</a>
+<p>BOPF es un framework que permite modelar datos, definir validaciones, definir la persistencia en base de datos, realizar determinaciones, definir consultas, etc..</p>
+<p>Es un herramienta muy útil porque te ahorra toda la gestión que hay que hacer en los modelos de datos propios que se hacen en los proyectos.</p>
+<p>Aquí iré recogiendo un poco de todo de lo que voy haciendo y/o aprendiendo sobre los BOPF.</p>
+<p>En el siguiente 
+  <a href="https://github.com/irodrigob/ABAP_BOPF_UTILS">enlace</a> están las utilidades que voy creando para los BOPF en formato ABAPGit.</p>
+<h1 id="publicaciones">
+  Publicaciones
+  <a class="anchor" href="#publicaciones">#</a>
 </h1>
-<p>Permite que una variable se inicialice segun una condicion determinada:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn_data=&gt;cv_updkz_insert 
-                         WHEN is_header-has_changed = abap_true THEN zif_rtn_data=&gt;cv_updkz_edit ).
-</code></pre></div><h1 id="ejemplo-2">
-  Ejemplo 2
-  <a class="anchor" href="#ejemplo-2">#</a>
-</h1>
-<p>Uso de SWITCH haciendo una conversion de variable;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> &lt;ls_cond_crud&gt;-value = SWITCH #( &lt;ls_conditions_values_field&gt;-field_type
-                                   WHEN zif_rtn_negotiation_data=&gt;cs_field_types-flex_group THEN &lt;field&gt;
-                                   LSE CONV string( &lt;field&gt; ) ).
-</code></pre></div><h1 id="ejemplo-3">
-  Ejemplo 3
-  <a class="anchor" href="#ejemplo-3">#</a>
-</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA lv_valor TYPE string.
+<dl>
 
-DO 10 TIMES.
-  lv_valor = COND #( LET x = sy-index MOD 2 IN WHEN x = 0 THEN |par| ELSE |impar|  ).
-  WRITE:/ lv_valor.
-ENDDO.
-</code></pre></div></article>
+  <dt>
+    <a href="/docs/sap/abap/bopf/nomenclaturas/">Nomenclaturas</a>
+  </dt>
+  <dd>
+    Nomenclaturas
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/bopf/acciones/">Acciones</a>
+  </dt>
+  <dd>
+    Todo lo referente a las acciones
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/bopf/api_abap/">API desde ABAP</a>
+  </dt>
+  <dd>
+    Como usar la API de los BOPF desde ABAP
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/bopf/determinaciones/">Determinaciones</a>
+  </dt>
+  <dd>
+    Todo lo referente a determinaciones
+  </dd>
+
+  <dt>
+    <a href="/docs/sap/abap/bopf/ejemplos_generales/">Ejemplos generales</a>
+  </dt>
+  <dd>
+    Ejemplos válidos en cualquier parte del BOPF
+  </dd>
+
+</dl>
+
+</article>
  
       
 

@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sentencias sobre condiciones">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Condiciones" />
-<meta property="og:description" content="Sentencias sobre condiciones" />
+<meta name="description" content="Nomenclaturas">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Nomenclaturas" />
+<meta property="og:description" content="Nomenclaturas" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/" />
-<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
-<title>Condiciones | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/" />
+
+<title>Nomenclaturas | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -162,7 +162,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
+    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="active">Nomenclaturas</a>
   
 
         </li>
@@ -274,7 +274,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="active">Condiciones</a>
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
   
 
         </li>
@@ -406,7 +406,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Condiciones</strong>
+  <strong>Nomenclaturas</strong>
 
   <label for="toc-control">
     
@@ -420,38 +420,80 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">#</a>
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
 </h1>
-<p>En este grupo se irán poniendo las distintas sentencias que nos permiten hacer condiciones.</p>
-<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
-<h1 id="ejemplo-1">
-  Ejemplo 1
-  <a class="anchor" href="#ejemplo-1">#</a>
+<p>Es tener las indicaciones de las nomenclaturas que uso cuando creo un BOPF. Ya que de esta manera es fácil identificar los objetos a simple vista.</p>
+<p>Yo normalmente cuando hago proyecto suele dar un nombre de tres carácteres que usará como prefijo para cualquier objeto que creo, ya sea, BOPF, ya sea, cualquier otro objeto: clases, transacciones, etc.</p>
+<h1 id="estructuras-y-tablas-de-diccionario">
+  Estructuras y tablas de diccionario
+  <a class="anchor" href="#estructuras-y-tablas-de-diccionario">#</a>
 </h1>
-<p>Permite que una variable se inicialice segun una condicion determinada:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn_data=&gt;cv_updkz_insert 
-                         WHEN is_header-has_changed = abap_true THEN zif_rtn_data=&gt;cv_updkz_edit ).
-</code></pre></div><h1 id="ejemplo-2">
-  Ejemplo 2
-  <a class="anchor" href="#ejemplo-2">#</a>
+<p>En la siguiente imagen:</p>
+<p>
+  <img src="/images/sap/abap/bopf/ejemplo_nomenclatura_estructuras_tablas.png" alt="Ejemplo" /></p>
+<p>Es un ejemplo de la nomencltura utilizada en un proyecto real. <strong>NOTA: A día de hoy hay una ligera variación, cambia el nombre de la estructura persistente</strong></p>
+<p>El esquema sería el siguiente:</p>
+<ul>
+<li>La estructura para los persistentes sería &ndash;&gt; <code>Z&lt;nombre proyecto&gt;_BO_SP_&lt;libre&gt;</code></li>
+<li>La estructura de los datos transitorios &ndash;&gt; <code>Z&lt;nombre proyecto&gt;_BO_ST_&lt;libre&gt;</code></li>
+<li>La estructura que combina las dos estructura anteriores  &ndash;&gt; <code>Z&lt;nombre proyecto&gt;_BO_SC_&lt;libre&gt;</code></li>
+<li>El tipo de tabla para la estructura combinada &ndash;&gt; <code>Z&lt;nombre proyecto&gt;_BO_I_&lt;libre&gt;</code></li>
+<li>Tabla de base de datos &ndash;&gt; <code>Z&lt;nombre proyecto&gt;_T_&lt;libre&gt;</code></li>
+</ul>
+<h1 id="determinaciones">
+  Determinaciones
+  <a class="anchor" href="#determinaciones">#</a>
 </h1>
-<p>Uso de SWITCH haciendo una conversion de variable;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> &lt;ls_cond_crud&gt;-value = SWITCH #( &lt;ls_conditions_values_field&gt;-field_type
-                                   WHEN zif_rtn_negotiation_data=&gt;cs_field_types-flex_group THEN &lt;field&gt;
-                                   LSE CONV string( &lt;field&gt; ) ).
-</code></pre></div><h1 id="ejemplo-3">
-  Ejemplo 3
-  <a class="anchor" href="#ejemplo-3">#</a>
+<p>Sería: <code>ZCL_&lt;nombre proyecto&gt;_D_&lt;nombre bo&gt;_&lt;nodo&gt;</code></p>
+<p>Ejemplo: ZCL_ATRON_D_FILE_ENG_HEADER</p>
+<h1 id="validaciones">
+  Validaciones
+  <a class="anchor" href="#validaciones">#</a>
 </h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA lv_valor TYPE string.
-
-DO 10 TIMES.
-  lv_valor = COND #( LET x = sy-index MOD 2 IN WHEN x = 0 THEN |par| ELSE |impar|  ).
-  WRITE:/ lv_valor.
-ENDDO.
-</code></pre></div></article>
+<p>Sería: <code>ZCL_&lt;nombre proyecto&gt;_V_&lt;nombre bo&gt;_&lt;nodo&gt;</code></p>
+<p>Ejemplo: ZCL_ATRON_V_FILE_ENG_HEADER</p>
+<h1 id="acciones">
+  Acciones
+  <a class="anchor" href="#acciones">#</a>
+</h1>
+<h2 id="clase">
+  Clase
+  <a class="anchor" href="#clase">#</a>
+</h2>
+<p>Sería: <code>ZCL_&lt;nombre proyecto&gt;_A_&lt;nombre bo&gt;_&lt;nodo&gt;</code></p>
+<p>Ejemplo: ZCL_ATRON_A_FILE_ENG_HEADER</p>
+<h2 id="estructura-para-los-parámetros-y-tipo-de-datos-para-la-salida-de-datos">
+  Estructura para los parámetros y tipo de datos para la salida de datos
+  <a class="anchor" href="#estructura-para-los-par%c3%a1metros-y-tipo-de-datos-para-la-salida-de-datos">#</a>
+</h2>
+<h3 id="estructura-de-parámetros">
+  Estructura de parámetros
+  <a class="anchor" href="#estructura-de-par%c3%a1metros">#</a>
+</h3>
+<p>Sería: <code>Z&lt;nombre proyecto&gt;_BO_SA_PARAMS_&lt;nombre accion&gt;&gt;</code></p>
+<p>El <em>SA</em> sería &ldquo;Structure Action&rdquo;</p>
+<p>Ejemplo: ZATRON_BO_SA_PARAMS_LAUNCH_ETL</p>
+<h3 id="estructura-para-la-salida-de-datos">
+  Estructura para la salida de datos
+  <a class="anchor" href="#estructura-para-la-salida-de-datos">#</a>
+</h3>
+<p>Sería: <code>Z&lt;nombre proyecto&gt;_BO_SA_EXPORT_&lt;nombre accion&gt;&gt;</code></p>
+<p>Ejemplo: ZATRON_BO_SA_EXPORT_LAUNCH_ETL</p>
+<h3 id="tipo-tabla-para-la-salida-de-datos">
+  Tipo tabla para la salida de datos
+  <a class="anchor" href="#tipo-tabla-para-la-salida-de-datos">#</a>
+</h3>
+<p>Sería: <code>Z&lt;nombre proyecto&gt;_BO_IA_EXPORT_&lt;nombre accion&gt;&gt;</code></p>
+<p>Ejemplo: ZATRON_BO_IA_EXPORT_LAUNCH_ETL</p>
+<h1 id="querys">
+  Querys
+  <a class="anchor" href="#querys">#</a>
+</h1>
+<p>Sería: <code>ZCL_&lt;nombre proyecto&gt;_Q_&lt;nombre bo&gt;_&lt;nodo&gt;</code></p>
+<p>Ejemplo: ZCL_ATRON_Q_FILE_ENG_HEADER</p>
+</article>
  
       
 

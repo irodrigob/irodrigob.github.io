@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sentencias sobre condiciones">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Condiciones" />
-<meta property="og:description" content="Sentencias sobre condiciones" />
+<meta name="description" content="Ejemplos válidos en cualquier parte del BOPF">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Ejemplos generales" />
+<meta property="og:description" content="Ejemplos válidos en cualquier parte del BOPF" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/" />
-<meta property="article:modified_time" content="2020-06-21T17:38:56+02:00" />
-<title>Condiciones | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/bopf/ejemplos_generales/" />
+
+<title>Ejemplos generales | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -202,7 +202,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/bopf/ejemplos_generales/" class="">Ejemplos generales</a>
+    <a href="/docs/sap/abap/bopf/ejemplos_generales/" class="active">Ejemplos generales</a>
   
 
         </li>
@@ -274,7 +274,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="active">Condiciones</a>
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
   
 
         </li>
@@ -406,7 +406,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Condiciones</strong>
+  <strong>Ejemplos generales</strong>
 
   <label for="toc-control">
     
@@ -420,37 +420,50 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">#</a>
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
 </h1>
-<p>En este grupo se irán poniendo las distintas sentencias que nos permiten hacer condiciones.</p>
-<p>Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</p>
-<h1 id="ejemplo-1">
-  Ejemplo 1
-  <a class="anchor" href="#ejemplo-1">#</a>
+<p>Aquí estarán ejemplos de código que puede ser usado en distintos ambitos de uso de los BOFP</p>
+<h1 id="instanciar-clase-de-mensajes">
+  Instanciar clase de mensajes
+  <a class="anchor" href="#instanciar-clase-de-mensajes">#</a>
 </h1>
-<p>Permite que una variable se inicialice segun una condicion determinada:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn_data=&gt;cv_updkz_insert 
-                         WHEN is_header-has_changed = abap_true THEN zif_rtn_data=&gt;cv_updkz_edit ).
-</code></pre></div><h1 id="ejemplo-2">
-  Ejemplo 2
-  <a class="anchor" href="#ejemplo-2">#</a>
+<p>Los mensajes de los BOPF se recogen en una clase generica que pueda ser usada en las determinaciones, validaciones, etc..</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">    IF eo_message IS NOT BOUND. &#34; Se instancia la clase de mensajes en caso de no estarlo
+      eo_message = /bobf/cl_frw_factory=&gt;get_message( ).
+    ENDIF.
+</code></pre></div><h1 id="template-código-usado-en-acciones-validaciones-y-determinaciones">
+  Template código usado en acciones, validaciones y determinaciones
+  <a class="anchor" href="#template-c%c3%b3digo-usado-en-acciones-validaciones-y-determinaciones">#</a>
 </h1>
-<p>Uso de SWITCH haciendo una conversion de variable;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> &lt;ls_cond_crud&gt;-value = SWITCH #( &lt;ls_conditions_values_field&gt;-field_type
-                                   WHEN zif_rtn_negotiation_data=&gt;cs_field_types-flex_group THEN &lt;field&gt;
-                                   LSE CONV string( &lt;field&gt; ) ).
-</code></pre></div><h1 id="ejemplo-3">
-  Ejemplo 3
-  <a class="anchor" href="#ejemplo-3">#</a>
-</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA lv_valor TYPE string.
+<p>En cada método de una determinación, validación o acciones siempre hay los siguientes pasos, más o menos:</p>
+<ol>
+<li>Leer los datos según la clave que se recibe por párametro. Este paso siempre hay que hacerlo da igual lo que se haga</li>
+<li>Procesar los datos</li>
+<li>Actualizar los datos en el nodo. Este paso es opcional según lo que estemos haciendo</li>
+</ol>
+<h2 id="lectura-de-datos">
+  Lectura de datos
+  <a class="anchor" href="#lectura-de-datos">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">DATA lt_data TYPE zatron_bo_i_file_eng_header.
 
-DO 10 TIMES.
-  lv_valor = COND #( LET x = sy-index MOD 2 IN WHEN x = 0 THEN |par| ELSE |impar|  ).
-  WRITE:/ lv_valor.
-ENDDO.
+    &#34; Lectura de datos
+    io_read-&gt;retrieve( EXPORTING iv_node = is_ctx-node_key
+                                 it_key  = it_key
+                       IMPORTING et_data = lt_data ).
+</code></pre></div><h2 id="actualización">
+  Actualización
+  <a class="anchor" href="#actualizaci%c3%b3n">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">LOOP AT lt_data REFERENCE INTO DATA(lo_data).
+
+      &#34; Actualización  
+      io_modify-&gt;update( iv_node = is_ctx-node_key
+                   iv_key  = lo_data-&gt;key
+                   is_data = lo_data ).
+    ENDLOOP.
 </code></pre></div></article>
  
       
