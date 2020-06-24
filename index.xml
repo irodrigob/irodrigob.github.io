@@ -118,6 +118,17 @@ DATA lo_elemdesc type ref to cl_abap_elemdescr. Lo_elemdesc ?= cl_abap_typedescr
     </item>
     
     <item>
+      <title>Desarrollo con VS Code</title>
+      <link>https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/</guid>
+      <description>Objetivo#Para desarrollar en UI5 he probado tres editores: WebStorm, Sublime y Visual Studio Code.
+WebStorm lo use hace años y me fue tan bien que pague por la licencia. El tema de reconocer configurar, eso hace años, las librerias era con una extensión pero no esta la última versión.
+Sublime lo empece a usar hace poco para mi último proyecto y fue el único que era capaz de navegar entre las distintas funcionaes de javascript que iba creando.</description>
+    </item>
+    
+    <item>
       <title>Determinaciones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/determinaciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

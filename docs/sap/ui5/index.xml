@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UI5 on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/ui5/</link>
+    <description>Recent content in UI5 on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/ui5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Desarrollo con VS Code</title>
+      <link>https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/</guid>
+      <description>Objetivo#Para desarrollar en UI5 he probado tres editores: WebStorm, Sublime y Visual Studio Code.
+WebStorm lo use hace años y me fue tan bien que pague por la licencia. El tema de reconocer configurar, eso hace años, las librerias era con una extensión pero no esta la última versión.
+Sublime lo empece a usar hace poco para mi último proyecto y fue el único que era capaz de navegar entre las distintas funcionaes de javascript que iba creando.</description>
+    </item>
+    
+  </channel>
+</rss>

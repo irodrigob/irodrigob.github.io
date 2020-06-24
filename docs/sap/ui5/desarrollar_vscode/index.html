@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Desarrollar aplicaciones con Visual Studio Code">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Desarrollo con VS Code" />
+<meta property="og:description" content="Desarrollar aplicaciones con Visual Studio Code" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/" />
+
+<title>Desarrollo con VS Code | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.85dc1900554696b7cb4f2f1a65f86beec00de750b508c170d34d9424885e4fed.js" integrity="sha256-hdwZAFVGlrfLTy8aZfhr7sAN51C1CMFw002UJIheT&#43;0="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/desarrollar_vscode/" class="active">Desarrollo con VS Code</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Desarrollo con VS Code</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
+</h1>
+<p>Para desarrollar en UI5 he probado tres editores: 
+  <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>, 
+  <a href="https://www.sublimetext.com/">Sublime</a> y 
+  <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</p>
+<p>WebStorm lo use hace años y me fue tan bien que pague por la licencia. El tema de reconocer configurar, eso hace años, las librerias era con una extensión pero no esta la última versión.</p>
+<p>Sublime lo empece a usar hace poco para mi último proyecto y fue el único que era capaz de navegar entre las distintas funcionaes de javascript que iba creando. Pero su entorno no me terminaba de encajar. Y la extensión de librerias de UI5 esta más desfasada.</p>
+<p>Visual Studio Code. Es el que uso ahora, el único pero gordo es que no puedes navegar entre funcionens que esten entre distintos archivos. Esto hace que uses mucho los buscadores o tener buena memoria. Además, tiene extensiones para generar las vistas XML. El entorno lo veo más amigable y es el que me siento a gusto. Además, creo que es el que tiene más recorrido por todo su ecosistema de extensiones.</p>
+<p>En este artículo explicaría sin mucho detalle, a menos de momento, como he configurado mi entorno para desarrollar en UI5 con VS Code.</p>
+<h1 id="preparar-entorno-en-vs-code">
+  Preparar entorno en VS Code
+  <a class="anchor" href="#preparar-entorno-en-vs-code">#</a>
+</h1>
+<h2 id="prerequisitos">
+  Prerequisitos
+  <a class="anchor" href="#prerequisitos">#</a>
+</h2>
+<p>Hay que tener instalado el 
+  <a href="https://code.visualstudio.com/">Visual Studio Code</a> y 
+  <a href="https://nodejs.org/en/">Node.js</a>.</p>
+<h2 id="paquetes-del-nodejs">
+  Paquetes del node.js
+  <a class="anchor" href="#paquetes-del-nodejs">#</a>
+</h2>
+<ol>
+<li>Mediante la consola de windows instalar el paquete &ldquo;generator-easy-ui5&rdquo; para simplificar la creación de proyectos nuevos, como vistas, etc.. Se instala con la sentencia:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm install -g yo generator-easy-ui5 
+</code></pre></div><h2 id="configuración-del-vs-code">
+  Configuración del VS Code
+  <a class="anchor" href="#configuraci%c3%b3n-del-vs-code">#</a>
+</h2>
+<ol>
+<li>Instalar la extensión 
+  <a href="https://marketplace.visualstudio.com/items?itemName=iljapostnovs.ui5plugin">SAPUI5 Extension</a> de VS Code. Esta extensión te permite autocompletar código en vistas XML y controladores. Yo ahora mismo no lo tengo ni instalado porque he ido haciendo las cosas a base de ejemplos de las propias página de UI5 y su API. Si lo instalamos hay que modificar la configuración de las extensión para:</li>
+</ol>
+<ul>
+<li>Cambiar el nombre de la carpeta donde esta el codigo fuente. Como se va usar el &ldquo;easy-ui5&rdquo; se cambia el valor &ldquo;src&rdquo; por &ldquo;webapp&rdquo;.</li>
+<li>Hay que indicarla versión de SAPUI5 que se va a usar, con la versión 1.73.1 funciona sin problemas</li>
+</ul>
+<ol start="2">
+<li>Instalar la extensión 
+  <a href="https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml">XML Tools</a> para que te haga pretty pinter el as vistas XML. Si queremos los atributos en cada línea, y no todo en una línea que es la opción por defecto, hay que hay ir a la configuración de las extensión, es la que se llama <em>XML Tools Configuration</em>, y marcar el flag que se llama <em>Split attributes on Format</em></li>
+</ol>
+<h2 id="preparar-el-proyecto">
+  Preparar el proyecto
+  <a class="anchor" href="#preparar-el-proyecto">#</a>
+</h2>
+<ol>
+<li>
+<p>Abrir la consola de Windows e ir a la carpeta donde se alojara el proyecto. <strong>IMPORTANTE: No es necesario crear la carpeta del proyecto</strong>*</p>
+</li>
+<li>
+<p>Ahora ejecutar el comando:</p>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">yo easy-ui5
+</code></pre></div><p>Para hacer la configuración inicial del proyecto. Seguir las preguntas del asistente. Este paso sobrescribe aspectos de la configuración del paso 2. A día de hoy no tengo claro si se puede obviar el paso 2 ya que a lo mejor este paso crea el <em>package.json</em>.
+Las opciones para mis proyectos personales han sido:</p>
+<p>
+  <img src="/images/sap/ui5/desarrollar_vscode/yo_easy_ui5.png" alt="yo easy-ui5" /></p>
+<p>En las preguntas tenemos la posibilidad de crear la carpeta donde estará el proyecto. Además instalará las dependencias necesarias.</p>
+<p><strong>Cosas a tener en cuenta:</strong></p>
+<ul>
+<li>El nombre del <em>namespace</em> se concatena al nombre de la carpeta. Creo que en su momento yo puse un <em>namespace</em> pero le indique que no creará la carpeta.</li>
+</ul>
+<ol start="3">
+<li>Como en mi caso voy a llamar a servicios que están en un sistema SAP hay que instalar un proxy para evitar el cross domain. Para eso hay que hacer lo siguiente:</li>
+</ol>
+<ul>
+<li>Desde la consola de Windows ejecutar el siguiente comando:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm install ui5-middleware-simpleproxy --save-dev
+</code></pre></div><ul>
+<li>Dentro de la carpeta del proyecto hay que modificar el archivo <em>ui5.yaml</em> y poner algo parecido(digo parecido porque cada uno tendrá un servidor distinto):</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">Srver:  
+server:
+  customMiddleware:
+  - name: ui5-middleware-simpleproxy
+    afterMiddleware: compression
+    mountPath: /sap/opu/odata/sap
+    configuration:
+      baseUri: &#34;http://vhcalnplci.dummy.nodomain:8000/sap/opu/odata/sap&#34;
+</code></pre></div><p>Esto lo que hace que cualquier petición local a <em>/sap/opu/odata/sap</em> se redirigia a la url indicada en <em>baseUri</em>. El nombre del servidor es el SAP pone a sus ABAP Trial Version.</p>
+<ul>
+<li>En el fichero *package.json&rdquo; hacer lo siguiente:</li>
+<li>Sección <em>devDependencies</em> modificar:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&#34;ui5-middleware-simpleproxy&#34;: &#34;*&#34;
+</code></pre></div><p>Se pone el asterisco en la versión para que sea válido para cualquier versión del paquete.</p>
+<ul>
+<li>Añadir la siguiente sección, yo la he puesto justo después de <em>devDependencies</em>:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> &#34;ui5&#34;: <span style="color:#75715e">{</span>
+   <span style="color:#e6db74">&#34;dependencies&#34;</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span>
+     <span style="color:#e6db74">&#34;ui5-middleware-simpleproxy&#34;</span>
+   <span style="color:#f92672">]</span>
+ <span style="color:#75715e">}</span>
+</code></pre></div><ol start="4">
+<li>Ahora abrimos el VS Code y se abre la carpeta del proyecto. Ahora en la parte inferior hay varias pestañas, ir a la de <em>Terminal</em> y pondremos:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm start
+</code></pre></div><p>Esto arrancará el servidor web con la aplicación si todo esta bien arranca la aplicación template que se ha creado con el <em>yo easy-ui5</em>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
