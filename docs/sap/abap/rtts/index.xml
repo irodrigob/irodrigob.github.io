@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RTTS on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/rtts/</link>
+    <description>Recent content in RTTS on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/rtts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>API desde ABAP</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/rtts/saber_campos_estructura/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/rtts/saber_campos_estructura/</guid>
+      <description>Ejemplo#DATA(lt_components) = CAST cl_abap_structdescr( cl_abap_typedescr=&amp;gt;describe_by_data( cs_row_data ) )-&amp;gt;get_components( ). </description>
+    </item>
+    
+  </channel>
+</rss>

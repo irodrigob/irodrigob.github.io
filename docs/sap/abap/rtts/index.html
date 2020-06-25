@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nuevas sentencias aparecidas en la versión 7.4">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Sentencias &gt;= 7.4" />
-<meta property="og:description" content="Nuevas sentencias aparecidas en la versión 7.4" />
+<meta name="description" content="Runtime Type Services">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="RTTS" />
+<meta property="og:description" content="Runtime Type Services" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/sentencias_74/" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/rtts/" />
 
-<title>Sentencias &gt;= 7.4 | Navi-developer</title>
+<title>RTTS | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.85bbac18e95f33fa1189146b388bcfc814a036c73721f5ea6c9f81ffe0cdd455.js" integrity="sha256-hbusGOlfM/oRiRRrOIvPyBSgNsc3IfXqbJ&#43;B/&#43;DN1FU="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/sentencias_74/index.xml" title="Navi-developer" />
+<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/sap/abap/rtts/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -250,7 +250,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/" class="active">Sentencias &gt;= 7.4</a>
+    <a href="/docs/sap/abap/sentencias_74/" class="">Sentencias &gt;= 7.4</a>
   
 
           
@@ -351,7 +351,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/rtts/" class="collapsed ">RTTS</a>
+    <a href="/docs/sap/abap/rtts/" class="collapsed active">RTTS</a>
   
 
           
@@ -359,6 +359,20 @@ https://github.com/alex-shpak/hugo-book
   
   
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/rtts/saber_campos_estructura/" class="">API desde ABAP</a>
+  
+
+        </li>
+      
+    
+  </ul>
   
 
         </li>
@@ -451,7 +465,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Sentencias &gt;= 7.4</strong>
+  <strong>RTTS</strong>
 
   <label for="toc-control">
     
@@ -465,14 +479,28 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="objetivo">
-  Objetivo
-  <a class="anchor" href="#objetivo">#</a>
+  <article class="markdown"><h1 id="abap">
+  ABAP
+  <a class="anchor" href="#abap">#</a>
 </h1>
-<p>A partir de la versión 7.4 de ABAP aparecerán nuevas sentencia, que se demoninan in-line, que permiten una mayor flexibilidad a la hora de desarrollar. Se demoninan in-line porque se puede combinar varias sentencias en una sola línea, incluso, se puede poner dichas sentencias a la hora de pasar parámetros en clases. Lamentablemente, las funciones no permiten dicha funcionalidad.</p>
-<p>Hay que destacar que estas sentencias van mejorando en cada versión, en la versión 7.5 apareciendo nuevas funcionalidades.</p>
-<p>Aunque tengo que reconocer que usar estas sentencias son muy guays y parece que sabes, muchas veces su legibilidad queda en entredicho. Y hay veces que hay que usar un mix de sentencias de <em>&ldquo;siempre&rdquo;</em> son más legibles tanto para uno propio, como para la persona que lo va a mantener.</p>
-<p>Iré creando páginas para ir clasificando los distintos tipo de sentencias.</p>
+<p>El RTTS, Runtime Type Services, es un conjunto de clases que permite la creación de variables, tablas internas de manera dinámica.</p>
+<p>El RTTS es una herramienta tremendamente útil para crear objetos de manera dinámica de una manera bastante sencilla. La jerarquía de clases es la siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">CL_ABAP_TYPEDESCR
+  |
+  |--CL_ABAP_DATADESCR
+  |   |
+  |   |--CL_ABAP_ELEMDESCR
+  |   |--CL_ABAP_REFDESCR
+  |   |--CL_ABAP_COMPLEXDESCR
+  |       |
+  |       |--CL_ABAP_STRUCTDESCR
+  |       |--CL_ABAP_TABLEDESCR
+  |
+  |--CL_ABAP_OBJECTDESCR
+     |
+     |--CL_ABAP_CLASSDESCR
+     |--CL_ABAP_INTFDESCR
+</code></pre></div><p>Aquí se irán poniendo ejemplos diversos sobre el RTTS.</p>
 <h1 id="publicaciones">
   Publicaciones
   <a class="anchor" href="#publicaciones">#</a>
@@ -480,59 +508,10 @@ https://github.com/alex-shpak/hugo-book
 <dl>
 
   <dt>
-    <a href="/docs/sap/abap/sentencias_74/bucles/">Bucles</a>
+    <a href="/docs/sap/abap/rtts/saber_campos_estructura/">API desde ABAP</a>
   </dt>
   <dd>
-    Sentencias sobre proceso de tablas internas
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/condiciones/">Condiciones</a>
-  </dt>
-  <dd>
-    Sentencias sobre condiciones
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/conversiones/">Conversiones</a>
-  </dt>
-  <dd>
-    Sentencias sobre conversión de datos
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/filtros/">Filtros</a>
-  </dt>
-  <dd>
-    Sentencias sobre el filtrado de datos
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/">Lectura tablas del diccionario</a>
-  </dt>
-  <dd>
-    Formas nuevas de leer en las tablas del diccionario
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/">Mapeo de camos</a>
-  </dt>
-  <dd>
-    Sentencias sobre mapeo de campos
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/relleno_valores/">Relleno de valores</a>
-  </dt>
-  <dd>
-    Sentencias para informar tablas internas
-  </dd>
-
-  <dt>
-    <a href="/docs/sap/abap/sentencias_74/string_templates/">String template</a>
-  </dt>
-  <dd>
-    Sentencias sobre el tratamiento de string
+    Como usar la API de los BOPF desde ABAP
   </dd>
 
 </dl>

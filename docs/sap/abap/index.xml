@@ -10,5 +10,15 @@
 	<atom:link href="https://irodrigob.github.io/docs/sap/abap/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Transacciones</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/transacciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/transacciones/</guid>
+      <description>Objetivo#Recopilación de las transacciones que me parecen interesantes.
+Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar    Financieras    Transacción Descripción     GGB0 Transación global para validaciones   GGB1 Transación global para sustituciones   OV51 Documentos modificacion deudores    Monitarización SAP PO    Transacción Descripción     SXMB_MONI Monitor de mensajes XML.</description>
+    </item>
+    
   </channel>
 </rss>

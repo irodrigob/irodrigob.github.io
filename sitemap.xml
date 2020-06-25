@@ -73,6 +73,11 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/rtts/saber_campos_estructura/</loc>
+    <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/</loc>
     <lastmod>2020-06-17T22:40:56+02:00</lastmod>
   </url>
@@ -98,6 +103,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/</loc>
+    <lastmod>2020-06-24T16:15:00+02:00</lastmod>
   </url>
   
   <url>
@@ -107,7 +113,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-06-22T22:32:37+02:00</lastmod>
+    <lastmod>2020-06-25T22:45:01+02:00</lastmod>
   </url>
   
   <url>
@@ -136,6 +142,11 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/rtts/</loc>
+    <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/string_templates/</loc>
     <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
@@ -145,7 +156,13 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/transacciones/</loc>
+    <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/ui5/</loc>
+    <lastmod>2020-06-24T16:15:00+02:00</lastmod>
   </url>
   
 </urlset>
