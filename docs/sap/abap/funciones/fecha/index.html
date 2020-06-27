@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fecha y Hora">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Fecha / Hora" />
+<meta property="og:description" content="Fecha y Hora" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/funciones/fecha/" />
+
+<title>Fecha / Hora | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.005171e6a7fc5808f6bc3aab5cd906416b5994191e6863293ef1363c57317e1e.js" integrity="sha256-AFFx5qf8WAj2vDqrXNkGQWtZlBkeaGMpPvE2PFcxfh4="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/" class="">BOPF</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/acciones/" class="">Acciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/api_abap/" class="">API desde ABAP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/plantillas_codigo_interno/" class="">Código ejemplo dentro del BOPF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/determinaciones/" class="">Determinaciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/tablas/" class="collapsed ">Tablas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/cds/" class="">CDS</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/cds/atajos/" class="">Atajos</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/" class="">Sentencias &gt;= 7.4</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/bucles/" class="">Bucles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/conversiones/" class="">Conversiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/filtros/" class="">Filtros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/" class="">Lectura tablas del diccionario</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/" class="">Mapeo de camos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/relleno_valores/" class="">Relleno de valores</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/string_templates/" class="">String template</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/alv/" class="">ALV</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/clases/" class="collapsed ">Clases</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/" class="collapsed ">Funciones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/basic_component/" class="">Basic Component</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/fecha/" class="active">Fecha / Hora</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/finanzas/" class="">Finanzas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/logistica/" class="">Logística</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/ventas/" class="">Ventas</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/notas/" class="">Notas de SAP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/programas/" class="collapsed ">Programas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/rtts/" class="collapsed ">RTTS</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/transacciones/" class="">Transacciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/utilidades_generales/" class="">Utilidades generales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Fecha / Hora</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="objetivo">
+  Objetivo
+  <a class="anchor" href="#objetivo">#</a>
+</h1>
+<p>Debido a que hay multitud de funciones para fechas y horas que uso, las pongo en un apartado aparte en vez de ponerlas en la de <em>Basic Component</em>.</p>
+<h1 id="lista">
+  Lista
+  <a class="anchor" href="#lista">#</a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET_WEEK_INFO_BASED_ON_DATE</td>
+<td>Te devuelve la semana y el día que es lunes y domingo.</td>
+</tr>
+<tr>
+<td>DATE_GET_WEEK</td>
+<td>Solo devuelve la semana. Ojo que la semana viene al principio con el año.</td>
+</tr>
+<tr>
+<td>HR_AUPBS_MONTH_DAY</td>
+<td>Le pones dos fechas y te devuelve la diferencia en días, meses, años y días de calendario</td>
+</tr>
+<tr>
+<td>HR_MONTHS_BETWEEN_TWO_DATES</td>
+<td>Dos fechas y te devuelve la diferencia en meses</td>
+</tr>
+<tr>
+<td>MONTH_NAMES_GET</td>
+<td>Devuelve los textos de los meses para un idioma.</td>
+</tr>
+<tr>
+<td>RP_CALC_DATE_IN_INTERVAL</td>
+<td>Permite obtener una fecha a partir de meses, dias o años. Se puede indicar que se sumen o resten</td>
+</tr>
+<tr>
+<td>SD_DATETIME_DIFFERENCE</td>
+<td>Le pasas dos fechas y horas y te devuelve la diferencia en dias y horas</td>
+</tr>
+<tr>
+<td>SWI_DURATION_DETERMINE	Funcion que devuelve en segundos la diferencia entre dos fechas y dos horas</td>
+<td></td>
+</tr>
+<tr>
+<td>WEEK_GET_FIRST_DAY</td>
+<td>Devuelve el primer día de la semana pasada</td>
+</tr>
+<tr>
+<td>TZ_SYSTEM_TO_LOCAL</td>
+<td>Convierto la hora y fecha del huso horario del servidor a un huso horario</td>
+</tr>
+<tr>
+<td>L_MC_TIME_DIFFERENCE</td>
+<td>Es como la SD_DATETIME_DIFFERENCE pero devuelve la diferencia en minutos</td>
+</tr>
+<tr>
+<td>LAST_WEEK</td>
+<td>De una semana te devuelve la fecha del lunes y domingo. Y además la semana anterior.</td>
+</tr>
+<tr>
+<td>CONVERT_DATE_TO_INTERNAL</td>
+<td>Convierte una fecha en char a formato interno.</td>
+</tr>
+<tr>
+<td>FIMA_DAYS_AND_MONTHS_AND_YEARS</td>
+<td>Devuelve la diferencia en meses y años entre dos fechas</td>
+</tr>
+<tr>
+<td>RSARCH_DATE_CONVERT</td>
+<td>De una fecha te devuelve mes, periodo, dia, semana, mes, etc..</td>
+</tr>
+<tr>
+<td>EWU_ADD_TIME</td>
+<td>Le pasas fecha y hora. Le pones un campo fecha para que sume hora/minuto/segundo</td>
+</tr>
+<tr>
+<td>BKK_ADD_WORKINGDAY</td>
+<td>Suma/resta dias a una fecha teniendo en cuenta dias laborables</td>
+</tr>
+</tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

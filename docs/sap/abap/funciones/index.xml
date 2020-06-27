@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Funciones on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/funciones/</link>
+    <description>Recent content in Funciones on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/funciones/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic Component</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/basic_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/basic_component/</guid>
+      <description>Objetivo#Funciones del módulo basic component, es decir, funciones que son generales a todo SAP.
+Al final hay una sección de ejemplos para algunas funciones. No todas las funciones tienen ejemplo.
+Lista#Generales#   Función Descripción     SXO_IMPL_DELETE Borra la implementación de una BADI   SCP_REPLACE_STRANGE_CHARS Quita acentos, ç, ¨, etc… de una char   SELECTION_TEXTS_MODIFY_DTEL Permite cambiar el texto de un campo de selección.</description>
+    </item>
+    
+    <item>
+      <title>Fecha / Hora</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</guid>
+      <description>Objetivo#Debido a que hay multitud de funciones para fechas y horas que uso, las pongo en un apartado aparte en vez de ponerlas en la de Basic Component.
+Lista#   Función Descripción     GET_WEEK_INFO_BASED_ON_DATE Te devuelve la semana y el día que es lunes y domingo.   DATE_GET_WEEK Solo devuelve la semana. Ojo que la semana viene al principio con el año.</description>
+    </item>
+    
+    <item>
+      <title>Finanzas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</guid>
+      <description>Objetivo#Funciones del módulo de finanzas
+Lista#   Función Descripción     FI_FIND_PAYMENT_CONDITIONS Obtiene la fecha de vencimiento en base a la fecha base y condicion de pago   GET_CURRENT_YEAR Se le pasa sociedad y fecha de documento y devuelve el ejercicio fiscal   BAPI_COMPANYCODE_GET_PERIOD Devuelve el periodo y ejercicio contable a partir de una fecha y sociedad. Esta funcion puede ser llamada en remota.</description>
+    </item>
+    
+    <item>
+      <title>Logística</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/logistica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/logistica/</guid>
+      <description>Objetivo#Funciones del módulo de logística. Logística entraría la parte de compras, almacenes, etc.
+Lista#   Función Descripción     RM_KOKRS_TO_PLANT_FIND De una centro te devuelve su sociedad FI y CO   CO_RM_COMPANYCODE_FIND De una centro te devuelve su sociedad FI   RK_KOKRS_FIND De una centro te devuelve su sociedad CO   CS_WHERE_USED_MAT De un material devuelve en que lista de material se usa.</description>
+    </item>
+    
+    <item>
+      <title>Ventas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/ventas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/ventas/</guid>
+      <description>Objetivo#Funciones del módulo de ventas(SD).
+Al final hay una sección de ejemplos para algunas funciones. No todas las funciones tienen ejemplo.
+Lista#   Función Descripción     RV_DOCUMENT_FLOW Sacar el flujo de documentos en ventas   SD_OBJECT_TYPE_DETERMINE Se le pasa el tipo de documento de SD y devuelve el objeto workflow asociado.    Ejemplos#RV_DOCUMENT_FLOW#FORM ir_flujo USING pe_datos TYPE LINE OF zzc_sd49501=&amp;gt;ty_t_alv.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -73,6 +73,16 @@ Yo suelo usar una clase general para agrupar acciones de un mismo nodo. En algun
     </item>
     
     <item>
+      <title>ALV</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/alv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/alv/</guid>
+      <description>Objetivo#Cajón de desastre de cosas interesante de los ALV. No descarto que alguna cosa este duplicada en alguna otra sección como clases o funciones.
+Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container. En los nuevos SALV hay que poner después del display un WRITE: &amp;lsquo;X&amp;rsquo;.  Recuperar contenido mostrado por un ALV#cl_salv_bs_runtime_info=&amp;gt;set( EXPORTING display = abap_false metadata = abap_true data = abap_true ).</description>
+    </item>
+    
+    <item>
       <title>API desde ABAP</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/api_abap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -90,6 +100,36 @@ Instanciar variables para acceder al BOPF#Lo primero que se suele hacer es in
       
       <guid>https://irodrigob.github.io/docs/sap/abap/rtts/saber_campos_estructura/</guid>
       <description>Ejemplo#DATA(lt_components) = CAST cl_abap_structdescr( cl_abap_typedescr=&amp;gt;describe_by_data( cs_row_data ) )-&amp;gt;get_components( ). </description>
+    </item>
+    
+    <item>
+      <title>Basic Component</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/basic_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/basic_component/</guid>
+      <description>Objetivo#Generalmente las tablas que generales a todo SAP son las interesantes ya que permiten cosas que de otra manera no se podría saber: ya sea porque no se conoce la transacción o falta de permisos para acceder a determinadas transacciones.
+Lista#Generales#   Función Descripción     SXC_CLASS Contiene que clase esta utilizando una implementacion de BADI   DWINACTIV Objetos desactivados   SSM_CUST Variables del session manager (ejemplo imagen en pantalla de inicio)   SSM_USR Tabla para controlar a que menus tiene acceso el usuario en el session manager   USERS_SSM Lo mismo que la de antes pero valida en la ECC6.</description>
+    </item>
+    
+    <item>
+      <title>Basic Component</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/basic_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/basic_component/</guid>
+      <description>Objetivo#Funciones del módulo basic component, es decir, funciones que son generales a todo SAP.
+Al final hay una sección de ejemplos para algunas funciones. No todas las funciones tienen ejemplo.
+Lista#Generales#   Función Descripción     SXO_IMPL_DELETE Borra la implementación de una BADI   SCP_REPLACE_STRANGE_CHARS Quita acentos, ç, ¨, etc… de una char   SELECTION_TEXTS_MODIFY_DTEL Permite cambiar el texto de un campo de selección.</description>
+    </item>
+    
+    <item>
+      <title>Basic component</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/clases/basic_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/clases/basic_component/</guid>
+      <description>Lista#   Clase Descripción     CALL METHOD cl_gui_cfw=&amp;gt;set_new_ok_code( ‘YOUR_OK_CODE’ ). Permite simular que se pulsa un código de función.   CL_BCS_CONVERT Convierte de txt a raw, a solix, viceversa, etc…   CL_ABAP_EXCEPTIONAL_VALUES Con el método get_max_value devuelve el valor máximo de una variable. Si es numc03 da 999.   CL_SYSTEM_TRANSACTION_STATE Para saber si esta en un proceso commit, o saber el numero de LUW, etc.</description>
     </item>
     
     <item>
@@ -127,6 +167,17 @@ DATA lo_elemdesc type ref to cl_abap_elemdescr. Lo_elemdesc ?= cl_abap_typedescr
     </item>
     
     <item>
+      <title>Código ejemplo dentro del BOPF</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</guid>
+      <description>Objetivo#Aquí están las plantillas de ejemplo ABAP que se usarán dentro de las clases que se usarán en validaciones, determinaciones, etc..
+Instanciar clase de mensajes#Los mensajes de los BOPF se recogen en una clase generica que pueda ser usada en las determinaciones, validaciones, etc..
+IF eo_message IS NOT BOUND. &amp;#34; Se instancia la clase de mensajes en caso de no estarlo eo_message = /bobf/cl_frw_factory=&amp;gt;get_message( ).</description>
+    </item>
+    
+    <item>
       <title>Desarrollo con VS Code</title>
       <link>https://irodrigob.github.io/docs/sap/ui5/desarrollar_vscode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -148,14 +199,13 @@ Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. E
     </item>
     
     <item>
-      <title>Ejemplos generales</title>
-      <link>https://irodrigob.github.io/docs/sap/abap/bopf/ejemplos_generales/</link>
+      <title>Fecha / Hora</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/ejemplos_generales/</guid>
-      <description>Objetivo#Aquí estarán ejemplos de código que puede ser usado en distintos ambitos de uso de los BOFP
-Instanciar clase de mensajes#Los mensajes de los BOPF se recogen en una clase generica que pueda ser usada en las determinaciones, validaciones, etc..
-IF eo_message IS NOT BOUND. &amp;#34; Se instancia la clase de mensajes en caso de no estarlo eo_message = /bobf/cl_frw_factory=&amp;gt;get_message( ). ENDIF. Template código usado en acciones, validaciones y determinaciones#En cada método de una determinación, validación o acciones siempre hay los siguientes pasos, más o menos:</description>
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</guid>
+      <description>Objetivo#Debido a que hay multitud de funciones para fechas y horas que uso, las pongo en un apartado aparte en vez de ponerlas en la de Basic Component.
+Lista#   Función Descripción     GET_WEEK_INFO_BASED_ON_DATE Te devuelve la semana y el día que es lunes y domingo.   DATE_GET_WEEK Solo devuelve la semana. Ojo que la semana viene al principio con el año.</description>
     </item>
     
     <item>
@@ -170,6 +220,26 @@ Ejemplo 1#&amp;lt;ls_values_search_sap&amp;gt;-kotab_data = FILTER #( lt_valu
     </item>
     
     <item>
+      <title>Finanzas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/finanzas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/finanzas/</guid>
+      <description>Objetivo#Tablas que permiten descubrir determinadas configuraciones de dicho módulo.
+Lista#Generales#   Función Descripción     GB01 Tabla que contiene los campos que se pueden sustituir en la OBBH   T045DTA Partidas que se graban en la FBWE. Si se borran permite reprocesarlas.    </description>
+    </item>
+    
+    <item>
+      <title>Finanzas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</guid>
+      <description>Objetivo#Funciones del módulo de finanzas
+Lista#   Función Descripción     FI_FIND_PAYMENT_CONDITIONS Obtiene la fecha de vencimiento en base a la fecha base y condicion de pago   GET_CURRENT_YEAR Se le pasa sociedad y fecha de documento y devuelve el ejercicio fiscal   BAPI_COMPANYCODE_GET_PERIOD Devuelve el periodo y ejercicio contable a partir de una fecha y sociedad. Esta funcion puede ser llamada en remota.</description>
+    </item>
+    
+    <item>
       <title>Lectura tablas del diccionario</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -181,6 +251,25 @@ SELECT kschl, kotab, @is_header-customer_code AS keyvalue, @is_header-validity_t
     </item>
     
     <item>
+      <title>Lista de programas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/programas/programas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/programas/programas/</guid>
+      <description>Lista#Generales#   Programa Descripción     RSSPO* Tiene ejemplos de las funcion POPUP_*   BCS_EXAMPLE_7 BCS: Enviar correu-e amb adjunt Excel autocreat (exemple)   RSCPSETEDITOR Este es el programa que a partir del EHP4 permite activar desactivar el word como editor para smartforms y sapscript   BALVBUFDEL Resetea memoria intermedia de ALV. Ideal cuando se cambian textos de elementos de datos.</description>
+    </item>
+    
+    <item>
+      <title>Logística</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/logistica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/logistica/</guid>
+      <description>Objetivo#Funciones del módulo de logística. Logística entraría la parte de compras, almacenes, etc.
+Lista#   Función Descripción     RM_KOKRS_TO_PLANT_FIND De una centro te devuelve su sociedad FI y CO   CO_RM_COMPANYCODE_FIND De una centro te devuelve su sociedad FI   RK_KOKRS_FIND De una centro te devuelve su sociedad CO   CS_WHERE_USED_MAT De un material devuelve en que lista de material se usa.</description>
+    </item>
+    
+    <item>
       <title>Mapeo de camos</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/mapeo_campos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -189,6 +278,16 @@ SELECT kschl, kotab, @is_header-customer_code AS keyvalue, @is_header-validity_t
       <description>Introducción#En este grupo se irán poniendo las distintas sentencias que nos permiten hacer mapeo de campos, digamos que son las que sustituyen al MOVE-CORRESPODING.
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.
 Ejemplo 1#La clase CL_ABAP_CORRESPONDING permite crear mapeos entre tablas y estructuras. En este ejemplo se construye la tabla de mapeos en base a una tabla interna.</description>
+    </item>
+    
+    <item>
+      <title>Notas de SAP</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/notas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/notas/</guid>
+      <description>Objetivo#Recopilar notas que son interesante para entender el funcionamiento de determinados procesos
+Lista#   Nota Descripción     1420281 Note 1420281 - CO-OM tools: SE16N: Deactivating &amp;amp;SAP_EDIT   1083986 Explica las BAPIS para el sistema de clasificacion. Y tiene subnotas que explican como funcionan muchas de ellas.    </description>
     </item>
     
     <item>
@@ -222,7 +321,39 @@ Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como 
       
       <guid>https://irodrigob.github.io/docs/sap/abap/transacciones/</guid>
       <description>Objetivo#Recopilación de las transacciones que me parecen interesantes.
-Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar    Financieras    Transacción Descripción     GGB0 Transación global para validaciones   GGB1 Transación global para sustituciones   OV51 Documentos modificacion deudores    Monitarización SAP PO    Transacción Descripción     SXMB_MONI Monitor de mensajes XML.</description>
+Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63.</description>
+    </item>
+    
+    <item>
+      <title>Utilidades generales</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</guid>
+      <description>Objetivo#Cajón de desastre de cosas que no se muy como clasificar.
+Hacks#Saltarse seguridad como desarrollador#Para saltarse la seguridad del usuario desarrollador
+URL# http://wiki.sdn.sap.com/wiki/display/Basis/Timezone+changes+best+practices &amp;ndash;&amp;gt; Best practices sobre los husos horarios  Rellenar campos con 0#data: l_char(50). TRANSLATE l_char USING &amp;#39; 0&amp;#39;. WRITE l_char. Truco para saber que BADIS se utilizan en un proceso#Hay que ir a la transacción SE24 informar la clase CL_EXITHANDLER metodo e ir al contenido del método GET_INSTANCE.</description>
+    </item>
+    
+    <item>
+      <title>Ventas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/ventas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/ventas/</guid>
+      <description>Objetivo#Tablas de ventas
+Lista#Generales#   Función Descripción     VAPMA Tabla que contiene los datos de VBAK y VBAP pero con muchos menos campos. Y lo más importantes son claves.    </description>
+    </item>
+    
+    <item>
+      <title>Ventas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/ventas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/ventas/</guid>
+      <description>Objetivo#Funciones del módulo de ventas(SD).
+Al final hay una sección de ejemplos para algunas funciones. No todas las funciones tienen ejemplo.
+Lista#   Función Descripción     RV_DOCUMENT_FLOW Sacar el flujo de documentos en ventas   SD_OBJECT_TYPE_DETERMINE Se le pasa el tipo de documento de SD y devuelve el objeto workflow asociado.    Ejemplos#RV_DOCUMENT_FLOW#FORM ir_flujo USING pe_datos TYPE LINE OF zzc_sd49501=&amp;gt;ty_t_alv.</description>
     </item>
     
   </channel>

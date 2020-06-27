@@ -43,6 +43,17 @@ Instanciar variables para acceder al BOPF#Lo primero que se suele hacer es in
     </item>
     
     <item>
+      <title>Código ejemplo dentro del BOPF</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</guid>
+      <description>Objetivo#Aquí están las plantillas de ejemplo ABAP que se usarán dentro de las clases que se usarán en validaciones, determinaciones, etc..
+Instanciar clase de mensajes#Los mensajes de los BOPF se recogen en una clase generica que pueda ser usada en las determinaciones, validaciones, etc..
+IF eo_message IS NOT BOUND. &amp;#34; Se instancia la clase de mensajes en caso de no estarlo eo_message = /bobf/cl_frw_factory=&amp;gt;get_message( ).</description>
+    </item>
+    
+    <item>
       <title>Determinaciones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/determinaciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,17 +61,6 @@ Instanciar variables para acceder al BOPF#Lo primero que se suele hacer es in
       <guid>https://irodrigob.github.io/docs/sap/abap/bopf/determinaciones/</guid>
       <description>Objetivo#Las determinaciones se usan para rellenar atributos transitorios, son aquellos campos que se definen en la estructura transitoria. Yo los uso para completar descripciones y hacer cálculos.
 Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. En algunos artículos y el propio BOPF aconseja hacer una clase por determinación. Pero lo veo una manera de generar clases que a lo mejor solo tiene cuatro líneas de código.</description>
-    </item>
-    
-    <item>
-      <title>Ejemplos generales</title>
-      <link>https://irodrigob.github.io/docs/sap/abap/bopf/ejemplos_generales/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/ejemplos_generales/</guid>
-      <description>Objetivo#Aquí estarán ejemplos de código que puede ser usado en distintos ambitos de uso de los BOFP
-Instanciar clase de mensajes#Los mensajes de los BOPF se recogen en una clase generica que pueda ser usada en las determinaciones, validaciones, etc..
-IF eo_message IS NOT BOUND. &amp;#34; Se instancia la clase de mensajes en caso de no estarlo eo_message = /bobf/cl_frw_factory=&amp;gt;get_message( ). ENDIF. Template código usado en acciones, validaciones y determinaciones#En cada método de una determinación, validación o acciones siempre hay los siguientes pasos, más o menos:</description>
     </item>
     
   </channel>

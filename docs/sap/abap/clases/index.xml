@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clases on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/clases/</link>
+    <description>Recent content in Clases on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/clases/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic component</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/clases/basic_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/clases/basic_component/</guid>
+      <description>Lista#   Clase Descripción     CALL METHOD cl_gui_cfw=&amp;gt;set_new_ok_code( ‘YOUR_OK_CODE’ ). Permite simular que se pulsa un código de función.   CL_BCS_CONVERT Convierte de txt a raw, a solix, viceversa, etc…   CL_ABAP_EXCEPTIONAL_VALUES Con el método get_max_value devuelve el valor máximo de una variable. Si es numc03 da 999.   CL_SYSTEM_TRANSACTION_STATE Para saber si esta en un proceso commit, o saber el numero de LUW, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

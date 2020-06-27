@@ -11,13 +11,44 @@
     
     
     <item>
+      <title>ALV</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/alv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/alv/</guid>
+      <description>Objetivo#Cajón de desastre de cosas interesante de los ALV. No descarto que alguna cosa este duplicada en alguna otra sección como clases o funciones.
+Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container. En los nuevos SALV hay que poner después del display un WRITE: &amp;lsquo;X&amp;rsquo;.  Recuperar contenido mostrado por un ALV#cl_salv_bs_runtime_info=&amp;gt;set( EXPORTING display = abap_false metadata = abap_true data = abap_true ).</description>
+    </item>
+    
+    <item>
+      <title>Notas de SAP</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/notas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/notas/</guid>
+      <description>Objetivo#Recopilar notas que son interesante para entender el funcionamiento de determinados procesos
+Lista#   Nota Descripción     1420281 Note 1420281 - CO-OM tools: SE16N: Deactivating &amp;amp;SAP_EDIT   1083986 Explica las BAPIS para el sistema de clasificacion. Y tiene subnotas que explican como funcionan muchas de ellas.    </description>
+    </item>
+    
+    <item>
       <title>Transacciones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/transacciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/sap/abap/transacciones/</guid>
       <description>Objetivo#Recopilación de las transacciones que me parecen interesantes.
-Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar    Financieras    Transacción Descripción     GGB0 Transación global para validaciones   GGB1 Transación global para sustituciones   OV51 Documentos modificacion deudores    Monitarización SAP PO    Transacción Descripción     SXMB_MONI Monitor de mensajes XML.</description>
+Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63.</description>
+    </item>
+    
+    <item>
+      <title>Utilidades generales</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</guid>
+      <description>Objetivo#Cajón de desastre de cosas que no se muy como clasificar.
+Hacks#Saltarse seguridad como desarrollador#Para saltarse la seguridad del usuario desarrollador
+URL# http://wiki.sdn.sap.com/wiki/display/Basis/Timezone+changes+best+practices &amp;ndash;&amp;gt; Best practices sobre los husos horarios  Rellenar campos con 0#data: l_char(50). TRANSLATE l_char USING &amp;#39; 0&amp;#39;. WRITE l_char. Truco para saber que BADIS se utilizan en un proceso#Hay que ir a la transacción SE24 informar la clase CL_EXITHANDLER metodo e ir al contenido del método GET_INSTANCE.</description>
     </item>
     
   </channel>

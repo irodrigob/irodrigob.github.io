@@ -68,6 +68,10 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/alv/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/api_abap/</loc>
     <lastmod>2020-06-22T22:32:37+02:00</lastmod>
   </url>
@@ -75,6 +79,19 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/rtts/saber_campos_estructura/</loc>
     <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/basic_component/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/funciones/basic_component/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/clases/basic_component/</loc>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
   </url>
   
   <url>
@@ -92,6 +109,11 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/clases/</loc>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/condiciones/</loc>
     <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
@@ -99,6 +121,11 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/conversiones/</loc>
     <lastmod>2020-06-21T17:54:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</loc>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
   </url>
   
   <url>
@@ -113,12 +140,11 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://irodrigob.github.io/docs/sap/abap/bopf/ejemplos_generales/</loc>
-    <lastmod>2020-06-22T22:32:37+02:00</lastmod>
+    <loc>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</loc>
   </url>
   
   <url>
@@ -127,13 +153,42 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/finanzas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/funciones/</loc>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/</loc>
     <lastmod>2020-06-21T17:38:56+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/programas/programas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/funciones/logistica/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/sentencias_74/mapeo_campos/</loc>
     <lastmod>2020-06-21T17:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/notas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/programas/</loc>
   </url>
   
   <url>
@@ -152,6 +207,10 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/tags/</loc>
   </url>
   
@@ -163,6 +222,20 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/ui5/</loc>
     <lastmod>2020-06-24T16:15:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</loc>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/ventas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/funciones/ventas/</loc>
+    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
   </url>
   
 </urlset>
