@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gateway on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/gateway/</link>
+    <description>Recent content in Gateway on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/gateway/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/gateway/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/gateway/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá un listado de información general de Gateway
+Transacciones#   Transacción Descripción     SMGW Transaccion para ver el monitor   SEGW Transacción para los servicios de Gateway   /IWFND/CACHE_CLEANUP Transaccion para borrar el cache del modelo   /IWFND/ERROR_LOG Transaccion para ver los logs   /IWFND/MAINT_SERVICE Activar y mantener servicios    Como debugear error XML Parse#Los errores de gateway muchas nos hay por donde cogerlos.</description>
+    </item>
+    
+  </channel>
+</rss>

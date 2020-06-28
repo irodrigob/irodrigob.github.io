@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recursos humanos on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/</link>
+    <description>Recent content in Recursos humanos on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/recursos_humanos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá un listado de información general sobre el módulo de recursos humanos
+Funciones#   Función Descripción     HR_READ_INFOTYPE_AUTHC_DISABLE Hace que en la funcion HR_READ_INFOTYPE no haga control de autorizacion. Se ha de poner por cada función de lectura de infotipo   HR_CHECK_AUTHORITY_INFTY Permite saber si se tiene autorizacion para leer/escribir un infotipo    Ejemplos#HR_CHECK_AUTHORITY_INFTY#CALL FUNCTION &amp;#39;HR_CHECK_AUTHORITY_INFTY&amp;#39; EXPORTING pernr = pernr-pernr infty = &amp;#39;0008&amp;#39; subty = &amp;#39;0 &amp;#39; begda = p0001-begda endda = p0001-endda level = &amp;#39;R&amp;#39; uname = sy-uname EXCEPTIONS no_authorization = 1 internal_error = 2 OTHERS = 3.</description>
+    </item>
+    
+  </channel>
+</rss>

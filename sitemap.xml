@@ -69,6 +69,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/alv/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
@@ -82,11 +83,17 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/archivelink/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/basic_component/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/funciones/basic_component/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
@@ -111,6 +118,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/clases/</loc>
     <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</loc>
   </url>
   
   <url>
@@ -140,11 +151,12 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
@@ -154,15 +166,45 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/finanzas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/funciones/</loc>
     <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/gateway/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/idoc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/archivelink/informacion_general/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/idoc/informacion_general/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/informacion_general/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/gateway/informacion_general/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/ventas/informacion_general/</loc>
   </url>
   
   <url>
@@ -172,10 +214,12 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/programas/programas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/funciones/logistica/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
@@ -185,10 +229,16 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/notas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/programas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/</loc>
   </url>
   
   <url>
@@ -208,6 +258,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
@@ -216,7 +267,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/transacciones/</loc>
-    <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
@@ -226,16 +277,21 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</loc>
-    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/tablas/ventas/</loc>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/funciones/ventas/</loc>
-    <lastmod>2020-06-26T19:48:02+02:00</lastmod>
+    <lastmod>2020-06-27T17:08:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/ventas/</loc>
   </url>
   
 </urlset>

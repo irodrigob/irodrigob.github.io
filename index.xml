@@ -79,7 +79,8 @@ Yo suelo usar una clase general para agrupar acciones de un mismo nodo. En algun
       
       <guid>https://irodrigob.github.io/docs/sap/abap/alv/</guid>
       <description>Objetivo#Cajón de desastre de cosas interesante de los ALV. No descarto que alguna cosa este duplicada en alguna otra sección como clases o funciones.
-Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container. En los nuevos SALV hay que poner después del display un WRITE: &amp;lsquo;X&amp;rsquo;.  Recuperar contenido mostrado por un ALV#cl_salv_bs_runtime_info=&amp;gt;set( EXPORTING display = abap_false metadata = abap_true data = abap_true ).</description>
+Proyectos personales#En el siguiente enlace hay una clase que permite simplificar la creación de ALV. Esta clase encapsula las clases de los SALV.
+Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container.</description>
     </item>
     
     <item>
@@ -140,6 +141,16 @@ Lista#Generales#   Función Descripción     SXO_IMPL_DELETE Borra la impl
       <guid>https://irodrigob.github.io/docs/sap/abap/sentencias_74/bucles/</guid>
       <description>Introducción#En este grupo se irán poniendo las distintas sentencias que nos permiten procesar tablas internas. Este artículo esta muy relacionado con el del relleno de valores ya que se usán las mismas sentencias para procesar tablas internas. Aún asi, lo separo en dos artículos según la finalidad en que se use.
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</description>
+    </item>
+    
+    <item>
+      <title>Clases de desarrollo</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</guid>
+      <description>Objetivo#Recopilar clases de desarrollo que son interesante para tener ejemplos
+Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple    </description>
     </item>
     
     <item>
@@ -237,6 +248,59 @@ Lista#Generales#   Función Descripción     GB01 Tabla que contiene los c
       <guid>https://irodrigob.github.io/docs/sap/abap/funciones/finanzas/</guid>
       <description>Objetivo#Funciones del módulo de finanzas
 Lista#   Función Descripción     FI_FIND_PAYMENT_CONDITIONS Obtiene la fecha de vencimiento en base a la fecha base y condicion de pago   GET_CURRENT_YEAR Se le pasa sociedad y fecha de documento y devuelve el ejercicio fiscal   BAPI_COMPANYCODE_GET_PERIOD Devuelve el periodo y ejercicio contable a partir de una fecha y sociedad. Esta funcion puede ser llamada en remota.</description>
+    </item>
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/archivelink/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/archivelink/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá información general sobre el archivelink, GOS o BDS que son maneras de distintas de archivar documentos en SAP.
+Menú ámbito#El menú SOA_COPY contiene todas las transacciones para crear, gestionar y monitorizar el archivelink
+Programas#   Programa Descripción     RSAOT1 Ejemplo de cómo subir y leer documento en archivelink    Tablas#   Tabla Descripción     SGOSATTR Tabla para parametrizar las opciones del menu de archivelink en transacciones    Funciones#   Función Descripción     BDS_GOS_CONNECTIONS_GET Obtiene los adjuntos de un objeto del GOS.</description>
+    </item>
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/idoc/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/idoc/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá un listado de información general sobre los IDOC&amp;rsquo;s: transacciones, programas, etc..
+Menú ámbito#El menú WEDI contiene todas las transacciones para crear, gestionar y monitorizar IDOCs
+Transacciones#   Transacción Descripción     WE19 Clonar IDOC para poderlo procesar   BD87 Analizar IDOC&amp;rsquo;s    Programas#   Programa Descripción     RC1_IDOC_SET_STATUS Permite cambiar el status de un idoc a otro    Tablas#   Tabla Descripción     TBDBE Tabla donde esta la configuración de la función que se lanzará a través de la función BAPI_IDOC_INPUT1    </description>
+    </item>
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá un listado de información general sobre el módulo de recursos humanos
+Funciones#   Función Descripción     HR_READ_INFOTYPE_AUTHC_DISABLE Hace que en la funcion HR_READ_INFOTYPE no haga control de autorizacion. Se ha de poner por cada función de lectura de infotipo   HR_CHECK_AUTHORITY_INFTY Permite saber si se tiene autorizacion para leer/escribir un infotipo    Ejemplos#HR_CHECK_AUTHORITY_INFTY#CALL FUNCTION &amp;#39;HR_CHECK_AUTHORITY_INFTY&amp;#39; EXPORTING pernr = pernr-pernr infty = &amp;#39;0008&amp;#39; subty = &amp;#39;0 &amp;#39; begda = p0001-begda endda = p0001-endda level = &amp;#39;R&amp;#39; uname = sy-uname EXCEPTIONS no_authorization = 1 internal_error = 2 OTHERS = 3.</description>
+    </item>
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/gateway/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/gateway/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá un listado de información general de Gateway
+Transacciones#   Transacción Descripción     SMGW Transaccion para ver el monitor   SEGW Transacción para los servicios de Gateway   /IWFND/CACHE_CLEANUP Transaccion para borrar el cache del modelo   /IWFND/ERROR_LOG Transaccion para ver los logs   /IWFND/MAINT_SERVICE Activar y mantener servicios    Como debugear error XML Parse#Los errores de gateway muchas nos hay por donde cogerlos.</description>
+    </item>
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/ventas/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/ventas/informacion_general/</guid>
+      <description>Objetivo#Esta página tendrá información a nivel general
+Flujo#Una imagen que sintetiza muy bien el flujo de ventas:
+</description>
     </item>
     
     <item>

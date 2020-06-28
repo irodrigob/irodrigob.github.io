@@ -17,7 +17,18 @@
       
       <guid>https://irodrigob.github.io/docs/sap/abap/alv/</guid>
       <description>Objetivo#Cajón de desastre de cosas interesante de los ALV. No descarto que alguna cosa este duplicada en alguna otra sección como clases o funciones.
-Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container. En los nuevos SALV hay que poner después del display un WRITE: &amp;lsquo;X&amp;rsquo;.  Recuperar contenido mostrado por un ALV#cl_salv_bs_runtime_info=&amp;gt;set( EXPORTING display = abap_false metadata = abap_true data = abap_true ).</description>
+Proyectos personales#En el siguiente enlace hay una clase que permite simplificar la creación de ALV. Esta clase encapsula las clases de los SALV.
+Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container.</description>
+    </item>
+    
+    <item>
+      <title>Clases de desarrollo</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</guid>
+      <description>Objetivo#Recopilar clases de desarrollo que son interesante para tener ejemplos
+Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple    </description>
     </item>
     
     <item>
