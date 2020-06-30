@@ -67,7 +67,7 @@ SELECT kschl, kotab, @is_header-customer_code AS keyvalue, @is_header-validity_t
     </item>
     
     <item>
-      <title>Mapeo de camos</title>
+      <title>Mapeo de campos</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/mapeo_campos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

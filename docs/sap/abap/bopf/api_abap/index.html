@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.e59c670fc7dae1c0f9016811c2d486b6e4a65d4504726bd3609a49c6b7eb2b26.js" integrity="sha256-5ZxnD8fa4cD5AWgRwtSGtuSmXUUEcmvTYJpJxrfrKyY="></script>
+<script defer src="/en.search.min.a97b3d2120685100daa94452a8a7dc6aef243374fd898963d97399e6122520ba.js" integrity="sha256-qXs9ISBoUQDaqURSqKfcau8kM3T9iYlj2XOZ5hIlILo="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -331,7 +331,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/" class="">Mapeo de camos</a>
+    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/" class="">Mapeo de campos</a>
   
 
         </li>
@@ -713,51 +713,66 @@ https://github.com/alex-shpak/hugo-book
       CATCH /bobf/cx_frw.
         &#34;TODO: Error handling...
     ENDTRY.
-</code></pre></div><h1 id="añadir-registro-nuevo">
-  Añadir registro nuevo
-  <a class="anchor" href="#a%c3%b1adir-registro-nuevo">#</a>
+</code></pre></div><h1 id="añadir-registro">
+  Añadir registro
+  <a class="anchor" href="#a%c3%b1adir-registro">#</a>
 </h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> ET_MOD type /BOBF/T_FRW_MODIFICATION
-	
-&#34; Se instancia el objeto donde se guardarán los datos de cabecera.    
-DATA(lo_header) = NEW zsat_bo_sc_orders_header( ).
-“ El puntero es para poder hacer corresponding
+<p>Cuando se añaden hay que tener en cuenta si se insertados datos dependiente de un nodo superior, o no. En un BOPF todos los nodos dependen del ROOT, al menos es lo que he visto, por lo tanto
+añadir en el nodo ROOT es distinto que en un nodo &ldquo;hijo&rdquo;. Se muestra los ejemplos en ambos</p>
+<h2 id="nodo-root">
+  Nodo root
+  <a class="anchor" href="#nodo-root">#</a>
+</h2>
+<p>Cuando solo inserto un registro, por ejemplo un registro de cabecera, instancio en un objeto la estructura de los datos combinados porque contiene todos los campos necesarios para pasarle al BOPF.
+En la combinada contiene también los campos transitorios que nunca se rellenan porque son calculados. Pero se tiene que usar la combinada para pasarla la clave a insertar.</p>
+<p>Si se inserta datos de una tabla entonces se usa el tipo tabla definido en el BOPF.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> DATA lt_mod TYPE /bobf/t_frw_modification.
+
+    DATA(lo_header) = NEW zcar_bo_sc_header(  ).
     ASSIGN lo_header-&gt;* TO FIELD-SYMBOL(&lt;ls_header&gt;).
+    &lt;ls_header&gt; = CORRESPONDING #( is_header ).
+    &lt;ls_header&gt;-vbeln = iv_vbeln.
+    &lt;ls_header&gt;-key = /bobf/cl_frw_factory=&gt;get_new_key( ).
 
- lv_mode = /bobf/if_frw_c=&gt;sc_modify_create.
-      &lt;ls_header&gt; = CORRESPONDING #( is_header ).
-      &lt;ls_header&gt;-key = /bobf/cl_frw_factory=&gt;get_new_key( ).
+    INSERT VALUE #( node = zif_car_bo_orders_c=&gt;sc_node-root
+                          change_mode = /bobf/if_frw_c=&gt;sc_modify_create
+                          key = lo_header-&gt;key
+                          data = lo_header )
+                 INTO TABLE lt_mod.
+</code></pre></div><h1 id="subnodo-del-root">
+  Subnodo del ROOT
+  <a class="anchor" href="#subnodo-del-root">#</a>
+</h1>
+<p>Esto es cuando se añaden/modifican datos de un subnodo. Este ejemplo es la segunda parte del anterior. Ya qye en es</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">    DATA(lo_positions) = NEW zcar_bo_i_positions(  ).
+    ASSIGN lo_positions-&gt;* TO FIELD-SYMBOL(&lt;lt_positions&gt;).
+    LOOP AT it_positions ASSIGNING FIELD-SYMBOL(&lt;ls_positions&gt;).
+      DATA(lv_tabix) = sy-tabix.
+      APPEND INITIAL LINE TO &lt;lt_positions&gt; ASSIGNING FIELD-SYMBOL(&lt;ls_bo_positions&gt;).
+      &lt;ls_bo_positions&gt; = CORRESPONDING #( &lt;ls_positions&gt; ).
+      &lt;ls_bo_positions&gt;-posnr = lv_tabix.
+      &lt;ls_bo_positions&gt;-key = /bobf/cl_frw_factory=&gt;get_new_key( ).
+    ENDLOOP.
 
-INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
-                      change_mode = lv_mode
-                      key = lo_header-&gt;key
-                      data = lo_header )
-             INTO TABLE et_mod.
+    INSERT VALUE #( node = zif_car_bo_orders_c=&gt;sc_node-root
+                change_mode = /bobf/if_frw_c=&gt;sc_modify_create
+                key = lo_header-&gt;key
+                data = lo_positions
+                source_node = zif_car_bo_orders_c=&gt;sc_node-root
+                association = zif_car_bo_orders_c=&gt;sc_association-root-positions
+                source_key = lo_header-&gt;key ) INTO TABLE lt_mod.
 </code></pre></div><h1 id="modificar-registro">
   Modificar registro
   <a class="anchor" href="#modificar-registro">#</a>
 </h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> DATA(lv_mode) = /bobf/if_frw_c=&gt;sc_modify_update.
-
-“ Hay que buscar el registro actualizar con las opciones QUERY del BOPF y actualizar los campos
-
+<p>Este ejemplo es como se haría en el nodo ROOT pero se puede extrapolar como se haría con el ejemplo de añadir en un nodo dependiente del ROOT.</p>
+<p>Cuando se modificar siempre hay que leer los datos previamente a través de la <em>querys</em> del BOPF. Una vez leído los datos se puede modificar.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">
 INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
-                      change_mode = lv_mode
+                      change_mode = /bobf/if_frw_c=&gt;sc_modify_update
                       key = lo_header-&gt;key
                       data = lo_header )
              INTO TABLE et_mod.
-</code></pre></div><h1 id="informar-estructura-de-modificación-para-subnodo">
-  Informar estructura de modificación para subnodo
-  <a class="anchor" href="#informar-estructura-de-modificaci%c3%b3n-para-subnodo">#</a>
-</h1>
-<p>Esto es cuando se añaden/modifican datos de un subnodo.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> INSERT VALUE #( node = zif_atron_file_engine_c=&gt;sc_node-root
-                change_mode = /bobf/if_frw_c=&gt;sc_modify_create
-                key = lo_header-&gt;key
-                data = lo_content
-                source_node = zif_atron_file_engine_c=&gt;sc_node-root
-                association = zif_atron_file_engine_c=&gt;sc_association-root-content
-                source_key = lo_header-&gt;key ) INTO TABLE lt_mod.
 </code></pre></div><h1 id="modificar-datos-en-bopf">
   Modificar datos en BOPF
   <a class="anchor" href="#modificar-datos-en-bopf">#</a>
