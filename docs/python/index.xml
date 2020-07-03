@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/python/</link>
+    <description>Recent content in Python on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enlaces de interes</title>
+      <link>https://irodrigob.github.io/docs/python/enlaces_aprendizaje/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/enlaces_aprendizaje/</guid>
+      <description>Introducción#Recopilación de enlaces que me parece interesante.
+Aprendizaje# En Youtube tenemos el canal de AMP Tech que tiene video de como programar en Python hasta como hacer cosas con Machine Learning  </description>
+    </item>
+    
+    <item>
+      <title>Entorno de desarrollo</title>
+      <link>https://irodrigob.github.io/docs/python/entorno_desarrollo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/entorno_desarrollo/</guid>
+      <description>Introducción#Aquí hasta que no tenga más conocimientos voy ir anotando cosas que me sirven para preparar el entorno para desarrollo
+Python#El interprete del lenguaje hay que descargarlo de la página oficial.
+IDE de desarrollo#Uso el VS Code que tiene una ventaja cuando creas un programa con extensión &amp;ldquo;.py&amp;rdquo; (extensión que indica que es un lenguaje Python) te descarga el plugin para poder ejecutar directamente desde el VSCode.</description>
+    </item>
+    
+  </channel>
+</rss>

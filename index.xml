@@ -22,12 +22,33 @@ Parámetros#define view ZATRON_CDS_DOMAIN_TEXTS with parameters p_domain :DOM
     </item>
     
     <item>
+      <title>Enlaces de interes</title>
+      <link>https://irodrigob.github.io/docs/python/enlaces_aprendizaje/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/enlaces_aprendizaje/</guid>
+      <description>Introducción#Recopilación de enlaces que me parece interesante.
+Aprendizaje# En Youtube tenemos el canal de AMP Tech que tiene video de como programar en Python hasta como hacer cosas con Machine Learning  </description>
+    </item>
+    
+    <item>
       <title>Enlaces interesantes</title>
       <link>https://irodrigob.github.io/docs/github/enlaces_interesantes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/github/enlaces_interesantes/</guid>
       <description>Enlaces# Comandos en Git &amp;ndash;&amp;gt; https://www.hostinger.es/tutoriales/comandos-de-git  </description>
+    </item>
+    
+    <item>
+      <title>Entorno de desarrollo</title>
+      <link>https://irodrigob.github.io/docs/python/entorno_desarrollo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/entorno_desarrollo/</guid>
+      <description>Introducción#Aquí hasta que no tenga más conocimientos voy ir anotando cosas que me sirven para preparar el entorno para desarrollo
+Python#El interprete del lenguaje hay que descargarlo de la página oficial.
+IDE de desarrollo#Uso el VS Code que tiene una ventaja cuando creas un programa con extensión &amp;ldquo;.py&amp;rdquo; (extensión que indica que es un lenguaje Python) te descarga el plugin para poder ejecutar directamente desde el VSCode.</description>
     </item>
     
     <item>
