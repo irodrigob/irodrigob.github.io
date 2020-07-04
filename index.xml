@@ -23,10 +23,10 @@ Parámetros#define view ZATRON_CDS_DOMAIN_TEXTS with parameters p_domain :DOM
     
     <item>
       <title>Enlaces de interes</title>
-      <link>https://irodrigob.github.io/docs/python/enlaces_aprendizaje/</link>
+      <link>https://irodrigob.github.io/docs/python/enlaces_interes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://irodrigob.github.io/docs/python/enlaces_aprendizaje/</guid>
+      <guid>https://irodrigob.github.io/docs/python/enlaces_interes/</guid>
       <description>Introducción#Recopilación de enlaces que me parece interesante.
 Aprendizaje# En Youtube tenemos el canal de AMP Tech que tiene video de como programar en Python hasta como hacer cosas con Machine Learning  </description>
     </item>
@@ -49,6 +49,18 @@ Aprendizaje# En Youtube tenemos el canal de AMP Tech que tiene video de como 
       <description>Introducción#Aquí hasta que no tenga más conocimientos voy ir anotando cosas que me sirven para preparar el entorno para desarrollo
 Python#El interprete del lenguaje hay que descargarlo de la página oficial.
 IDE de desarrollo#Uso el VS Code que tiene una ventaja cuando creas un programa con extensión &amp;ldquo;.py&amp;rdquo; (extensión que indica que es un lenguaje Python) te descarga el plugin para poder ejecutar directamente desde el VSCode.</description>
+    </item>
+    
+    <item>
+      <title>Entrada de datos</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/entrada_datos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/entrada_datos/</guid>
+      <description>Entrada de datos#Para pedir datos existe la sentencia *input&amp;rdquo;, esta sentencia en el VSCODE abre una ventana, como la de los comandos, donde te pide los datos.
+Ejemplo:
+nombre = input(&amp;#34;¿dime tu nombre?&amp;#34;) print(nombre) Resultado:
+ivan</description>
     </item>
     
     <item>
@@ -81,6 +93,17 @@ Estructuras y tablas de diccionario#En la siguiente imagen:</description>
       <guid>https://irodrigob.github.io/docs/hugo/publicar_web_github/</guid>
       <description>Motivo#Para aquellos que no quieren gastarse dinero en productos como Wordpress o no necesitan páginas dinámicas, la opción de crear una de manera gratuíta y usando Hugo es una buena elección.
 Personalmente la clave es escoger un tema que se nos adapte a lo que necesitamos, porque cada tema tiene ciertos comportamientos que no tiene otros. Por ejemplo, inicialmente había escogido el tema npp-hugo, cuando empece a montar la estructura que quería vi que no era tan flexible en la organización por carpetas como me esperaba (al menos es lo que he visto probandolo).</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/variables/</guid>
+      <description>Variables#Existen tres tipos de variables, al menos por lo que he visto que son: string, enteras y flotantes.
+# Esta es integer a=23 # Esta es float b=23.456 # Esta es string c=&amp;#34;hola mundo&amp;#34; Para saber el tipo de variable en cualquier momento se puede usar la siguiente sentencia:
+type(c) Convertir variables#Si queremos convertir el formato de una variable a otra. Como hay tres tipos de &amp;ldquo;tipos&amp;rdquo;, hay tres funciones que lo hace: INT, FLOAT, STR</description>
     </item>
     
     <item>
@@ -165,6 +188,17 @@ Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como 
     </item>
     
     <item>
+      <title>Captura de excepciones</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/captura_excepciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/captura_excepciones/</guid>
+      <description>Captura excepciones#Para captura excepciones y que no salgan error raros al hacer operaciones tenemos la sentencia TRY..EXCEPT
+En el siguiente ejemplo extráido de un manual hay una formula para pasar de grados Farenheit a Celsius:
+ent = input(&amp;#39;Introduzca la Temperatura Fahrenheit:&amp;#39;) try: fahr = float(ent) cel = (fahr - 32.0) * 5.0 / 9.0 print(&amp;#34;Grados celsius&amp;#34;:cel) except: print(&amp;#39;Por favor, introduzca un número&amp;#39;) NOTA: Aquí también tiene que haber una identación en el código dentro del TRY y del EXCEPT</description>
+    </item>
+    
+    <item>
       <title>Clases de desarrollo</title>
       <link>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -172,6 +206,16 @@ Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como 
       <guid>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</guid>
       <description>Objetivo#Recopilar clases de desarrollo que son interesante para tener ejemplos
 Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple    </description>
+    </item>
+    
+    <item>
+      <title>Condiciones</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/condiciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/condiciones/</guid>
+      <description>Condiciones#Las condiciones son como en la mayoria de lenguajes
+ x == y &amp;ndash;&amp;gt; x es igual a y x != y &amp;ndash;&amp;gt; x es distinto de y x &amp;gt; y &amp;ndash;&amp;gt; x es mayor que y x &amp;lt; y &amp;ndash;&amp;gt; x es menor que y x &amp;gt;= y &amp;ndash;&amp;gt; x es mayor o igual que y x &amp;lt;= y &amp;ndash;&amp;gt; x es menor o igual que y x is y &amp;ndash;&amp;gt; x es lo mismo que y x is not y &amp;ndash;&amp;gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no)  Para hacer bucles condiciones esta la sentencia IF.</description>
     </item>
     
     <item>
@@ -272,6 +316,17 @@ Lista#   Función Descripción     FI_FIND_PAYMENT_CONDITIONS Obtiene la fech
     </item>
     
     <item>
+      <title>Funciones internas</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/funciones_internas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/funciones_internas/</guid>
+      <description>Funciones internas#Aquí una lista de funciones internas
+ MAX y MIN &amp;ndash;&amp;gt; Devuelve el valor máximo y mínimo de una lista. Si es un string nos devolvería la letra más alta y la mínima. Ejemplo:  print(&amp;#34;Letra máxima: &amp;#34;,max(&amp;#34;hola mundo&amp;#34;)) print(&amp;#34;Letra mínima: &amp;#34;,min(&amp;#34;hola mundo&amp;#34;)) Resultado:
+Letra máxima: uLetra mínima:  LEN &amp;ndash;&amp;gt; Devuelve el numéro de elementos de una lista. Si es un string devuelve el número de caracteres.</description>
+    </item>
+    
+    <item>
       <title>Información general</title>
       <link>https://irodrigob.github.io/docs/sap/abap/archivelink/informacion_general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -325,6 +380,15 @@ Flujo#Una imagen que sintetiza muy bien el flujo de ventas:
     </item>
     
     <item>
+      <title>Iteracciones</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/iteracciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/iteracciones/</guid>
+      <description>Iteracciones#</description>
+    </item>
+    
+    <item>
       <title>Lectura tablas del diccionario</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -373,6 +437,18 @@ Ejemplo 1#La clase CL_ABAP_CORRESPONDING permite crear mapeos entre tablas y 
       <guid>https://irodrigob.github.io/docs/sap/abap/notas/</guid>
       <description>Objetivo#Recopilar notas que son interesante para entender el funcionamiento de determinados procesos
 Lista#   Nota Descripción     1420281 Note 1420281 - CO-OM tools: SE16N: Deactivating &amp;amp;SAP_EDIT   1083986 Explica las BAPIS para el sistema de clasificacion. Y tiene subnotas que explican como funcionan muchas de ellas.    </description>
+    </item>
+    
+    <item>
+      <title>Operadores</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/operadores/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/operadores/</guid>
+      <description>Operadores#Aritméticos#Los operadores son los habituales:
+ Sumar: + Resta: - División: / Multiplicación: * Elevar a la potencia: ** Obtener el resto: %  Ejemplos:
+d = a * b print(&amp;#34;Resultado&amp;#34;, d) d = ( a + b ) / a print(&amp;#34;Resultado:&amp;#34;, d) Resultado:
+Resultado 416.15999999999997Resultado: 3.89String#Con los string podemos contaner y incluso hacer que un caracter aparezca n veces.</description>
     </item>
     
     <item>

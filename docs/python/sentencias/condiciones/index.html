@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Condiciones#Las condiciones son como en la mayoria de lenguajes
+ x == y &ndash;&gt; x es igual a y x != y &ndash;&gt; x es distinto de y x &gt; y &ndash;&gt; x es mayor que y x &lt; y &ndash;&gt; x es menor que y x &gt;= y &ndash;&gt; x es mayor o igual que y x &lt;= y &ndash;&gt; x es menor o igual que y x is y &ndash;&gt; x es lo mismo que y x is not y &ndash;&gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no)  Para hacer bucles condiciones esta la sentencia IF.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Condiciones" />
+<meta property="og:description" content="Condiciones#Las condiciones son como en la mayoria de lenguajes
+ x == y &ndash;&gt; x es igual a y x != y &ndash;&gt; x es distinto de y x &gt; y &ndash;&gt; x es mayor que y x &lt; y &ndash;&gt; x es menor que y x &gt;= y &ndash;&gt; x es mayor o igual que y x &lt;= y &ndash;&gt; x es menor o igual que y x is y &ndash;&gt; x es lo mismo que y x is not y &ndash;&gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no)  Para hacer bucles condiciones esta la sentencia IF." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/condiciones/" />
+
+<title>Condiciones | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.c5fddb261184df3444cae35a6778f03e5e9f78341cd7e754372dc55653eadbbd.js" integrity="sha256-xf3bJhGE3zREyuNaZ3jwPl6feDQc1&#43;dUNy3FVlPq270="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/entrada_datos/" class="">Entrada de datos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/variables/" class="">Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/captura_excepciones/" class="">Captura de excepciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/condiciones/" class="active">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/funciones_internas/" class="">Funciones internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/iteracciones/" class="">Iteracciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/operadores/" class="">Operadores</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Condiciones</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="condiciones">
+  Condiciones
+  <a class="anchor" href="#condiciones">#</a>
+</h1>
+<p>Las condiciones son como en la mayoria de lenguajes</p>
+<ul>
+<li>x == y &ndash;&gt; <em>x es igual a y</em></li>
+<li>x != y &ndash;&gt; <em>x es distinto de y</em></li>
+<li>x &gt; y &ndash;&gt; <em>x es mayor que y</em></li>
+<li>x &lt; y &ndash;&gt; <em>x es menor que y</em></li>
+<li>x &gt;= y &ndash;&gt; <em>x es mayor o igual que y</em></li>
+<li>x &lt;= y &ndash;&gt; <em>x es menor o igual que y</em></li>
+<li>x is y &ndash;&gt; <em>x es lo mismo que y</em></li>
+<li>x is not y &ndash;&gt; <em>x no es lo mismo que y</em></li>
+<li>Operadores lógicos son: <em>and(y), or(o) y not(no)</em></li>
+</ul>
+<p>Para hacer bucles condiciones esta la sentencia <em>IF</em>. Ejemplo</p>
+<p>Ejemplo sencillo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">if 34 == 45:
+ print(&#34;Son iguales&#34;)
+else:
+ print(&#34;No son iguales&#34;)
+</code></pre></div><p>Resultado:</p>
+<pre><code>No son iguales
+</code></pre><p><strong>NOTA: Hay que dejar un espacio en blanco, o una tabulación al escribir la siguiente línea del IF o del ELSE porque sino da un error el interprete. Ya que tiene que estar identado respecto a la sentencia</strong></p>
+<p>Hay una sentencia que es <em>PASS</em> que se pondría después del <em>IF</em> o del <em>ELSE</em> para que no de error. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">if 34 &lt;= 45:
+ pass
+</code></pre></div><p>No hace nada. Útil cuando todavía no saber que poner. En otros lenguaje se pondría un comentario pero aquí esto da error:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">if 34 &lt;= 45:
+ #no hago nada
+</code></pre></div><p>Da este error::</p>
+<pre><code>File &quot;&quot;, line 2
+    #no hago nada
+                 ^
+SyntaxError: unexpected EOF while parsing
+</code></pre><p>También están los *ELSE IF&rdquo; que se escriben con <em>ELIF</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">if 34 == 45:
+    print(&#34;Son iguales&#34;)
+elif 34 &gt; 45:
+    print(&#34;Es mayor&#34;)
+else:
+    print (&#34;Es menor&#34;)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Es menor
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
