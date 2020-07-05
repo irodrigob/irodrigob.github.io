@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cadenas#Las cadenas son secuencias de carácteres. Es decir, una variable de tipo de string puedes acceder a una posición concreta. Es como acceder a una posición de un array o lista. Ejemplo:
+texto = &#34;hola&#34; print(&#34;Segunda letra del texto es:&#34;, texto[1]) Resultado:
+Segunda letra del texto es: oOJO: Que aquí los arrays también empiezan por 0.
+Con la sentencia LEN se puede saber el tamaño de la cadena.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Cadenas" />
+<meta property="og:description" content="Cadenas#Las cadenas son secuencias de carácteres. Es decir, una variable de tipo de string puedes acceder a una posición concreta. Es como acceder a una posición de un array o lista. Ejemplo:
+texto = &#34;hola&#34; print(&#34;Segunda letra del texto es:&#34;, texto[1]) Resultado:
+Segunda letra del texto es: oOJO: Que aquí los arrays también empiezan por 0.
+Con la sentencia LEN se puede saber el tamaño de la cadena." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/cadenas/" />
+
+<title>Cadenas | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/entrada_datos/" class="">Entrada de datos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/variables/" class="">Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/cadenas/" class="active">Cadenas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/captura_excepciones/" class="">Captura de excepciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/constantes_internas/" class="">Constantes internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/funciones_internas/" class="">Funciones internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/iteracciones/" class="">Iteracciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/listas_tuplas/" class="">Listas y tuplas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/operadores/" class="">Operadores</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Cadenas</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="cadenas">
+  Cadenas
+  <a class="anchor" href="#cadenas">#</a>
+</h1>
+<p>Las cadenas son secuencias de carácteres. Es decir, una variable de tipo de string puedes acceder a una posición concreta. Es como acceder a una posición de un array o lista. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto = &#34;hola&#34;
+print(&#34;Segunda letra del texto es:&#34;, texto[1])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Segunda letra del texto es: o
+</code></pre><p><strong>OJO: Que aquí los arrays también empiezan por 0.</strong></p>
+<p>Con la sentencia <em>LEN</em> se puede saber el tamaño de la cadena. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto = &#34;hola&#34;
+print(&#34;Primera letra del texto es: &#34;, texto[0])
+longitud = len(texto)
+print(&#34;Última letra del texto es: &#34;,texto[longitud-1])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Primera letra del texto es:  h
+Última letra del texto es:  a
+</code></pre><p>Como en Javascript la longitud hay que restarle uno para poder acceder al último elemento, o para hacer bucles.</p>
+<p>Hay que tener en cuenta que las cadenas no se puede modificar como si se puede hacer en otros lenguajes, solo podemos consultarla. Es decir, esto:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola&#34;
+texto[2]=&#34;C&#34;
+</code></pre></div><p>Da el siguiente error:</p>
+<pre><code>TypeError                                 Traceback (most recent call last)
+ in 
+      1 texto=&quot;hola&quot;
+----&gt; 2 texto[2]=&quot;C&quot;
+
+TypeError: 'str' object does not support item assignment
+</code></pre><h2 id="bucles">
+  Bucles
+  <a class="anchor" href="#bucles">#</a>
+</h2>
+<p>A las cadenas también se puede acceder haciendo iteracciones. Ejemplo:</p>
+<p>Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola&#34;
+n=0
+while n &lt; len(texto):
+    print(&#34;Letra: &#34;,texto[n])
+    n = n + 1
+</code></pre></div><p>Resultado:</p>
+<pre><code>Letra:  h
+Letra:  o
+Letra:  l
+Letra:  a
+</code></pre><p>El ejemplo anterior pero usando <em>FOR</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola&#34;
+for letra in texto:
+    print(&#34;Letra: &#34;, letra)
+</code></pre></div><p>Dando el mismo resultado.</p>
+<h2 id="accediendo-a-las-partes-de-la-cadena">
+  Accediendo a las partes de la cadena
+  <a class="anchor" href="#accediendo-a-las-partes-de-la-cadena">#</a>
+</h2>
+<p>También se puede acceder a trozos de una cadena:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola mundo&#34;
+print(&#34;Primera parte: &#34;, texto[0:4])
+print(&#34;Segunda parte: &#34;, texto[5:10])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Primera parte:  hola
+Segunda parte:  mundo
+</code></pre><h2 id="operadores-en-condiciones">
+  Operadores en condiciones
+  <a class="anchor" href="#operadores-en-condiciones">#</a>
+</h2>
+<p>El operador <em>IN</em> se menciona en la página de 
+  <a href="/docs/python/sentencias/condiciones/">condiciones</a>  pero pongo el ejemplo aquí que es su sitio:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola&#34;
+if &#34;o&#34; in texto:
+    print(&#34;Existe la O&#34;)
+if &#34;j&#34; in texto:
+    pass
+else:
+    print(&#34;No existe la J&#34;)  
+</code></pre></div><p>Resultado:</p>
+<pre><code>Existe la O
+No existe la J
+</code></pre><p>También se puede usar los <em>&lt;</em> o <em>&gt;</em> para hacer comparaciones por orden alfabético.</p>
+<h2 id="métodos-de-cadenas">
+  Métodos de cadenas
+  <a class="anchor" href="#m%c3%a9todos-de-cadenas">#</a>
+</h2>
+<p>Las cadenas son también objetos que por defecto tienen su propios métodos. Para saber que métodos tiene un cadena hay que hacer lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola&#34;
+dir(texto)
+</code></pre></div><p>El resultado no lo pongo porque es muy largo y supongo que los métodos variarán segun la versión de Python usada.
+Un ejemplo de como se usaría:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;hola&#34;
+print(&#34;texto en minúsculas&#34;, texto)
+print(&#34;texto en mayñusculas&#34;, texto.upper())
+</code></pre></div><p>Resultado:</p>
+<pre><code>texto en minúsculas hola
+texto en mayñusculas HOLA
+</code></pre><p>Para saber como funciona mejor es irse a la 
+  <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">docu oficial de Python</a>.</p>
+<h2 id="formatos">
+  Formatos
+  <a class="anchor" href="#formatos">#</a>
+</h2>
+<p>Como cadenas se les puede aplicar formatos. El carácters para aplicar formatos es <em>%</em> y a continuación el tipo de valor que se va formtear:</p>
+<ul>
+<li>d &ndash;&gt; Decimal</li>
+<li>g &ndash;&gt; Flotante</li>
+<li>s &ndash;&gt; String</li>
+</ul>
+<p>Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">texto=&#34;ivan&#34;
+print(&#34;hola %s&#34; % texto)
+</code></pre></div><p>Resultado:</p>
+<pre><code>hola ivan
+</code></pre><p>Se puede sustituir varios valores pero hay que definir una tupla. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">print(&#34;hola %s, hoy es dia %d y son las %g&#34; % (&#34;ivan&#34;, 5, 16.32))
+</code></pre></div><p>Resultado:</p>
+<pre><code>hola ivan, hoy es dia 5 y son las 16.32
+</code></pre><p>El numero de formatos en la cadena debe coincidir con el número de valores en una tupla para que no de error.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

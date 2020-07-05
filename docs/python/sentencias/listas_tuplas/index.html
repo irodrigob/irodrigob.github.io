@@ -2,24 +2,27 @@
 <html lang="en" dir=>
 
 <head>
-	<meta name="generator" content="Hugo 0.72.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Introducción#Bienvenidos a mi espacio personal. El objetivo es ir poniendo toda las cosas que me han sido de utilidad durante la multitud de proyectos que he ido haciendo a lo largo de los años, vamos una especie de megachuleta a la que pueda acudir en caso de duda.
-No nos vamos a engañar la mayor parte de la información será sobre ABAP, lenguaje de programación de SAP, ya que llevo más de 20 años con el.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Bienvenidos" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://irodrigob.github.io/" />
+<meta name="description" content="Listas y tuplas#Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.
+Los string en si mismos son listas como se explica en pagína de cadenas.
+Ejemplo de inicialización:
+tupla=(1,2,3,4,5,6,7) lista=[8,9,10,11,12] La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Listas y tuplas" />
+<meta property="og:description" content="Listas y tuplas#Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.
+Los string en si mismos son listas como se explica en pagína de cadenas.
+Ejemplo de inicialización:
+tupla=(1,2,3,4,5,6,7) lista=[8,9,10,11,12] La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/" />
 
-<title>Bienvenidos | Navi-developer</title>
+<title>Listas y tuplas | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -250,7 +253,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/listas_tuplas/" class="">Listas y tuplas</a>
+    <a href="/docs/python/sentencias/listas_tuplas/" class="active">Listas y tuplas</a>
   
 
         </li>
@@ -443,7 +446,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Bienvenidos</strong>
+  <strong>Listas y tuplas</strong>
 
   <label for="toc-control">
     
@@ -457,17 +460,94 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="introducción">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n">#</a>
+  <article class="markdown"><h1 id="listas-y-tuplas">
+  Listas y tuplas
+  <a class="anchor" href="#listas-y-tuplas">#</a>
 </h1>
-<p>Bienvenidos a mi espacio personal. El objetivo es ir poniendo toda las cosas que me han sido de utilidad durante la multitud de proyectos que he ido haciendo a lo largo de los años, vamos una especie de megachuleta a la que pueda acudir en caso de duda.</p>
-<p>No nos vamos a engañar la mayor parte de la información será sobre ABAP, lenguaje de programación de SAP, ya que llevo más de 20 años con el.</p>
-<h1 id="organización">
-  Organización
-  <a class="anchor" href="#organizaci%c3%b3n">#</a>
-</h1>
-<p>En el menú de la izquierda es donde iré organizando por temática de lo que vaya publicando. Segun vayan avanzando mis conocmientos de en Hugo no descarto poner un índice o algo en esta página de inicio, pero de momento comenzamos así.</p>
+<p>Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.</p>
+<p>Los string en si mismos son listas como se explica en pagína de 
+  <a href="/docs/python/sentencias/cadenas/">cadenas</a>.</p>
+<p>Ejemplo de inicialización:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">tupla=(1,2,3,4,5,6,7)
+lista=[8,9,10,11,12]
+</code></pre></div><p>La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede. Salvo en las cadenas, que no pueden ser modificadas.</p>
+<p>Un truco para obtener el último valor sin usar el <em>LEN</em> es usar el <em>-1</em>. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">tupla=(1,2,3,4,5,6,7)
+lista=[8,9,10,11,12]
+
+print(&#34;Último valor: &#34;, lista[-1])
+print(&#34;Penúltimo valor: &#34;, lista[-2])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Último valor:  12
+Penúltimo valor:  11
+</code></pre><h2 id="lista">
+  Lista
+  <a class="anchor" href="#lista">#</a>
+</h2>
+<h3 id="modificar-valores">
+  Modificar valores
+  <a class="anchor" href="#modificar-valores">#</a>
+</h3>
+<p>Para cambiar una lista es tan sencillo al índice y poner un nuevo valor. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[8,9,10,11,12]
+
+print(&#34;Valores antes del cambio:&#34;, lista)
+# Cambiamos el segundo registro
+lista[1]=15
+print(&#34;Valores después del cambio:&#34;, lista)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valores antes del cambio: [8, 9, 10, 11, 12]
+Valores después del cambio: [8, 15, 10, 11, 12]
+</code></pre><h3 id="borrar-valores">
+  Borrar valores
+  <a class="anchor" href="#borrar-valores">#</a>
+</h3>
+<p>Para modificar valores se usa el método interno de la lista llamado <em>POP</em>. Ejemplo como borrar el último valor:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[8,9,10,11,12]
+
+print(&#34;Valores antes:&#34;, lista)
+lista.pop()
+print(&#34;Valores después:&#34;, lista)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valores antes: [8, 9, 10, 11, 12]
+Valores después: [8, 9, 10, 11]
+</code></pre><p>Para borrar una posición concreta se puede hacer de dos maneras con el método <em>POP</em> o con la sentencia <em>DEL</em>. Ejemplo con <em>POP</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[8,9,10,11,12]
+
+print(&#34;Valores antes:&#34;, lista)
+lista.pop(1)
+print(&#34;Valores después:&#34;, lista)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valores antes: [8, 9, 10, 11, 12]
+Valores después: [8, 10, 11, 12]
+</code></pre><p>Ejemplo con <em>DEL</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[8,9,10,11,12]
+
+print(&#34;Valores antes:&#34;, lista)
+del lista[1]
+print(&#34;Valores después:&#34;, lista)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valores antes: [8, 9, 10, 11, 12]
+Valores después: [8, 10, 11, 12]
+</code></pre><p>En ambos casos hay que tener en cuenta que el índice empieza por 0.</p>
+<h3 id="añadir-valores">
+  Añadir valores
+  <a class="anchor" href="#a%c3%b1adir-valores">#</a>
+</h3>
+<p>Para añadir se usa el método <em>APPEND</em> de la lista. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[8,9,10,11,12]
+
+print(&#34;Valores antes:&#34;, lista)
+lista.append(13)
+print(&#34;Valores después:&#34;, lista)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valores antes: [8, 9, 10, 11, 12]
+Valores después: [8, 9, 10, 11, 12, 13]
+</code></pre><h2 id="tuplas">
+  Tuplas
+  <a class="anchor" href="#tuplas">#</a>
+</h2>
+<p>El acceso a los valores de las tuplas se hace igual que con las listas.</p>
 </article>
  
       

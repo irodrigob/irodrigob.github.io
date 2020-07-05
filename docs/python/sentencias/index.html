@@ -6,9 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Introducción#Sentencias propias del lenguaje.
 Como nota estoy usando para hacer las pruebas el Jupyter Notebook porque directamente pones el código y pulsando CTRL&#43;ENTER se ejecuta y lo ves justo debajo.
-Introducción#Sentencias propias del lenguaje.
-Como nota estoy usando para hacer las pruebas el Jupyter Notebook porque directamente pones el código y pulsando CTRL&#43;ENTER se ejecuta y lo ves justo debajo.
-Comentarios#Los comentarios se ponen con el carácter #">
+Comentarios#Los comentarios se ponen con el carácter #
+Código dentro de sentencias#A diferencia de otros lenguajes que usán, o bien, carácteres especiales (como el {} como en Javascript), o bien, sentencias de inicio y fin para identificar el código que hay dentro de una sentencia: IF, FOR, etc.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Sentencias" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -18,7 +17,7 @@ Comentarios#Los comentarios se ponen con el carácter #">
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.c5fddb261184df3444cae35a6778f03e5e9f78341cd7e754372dc55653eadbbd.js" integrity="sha256-xf3bJhGE3zREyuNaZ3jwPl6feDQc1&#43;dUNy3FVlPq270="></script>
+<script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/python/sentencias/index.xml" title="Navi-developer" />
@@ -192,6 +191,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/python/sentencias/cadenas/" class="">Cadenas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/python/sentencias/captura_excepciones/" class="">Captura de excepciones</a>
   
 
@@ -212,6 +221,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/python/sentencias/constantes_internas/" class="">Constantes internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/python/sentencias/funciones_internas/" class="">Funciones internas</a>
   
 
@@ -223,6 +242,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/python/sentencias/iteracciones/" class="">Iteracciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/listas_tuplas/" class="">Listas y tuplas</a>
   
 
         </li>
@@ -435,17 +464,23 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <p>Sentencias propias del lenguaje.</p>
 <p>Como nota estoy usando para hacer las pruebas el Jupyter Notebook porque directamente pones el código y pulsando <em>CTRL+ENTER</em> se ejecuta y lo ves justo debajo.</p>
-<h1 id="introducción-1">
-  Introducción
-  <a class="anchor" href="#introducci%c3%b3n-1">#</a>
-</h1>
-<p>Sentencias propias del lenguaje.</p>
-<p>Como nota estoy usando para hacer las pruebas el Jupyter Notebook porque directamente pones el código y pulsando <em>CTRL+ENTER</em> se ejecuta y lo ves justo debajo.</p>
 <h1 id="comentarios">
   Comentarios
   <a class="anchor" href="#comentarios">#</a>
 </h1>
 <p>Los comentarios se ponen con el carácter <em>#</em></p>
+<h1 id="código-dentro-de-sentencias">
+  Código dentro de sentencias
+  <a class="anchor" href="#c%c3%b3digo-dentro-de-sentencias">#</a>
+</h1>
+<p>A diferencia de otros lenguajes que usán, o bien, carácteres especiales (como el <em>{}</em> como en Javascript), o bien, sentencias de inicio y fin para identificar el código que hay dentro de una sentencia: IF, FOR, etc.. En Python eso se hace
+identado, ya sea con un espacio en blanco o tabulacion, para indicar que las líneas de código pertenecen a una sentencia. Por ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">if a &lt;&gt; b:
+    sentencia 1 del IF
+    sentencia 2 del IF
+
+setencia fuera del IF
+</code></pre></div><p>Si no identamos entonces va a dar un mensaje de error porque se va pensar que la sentencia, en este caso el IF, no tiene código.</p>
 <h1 id="visualizar-datos">
   Visualizar datos
   <a class="anchor" href="#visualizar-datos">#</a>
@@ -483,6 +518,16 @@ type(c) Convertir variables#Si queremos convertir el formato de una variable 
   </dd>
 
   <dt>
+    <a href="/docs/python/sentencias/cadenas/">Cadenas</a>
+  </dt>
+  <dd>
+    Cadenas#Las cadenas son secuencias de carácteres. Es decir, una variable de tipo de string puedes acceder a una posición concreta. Es como acceder a una posición de un array o lista. Ejemplo:
+texto = &#34;hola&#34; print(&#34;Segunda letra del texto es:&#34;, texto[1]) Resultado:
+Segunda letra del texto es: oOJO: Que aquí los arrays también empiezan por 0.
+Con la sentencia LEN se puede saber el tamaño de la cadena.
+  </dd>
+
+  <dt>
     <a href="/docs/python/sentencias/captura_excepciones/">Captura de excepciones</a>
   </dt>
   <dd>
@@ -496,7 +541,15 @@ ent = input(&#39;Introduzca la Temperatura Fahrenheit:&#39;) try: fahr = float(e
   </dt>
   <dd>
     Condiciones#Las condiciones son como en la mayoria de lenguajes
- x == y &ndash;&gt; x es igual a y x != y &ndash;&gt; x es distinto de y x &gt; y &ndash;&gt; x es mayor que y x &lt; y &ndash;&gt; x es menor que y x &gt;= y &ndash;&gt; x es mayor o igual que y x &lt;= y &ndash;&gt; x es menor o igual que y x is y &ndash;&gt; x es lo mismo que y x is not y &ndash;&gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no)  Para hacer bucles condiciones esta la sentencia IF.
+ x == y &ndash;&gt; x es igual a y x != y &ndash;&gt; x es distinto de y x &gt; y &ndash;&gt; x es mayor que y x &lt; y &ndash;&gt; x es menor que y x &gt;= y &ndash;&gt; x es mayor o igual que y x &lt;= y &ndash;&gt; x es menor o igual que y x is y &ndash;&gt; x es lo mismo que y x is not y &ndash;&gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no) IN Devuelve si un cadena esta dentro de otra.
+  </dd>
+
+  <dt>
+    <a href="/docs/python/sentencias/constantes_internas/">Constantes internas</a>
+  </dt>
+  <dd>
+    Iteracciones#Las constantes internas, son eso, constantes propias de Python que tienen un valor fijo y que pueden servir para inicializar valores.
+ None &ndash;&gt; Sirve para indicar que una variable esta vacia.  
   </dd>
 
   <dt>
@@ -512,7 +565,19 @@ Letra máxima: uLetra mínima:  LEN &ndash;&gt; Devuelve el numéro de elemento
     <a href="/docs/python/sentencias/iteracciones/">Iteracciones</a>
   </dt>
   <dd>
-    Iteracciones#
+    Iteracciones#Iteracciones condicionales#Llamo iteracciones condicionales aquellas sentencias que no recorren listas sino simplemente repetin un bloque de sentencias hasta que se cumple una condición. La sentencia WHILE sería un ejemplo de ello:
+n = 5 print(&#34;Contador&#34;) while n &gt;= 0: print(n) n = n - 1 Resultado:
+Contador543210Con la sentencia BREAK se puede salir de un bucle. Ejemplo:
+  </dd>
+
+  <dt>
+    <a href="/docs/python/sentencias/listas_tuplas/">Listas y tuplas</a>
+  </dt>
+  <dd>
+    Listas y tuplas#Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.
+Los string en si mismos son listas como se explica en pagína de cadenas.
+Ejemplo de inicialización:
+tupla=(1,2,3,4,5,6,7) lista=[8,9,10,11,12] La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede.
   </dd>
 
   <dt>

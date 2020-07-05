@@ -188,6 +188,18 @@ Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como 
     </item>
     
     <item>
+      <title>Cadenas</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/cadenas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/cadenas/</guid>
+      <description>Cadenas#Las cadenas son secuencias de carácteres. Es decir, una variable de tipo de string puedes acceder a una posición concreta. Es como acceder a una posición de un array o lista. Ejemplo:
+texto = &amp;#34;hola&amp;#34; print(&amp;#34;Segunda letra del texto es:&amp;#34;, texto[1]) Resultado:
+Segunda letra del texto es: oOJO: Que aquí los arrays también empiezan por 0.
+Con la sentencia LEN se puede saber el tamaño de la cadena.</description>
+    </item>
+    
+    <item>
       <title>Captura de excepciones</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/captura_excepciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -215,7 +227,7 @@ Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de tran
       
       <guid>https://irodrigob.github.io/docs/python/sentencias/condiciones/</guid>
       <description>Condiciones#Las condiciones son como en la mayoria de lenguajes
- x == y &amp;ndash;&amp;gt; x es igual a y x != y &amp;ndash;&amp;gt; x es distinto de y x &amp;gt; y &amp;ndash;&amp;gt; x es mayor que y x &amp;lt; y &amp;ndash;&amp;gt; x es menor que y x &amp;gt;= y &amp;ndash;&amp;gt; x es mayor o igual que y x &amp;lt;= y &amp;ndash;&amp;gt; x es menor o igual que y x is y &amp;ndash;&amp;gt; x es lo mismo que y x is not y &amp;ndash;&amp;gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no)  Para hacer bucles condiciones esta la sentencia IF.</description>
+ x == y &amp;ndash;&amp;gt; x es igual a y x != y &amp;ndash;&amp;gt; x es distinto de y x &amp;gt; y &amp;ndash;&amp;gt; x es mayor que y x &amp;lt; y &amp;ndash;&amp;gt; x es menor que y x &amp;gt;= y &amp;ndash;&amp;gt; x es mayor o igual que y x &amp;lt;= y &amp;ndash;&amp;gt; x es menor o igual que y x is y &amp;ndash;&amp;gt; x es lo mismo que y x is not y &amp;ndash;&amp;gt; x no es lo mismo que y Operadores lógicos son: and(y), or(o) y not(no) IN Devuelve si un cadena esta dentro de otra.</description>
     </item>
     
     <item>
@@ -228,6 +240,16 @@ Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de tran
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.
 Ejemplo 1#Permite que una variable se inicialice segun una condicion determinada:
 DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn_data=&amp;gt;cv_updkz_insert WHEN is_header-has_changed = abap_true THEN zif_rtn_data=&amp;gt;cv_updkz_edit ). Ejemplo 2#Uso de SWITCH haciendo una conversion de variable;</description>
+    </item>
+    
+    <item>
+      <title>Constantes internas</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/constantes_internas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/constantes_internas/</guid>
+      <description>Iteracciones#Las constantes internas, son eso, constantes propias de Python que tienen un valor fijo y que pueden servir para inicializar valores.
+ None &amp;ndash;&amp;gt; Sirve para indicar que una variable esta vacia.  </description>
     </item>
     
     <item>
@@ -385,7 +407,9 @@ Flujo#Una imagen que sintetiza muy bien el flujo de ventas:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/sentencias/iteracciones/</guid>
-      <description>Iteracciones#</description>
+      <description>Iteracciones#Iteracciones condicionales#Llamo iteracciones condicionales aquellas sentencias que no recorren listas sino simplemente repetin un bloque de sentencias hasta que se cumple una condición. La sentencia WHILE sería un ejemplo de ello:
+n = 5 print(&amp;#34;Contador&amp;#34;) while n &amp;gt;= 0: print(n) n = n - 1 Resultado:
+Contador543210Con la sentencia BREAK se puede salir de un bucle. Ejemplo:</description>
     </item>
     
     <item>
@@ -406,6 +430,18 @@ SELECT kschl, kotab, @is_header-customer_code AS keyvalue, @is_header-validity_t
       
       <guid>https://irodrigob.github.io/docs/sap/abap/programas/programas/</guid>
       <description>Lista#Generales#   Programa Descripción     RSSPO* Tiene ejemplos de las funcion POPUP_*   BCS_EXAMPLE_7 BCS: Enviar correu-e amb adjunt Excel autocreat (exemple)   RSCPSETEDITOR Este es el programa que a partir del EHP4 permite activar desactivar el word como editor para smartforms y sapscript   BALVBUFDEL Resetea memoria intermedia de ALV. Ideal cuando se cambian textos de elementos de datos.</description>
+    </item>
+    
+    <item>
+      <title>Listas y tuplas</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/</guid>
+      <description>Listas y tuplas#Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.
+Los string en si mismos son listas como se explica en pagína de cadenas.
+Ejemplo de inicialización:
+tupla=(1,2,3,4,5,6,7) lista=[8,9,10,11,12] La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede.</description>
     </item>
     
     <item>
