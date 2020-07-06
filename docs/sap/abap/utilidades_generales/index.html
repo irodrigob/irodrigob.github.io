@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
+<script defer src="/en.search.min.9fd6db9e01fa7a9eda6d0deebe1169d9108ace80de3ed074a483680d7ef0b400.js" integrity="sha256-n9bbngH6ep7abQ3uvhFp2RCKzoDePtB0pINoDX7wtAA="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -324,16 +324,6 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
     <a href="/docs/sap/abap/bopf/acciones/" class="">Acciones</a>
   
 
@@ -365,6 +355,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/sap/abap/bopf/determinaciones/" class="">Determinaciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
   
 
         </li>
@@ -837,10 +837,40 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#hacks">Hacks</a>
+      <ul>
+        <li><a href="#saltarse-seguridad-como-desarrollador">Saltarse seguridad como desarrollador</a></li>
+      </ul>
+    </li>
+    <li><a href="#url">URL</a></li>
+    <li><a href="#rellenar-campos-con-0">Rellenar campos con 0</a></li>
+    <li><a href="#truco-para-saber-que-badis-se-utilizan-en-un-proceso">Truco para saber que BADIS se utilizan en un proceso</a></li>
+    <li><a href="#poner-sentencia-sql-directamente-en-produccion">Poner sentencia SQL directamente en Produccion</a></li>
+    <li><a href="#saltarse-seguridad-se16n">Saltarse seguridad SE16N</a></li>
+    <li><a href="#ejecutar-un-programa-automáticamente-en-una-orden-de-transporte">Ejecutar un programa automáticamente en una orden de transporte</a></li>
+    <li><a href="#usar-comandos-de-sapscript-en-cualquier-sitio">Usar comandos de SAPScript en cualquier sitio</a></li>
+    <li><a href="#ver-un-formulario-en-formato-pdf-en-su-previsualización">Ver un formulario en formato PDF en su previsualización</a></li>
+    <li><a href="#búsqueda-de-fechas"><strong>Búsqueda de fechas</strong></a></li>
+    <li><a href="#usar-simbolos-sapscript-para-reemplazar-valores">Usar simbolos sapscript para reemplazar valores</a></li>
+    <li><a href="#capturar-mensajes-de-error-en-funcion">Capturar mensajes de error en funcion</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
   
  
       </header>
@@ -985,6 +1015,33 @@ WRITE : / ls_line-tdline.
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#hacks">Hacks</a>
+      <ul>
+        <li><a href="#saltarse-seguridad-como-desarrollador">Saltarse seguridad como desarrollador</a></li>
+      </ul>
+    </li>
+    <li><a href="#url">URL</a></li>
+    <li><a href="#rellenar-campos-con-0">Rellenar campos con 0</a></li>
+    <li><a href="#truco-para-saber-que-badis-se-utilizan-en-un-proceso">Truco para saber que BADIS se utilizan en un proceso</a></li>
+    <li><a href="#poner-sentencia-sql-directamente-en-produccion">Poner sentencia SQL directamente en Produccion</a></li>
+    <li><a href="#saltarse-seguridad-se16n">Saltarse seguridad SE16N</a></li>
+    <li><a href="#ejecutar-un-programa-automáticamente-en-una-orden-de-transporte">Ejecutar un programa automáticamente en una orden de transporte</a></li>
+    <li><a href="#usar-comandos-de-sapscript-en-cualquier-sitio">Usar comandos de SAPScript en cualquier sitio</a></li>
+    <li><a href="#ver-un-formulario-en-formato-pdf-en-su-previsualización">Ver un formulario en formato PDF en su previsualización</a></li>
+    <li><a href="#búsqueda-de-fechas"><strong>Búsqueda de fechas</strong></a></li>
+    <li><a href="#usar-simbolos-sapscript-para-reemplazar-valores">Usar simbolos sapscript para reemplazar valores</a></li>
+    <li><a href="#capturar-mensajes-de-error-en-funcion">Capturar mensajes de error en funcion</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 

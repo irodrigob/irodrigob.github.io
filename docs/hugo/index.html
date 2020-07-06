@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
+<script defer src="/en.search.min.9fd6db9e01fa7a9eda6d0deebe1169d9108ace80de3ed074a483680d7ef0b400.js" integrity="sha256-n9bbngH6ep7abQ3uvhFp2RCKzoDePtB0pINoDX7wtAA="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/hugo/index.xml" title="Navi-developer" />
@@ -445,10 +445,25 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#publicaciones">Publicaciones</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
   
  
       </header>
@@ -502,6 +517,18 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#publicaciones">Publicaciones</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 

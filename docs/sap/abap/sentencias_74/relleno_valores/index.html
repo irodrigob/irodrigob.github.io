@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
+<script defer src="/en.search.min.9fd6db9e01fa7a9eda6d0deebe1169d9108ace80de3ed074a483680d7ef0b400.js" integrity="sha256-n9bbngH6ep7abQ3uvhFp2RCKzoDePtB0pINoDX7wtAA="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -324,16 +324,6 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
     <a href="/docs/sap/abap/bopf/acciones/" class="">Acciones</a>
   
 
@@ -365,6 +355,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/sap/abap/bopf/determinaciones/" class="">Determinaciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
   
 
         </li>
@@ -837,10 +837,28 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#ejemplo-1">Ejemplo 1</a></li>
+    <li><a href="#utilización-de-la-opción-base">Utilización de la opción BASE</a></li>
+    <li><a href="#ejemplo-2">Ejemplo 2</a></li>
+    <li><a href="#ejemplo-usando-corresponding">Ejemplo usando CORRESPONDING</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
   
  
       </header>
@@ -868,24 +886,29 @@ https://github.com/alex-shpak/hugo-book
                                       datab = is_header-validity_to
                                       datbi = is_header-validity_from
                                       updkz = zif_rtn_data=&gt;cv_updkz_insert ) ).
-</code></pre></div><p>Nota: Si <em>et_cond_crud</em> tuviera datos se perderían, si se quieren añadir los datos a los existentes hay que añadir la opción <em>BASE</em>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">et_cond_crud = VALUE #( BASE  ( et_cond_crud ) FOR ls_tippqps IN mt_tippqps
-                                             WHERE ( pqtyp = is_header-negotiation_type_code
-                                                     AND keyfield = lv_keyfield )
-                                            ( kschl = ls_tippqps-kschl
-                                              kotab = ls_tippqps-kotab
-                                              keyvalue = is_header-customer_code
-                                              datab = is_header-validity_to
-                                              datbi = is_header-validity_from
-                                              updkz = zif_rtn_data=&gt;cv_updkz_insert ) ).
-</code></pre></div><h1 id="ejemplo-2">
+</code></pre></div><p><strong>Nota: Si <em>et_cond_crud</em> tuviera datos se perderían, si se quieren añadir los datos a los existentes hay que añadir la opción <em>BASE</em>:</strong></p>
+<h1 id="utilización-de-la-opción-base">
+  Utilización de la opción BASE
+  <a class="anchor" href="#utilizaci%c3%b3n-de-la-opci%c3%b3n-base">#</a>
+</h1>
+<p><em>BASE</em> es una opción del <em>VALUE</em> que permite que los datos tiene la tabla donde se van a volcar los datos no se pierdan. Pero tiene un funcionamiento distinto si es una estructura o tabla interna.</p>
+<p>Si es una tabla interna funciona de esta manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lt_header_selparams = VALUE #( BASE lt_header_selparams FOR &lt;wa&gt; IN s_soldto 
+                               ( attribute_name = zif_car_bo_orders_c=&gt;sc_node_attribute-root-soldto 
+                                 sign = &#39;I&#39; 
+                                 option = &#39;EQ&#39; 
+                                 low = &lt;wa&gt;-low ) ).
+</code></pre></div><p>Si es una estructura va de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&lt;ls_datos&gt; = CORRESPONDING #( BASE ( &lt;ls_datos&gt; ) &lt;ls_positions&gt; ).
+</code></pre></div><p>La diferencia radica en que la tabla interna no lleva paréntesis y la estructura si.</p>
+<h1 id="ejemplo-2">
   Ejemplo 2
   <a class="anchor" href="#ejemplo-2">#</a>
 </h1>
 <p>Ampliación de la sentencia INSERT de siempre pero con en este caso no es necesario crear estructuras intermediante o usar el insert/append a un field-symbols y luego informar los valores</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">INSERT VALUE #( sign = &#39;I&#39; option = &#39;EQ&#39; low = abap_false ) INTO TABLE lt_params_sl.
 </code></pre></div><h1 id="ejemplo-usando-corresponding">
-  Ejemplo usando corresponding
+  Ejemplo usando CORRESPONDING
   <a class="anchor" href="#ejemplo-usando-corresponding">#</a>
 </h1>
 <p>Hacer un insert + corresponding en una tabla interna.</p>
@@ -915,6 +938,21 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#ejemplo-1">Ejemplo 1</a></li>
+    <li><a href="#utilización-de-la-opción-base">Utilización de la opción BASE</a></li>
+    <li><a href="#ejemplo-2">Ejemplo 2</a></li>
+    <li><a href="#ejemplo-usando-corresponding">Ejemplo usando CORRESPONDING</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 

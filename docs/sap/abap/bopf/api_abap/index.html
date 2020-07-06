@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.566b26ee625b7ed21e10e93e8128bea672e90fd518c3b8289cf49f2494967381.js" integrity="sha256-Vmsm7mJbftIeEOk&#43;gSi&#43;pnLpD9UYw7gonPSfJJSWc4E="></script>
+<script defer src="/en.search.min.9fd6db9e01fa7a9eda6d0deebe1169d9108ace80de3ed074a483680d7ef0b400.js" integrity="sha256-n9bbngH6ep7abQ3uvhFp2RCKzoDePtB0pINoDX7wtAA="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -324,16 +324,6 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
     <a href="/docs/sap/abap/bopf/acciones/" class="">Acciones</a>
   
 
@@ -365,6 +355,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/sap/abap/bopf/determinaciones/" class="">Determinaciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/nomenclaturas/" class="">Nomenclaturas</a>
   
 
         </li>
@@ -837,10 +837,41 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#instanciar-variables-para-acceder-al-bopf">Instanciar variables para acceder al BOPF</a></li>
+    <li><a href="#añadir-registro">Añadir registro</a>
+      <ul>
+        <li><a href="#nodo-root">Nodo root</a></li>
+      </ul>
+    </li>
+    <li><a href="#subnodo-del-root">Subnodo del ROOT</a></li>
+    <li><a href="#modificar-registro">Modificar registro</a></li>
+    <li><a href="#modificar-datos-en-bopf">Modificar datos en BOPF</a></li>
+    <li><a href="#grabar-datos-en-bopf">Grabar datos en BOPF</a></li>
+    <li><a href="#consulta-de-datos">Consulta de datos</a>
+      <ul>
+        <li><a href="#cuando-se-tiene-el-id-del-registro">Cuando se tiene el ID del registro</a></li>
+        <li><a href="#los-datos-de-un-subnodo">Los datos de un subnodo</a></li>
+        <li><a href="#hacer-consultas">Hacer consultas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
   
  
       </header>
@@ -960,21 +991,26 @@ INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
         IMPORTING
           ev_rejected            = ev_rejected
           eo_message             = eo_message ).
-</code></pre></div><h1 id="leer-datos-por-el-id-de-nodo">
-  Leer datos por el ID de nodo
-  <a class="anchor" href="#leer-datos-por-el-id-de-nodo">#</a>
+</code></pre></div><h1 id="consulta-de-datos">
+  Consulta de datos
+  <a class="anchor" href="#consulta-de-datos">#</a>
 </h1>
+<p>Cuando se tiene la clave del registro del nodo se tiene que usar el método <em>retrieve</em> o <em>retrieve_by_association</em>.</p>
+<h2 id="cuando-se-tiene-el-id-del-registro">
+  Cuando se tiene el ID del registro
+  <a class="anchor" href="#cuando-se-tiene-el-id-del-registro">#</a>
+</h2>
 <p><em>LT_HEADER</em> es la tabla interna que se indica en <em>Combinated table type</em></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> mo_svc_mngr-&gt;retrieve( EXPORTING iv_node_key             = zif_atron_file_engine_c=&gt;sc_node-root
                               it_key                  = VALUE #( ( key = iv_id_file ) )
                               iv_fill_data            = abap_false
                     IMPORTING et_data                 = lt_header ).
 
-</code></pre></div><h1 id="leer-por-asociación">
-  Leer por asociación
-  <a class="anchor" href="#leer-por-asociaci%c3%b3n">#</a>
-</h1>
-<p>En <em>node_key</em> se informa el nodo donde pertenece la clave que se le pasará a <em>IT_KEY</em>. En asociación se indica del nodo de la key a que nodo se quiere recuperar valores. En el ejemplo la key pertenece al nodo <em>root</em> y queremos que recuperar los datos asociados a dicha clave en el nodo <em>content</em>.</p>
+</code></pre></div><h2 id="los-datos-de-un-subnodo">
+  Los datos de un subnodo
+  <a class="anchor" href="#los-datos-de-un-subnodo">#</a>
+</h2>
+<p>En <em>node_key</em> se informa el nodo donde pertenece la clave que se le pasará <em>IT_KEY</em>. En asociación se indica del nodo de la key a que nodo se quiere recuperar valores. En el ejemplo la key pertenece al nodo <em>root</em> y queremos que recuperar los datos asociados a dicha clave en el nodo <em>content</em>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> mo_svc_mngr-&gt;retrieve_by_association(
         EXPORTING
           iv_node_key             = zif_atron_file_engine_c=&gt;sc_node-root
@@ -983,7 +1019,33 @@ INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
           iv_fill_data = abap_true
         IMPORTING
            et_data                 = lt_content ).
-</code></pre></div></article>
+</code></pre></div><h2 id="hacer-consultas">
+  Hacer consultas
+  <a class="anchor" href="#hacer-consultas">#</a>
+</h2>
+<p>Al BOPF se puede hacer búsqueda por cualquier campo de los nodos que tenga. Para eso el nodo tiene que tener un tipo de búsqueda de tipo *Select by elements&rdquo; en la pestaña <em>Query</em>.</p>
+<p>Los parámetros de búsqueda se pasan en el tipo tabla <em>/BOBF/T_FRW_QUERY_SELPARAM</em> y el método ha usar es el <em>QUERY</em>. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">  DATA lt_header_selparams TYPE /bobf/t_frw_query_selparam.
+
+  INSERT VALUE #( attribute_name = zif_car_bo_orders_c=&gt;sc_node_attribute-root-vkorg sign = &#39;I&#39; option = &#39;EQ&#39; low = p_vkorg ) INTO TABLE lt_header_selparams.
+  INSERT VALUE #( attribute_name = zif_car_bo_orders_c=&gt;sc_node_attribute-root-vtweg sign = &#39;I&#39; option = &#39;EQ&#39; low = p_vtweg ) INTO TABLE lt_header_selparams.
+  INSERT VALUE #( attribute_name = zif_car_bo_orders_c=&gt;sc_node_attribute-root-spart sign = &#39;I&#39; option = &#39;EQ&#39; low = p_spart ) INTO TABLE lt_header_selparams.
+
+  mo_svc_mngr-&gt;query(
+  EXPORTING
+    iv_query_key            = zif_car_bo_orders_c=&gt;sc_query-root-select_by_elements
+    it_selection_parameters = lt_header_selparams
+    iv_fill_data            = abap_true
+  IMPORTING
+    et_data                 = et_header ).
+</code></pre></div><p>El parámetro <em>IV_FILL_DATA</em> tiene que estar <em>TRUE</em> para que nos devuelva datos en el parámetro <em>ET_DATA</em>. La tabla interna donde se almacenan los datos debe ser del tipo <em>Combinated table type</em> que hay definida en el nodo.
+Si solo queremos los ID de los registros se haría de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"> mo_svc_mngr-&gt;query( EXPORTING iv_query_key            = zif_car_bo_orders_c=&gt;sc_query-positions-select_by_elements
+                                      it_selection_parameters = it_positions_selparams
+                                      iv_fill_data            = abap_false
+                            IMPORTING et_key = DATA(lt_key_pos) ).
+</code></pre></div><p>El parámetro de entrada <em>IS_QUERY_OPTIONS</em> se le puede indicar los campos de ordenación, número de registros y opciones de páginación.</p>
+</article>
  
       
 
@@ -1008,6 +1070,34 @@ INSERT VALUE #( node = zif_sat_orders_c=&gt;sc_node-root
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#objetivo">Objetivo</a></li>
+    <li><a href="#instanciar-variables-para-acceder-al-bopf">Instanciar variables para acceder al BOPF</a></li>
+    <li><a href="#añadir-registro">Añadir registro</a>
+      <ul>
+        <li><a href="#nodo-root">Nodo root</a></li>
+      </ul>
+    </li>
+    <li><a href="#subnodo-del-root">Subnodo del ROOT</a></li>
+    <li><a href="#modificar-registro">Modificar registro</a></li>
+    <li><a href="#modificar-datos-en-bopf">Modificar datos en BOPF</a></li>
+    <li><a href="#grabar-datos-en-bopf">Grabar datos en BOPF</a></li>
+    <li><a href="#consulta-de-datos">Consulta de datos</a>
+      <ul>
+        <li><a href="#cuando-se-tiene-el-id-del-registro">Cuando se tiene el ID del registro</a></li>
+        <li><a href="#los-datos-de-un-subnodo">Los datos de un subnodo</a></li>
+        <li><a href="#hacer-consultas">Hacer consultas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 

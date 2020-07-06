@@ -75,17 +75,6 @@ Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git
     </item>
     
     <item>
-      <title>Nomenclaturas</title>
-      <link>https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/</guid>
-      <description>Objetivo#Es tener las indicaciones de las nomenclaturas que uso cuando creo un BOPF. Ya que de esta manera es fácil identificar los objetos a simple vista.
-Yo normalmente cuando hago proyecto suele dar un nombre de tres carácteres que usará como prefijo para cualquier objeto que creo, ya sea, BOPF, ya sea, cualquier otro objeto: clases, transacciones, etc.
-Estructuras y tablas de diccionario#En la siguiente imagen:</description>
-    </item>
-    
-    <item>
       <title>Publicar Web Github</title>
       <link>https://irodrigob.github.io/docs/hugo/publicar_web_github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -463,6 +452,17 @@ Lista#   Función Descripción     RM_KOKRS_TO_PLANT_FIND De una centro te de
       <description>Introducción#En este grupo se irán poniendo las distintas sentencias que nos permiten hacer mapeo de campos, digamos que son las que sustituyen al MOVE-CORRESPODING.
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.
 Ejemplo 1#La clase CL_ABAP_CORRESPONDING permite crear mapeos entre tablas y estructuras. En este ejemplo se construye la tabla de mapeos en base a una tabla interna.</description>
+    </item>
+    
+    <item>
+      <title>Nomenclaturas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/</guid>
+      <description>Objetivo#Es tener las indicaciones de las nomenclaturas que uso cuando creo un BOPF. Ya que de esta manera es fácil identificar los objetos a simple vista.
+Yo normalmente cuando hago proyecto suele dar un nombre de tres carácteres que usará como prefijo para cualquier objeto que creo, ya sea, BOPF, ya sea, cualquier otro objeto: clases, transacciones, etc.
+Estructuras y tablas de diccionario#En la siguiente imagen:</description>
     </item>
     
     <item>
