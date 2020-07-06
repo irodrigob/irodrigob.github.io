@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine learning on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/python/machine_learning/</link>
+    <description>Recent content in Machine learning on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/python/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Librerias</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/librerias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/librerias/</guid>
+      <description>Introducción#Librerias para usar
+Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.
+Instalación#No se instalar porque viene incluido con Anaconda:
+</description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</guid>
+      <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python.
+Entonros#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
+Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
+    </item>
+    
+  </channel>
+</rss>

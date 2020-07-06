@@ -75,6 +75,18 @@ Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git
     </item>
     
     <item>
+      <title>Librerias</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/librerias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/librerias/</guid>
+      <description>Introducción#Librerias para usar
+Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.
+Instalación#No se instalar porque viene incluido con Anaconda:
+</description>
+    </item>
+    
+    <item>
       <title>Publicar Web Github</title>
       <link>https://irodrigob.github.io/docs/hugo/publicar_web_github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -114,6 +126,17 @@ Yo suelo usar una clase general para agrupar acciones de un mismo nodo. En algun
       <description>Objetivo#Cajón de desastre de cosas interesante de los ALV. No descarto que alguna cosa este duplicada en alguna otra sección como clases o funciones.
 Proyectos personales#En el siguiente enlace hay una clase que permite simplificar la creación de ALV. Esta clase encapsula las clases de los SALV.
 Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&amp;gt;SCREEN0 &amp;ndash;&amp;gt; Permite sacar un ALV como si fuera dynpro si tener una o configurar container.</description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</guid>
+      <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python.
+Entonros#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
+Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
     </item>
     
     <item>
