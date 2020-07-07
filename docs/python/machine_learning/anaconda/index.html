@@ -13,12 +13,12 @@ Entonros#Los entornos, creo que hasta tres entornos se pueden usar, permiten 
 Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/anaconda/" />
-
+<meta property="article:modified_time" content="2020-07-06T22:45:40+02:00" />
 <title>Anaconda | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.837f16b12c0219671c0b062258ed96b0fb6bf936de5d4a6edc5af42c119ab052.js" integrity="sha256-g38WsSwCGWccCwYiWO2WsPtr&#43;TbeXUpu3Fr0LBGasFI="></script>
+<script defer src="/en.search.min.6972d5e07c0aa558f4ac055a3aa9eeb8c5ca04e8cbf746130fba53d4190a7bfd.js" integrity="sha256-aXLV4HwKpVj0rAVaOqnuuMXKBOjL90YTD7pT1BkKe/0="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -504,7 +504,12 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#entonros">Entonros</a></li>
     <li><a href="#activar-entorno">Activar entorno</a></li>
-    <li><a href="#instalar-libreria">Instalar libreria</a></li>
+    <li><a href="#instalar-libreria">Instalar libreria</a>
+      <ul>
+        <li><a href="#vía-consola">Vía consola</a></li>
+        <li><a href="#vía-entorno-gráfico">Vía entorno gráfico</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -566,6 +571,10 @@ https://github.com/alex-shpak/hugo-book
   Instalar libreria
   <a class="anchor" href="#instalar-libreria">#</a>
 </h1>
+<h2 id="vía-consola">
+  Vía consola
+  <a class="anchor" href="#v%c3%ada-consola">#</a>
+</h2>
 <p>La libería de TensorFlow no viene instalado. Vamos a instalar en el entorno de <em>test</em> y vía consola.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda installa tensorflow
 </code></pre></div><p>Sale información sobre lo que se va a instalr_</p>
@@ -573,6 +582,22 @@ https://github.com/alex-shpak/hugo-book
   <img src="/images/python/machine_learning/anaconda/instalar_paquete_tensorflow.png" alt="Instalar TensorFlow" /></p>
 <p>Importante en la imagen se ve que va instalar TensorFlow en el entorno <em>test</em>, el activo. Si tenemos otro entorno que lo queramos instalar hay que activar dicho entorno e instalarlo.</p>
 <p>Se le pulsa que <em>y</em> y comenzará a realizar la instalación. Nos irá diciendo del progreso de instalación pero no tarda mucho. Con eso ya se puede usar el TensorFlow.</p>
+<h2 id="vía-entorno-gráfico">
+  Vía entorno gráfico
+  <a class="anchor" href="#v%c3%ada-entorno-gr%c3%a1fico">#</a>
+</h2>
+<p>Vamos a instalar la librería <em>Scikit lear(sklearn)</em> para ello primero hay activar el entorno donde la queremos, ir a la pestaña de <em>Environments</em>, seleccionar los paquetes no instaldos y filtrar por <em>scikit</em>:</p>
+<p>
+  <img src="/images/python/machine_learning/anaconda/instalacion_libreria_entorno_grafico.png" alt="Instalacion mediante entorno gráfico" /></p>
+<p>En la imagen ya se ha marcado el paquete que nos interesa y pulsar el botón de <em>Apply</em> situado en la parte inferior derecha.
+<strong>NOTA: Al marca los tres paquetes de <em>scifi</em> no hay manera que se instalen por eso solo marco uno</strong></p>
+<p>
+  <img src="/images/python/machine_learning/anaconda/iniciar_instalacion_paquete_entorno_grafico.png" alt="Iniciar instalación" /></p>
+<p>Si hay dependencias con otros paquetes nos pedirá que confirmemos los otros paquetes:</p>
+<p>
+  <img src="/images/python/machine_learning/anaconda/instalacion_grafica_ventana_dependencias.png" alt="Ventana dependencias" /></p>
+<p>Se pulsar el botón <em>Apply</em> para iniciar la instalación. Una vez instalado el paquete desaparecerá de la lista de paquetes no instalados.</p>
+<p>También he instalado el paquete <em>scikit-image</em>. El otro paquete asociado <em>scikit-rf</em> da error al instalarlo.</p>
 </article>
  
       
@@ -606,7 +631,12 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#entonros">Entonros</a></li>
     <li><a href="#activar-entorno">Activar entorno</a></li>
-    <li><a href="#instalar-libreria">Instalar libreria</a></li>
+    <li><a href="#instalar-libreria">Instalar libreria</a>
+      <ul>
+        <li><a href="#vía-consola">Vía consola</a></li>
+        <li><a href="#vía-entorno-gráfico">Vía entorno gráfico</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

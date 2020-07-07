@@ -83,7 +83,7 @@ Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git
       <description>Introducción#Librerias para usar
 Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.
 Instalación#No se instalar porque viene incluido con Anaconda:
-</description>
+Scikit learn(Sklearn)#¿Qué és?#Según la Wikipedia: Scikit-learn es una biblioteca para aprendizaje automático de software libre para el lenguaje de programación Python.</description>
     </item>
     
     <item>
