@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Iteracciones#Iteracciones condicionales#Llamo iteracciones condicionales aquellas sentencias que no recorren listas sino simplemente repetin un bloque de sentencias hasta que se cumple una condición. La sentencia WHILE sería un ejemplo de ello:
-n = 5 print(&#34;Contador&#34;) while n &gt;= 0: print(n) n = n - 1 Resultado:
-Contador543210Con la sentencia BREAK se puede salir de un bucle. Ejemplo:">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Iteracciones" />
-<meta property="og:description" content="Iteracciones#Iteracciones condicionales#Llamo iteracciones condicionales aquellas sentencias que no recorren listas sino simplemente repetin un bloque de sentencias hasta que se cumple una condición. La sentencia WHILE sería un ejemplo de ello:
-n = 5 print(&#34;Contador&#34;) while n &gt;= 0: print(n) n = n - 1 Resultado:
-Contador543210Con la sentencia BREAK se puede salir de un bucle. Ejemplo:" />
+<meta name="description" content="Usar librerias#Importar libreria se hace con la sentencia Import pero tiene variantes según sean librerias propias de Python o sencillas, eso creo, o librerias que están dentro de un paquete.
+Librerías propias o sencillas#Ejemplo de como usar la libreria matemática para calcular una raíz cuadrada:
+import math print(math.sqrt(20)) Resultado
+4.47213595499958Librerías dentro de paquetes#El siguiente ejemplo se recupera la libreria de regresión de KNN:">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Usar liberias" />
+<meta property="og:description" content="Usar librerias#Importar libreria se hace con la sentencia Import pero tiene variantes según sean librerias propias de Python o sencillas, eso creo, o librerias que están dentro de un paquete.
+Librerías propias o sencillas#Ejemplo de como usar la libreria matemática para calcular una raíz cuadrada:
+import math print(math.sqrt(20)) Resultado
+4.47213595499958Librerías dentro de paquetes#El siguiente ejemplo se recupera la libreria de regresión de KNN:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/iteracciones/" />
-<meta property="article:modified_time" content="2020-07-05T17:17:03+02:00" />
-<title>Iteracciones | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/usar_librerias/" />
+
+<title>Usar liberias | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -241,7 +243,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/iteracciones/" class="active">Iteracciones</a>
+    <a href="/docs/python/sentencias/iteracciones/" class="">Iteracciones</a>
   
 
         </li>
@@ -271,7 +273,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/usar_librerias/" class="">Usar liberias</a>
+    <a href="/docs/python/sentencias/usar_librerias/" class="active">Usar liberias</a>
   
 
         </li>
@@ -495,7 +497,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Iteracciones</strong>
+  <strong>Usar liberias</strong>
 
   <label for="toc-control">
     
@@ -511,10 +513,10 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#iteracciones">Iteracciones</a>
+    <li><a href="#usar-librerias">Usar librerias</a>
       <ul>
-        <li><a href="#iteracciones-condicionales">Iteracciones condicionales</a></li>
-        <li><a href="#iteracciones-listas">Iteracciones listas</a></li>
+        <li><a href="#librerías-propias-o-sencillas">Librerías propias o sencillas</a></li>
+        <li><a href="#librerías-dentro-de-paquetes">Librerías dentro de paquetes</a></li>
       </ul>
     </li>
   </ul>
@@ -528,70 +530,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="iteracciones">
-  Iteracciones
-  <a class="anchor" href="#iteracciones">#</a>
+  <article class="markdown"><h1 id="usar-librerias">
+  Usar librerias
+  <a class="anchor" href="#usar-librerias">#</a>
 </h1>
-<h2 id="iteracciones-condicionales">
-  Iteracciones condicionales
-  <a class="anchor" href="#iteracciones-condicionales">#</a>
+<p>Importar libreria se hace con la sentencia <em>Import</em> pero tiene variantes según sean librerias propias de Python o sencillas, eso creo, o librerias que están dentro de un paquete.</p>
+<h2 id="librerías-propias-o-sencillas">
+  Librerías propias o sencillas
+  <a class="anchor" href="#librer%c3%adas-propias-o-sencillas">#</a>
 </h2>
-<p>Llamo iteracciones condicionales aquellas sentencias que no recorren listas sino simplemente repetin un bloque de sentencias hasta que se cumple una condición. La sentencia <em>WHILE</em> sería un ejemplo de ello:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">n = 5
-print(&#34;Contador&#34;)
-while n &gt;= 0:
-    print(n)
-    n = n - 1
-</code></pre></div><p>Resultado:</p>
-<pre><code>Contador
-5
-4
-3
-2
-1
-0
-</code></pre><p>Con la sentencia <em>BREAK</em> se puede salir de un bucle. Ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">n = 5
-print(&#34;Contador&#34;)
-while True:
-    print(n)
-    n = n - 1
-    if n == 0:
-        break
-</code></pre></div><p>Resultado:</p>
-<pre><code>Contador
-5
-4
-3
-2
-1
-</code></pre><p>También se tiene la sentencia <em>CONTINUE</em>. Esta sentencia salta a la siguiente interacción. Ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">n = 6
-print(&#34;Contador&#34;)
-while n &gt;= 0:
-    n = n - 1    
-    if ( n % 2 ) != 0: # Solo se pintan los pares
-        continue
-    print(n)
-</code></pre></div><p>Resultado:</p>
-<pre><code>4
-2
-0
-</code></pre><p><strong>NOTA PERSONAL: Esta sentencia no la uso en otros lenguajes menos en Python. Pero la pongo para saber que existe.</strong></p>
-<h2 id="iteracciones-listas">
-  Iteracciones listas
-  <a class="anchor" href="#iteracciones-listas">#</a>
+<p>Ejemplo de como usar la libreria matemática para calcular una raíz cuadrada:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import math
+
+print(math.sqrt(20)) 
+</code></pre></div><p>Resultado</p>
+<pre><code>4.47213595499958
+</code></pre><h2 id="librerías-dentro-de-paquetes">
+  Librerías dentro de paquetes
+  <a class="anchor" href="#librer%c3%adas-dentro-de-paquetes">#</a>
 </h2>
-<p>Aquí encontramos la sentencia <em>FOR</em> que permite recuperar una lista de valores y procesarlas. Ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">numeros = [5,4,3,2]
-for numero in numeros:
-    print(&#34;Número: &#34;, numero)
-</code></pre></div><p>Resultado:</p>
-<pre><code>Número:  5
-Número:  4
-Número:  3
-Número:  2
-</code></pre></article>
+<p>El siguiente ejemplo se recupera la libreria de regresión de KNN:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Regresor de KNN o vecinos cercanos
+from sklearn.neighbors import KNeighborsRegressor
+</code></pre></div></article>
  
       
 
@@ -621,10 +582,10 @@ Número:  2
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#iteracciones">Iteracciones</a>
+    <li><a href="#usar-librerias">Usar librerias</a>
       <ul>
-        <li><a href="#iteracciones-condicionales">Iteracciones condicionales</a></li>
-        <li><a href="#iteracciones-listas">Iteracciones listas</a></li>
+        <li><a href="#librerías-propias-o-sencillas">Librerías propias o sencillas</a></li>
+        <li><a href="#librerías-dentro-de-paquetes">Librerías dentro de paquetes</a></li>
       </ul>
     </li>
   </ul>

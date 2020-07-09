@@ -545,6 +545,18 @@ Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N I
     </item>
     
     <item>
+      <title>Usar liberias</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/usar_librerias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/usar_librerias/</guid>
+      <description>Usar librerias#Importar libreria se hace con la sentencia Import pero tiene variantes según sean librerias propias de Python o sencillas, eso creo, o librerias que están dentro de un paquete.
+Librerías propias o sencillas#Ejemplo de como usar la libreria matemática para calcular una raíz cuadrada:
+import math print(math.sqrt(20)) Resultado
+4.47213595499958Librerías dentro de paquetes#El siguiente ejemplo se recupera la libreria de regresión de KNN:</description>
+    </item>
+    
+    <item>
       <title>Utilidades generales</title>
       <link>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
