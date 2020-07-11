@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Introducción#Python es un lenaguaje de programación muy usado para el machine learning. Aquí iré recogiendo todo lo que vaya aprendiendo.
-Secciones#Las sección de Python son las siguientes:
-Enlaces de interesIntroducción#Recopilación de enlaces que me parece interesante. Aprendizaje#En Youtube tenemos el canal de AMP Tech que tiene video de como programar en Python hasta como hacer cosas con Machine Learning Entorno de desarrolloIntroducción#Aquí hasta que no tenga más conocimientos voy ir anotando cosas que me sirven para preparar el entorno para desarrollo Python#El interprete del lenguaje hay que descargarlo de la página oficial.">
+<meta name="description" content="Python">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Python" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Python" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/python/" />
 
@@ -16,7 +14,7 @@ Secciones#Las sección de Python son las siguientes:
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.d55433f8e2f3a51e02f9c16fe5433d10529a963e3f08bbcf5ce520eeb8a26e9b.js" integrity="sha256-1VQz&#43;OLzpR4C&#43;cFv5UM9EFKalj4/CLvPXOUg7riibps="></script>
+<script defer src="/en.search.min.cec4fff81de50b4163a7cd424bb70bda3320cfd4f40a06f1f63c9303da055159.js" integrity="sha256-zsT/&#43;B3lC0Fjp81CS7cL2jMgz9T0Cgbx9jyTA9oFUVk="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/python/index.xml" title="Navi-developer" />
@@ -230,6 +228,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/python/sentencias/ficheros/" class="">Ficheros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/python/sentencias/funciones_internas/" class="">Funciones internas</a>
   
 
@@ -270,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/usar_librerias/" class="">Usar liberias</a>
+    <a href="/docs/python/sentencias/usar_librerias/" class="">Usar librerias</a>
   
 
         </li>
@@ -312,6 +320,37 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
   
 
         </li>
@@ -539,27 +578,21 @@ https://github.com/alex-shpak/hugo-book
     <a href="/docs/python/enlaces_interes/">Enlaces de interes</a>
   </dt>
   <dd>
-    Introducción#Recopilación de enlaces que me parece interesante.
-Aprendizaje# En Youtube tenemos el canal de AMP Tech que tiene video de como programar en Python hasta como hacer cosas con Machine Learning  
+    Enlaces de interes
   </dd>
 
   <dt>
     <a href="/docs/python/entorno_desarrollo/">Entorno de desarrollo</a>
   </dt>
   <dd>
-    Introducción#Aquí hasta que no tenga más conocimientos voy ir anotando cosas que me sirven para preparar el entorno para desarrollo
-Python#El interprete del lenguaje hay que descargarlo de la página oficial.
-IDE de desarrollo#Uso el VS Code que tiene una ventaja cuando creas un programa con extensión &ldquo;.py&rdquo; (extensión que indica que es un lenguaje Python) te descarga el plugin para poder ejecutar directamente desde el VSCode.
+    Entorno de desarrollo
   </dd>
 
   <dt>
     <a href="/docs/python/sentencias/">Sentencias</a>
   </dt>
   <dd>
-    Introducción#Sentencias propias del lenguaje.
-Como nota estoy usando para hacer las pruebas el Jupyter Notebook porque directamente pones el código y pulsando CTRL+ENTER se ejecuta y lo ves justo debajo.
-Comentarios#Los comentarios se ponen con el carácter #
-Uso del &ldquo;:&rdquo; para sentencia con bloques de código#En las sentencias que tienen dentro de ellas bloques de código: IF, WHILE, FOR,etc, hay que poner el carácter &ldquo;:&rdquo; al final de la sentencia.
+    Sentencias
   </dd>
 
   <dt>
@@ -568,7 +601,7 @@ Uso del &ldquo;:&rdquo; para sentencia con bloques de código#En las sentenci
   <dd>
     Introducción#Toda sobre machine learning en Python
 Secciones#Las sección son las siguientes:
-LibreriasIntroducción#Librerias para usar Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices. Instalación#No se instalar porque viene incluido con Anaconda: Scikit learn(Sklearn)#¿Qué és?
+LibreriasLibreriasAnacondaAnacondaRegresion linealRegresion lineal
   </dd>
 
 </dl>

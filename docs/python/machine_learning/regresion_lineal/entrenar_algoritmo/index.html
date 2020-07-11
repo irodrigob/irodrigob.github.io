@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ejemplo de entrenamiento de algoritmo de regresion lineal">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Entrenar algoritmo de regresion lineal" />
+<meta property="og:description" content="Ejemplo de entrenamiento de algoritmo de regresion lineal" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" />
+
+<title>Entrenar algoritmo de regresion lineal | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.cec4fff81de50b4163a7cd424bb70bda3320cfd4f40a06f1f63c9303da055159.js" integrity="sha256-zsT/&#43;B3lC0Fjp81CS7cL2jMgz9T0Cgbx9jyTA9oFUVk="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/entrada_datos/" class="">Entrada de datos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/variables/" class="">Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/cadenas/" class="">Cadenas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/captura_excepciones/" class="">Captura de excepciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/constantes_internas/" class="">Constantes internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/ficheros/" class="">Ficheros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/funciones_internas/" class="">Funciones internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/iteracciones/" class="">Iteracciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/listas_tuplas/" class="">Listas y tuplas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/operadores/" class="">Operadores</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/usar_librerias/" class="">Usar librerias</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="active">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Entrenar algoritmo de regresion lineal</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+    <li><a href="#si-se-descomenta-las-sentencia-y-se-ejecuta-se-van-viendo-los-datos">Si se descomenta las sentencia y se ejecuta se van viendo los datos</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído del video 
+  <a href="https://www.youtube.com/watch?v=38rBECdCv3A&amp;t">Machine Learning episodio 2 Algoritmos de regresión</a></p>
+<p>El ejemplo esta creado el <em>Jupiter Notebool</em> y se irá poniendo el código de las distintas celdas</p>
+<h1 id="código">
+  Código
+  <a class="anchor" href="#c%c3%b3digo">#</a>
+</h1>
+<p>Se cargan las librerias</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Regresor de KNN o vecinos cercanos
+from sklearn.neighbors import KNeighborsRegressor
+# Set de datos de boston
+from sklearn.datasets import load_boston
+# Divide los datos entre entrenamiento y testing
+from sklearn.model_selection import train_test_split
+# Algoritmos de regresión linea y ridge
+from sklearn.linear_model import LinearRegression, Ridge
+</code></pre></div><p>Carga del modelo de datos que se van a usar</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># A la variable boston se le asigna el set de datos. Que son los precios de las 
+# casas en boston que depende de varías características
+boston = load_boston()
+
+# Visualiza las claves que tiene los datos
+boston.keys()
+</code></pre></div><p>Son sentencias que permite los datos del modo cargado en el paso anterior.</p>
+<h1 id="si-se-descomenta-las-sentencia-y-se-ejecuta-se-van-viendo-los-datos">
+  Si se descomenta las sentencia y se ejecuta se van viendo los datos
+  <a class="anchor" href="#si-se-descomenta-las-sentencia-y-se-ejecuta-se-van-viendo-los-datos">#</a>
+</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># La data son las características
+#boston.data
+
+# Respuestas a nuestras características
+#boston.target
+
+# Ver los ejemplos que hay en data. Que devuelve 506, 13. Que son 506 casa 
+# con 13 características
+#boston.data.shape
+
+# Si se hace lo mismo pero con el target devuelve 506 respuestas
+#boston.target.shape
+</code></pre></div><p>Variables que se usarán para el entrenamiento y test</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Las que terminan en &#34;_ent&#34; son para entrenar y las que terminan 
+# en &#34;_test&#34; son para testing. 
+# Estas variables se inicializan con la data o características y las etiquetas
+X_ent, X_test, y_ent, y_test = train_test_split(boston.data, boston.target)
+</code></pre></div><p>Permite ver que se datos se usan para entrenamiento y para test</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Si hacemos esto se que son los datos que ha usado para entrenar. Que serán 379, 13
+print(&#34;Datos para entrenar:&#34;,X_ent.shape)
+# Y para testing devuelve el resto 127, 13
+print(&#34;Datos para testing:&#34;,X_test.shape)
+# resto de variables que son los vector pero sin las características. 
+# Solo devuelve 379 para _ent y 127 para _test
+print(&#34;Datos y para entrenar:&#34;, y_ent.shape)
+print(&#34;Datos y para testing:&#34;, y_test.shape)
+</code></pre></div><p>Primer algoritmo de regresion líneal.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Variable que se le asocia con el algoritmo de vecinos cercanos. Pasándole 
+# que considere 3 vecinos.
+knn = KNeighborsRegressor(n_neighbors=3)
+</code></pre></div><p>Datos de entrenamiento</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se le pasa al algoritmo los datos de entrenamiento y los valores 
+# objetivos o guia. Al ejecutar se visualizará los parámetros
+# del algoritmo que han sido modificados, como es el número de vecinos.
+knn.fit(X_ent,y_ent)
+</code></pre></div><p>Resultado del entrenamiento</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Para saber como aprendio nuestro algoritmo se le pasan los 
+# datos de test. 
+# Si se le pasa 3 vecinos el % de aprendizaje es un 48%.  Pero si se le 
+# sube el valor del parámetro n_neighbors a 5 el % de aprendizaje 
+# disminuye al 47%. 
+# Y si ponemos 4 es un poco inferior al 3. Por ello, el más optimo 
+# es dejarlo en 3 para este set de datos.
+knn.score(X_test,y_test)
+</code></pre></div><p>Borrao de datos para probar otros algoritmos.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se borra el contenido de la variable para poder usar la libreria
+# &#34;LinearRegressionLinearRegression&#34;
+# El objetivo de borrar es evitar que la maquia se sature al procesos varios modelos
+del knn
+</code></pre></div><p>Se repiten los mismos pasos para usar otro algoritmo.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">rl = LinearRegression()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se alimenta con los mismos datos que para el algoritmo de vecinos cercanos
+rl.fit(X_ent,y_ent) 
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Vamos a ver cual ha sido su nivel de aprendizaje. Pasandole 
+# los mismos datos que para el KNN. En este caso ha aprendido un 72% 
+# mucho mejor que el 48% del KNN
+rl.score(X_test,y_test)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Ahora se va borra el algoritmo usado para utilizar el algoritmo de ridger
+del rl
+</code></pre></div><p>Lo mismo pero para el algoritmo ridge</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">ridge = Ridge(alpha=1)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se vuelve alimentar con los mismo datos de los algoritmos anteriores
+ridge.fit(X_ent, y_ent)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Y ahora a ver cuanto ha aprendido
+# Devuelve un 72%(redonde hacia arriba) que es un poco mejor al 
+# algoritmo de regression lineal. Cambiando el parámetro alpha a 0.5 
+# devuelve un valor sensible inferior al valor por defecto que es alpha = 1
+ridge.score(X_test,y_test)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">del ridge
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+    <li><a href="#si-se-descomenta-las-sentencia-y-se-ejecuta-se-van-viendo-los-datos">Si se descomenta las sentencia y se ejecuta se van viendo los datos</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

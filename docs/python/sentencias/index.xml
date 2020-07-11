@@ -77,6 +77,18 @@ ent = input(&amp;#39;Introduzca la Temperatura Fahrenheit:&amp;#39;) try: fahr =
     </item>
     
     <item>
+      <title>Ficheros</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/ficheros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/ficheros/</guid>
+      <description>Ficheros#Leer un fichero#Se puede hacer de dos manera con la sentencia WITH y sin ella.
+Ejemplo modo sin WITH
+file = open(&amp;#34;welcome.txt&amp;#34;) data = file.read() print data file.close() # Importante hay que cerrar el fichero para evitar bloqueos Con la opción WITH
+with open(&amp;#34;hola.txt&amp;#34;) as file: data = file.read() Con WITH parece ser que el control de excepciones es mejor y tareas simples como la preparación del fichero y su cierre se hace de manera automática.</description>
+    </item>
+    
+    <item>
       <title>Funciones internas</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/funciones_internas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -123,7 +135,7 @@ Resultado 416.15999999999997Resultado: 3.89String#Con los string podemos co
     </item>
     
     <item>
-      <title>Usar liberias</title>
+      <title>Usar librerias</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/usar_librerias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

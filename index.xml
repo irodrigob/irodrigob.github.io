@@ -80,10 +80,10 @@ Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/librerias/</guid>
-      <description>Introducción#Librerias para usar
+      <description>Introducción#Librerias para poder usar el Machine Learning.
+Los pasos para instalar las librerías esta explicado en la página de Anaconda.
 Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.
-Instalación#No se instalar porque viene incluido con Anaconda:
-Scikit learn(Sklearn)#¿Qué és?#Según la Wikipedia: Scikit-learn es una biblioteca para aprendizaje automático de software libre para el lenguaje de programación Python.</description>
+Instalación#No se instalar porque viene incluido con Anaconda:</description>
     </item>
     
     <item>
@@ -309,6 +309,18 @@ Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. E
     </item>
     
     <item>
+      <title>Entrenar algoritmo de regresion lineal</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 2 Algoritmos de regresión
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
+Código#Se cargan las librerias
+# Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.model_selection import train_test_split # Algoritmos de regresión linea y ridge from sklearn.</description>
+    </item>
+    
+    <item>
       <title>Fecha / Hora</title>
       <link>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -316,6 +328,18 @@ Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. E
       <guid>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</guid>
       <description>Objetivo#Debido a que hay multitud de funciones para fechas y horas que uso, las pongo en un apartado aparte en vez de ponerlas en la de Basic Component.
 Lista#   Función Descripción     GET_WEEK_INFO_BASED_ON_DATE Te devuelve la semana y el día que es lunes y domingo.   DATE_GET_WEEK Solo devuelve la semana. Ojo que la semana viene al principio con el año.</description>
+    </item>
+    
+    <item>
+      <title>Ficheros</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/ficheros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/ficheros/</guid>
+      <description>Ficheros#Leer un fichero#Se puede hacer de dos manera con la sentencia WITH y sin ella.
+Ejemplo modo sin WITH
+file = open(&amp;#34;welcome.txt&amp;#34;) data = file.read() print data file.close() # Importante hay que cerrar el fichero para evitar bloqueos Con la opción WITH
+with open(&amp;#34;hola.txt&amp;#34;) as file: data = file.read() Con WITH parece ser que el control de excepciones es mejor y tareas simples como la preparación del fichero y su cierre se hace de manera automática.</description>
     </item>
     
     <item>
@@ -545,7 +569,7 @@ Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N I
     </item>
     
     <item>
-      <title>Usar liberias</title>
+      <title>Usar librerias</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/usar_librerias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
