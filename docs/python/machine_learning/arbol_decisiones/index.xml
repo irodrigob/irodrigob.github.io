@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arbol de decisiones on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/</link>
+    <description>Recent content in Arbol de decisiones on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ejemplo básico</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 3. Árboles de Decisiones
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
+Código#Carga de librerías
+# Clasificador de arbol de decisiones from sklearn.tree import DecisionTreeClassifier # Dos set de datos uno de cancer y otro de iris from sklearn.datasets import load_breast_cancer, load_iris # Librería para separar datos de entrenamiento y testing from sklearn.</description>
+    </item>
+    
+  </channel>
+</rss>

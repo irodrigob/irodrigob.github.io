@@ -309,6 +309,18 @@ Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. E
     </item>
     
     <item>
+      <title>Ejemplo básico</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 3. Árboles de Decisiones
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
+Código#Carga de librerías
+# Clasificador de arbol de decisiones from sklearn.tree import DecisionTreeClassifier # Dos set de datos uno de cancer y otro de iris from sklearn.datasets import load_breast_cancer, load_iris # Librería para separar datos de entrenamiento y testing from sklearn.</description>
+    </item>
+    
+    <item>
       <title>Entrenar algoritmo de regresion lineal</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

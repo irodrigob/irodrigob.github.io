@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ejemplo básico de entrenamiento y visualización del arbol de decisiones">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Ejemplo básico" />
+<meta property="og:description" content="Ejemplo básico de entrenamiento y visualización del arbol de decisiones" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" />
+
+<title>Ejemplo básico | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.954968f7e84f37b8e522f35b2924e1d08bd999df73bcfbd9510f90febccc8e3e.js" integrity="sha256-lUlo9&#43;hPN7jlIvNbKSTh0IvZmd9zvPvZUQ&#43;Q/rzMjj4="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/entrada_datos/" class="">Entrada de datos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/variables/" class="">Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/cadenas/" class="">Cadenas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/captura_excepciones/" class="">Captura de excepciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/constantes_internas/" class="">Constantes internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/ficheros/" class="">Ficheros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/funciones_internas/" class="">Funciones internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/iteracciones/" class="">Iteracciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/listas_tuplas/" class="">Listas y tuplas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/operadores/" class="">Operadores</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/usar_librerias/" class="">Usar librerias</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/" class="">Arbol de decisiones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" class="active">Ejemplo básico</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Ejemplo básico</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído del video 
+  <a href="https://www.youtube.com/watch?v=269QJ5joMCc&amp;t">Machine Learning episodio 3. Árboles de Decisiones</a></p>
+<p>El ejemplo esta creado el <em>Jupiter Notebool</em> y se irá poniendo el código de las distintas celdas</p>
+<h1 id="código">
+  Código
+  <a class="anchor" href="#c%c3%b3digo">#</a>
+</h1>
+<p>Carga de librerías</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Clasificador de arbol de decisiones
+from sklearn.tree import DecisionTreeClassifier
+# Dos set de datos uno de cancer y otro de iris
+from sklearn.datasets import load_breast_cancer, load_iris
+# Librería para separar datos de entrenamiento y testing
+from sklearn.model_selection import train_test_split
+# Estos últimos son para poder mostrar gráficamente el arbol de decisiones
+from sklearn.tree import export_graphviz
+import graphviz
+import matplotlib.pyplot as plt
+import numpy as np
+</code></pre></div><p>Datos para el ejemplo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Carga de los datos IRIS a una variable
+iris = load_iris()
+</code></pre></div><p>Split de datos de entrenamiento y test</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Las variables _ent son las que se usarán para entrenamiento y testing
+# Target son las etiquetas y data y son las características
+X_ent, X_test, y_ent, y_test = train_test_split(iris.data, iris.target)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Variable con el arbol de decisiones
+arbol = DecisionTreeClassifier()
+</code></pre></div><p>Se entrena a algoritmo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se le pasan los datos de entrenamiento y los valores guia
+arbol.fit(X_ent, y_ent)
+</code></pre></div><p>Resultado del entrenamiento con los datos de test</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Con esto se averigua el % de aprendizaje. 
+# Devuelve un 97% que no esta nada mal
+arbol.score(X_test, y_test)
+</code></pre></div><p>Resultado del entrenamiento con los datos del entrenamiento. Se produce sobreajuste que no es bueno
+ya que puede provocar falsos positivos a futuro.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se hace lo mismo sobre los datos de entrenamiento. En este caso devuelve el 100%.
+# Parece ser que devuelva un 100% en los datos de entrenamiento no es muy bueno
+arbol.score(X_ent, y_ent)
+</code></pre></div><p>Se genera un fichero para visualizar el arbol de deciciones</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Genera un archivo .dot con los datos del arbol.
+# Al ejecutarlo aparece el archivo en el mismo directorio donde esta este script
+export_graphviz(arbol, out_file=&#39;arbol.dot&#39;, class_names=iris.target_names, 
+                feature_names=iris.feature_names,impurity=False,filled=True)
+</code></pre></div><p>Visualización del fichero</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Abre el fichero generado en el paso anterior, se lee en una variable 
+with open(&#39;arbol.dot&#39;) as f:
+    dot_graph=f.read()
+# Se muestra el arbol de decisiones    
+graphviz.Source(dot_graph)
+</code></pre></div><p>Muestra un gráfico de barra para ver cual es la carácterística más importante
+en la clasificación</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Esto lo que nos dice que tan de importante es una característica especifica
+# para ayudarnos a definir a la clase a la que pertenece.
+# En el gráfico se mostrará la característica más importante es la longitud del petalo
+
+# Caract obtenemos el número de características que tiene la tupla
+caract = iris.data.shape[1]
+# &#34;feature_importances_&#34; es la importancia de nuestras características
+# Indica que va crear un gráfico de barras donde:
+# El primer parámetro &#34;y&#34; tendrá cuatro registros, el número de características
+# El segundo parámetro son los valores que se hará las características
+plt.barh(range(caract),arbol.feature_importances_)
+# Se le informan las etiquetas. El primer parámetro es un array en
+# blanco(np.arange crea un array en base al número pasado). El segundo
+# parámetro son los textos de la etiqueta
+plt.yticks(np.arange(caract),iris.feature_names)
+# Se le pasa el texto para el eje X e Y
+plt.xlabel(&#39;Importancia de las características&#39;)
+plt.ylabel(&#39;Característica&#39;)
+plt.show()
+</code></pre></div><p>Se cambia los parámetros del árbol para mejorarlo.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se van ajustar los parámetros del clasificador para mejorar la precisión. 
+# max_depth le indica cuantos niveles en la clasificación le permitimos. 
+# Si inicialmente erán 6  niveles encontrados, según la gráfica ahora serán 3.
+arbol = DecisionTreeClassifier(max_depth=3)
+</code></pre></div><p>De nuevo al entrenamiento</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se vuevle a entrenar
+arbol.fit(X_ent, y_ent)
+</code></pre></div><p>Resultados del entrenamiento</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># El resultado con los datos de test son del 94%
+arbol.score(X_test,y_test)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># El resultado con los datos de entrenamiento es del 97%, antes era del 100%
+arbol.score(X_ent, y_ent)
+</code></pre></div><p>Ejemplo de como hace el proceso de clasificación el arbol</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Ejemplo de como se muestra gráficamente como 
+ # realiza la clasificación el algoritmo. Se usa la
+ # librería Matplotlib para visualizarlo
+ n_classes = 3
+ plot_color = &#34;bry&#34;
+ plot_step = 0.2
+
+ for pairidx, pair in enumerate([[0,1], [0, 2],[0, 3],
+                               [1, 2], [1, 3], [2, 3]]):
+    X = iris.data[:, pair]                        
+    y = iris.target
+
+    # Entrenar algoritmo
+    # Sin usar la opción max_depth=3 en la gráfica se ven unas rayas, como las rojas, 
+    # que son debidas a los sobreajustes. Esta raya le sirve al modelo para clasificar
+    # a futuro uno de los elementos. Entonces en un futuro cuando un elemento caigan 
+    # en esas rayas lo va a clasificar de manera incorrecta.
+    # Si se pone ela opción max_depth=3 esas rayas ya no se ven. Ya no hay sobreajuste
+    # en el entrenamiento
+    clf = DecisionTreeClassifier(max_depth=3).fit(X,y)
+    plt.subplot(2, 3, pairidx + 1)
+
+    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, plot_step),
+                         np.arange(y_min, y_max, plot_step))
+
+    Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+    Z = Z.reshape(xx.shape)
+    cs = plt.contour(xx, yy, Z, cmap=plt.cm.Paired)
+
+    plt.xlabel(iris.feature_names[pair[0]])
+    plt.ylabel(iris.feature_names[pair[1]])
+    plt.axis(&#34;tight&#34;)
+
+    # Plot the training point
+    for i, color in zip(range(n_classes), plot_color):
+        idx = np.where(y == i)
+        plt.scatter(X[idx, 0], X[idx, 1], c = color, label = iris.target_names[i],
+                    cmap=plt.cm.Paired)
+    
+    plt.axis(&#34;tight&#34;)
+
+plt.suptitle(&#34;Ejemplo de clasificador de arboles&#34;)
+plt.legend()
+plt.show()
+</code></pre></div><p>En esta imagen se ve como se ha realizado la clasificación:</p>
+<p>
+  <img src="/images/python/machine_learning/arbol_decisiones/ejempo_arbol_decision_sobreajuste.png" alt="Representación con sobreajuste" /></p>
+<p>Los recuadros azules son los sobreajustes que produce el algoritmo al intentar clasificar alguno de los elementos, pero que 
+esto a futuro dará falsos positivos.</p>
+<p>Ajustando el parámetro <em>max_depth=3</em> vemos que esas líneas desparecen:</p>
+<p>
+  <img src="/images/python/machine_learning/arbol_decisiones/ejempo_arbol_decision_sinsobreajuste.png" alt="Representación sin sobreajuste" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
