@@ -22,5 +22,16 @@ Código#Carga de librerías
 # Clasificador de arbol de decisiones from sklearn.tree import DecisionTreeClassifier # Dos set de datos uno de cancer y otro de iris from sklearn.datasets import load_breast_cancer, load_iris # Librería para separar datos de entrenamiento y testing from sklearn.</description>
     </item>
     
+    <item>
+      <title>Explicación sobreajuste</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 4. Sobreajuste. Este artículo es un añadido a lo que se comenta brevemente en el artículo de ejemplo sobre arbol de decisiones
+En el video indicado se explica perfectamente lo que és, aún así, intento explicarlo a mi manera que es un sobreajuste o overfilling, en ingles. Se usarán pantallazos del video para explicar algunos puntos.
+El sobreajuste se produce cuando se entrena el algoritmo ya que intenta generar una formula o ecuación que permite clasificar los datos.</description>
+    </item>
+    
   </channel>
 </rss>
