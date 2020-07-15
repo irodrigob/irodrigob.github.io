@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.04746a875ce5ea0adcc4c8d2b0b3cce6d80d76fb35bb1f4b85054dd337781476.js" integrity="sha256-BHRqh1zl6grcxMjSsLPM5tgNdvs1ux9LhQVN0zd4FHY="></script>
+<script defer src="/en.search.min.303dc99454e01c5f3dde11134396a34c83a81bd6b1137bee5a70f969af54a6bc.js" integrity="sha256-MD3JlFTgHF893hETQ5ajTIOoG9axE3vuWnD5aa9Uprw="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -369,6 +369,27 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/python/machine_learning/estimador_incertidumbre/" class="">Estimador incertidumbre</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
   
 
@@ -596,6 +617,8 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#modificar-valores">Modificar valores</a></li>
             <li><a href="#borrar-valores">Borrar valores</a></li>
             <li><a href="#añadir-valores">Añadir valores</a></li>
+            <li><a href="#sublistas">Sublistas</a></li>
+            <li><a href="#segmentos">Segmentos</a></li>
           </ul>
         </li>
         <li><a href="#tuplas">Tuplas</a></li>
@@ -618,7 +641,7 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <p>Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.</p>
 <p>Los string en si mismos son listas como se explica en pagína de 
-  <a href="/docs/python/sentencias/cadenas/">cadenas</a>.</p>
+  <a href="/docs/python/sentencias/cadenas/">cadenas</a>. Pero mientras que en la cadenas los valores son carácteres en una lista/tupla puede contener cualquier valor.</p>
 <p>Ejemplo de inicialización:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">tupla=(1,2,3,4,5,6,7)
 lista=[8,9,10,11,12]
@@ -695,6 +718,29 @@ print(&#34;Valores después:&#34;, lista)
 </code></pre></div><p>Resultado:</p>
 <pre><code>Valores antes: [8, 9, 10, 11, 12]
 Valores después: [8, 9, 10, 11, 12, 13]
+</code></pre><h3 id="sublistas">
+  Sublistas
+  <a class="anchor" href="#sublistas">#</a>
+</h3>
+<p>Es posible tener una sublista dentro de una lista ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[&#34;valor 1&#34;,2, 3.4,[&#34;subvalor&#34;, 10]]
+print(&#34;Contenido &#34;, lista)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Contenido  ['valor 1', 2, 3.4, ['subvalor', 10]]
+</code></pre><h3 id="segmentos">
+  Segmentos
+  <a class="anchor" href="#segmentos">#</a>
+</h3>
+<p>Igual que en las cadenas también se puede acceder a segmentos. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[1,2,3,4,5,6]
+print(&#34;Contenido &#34;, lista[3:5])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Contenido  [4, 5]
+</code></pre><p>Si no se pone el primer valor del segmento se comienza a leer desde el primer valor. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[1,2,3,4,5,6]
+print(&#34;Contenido &#34;, lista[:5])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Contenido  [1, 2, 3, 4, 5]
 </code></pre><h2 id="tuplas">
   Tuplas
   <a class="anchor" href="#tuplas">#</a>
@@ -737,6 +783,8 @@ Valores después: [8, 9, 10, 11, 12, 13]
             <li><a href="#modificar-valores">Modificar valores</a></li>
             <li><a href="#borrar-valores">Borrar valores</a></li>
             <li><a href="#añadir-valores">Añadir valores</a></li>
+            <li><a href="#sublistas">Sublistas</a></li>
+            <li><a href="#segmentos">Segmentos</a></li>
           </ul>
         </li>
         <li><a href="#tuplas">Tuplas</a></li>

@@ -117,9 +117,8 @@ Contador543210Con la sentencia BREAK se puede salir de un bucle. Ejemplo:
       
       <guid>https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/</guid>
       <description>Listas y tuplas#Las listas son las que usan [] y las tuplas(). Ambas sirven para guardar datos. Y ambas están indexadas por 0, es decir, al primer registro se accede por el valor 0.
-Los string en si mismos son listas como se explica en pagína de cadenas.
-Ejemplo de inicialización:
-tupla=(1,2,3,4,5,6,7) lista=[8,9,10,11,12] La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede.</description>
+Los string en si mismos son listas como se explica en pagína de cadenas. Pero mientras que en la cadenas los valores son carácteres en una lista/tupla puede contener cualquier valor.
+Ejemplo de inicialización:</description>
     </item>
     
     <item>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Estimador incertidumbre on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/python/machine_learning/estimador_incertidumbre/</link>
+    <description>Recent content in Estimador incertidumbre on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/python/machine_learning/estimador_incertidumbre/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
