@@ -229,7 +229,7 @@ ent = input(&amp;#39;Introduzca la Temperatura Fahrenheit:&amp;#39;) try: fahr =
       
       <guid>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</guid>
       <description>Objetivo#Recopilar clases de desarrollo que son interesante para tener ejemplos
-Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple    </description>
+Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple   SABAPDEMOS Ejemplos de todo tipo sobre ABAP. Desde rendimiento, CDS, push, etc..    </description>
     </item>
     
     <item>
@@ -321,12 +321,37 @@ Código#Carga de librerías
     </item>
     
     <item>
+      <title>Ejemplo de conversión de palabras a números</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 7. Vectorización.
+Partimos de las siguiente dos frases:
+ Vectorizar el texto es necesario en machine learning Machine learning es una gran herramienta  El primer pasar es tokenizar. Tokenizar es dividir el texto en tokens o palabras.
+Los token los obtendremos de las palabras no repetidas que son:
+ Vectorizar el texto es necesario en machine learning una gran herramienta  Nota: Se cuenta como misma palabra &amp;ldquo;Machine&amp;rdquo; que &amp;ldquo;machine&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Ejemplo de redes neuronales</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 6. Redes neuronales
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+En este ejemplo se usa la librería Scikit learn(Sklearn) que según el video no es lo mejor para ello. Hay que mejores como TenserFlow pero requiere de más conocimientos de algebra lineal.
+En la siguiente imagen tenemos un ejemplo de diagrama de una red neuronal:</description>
+    </item>
+    
+    <item>
       <title>Entrenar algoritmo de regresion lineal</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</guid>
-      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 2 Algoritmos de regresión
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 2. Algoritmos de regresión
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
 Código#Se cargan las librerias
 # Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.model_selection import train_test_split # Algoritmos de regresión linea y ridge from sklearn.</description>
@@ -587,7 +612,7 @@ Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como 
       
       <guid>https://irodrigob.github.io/docs/sap/abap/transacciones/</guid>
       <description>Objetivo#Recopilación de las transacciones que me parecen interesantes.
-Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63.</description>
+Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63   DWDM Ejemplos controles de pantalla    Financieras    Transacción Descripción     GGB0 Transación global para validaciones   GGB1 Transación global para sustituciones   OV51 Documentos modificacion deudores    Monitarización SAP PO    Transacción Descripción     SXMB_MONI Monitor de mensajes XML.</description>
     </item>
     
     <item>

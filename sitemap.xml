@@ -59,7 +59,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/librerias/</loc>
-    <lastmod>2020-07-12T13:37:55+02:00</lastmod>
+    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
   </url>
   
   <url>
@@ -213,12 +213,20 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-07-14T22:12:00+02:00</lastmod>
+    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</loc>
     <lastmod>2020-07-14T22:12:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/</loc>
   </url>
   
   <url>
@@ -228,6 +236,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/estimador_incertidumbre/</loc>
+    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
   </url>
   
   <url>
@@ -322,7 +331,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/</loc>
-    <lastmod>2020-07-11T17:57:46+02:00</lastmod>
+    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
   </url>
   
   <url>
@@ -363,6 +372,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/</loc>
     <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/</loc>
   </url>
   
   <url>
@@ -412,6 +425,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</loc>
     <lastmod>2020-07-03T14:47:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/</loc>
   </url>
   
   <url>

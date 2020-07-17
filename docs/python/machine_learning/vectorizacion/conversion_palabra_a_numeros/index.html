@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ejemplo de conversión de palabras a números">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Ejemplo de conversión de palabras a números" />
+<meta property="og:description" content="Ejemplo de conversión de palabras a números" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/" />
+
+<title>Ejemplo de conversión de palabras a números | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.2e18413bd65b385e519508b247acc812700176cb5c783864bd92c99bfdaa918c.js" integrity="sha256-LhhBO9ZbOF5RlQiyR6zIEnABdstceDhkvZLJm/2qkYw="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/" class="">Arbol de decisiones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" class="">Ejemplo básico</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/" class="">Explicación sobreajuste</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/estimador_incertidumbre/" class="">Estimador incertidumbre</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/" class="">Redes neuronales</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/" class="">Ejemplo de redes neuronales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/" class="active">Ejemplo de conversión de palabras a números</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Ejemplo de conversión de palabras a números</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído del video 
+  <a href="https://www.youtube.com/watch?v=9IqWxJ1T57U">Machine Learning episodio 7. Vectorización</a>.</p>
+<p>Partimos de las siguiente dos frases:</p>
+<ol>
+<li>Vectorizar el texto es necesario en machine learning</li>
+<li>Machine learning es una gran herramienta</li>
+</ol>
+<p>El primer pasar es tokenizar. Tokenizar es dividir el texto en tokens o palabras.</p>
+<p>Los token los obtendremos de las palabras no repetidas que son:</p>
+<ol>
+<li>Vectorizar</li>
+<li>el</li>
+<li>texto</li>
+<li>es</li>
+<li>necesario</li>
+<li>en</li>
+<li>machine</li>
+<li>learning</li>
+<li>una</li>
+<li>gran</li>
+<li>herramienta</li>
+</ol>
+<p><em>Nota: Se cuenta como misma palabra &ldquo;Machine&rdquo; que &ldquo;machine&rdquo;</em></p>
+<p>Lo siguiente es contar el número de tokens obtenidos que son 11.</p>
+<p>A continuación se va a crear dos vectores, uno por cada frase, que tendrá como tamaño el número de palabras o tokens obtenidos. Y a cada posición se le va asignar el número de veces que se repite una palabra en la frase según su posición en el token obtenido no en la frase.</p>
+<p>El vector de la primera fase sería:</p>
+<ul>
+<li>[1,1,1,1,1,1,1,1,0,0,0] &ndash;&gt; Las primeras 8 palabras de la frase solo aparece una vez en el token obtenido, mientras que las tres últimas no aparecen.</li>
+</ul>
+<p>El vector de la segunda frase sería:</p>
+<ul>
+<li>[0,0,0,1,0,0,1,1,1,1,1] &ndash;&gt; En la 4 posición aparece un 1 es porque el token número 4 contiene el valor <em>es</em> que se repite una vez en la segunda frase. Lo mismo para el resto de 1. En la posición 7 del vector se correspondería a la palabra <em>machine</em> que se repite una vez en la segunda frase.</li>
+</ul>
+<p>Según como se ve en la vectorización se van a tener vectores muy similares cuando las frases son muy parecidas. Por ejemplo si hablamos de <em>Machine learning</em> vamos a ver que las posición 7 y 8 van a estar activados, de esta manera se van a encontrar similitudes en ambos.</p>
+<p>Es muy parecido a lo que hace con el juego de datos de <em>Iris</em> pero en este caso las características van a ser las palabras.</p>
+<p>En el ejemplo siguiente debido al volúmen de datos del set importado hay palabras extrañas. Lo ideal será limpiar los datos de estas palabras extrañas para evitar que procesen, para ello lo mejor
+es usar la  
+  <a href="/docs/python/machine_learning/librerias/">libreria NLTK</a> para ello. Con esta librería se preprocesarían dichas palabras para dej</p>
+<h1 id="código">
+  Código
+  <a class="anchor" href="#c%c3%b3digo">#</a>
+</h1>
+<p>Librerias de ejemplo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import sklearn 
+# Set de datos que viene con las características: Un cuerpo de texto y con etiquetas 
+# la categoria a la cual pertenece. La categoria es de que tema se esta hablando.
+from sklearn.datasets import fetch_20newsgroups
+# Separación de datos de entrenamiento y test
+from sklearn.model_selection import train_test_split
+# Algoritmo que va permitir vectorizar todo el texto que tenemos.    
+from sklearn.feature_extraction.text import CountVectorizer
+# Algoritmo de regresión logísticas para la clasificaci´
+from sklearn.linear_model import LogisticRegression
+</code></pre></div><p>Set de datos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Set de datos
+noticias = fetch_20newsgroups(subset=&#34;train&#34;)
+</code></pre></div><p>Ejemplo de datos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Podemos ver un ejemplo de datos que se va a procesar. Que se verá que es un corre electrónico
+print(&#34;Cuerpo del mensaje: &#34;, noticias.data[0])
+# Si hacemo los mismo para ver a que clasificación pertenec. Aparecerá el valor 7, que es la clasificación a la que pertenece.
+print(&#34;Clasificación: &#34;, noticias.target[0])
+</code></pre></div><p>Número de bloques de texto</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Cuantos bloques de texto hay en el modelo de datos
+print(&#34;Número de bloques de texto que hay: &#34;, len(noticias.data))
+</code></pre></div><p>Clasificaciones del set de datos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Nombre de las clasificaciones
+print(&#34;Nombres de las clasificaciones:&#34;, noticias.target_names)
+</code></pre></div><p>Variable para la vectorización</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Variable para la vectorización
+vector = CountVectorizer()
+</code></pre></div><p>Datos para la vectorización</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se le pasan los datos que tenemos en la variable vector.   
+vector.fit(noticias.data)
+</code></pre></div><p>Datos generados en el proceso de vectorización</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se visualizan los tokens generados de los datos pasados.print
+# Un token = una palabra única en todo el set de datos.
+print(&#34;Tokens generados: &#34;, vector.vocabulary_)
+</code></pre></div><p>Variable con el vector que contiene las repeticiones de cada fila de datos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se crea una variable con la bolsa de palabras. Esta bolsa es el vector donde se cuenta el número de repeticiones que tienen cada una de las palabras
+bolsa = vector.transform(noticias.data)
+</code></pre></div><p>Resultado de la vectorización</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Resultado de la matriz.
+# Devuelve un valor de 11314, 130105, 
+# 11314 es el número de datos, o filas, que hay en el set de datos. 
+# Y por cada fila tiene 130107 elementos, que es el número de palabras
+# distintas que hay en el modelo.
+print(&#34;Filas de datos x columnas: &#34;, bolsa.shape)
+</code></pre></div><p>Clasificaciones para el algoritmo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Ahora se crea la variable que contiene las clasificaciones
+bolsay = noticias.target
+</code></pre></div><p>Datos para entrenar y test</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se separán los datos para entrenamiento y test.
+X_ent, X_test, y_ent, y_test = train_test_split(bolsa, bolsay)
+</code></pre></div><p>Algoritmo de regresión</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Algoritmo de regresion
+lr = LogisticRegression()
+</code></pre></div><p>Resultado del entrenamiento</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se le pasan los datos para el entrenamiento
+lr.fit(X_ent, y_ent)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

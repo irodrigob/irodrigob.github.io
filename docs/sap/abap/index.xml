@@ -28,7 +28,7 @@ Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&am
       
       <guid>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</guid>
       <description>Objetivo#Recopilar clases de desarrollo que son interesante para tener ejemplos
-Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple    </description>
+Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple   SABAPDEMOS Ejemplos de todo tipo sobre ABAP. Desde rendimiento, CDS, push, etc..    </description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Lista#   Nota Descripción     1420281 Note 1420281 - CO-OM tools: SE16N: Dea
       
       <guid>https://irodrigob.github.io/docs/sap/abap/transacciones/</guid>
       <description>Objetivo#Recopilación de las transacciones que me parecen interesantes.
-Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63.</description>
+Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63   DWDM Ejemplos controles de pantalla    Financieras    Transacción Descripción     GGB0 Transación global para validaciones   GGB1 Transación global para sustituciones   OV51 Documentos modificacion deudores    Monitarización SAP PO    Transacción Descripción     SXMB_MONI Monitor de mensajes XML.</description>
     </item>
     
     <item>
