@@ -135,7 +135,7 @@ Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&am
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</guid>
       <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python.
-Entonros#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
+Entornos#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
 Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
     </item>
     
@@ -277,6 +277,16 @@ DATA lo_elemdesc type ref to cl_abap_elemdescr. Lo_elemdesc ?= cl_abap_typedescr
     </item>
     
     <item>
+      <title>Creación pedido de ventas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/</guid>
+      <description>Ejemplo#Este es un ejemplo muy básico de creación de un pedidos ventas.
+&amp;#34; Tipos de datos TYPES: tt_bapi_item TYPE STANDARD TABLE OF bapisditm WITH EMPTY KEY. TYPES: tt_bapi_itemx TYPE STANDARD TABLE OF bapisditmx WITH EMPTY KEY. TYPES: tt_bapi_partners TYPE STANDARD TABLE OF bapiparnr WITH EMPTY KEY. TYPES: tt_bapi_schedules TYPE STANDARD TABLE OF bapischdl WITH EMPTY KEY. TYPES: tt_bapi_schedulesx TYPE STANDARD TABLE OF bapischdlx WITH EMPTY KEY. DATA lv_ebeln TYPE vbak-vbeln.</description>
+    </item>
+    
+    <item>
       <title>Código ejemplo dentro del BOPF</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -342,7 +352,19 @@ Los token los obtendremos de las palabras no repetidas que son:
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 6. Redes neuronales
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
 En este ejemplo se usa la librería Scikit learn(Sklearn) que según el video no es lo mejor para ello. Hay que mejores como TenserFlow pero requiere de más conocimientos de algebra lineal.
-En la siguiente imagen tenemos un ejemplo de diagrama de una red neuronal:</description>
+Código#Librerias del proceso
+import sklearn # Set de datos from sklearn.</description>
+    </item>
+    
+    <item>
+      <title>Ejemplo KMeans</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/</guid>
+      <description>Introducción#Ejemplo extraído de Machine Learning episodio 8. KMeans.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+Como ejemplo para ver el funcionamiento de Kmeans se va utilizar el set de datos de iris. Pero en este caso solo se le va a pasar las características pero no las etiquetas para que clasifique en tres grupos los datos. Luego se le pasarán las etiquetas para ver como ha aprendido el algoritmo, pero no se pasarán las etiquetas para su aprendizaje.</description>
     </item>
     
     <item>
@@ -612,7 +634,7 @@ Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como 
       
       <guid>https://irodrigob.github.io/docs/sap/abap/transacciones/</guid>
       <description>Objetivo#Recopilación de las transacciones que me parecen interesantes.
-Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63   DWDM Ejemplos controles de pantalla    Financieras    Transacción Descripción     GGB0 Transación global para validaciones   GGB1 Transación global para sustituciones   OV51 Documentos modificacion deudores    Monitarización SAP PO    Transacción Descripción     SXMB_MONI Monitor de mensajes XML.</description>
+Transacciones#SAP R/3 o ECCGenerales    Transacción Descripción     I18N Internacionalizacion. Permite configurar el smartforms para usar word (a partir del EHP4 lo hace este report: RSCPSETEDITOR)   CG3Y Descarga de ficheros del servidor a local   CG3Z Subido de fichero al servidor desde local   SM01 Bloquea transacciones estándar   SLXT Guarda las traducciones hechas en la transacción SE63   DWDM Ejemplos controles de pantalla   BAPI Permite ver los objetos de negocio con sus respectiva funcionalidad.</description>
     </item>
     
     <item>

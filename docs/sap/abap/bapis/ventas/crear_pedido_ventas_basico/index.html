@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ejemplo básico de creación pedido de ventas">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Creación pedido de ventas" />
+<meta property="og:description" content="Ejemplo básico de creación pedido de ventas" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/" />
+<meta property="article:modified_time" content="2020-07-18T17:02:59+02:00" />
+<title>Creación pedido de ventas | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.123fbe82cef2c421ca17c938827f4af0a02d7931a905b3a79d8df7dfc54e1620.js" integrity="sha256-Ej&#43;&#43;gs7yxCHKF8k4gn9K8KAteTGpBbOnnY3338VOFiA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bopf/" class="collapsed ">BOPF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/" class="">Sentencias &gt;= 7.4</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/bucles/" class="">Bucles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/condiciones/" class="">Condiciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/conversiones/" class="">Conversiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/filtros/" class="">Filtros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/lectura_tablas_diccionario/" class="">Lectura tablas del diccionario</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/mapeo_campos/" class="">Mapeo de campos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/relleno_valores/" class="">Relleno de valores</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/sentencias_74/string_templates/" class="">String template</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/alv/" class="">ALV</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/archivelink/" class="collapsed ">Archivelink</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bapis/" class="collapsed ">BAPIs</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bapis/ventas/" class="">BAPIs del módulo comercial o ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/" class="active">Creación pedido de ventas</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/cds/" class="collapsed ">CDS</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/clases/" class="collapsed ">Clases</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/clases_desarrollo/" class="">Clases de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/funciones/" class="collapsed ">Funciones</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/idoc/" class="collapsed ">IDOC</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/notas/" class="">Notas de SAP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/programas/" class="collapsed ">Programas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/recursos_humanos/" class="collapsed ">Recursos humanos</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/rtts/" class="collapsed ">RTTS</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/transacciones/" class="">Transacciones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/utilidades_generales/" class="">Utilidades generales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Creación pedido de ventas</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ejemplo">Ejemplo</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="ejemplo">
+  Ejemplo
+  <a class="anchor" href="#ejemplo">#</a>
+</h1>
+<p>Este es un ejemplo muy básico de creación de un pedidos ventas.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&#34; Tipos de datos
+TYPES: tt_bapi_item TYPE STANDARD TABLE OF bapisditm WITH EMPTY KEY.
+TYPES: tt_bapi_itemx TYPE STANDARD TABLE OF bapisditmx WITH EMPTY KEY.
+TYPES: tt_bapi_partners TYPE STANDARD TABLE OF bapiparnr WITH EMPTY KEY.
+TYPES: tt_bapi_schedules TYPE STANDARD TABLE OF bapischdl WITH EMPTY KEY.
+TYPES: tt_bapi_schedulesx TYPE STANDARD TABLE OF bapischdlx WITH EMPTY KEY.
+
+DATA lv_ebeln TYPE vbak-vbeln.
+
+&#34; Estructuras de la BAPI
+DATA ms_bapi_header TYPE bapisdhd1.
+DATA ms_bapi_headerx TYPE bapisdhd1x.
+DATA mt_bapi_item TYPE tt_bapi_item.
+DATA mt_bapi_itemx TYPE tt_bapi_itemx.
+DATA mt_bapi_partners TYPE tt_bapi_partners.
+DATA mt_bapi_schedules TYPE tt_bapi_schedules.
+DATA mt_bapi_schedulesx TYPE tt_bapi_schedulesx.
+DATA mt_bapi_return TYPE bapiret2_t.
+
+
+&#34; Datos de cabecera del pedido
+ms_bapi_header-doc_type = &#39;ZP06&#39;. &#34; CLase pedido
+ms_bapi_headerx-doc_type = abap_true.
+ms_bapi_header-po_method = &#39;CSTK&#39;. &#34; Motivo de pedido
+ms_bapi_headerx-po_method = abap_true.
+ms_bapi_header-sales_org  = &#39;US01&#39;. &#34; Org. ventas
+ms_bapi_headerx-sales_org  = abap_true.
+ms_bapi_header-distr_chan = &#39;10&#39;. &#34; Canal
+ms_bapi_headerx-distr_chan = abap_true.
+ms_bapi_header-division   = &#39;PP&#39;. &#34; Sector
+ms_bapi_headerx-division   = abap_true.
+ms_bapi_header-req_date_h = sy-datum. &#34; Fecha preferente entrega
+ms_bapi_headerx-req_date_h = abap_true.
+ms_bapi_header-war_date = sy-datum. &#34; Fecha de garantia. Es opcional
+ms_bapi_headerx-war_date = abap_true.
+ms_bapi_header-purch_no_c = &#39;Pedido cliente&#39;.
+ms_bapi_headerx-purch_no_c = abap_true.
+
+ms_bapi_headerx-updateflag = &#39;I&#39;. &#34; Se va insertar el pedido
+
+&#34; Posiciones del pedido
+DATA(lv_cont) = 1.
+
+APPEND INITIAL LINE TO mt_bapi_item ASSIGNING FIELD-SYMBOL(&lt;ls_bapi_items&gt;).
+APPEND INITIAL LINE TO mt_bapi_itemx ASSIGNING FIELD-SYMBOL(&lt;ls_bapi_itemsx&gt;).
+
+&lt;ls_bapi_items&gt;-itm_number = lv_cont. &#34; Posición del pedido
+&lt;ls_bapi_itemsx&gt;-itm_number = lv_cont.
+&lt;ls_bapi_itemsx&gt;-updateflag = &#39;I&#39;. &#34; Se va insertar la posición
+&lt;ls_bapi_items&gt;-material = &#39;000000000065032815&#39;.
+&lt;ls_bapi_itemsx&gt;-material = abap_true.
+&lt;ls_bapi_items&gt;-target_qty = &#39;12.000&#39;.
+&lt;ls_bapi_itemsx&gt;-target_qty = abap_true.
+&lt;ls_bapi_items&gt;-target_qu = &#39;ST&#39;.
+&lt;ls_bapi_itemsx&gt;-target_qu = abap_true.
+
+&#34; La cantidad que se informa en la posición hay que indicarla también en el reparto
+APPEND INITIAL LINE TO mt_bapi_schedules ASSIGNING FIELD-SYMBOL(&lt;ls_bapi_schedules&gt;).
+APPEND INITIAL LINE TO mt_bapi_schedulesx ASSIGNING FIELD-SYMBOL(&lt;ls_bapi_schedulesx&gt;).
+
+&lt;ls_bapi_schedules&gt;-itm_number = &lt;ls_bapi_items&gt;-itm_number.
+&lt;ls_bapi_schedulesx&gt;-itm_number = &lt;ls_bapi_items&gt;-itm_number.
+&lt;ls_bapi_schedules&gt;-req_qty = &lt;ls_bapi_items&gt;-target_qty.
+&lt;ls_bapi_schedulesx&gt;-req_qty = abap_true.
+
+&#34; Partners
+&#34; Destinatario
+APPEND INITIAL LINE TO mt_bapi_partners ASSIGNING FIELD-SYMBOL(&lt;ls_partner&gt;).
+&lt;ls_partner&gt;-partn_role = &#39;WE&#39;.
+&lt;ls_partner&gt;-partn_numb = &#39;0003331395&#39;.
+
+&#34; Solicitante
+APPEND INITIAL LINE TO mt_bapi_partners ASSIGNING &lt;ls_partner&gt;.
+&lt;ls_partner&gt;-partn_role = &#39;AG&#39;.
+&lt;ls_partner&gt;-partn_numb = &#39;0003331395&#39;.
+
+CALL FUNCTION &#39;BAPI_SALESORDER_CREATEFROMDAT2&#39;
+  EXPORTING
+    order_header_in     = ms_bapi_header
+    order_header_inx    = ms_bapi_headerx
+  IMPORTING
+    salesdocument       = lv_ebeln
+  TABLES
+    return              = mt_bapi_return[]
+    order_items_in      = mt_bapi_item
+    order_items_inx     = mt_bapi_itemx
+    order_partners      = mt_bapi_partners
+    order_schedules_in  = mt_bapi_schedules
+    order_schedules_inx = mt_bapi_schedulesx.
+
+&#34; Nota la clase de mensajes &#39;V4&#39; es propia de la BAPI, se recomienda excluirlos para saber
+&#34; no tener mensajes que no aportan nada
+READ TABLE mt_bapi_return ASSIGNING FIELD-SYMBOL(&lt;ls_return&gt;) WITH KEY type = &#39;E&#39;.
+IF sy-subrc NE 0.
+  CALL FUNCTION &#39;BAPI_TRANSACTION_COMMIT&#39;.
+
+  WRITE:/ &#39;Pedido creado: &#39;, lv_ebeln.
+ELSE.
+  CALL FUNCTION &#39;BAPI_TRANSACTION_ROLLBACK&#39;.
+
+  WRITE:/ &#39;Se ha producido el error:&#39;, &lt;ls_return&gt;-message.
+ENDIF.
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ejemplo">Ejemplo</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algoritmos de aprendizaje no supervisado on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/</link>
+    <description>Recent content in Algoritmos de aprendizaje no supervisado on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ejemplo KMeans</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/</guid>
+      <description>Introducción#Ejemplo extraído de Machine Learning episodio 8. KMeans.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+Como ejemplo para ver el funcionamiento de Kmeans se va utilizar el set de datos de iris. Pero en este caso solo se le va a pasar las características pero no las etiquetas para que clasifique en tres grupos los datos. Luego se le pasarán las etiquetas para ver como ha aprendido el algoritmo, pero no se pasarán las etiquetas para su aprendizaje.</description>
+    </item>
+    
+  </channel>
+</rss>

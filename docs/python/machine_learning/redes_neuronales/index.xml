@@ -19,7 +19,8 @@
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 6. Redes neuronales
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
 En este ejemplo se usa la librería Scikit learn(Sklearn) que según el video no es lo mejor para ello. Hay que mejores como TenserFlow pero requiere de más conocimientos de algebra lineal.
-En la siguiente imagen tenemos un ejemplo de diagrama de una red neuronal:</description>
+Código#Librerias del proceso
+import sklearn # Set de datos from sklearn.</description>
     </item>
     
   </channel>

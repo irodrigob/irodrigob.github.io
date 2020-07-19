@@ -14,12 +14,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/</loc>
-    <lastmod>2020-06-28T17:02:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://irodrigob.github.io/docs/sap/abap/cds/</loc>
-    <lastmod>2020-06-22T22:32:37+02:00</lastmod>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -59,7 +54,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/librerias/</loc>
-    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -69,17 +64,12 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/</loc>
-    <lastmod>2020-07-11T17:57:46+02:00</lastmod>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/</loc>
     <lastmod>2020-06-17T22:40:56+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://irodrigob.github.io/docs/python/sentencias/</loc>
-    <lastmod>2020-07-11T17:57:46+02:00</lastmod>
   </url>
   
   <url>
@@ -98,13 +88,18 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/alv/</loc>
     <lastmod>2020-06-28T17:02:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</loc>
-    <lastmod>2020-07-11T17:57:46+02:00</lastmod>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -119,12 +114,22 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/</loc>
-    <lastmod>2020-07-12T13:37:55+02:00</lastmod>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/archivelink/</loc>
     <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bapis/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -167,13 +172,18 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/cds/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/clases/</loc>
     <lastmod>2020-06-26T19:48:02+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</loc>
-    <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
@@ -197,6 +207,11 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/bopf/plantillas_codigo_interno/</loc>
     <lastmod>2020-06-26T19:48:02+02:00</lastmod>
   </url>
@@ -213,7 +228,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -223,20 +238,27 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/</loc>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</loc>
-    <lastmod>2020-07-11T17:57:46+02:00</lastmod>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/estimador_incertidumbre/</loc>
-    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -341,7 +363,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/</loc>
-    <lastmod>2020-07-06T22:45:40+02:00</lastmod>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
@@ -376,11 +398,12 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/</loc>
-    <lastmod>2020-07-11T17:57:46+02:00</lastmod>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>
@@ -391,6 +414,11 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/rtts/</loc>
     <lastmod>2020-06-25T22:45:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/sentencias/</loc>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -409,7 +437,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/transacciones/</loc>
-    <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
   </url>
   
   <url>
@@ -429,6 +457,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/</loc>
+    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
   </url>
   
   <url>

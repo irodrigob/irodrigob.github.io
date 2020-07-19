@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ejemplo Kmeans">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Ejemplo KMeans" />
+<meta property="og:description" content="Ejemplo Kmeans" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/" />
+<meta property="article:modified_time" content="2020-07-18T17:02:59+02:00" />
+<title>Ejemplo KMeans | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.123fbe82cef2c421ca17c938827f4af0a02d7931a905b3a79d8df7dfc54e1620.js" integrity="sha256-Ej&#43;&#43;gs7yxCHKF8k4gn9K8KAteTGpBbOnnY3338VOFiA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/" class="">Algoritmos de aprendizaje no supervisado</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/" class="active">Ejemplo KMeans</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/" class="">Arbol de decisiones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" class="">Ejemplo básico</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/" class="">Explicación sobreajuste</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/estimador_incertidumbre/" class="">Estimador incertidumbre</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/" class="">Redes neuronales</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/" class="">Ejemplo de redes neuronales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/" class="">Ejemplo de conversión de palabras a números</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Ejemplo KMeans</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído de 
+  <a href="https://www.youtube.com/watch?v=8aUqS3Ge4Q4">Machine Learning episodio 8. KMeans</a>.</p>
+<p>El ejemplo esta creado el <em>Jupiter Notebool</em> y se irá poniendo el código de las distintas celdas.</p>
+<p>Como ejemplo para ver el funcionamiento de Kmeans se va utilizar el set de datos de <em>iris</em>. Pero en este caso solo se le va a pasar las características pero no las etiquetas para que clasifique en tres grupos los datos. Luego se le pasarán las etiquetas para ver como ha aprendido el algoritmo, pero no se pasarán las etiquetas para su aprendizaje.</p>
+<p>En este ejemplo es un ejemplo de como este tipo de algoritmo, como se explica en el índice, es de prueba y error. Ya que variando el número de cluster o iteracciones la capacidad de aprendizaje aumenta o disminuye. En este tipo de cada lo mejor es poner el algorimo dentro de un FOR para que se pueda ir viendo cual es la combinación más idónea.</p>
+<p>Una vez de las ventajas del set de datos de <em>iris</em> es que tiene a que etiqueta pertnece cada flor y es fácil hacer comprobaciones. En caso de no disponer dicho valor comparativo entonces casí hay que meterse en cada valor para ir viendo como lo clasifico. Por ejemplo, si en el set datos hubiese una fecha, de cuando se inicio la medición, posiblemente estaría agrupando por dicho campo y afectaría a la clasificación. En este caso habría que eliminar dicha información para mejor el proceso.</p>
+<p>Este tipo de algoritmo es mucho de prueba y error e ir interpretando los datos para ir puliendolos para que el algoritmo clasifique mejor.</p>
+<h1 id="código">
+  Código
+  <a class="anchor" href="#c%c3%b3digo">#</a>
+</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Algoritmo aprendizaje no supervisado
+from sklearn.cluster import KMeans
+# Datos para el entrenamiento
+from sklearn import datasets
+# Libreria para ver que tal aprendido el algoritmo
+from sklearn import metrics
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Datos de iris
+iris = datasets.load_iris()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Características de los datos. 
+# Cada fila es una flor y cada columna es el grosor o longitud del petalo y cepalo
+X = iris.data
+# Etiquetas de los datos. Que indica a que especie pertenece cada flor de los datos anteriores.
+Y = iris.target
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Datos de las carácterísticas
+print(&#34;Características: &#34;, X)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Datos de las etiquetas
+print(&#34;Etiquetas: &#34;, Y)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Algoritmo KMeans. Donde se le indica:
+# que dividida los datos en dos grupos o cluster. Nota el set de datos tiene 3 grupos
+# pero es para se vea la diferencia.
+# Y haga 3000 iteracciones para ajustar los centroides lo máximo posible
+km = KMeans(n_clusters=4,max_iter=3000)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Entrenamiento del algoritmo
+km.fit(X)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Es la predicción que indicará a que grupo pertenece los datos pasados.
+predicciones = km.predict(X)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Predicciones que realiza. El valor 0 indica el primer grupo, el 1 al segundo y así sucesivamente
+print(&#34;Predicción realizada por el algoritmo: &#34;, predicciones)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Variable para que compare la predicción realizada versus las etiquetas de los datos
+score = metrics.adjusted_rand_score(y, predicciones)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Resultado de hace 2 cluster y 3000 iteracciones arroja un resultado del 53% de acierto.
+# Si se cambia el algoritmo a 3 cluster el % sube al 73%
+# Si el número de cluster se sube a 4, el % disminuye al 65%. 
+# Con lo cual el número de grupos/cluster idónea es 3.
+print(&#34;Comparativa etiqueta vs predicción: &#34;, score)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

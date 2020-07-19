@@ -9,12 +9,12 @@
 <meta property="og:description" content="Ejemplo de redes neuronales usando Sklearn" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/" />
-
+<meta property="article:modified_time" content="2020-07-18T17:02:59+02:00" />
 <title>Ejemplo de redes neuronales | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.2e18413bd65b385e519508b247acc812700176cb5c783864bd92c99bfdaa918c.js" integrity="sha256-LhhBO9ZbOF5RlQiyR6zIEnABdstceDhkvZLJm/2qkYw="></script>
+<script defer src="/en.search.min.123fbe82cef2c421ca17c938827f4af0a02d7931a905b3a79d8df7dfc54e1620.js" integrity="sha256-Ej&#43;&#43;gs7yxCHKF8k4gn9K8KAteTGpBbOnnY3338VOFiA="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -152,23 +152,6 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
     <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
   
 
@@ -185,6 +168,37 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/python/machine_learning/librerias/" class="">Librerias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/" class="">Algoritmos de aprendizaje no supervisado</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/" class="">Ejemplo KMeans</a>
+  
+
+        </li>
+      
+    
+  </ul>
   
 
         </li>
@@ -356,6 +370,23 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
   
 
         </li>
@@ -569,23 +600,6 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://www.youtube.com/watch?v=7wC9YDImpyY">Machine Learning episodio 6. Redes neuronales</a></p>
 <p>El ejemplo esta creado el <em>Jupiter Notebool</em> y se irá poniendo el código de las distintas celdas.</p>
 <p>En este ejemplo se usa la librería <em>Scikit learn(Sklearn)</em> que según el video no es lo mejor para ello. Hay que mejores como <em>TenserFlow</em> pero requiere de más conocimientos de algebra lineal.</p>
-<p>En la siguiente imagen tenemos un ejemplo de diagrama de una red neuronal:</p>
-<p>
-  <img src="/images/python/machine_learning/redes_neuronales/diagrama_red_neuronal.png" alt="Diagrama red neuronal" /></p>
-<p>En este diagrama tenemos cuatro capas de nodos interconectados entre ellos.</p>
-<p>Los nodos de la izquierda del todo son los datos son los que se van a usar para alimentar el algortimo.</p>
-<p>Las capas ocultas son aquellas capas que no son ni de entrada ni de salida. Se llaman así porque se no se saben muy bien lo que hacen, solo que se pasan información entre ellas para ir alterando los valores para obtener predicciones más acertadas en el futuro.</p>
-<p>Las capas de salida son las que devolverán los datos del algoritmo. En el caso de los datos de prueba de <em>Iris</em>(clasificación de las flores) serían el tipo de flor a la que pertenece.</p>
-<p>Cada nodo del diagrama tiene un peso y un valor que se lo irá pasando al resto de nodos. Por ejemplo si estamos en el primer nodo de la segunda capa (la de la capa oculta), este nodo va a recibir información de los cuatro nodo de entrada. La información que recibe se divide en dos: Por un lado el valor que es la <em>X</em>, de la formula de la imagen, y su peso que es la <em>W</em> al que se le multiplará a <em>X</em>. A ese valor, que indicará que tan importante es dicho valor, se le sumará <em>B</em>. <em>B</em> es el <em>bias</em>, o sesgo, en castellano. Esto indicará que tan propensa es el nodo a activarse, como una especie de interruptor.</p>
-<p>En este ejemplo:</p>
-<p>
-  <img src="/images/python/machine_learning/redes_neuronales/formula_activacion_nodo.png" alt="Formula de activación" /></p>
-<p>indica que <em>Y</em> se activará si el valor obtenido supera el <em>0,5</em>. Con los valores de la imagen el nodo no se activará y no enviará información a las siguientes capas.</p>
-<p>Ahora si cambiamos los valores que recibe por los siguientes:
-
-  <img src="/images/python/machine_learning/redes_neuronales/formula_activacion_nodo2.png" alt="Formula de activación 2" /></p>
-<p>El nodo si que se va activar, y enviará información a la siguiente capa.</p>
-<p>Volviendo al diagrama de la red. Lo que hace el algoritmo de entrenamiento es como sabe las respuestas que debe esta recibiendo es ir modificando los valores de <em>W</em> y <em>B</em> para que las últimas capas de salida se activen cuando sea necesario. De esta manera es como el algoritmo aprende.</p>
 <h1 id="código">
   Código
   <a class="anchor" href="#c%c3%b3digo">#</a>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BAPIs del módulo comercial o ventas on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/</link>
+    <description>Recent content in BAPIs del módulo comercial o ventas on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/abap/bapis/ventas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creación pedido de ventas</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/bapis/ventas/crear_pedido_ventas_basico/</guid>
+      <description>Ejemplo#Este es un ejemplo muy básico de creación de un pedidos ventas.
+&amp;#34; Tipos de datos TYPES: tt_bapi_item TYPE STANDARD TABLE OF bapisditm WITH EMPTY KEY. TYPES: tt_bapi_itemx TYPE STANDARD TABLE OF bapisditmx WITH EMPTY KEY. TYPES: tt_bapi_partners TYPE STANDARD TABLE OF bapiparnr WITH EMPTY KEY. TYPES: tt_bapi_schedules TYPE STANDARD TABLE OF bapischdl WITH EMPTY KEY. TYPES: tt_bapi_schedulesx TYPE STANDARD TABLE OF bapischdlx WITH EMPTY KEY. DATA lv_ebeln TYPE vbak-vbeln.</description>
+    </item>
+    
+  </channel>
+</rss>
