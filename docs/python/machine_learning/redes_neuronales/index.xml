@@ -16,11 +16,21 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/</guid>
-      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 6. Redes neuronales
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 6. Redes neuronales.
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
 En este ejemplo se usa la librería Scikit learn(Sklearn) que según el video no es lo mejor para ello. Hay que mejores como TenserFlow pero requiere de más conocimientos de algebra lineal.
 Código#Librerias del proceso
 import sklearn # Set de datos from sklearn.</description>
+    </item>
+    
+    <item>
+      <title>Tipos de redes neuronales</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/</guid>
+      <description>Introducción#Ejemplo extraído de ¿Como funcionan las redes neuronales?. Se pondrán imagens obtenidas del video para explicar mejor el funcionamiento tal como lo hace en el video.
+Explicación#Como se explica en el índice de la página las redes neuronales se basan en la neuronas del cerebro humano. Una neurona esta interconectada con otras neuronas y responde cuando recibe un estimulo eléctrico. Cuando lo recibe decide si tiene que activarse o no.</description>
     </item>
     
   </channel>
