@@ -89,7 +89,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/</loc>
-    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>
@@ -223,7 +223,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-07-19T16:49:45+02:00</lastmod>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>
@@ -238,7 +238,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/</loc>
-    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>
@@ -258,6 +258,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/rtts/estructuras/</loc>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>
@@ -303,6 +304,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/gateway/</loc>
     <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/guardar_modelos_entrenados/</loc>
   </url>
   
   <url>
@@ -362,7 +367,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/</loc>
-    <lastmod>2020-07-17T21:02:16+02:00</lastmod>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>
@@ -386,6 +391,14 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/procesamiento_datos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/programas/</loc>
     <lastmod>2020-06-27T17:08:15+02:00</lastmod>
   </url>
@@ -397,7 +410,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/</loc>
-    <lastmod>2020-07-18T17:02:59+02:00</lastmod>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>
@@ -436,6 +449,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/</loc>
+    <lastmod>2020-07-20T18:01:15+02:00</lastmod>
   </url>
   
   <url>

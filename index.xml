@@ -457,6 +457,17 @@ Letra máxima: uLetra mínima:  LEN &amp;ndash;&amp;gt; Devuelve el numéro de 
     </item>
     
     <item>
+      <title>Guardar modelos entrenados</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/guardar_modelos_entrenados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/guardar_modelos_entrenados/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 9. Cómo guardar un modelo entrenado.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+En esta página veremos como se guardan los modelos entrenados para no tener que hacer entrenamientos cada vez que queremos hacer algo. En los ejemplos entrenar algoritmos se hace en segundos, pero en casos reales este entrenamiento puede durar dias o semnanas.</description>
+    </item>
+    
+    <item>
       <title>Información general</title>
       <link>https://irodrigob.github.io/docs/sap/abap/archivelink/informacion_general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -603,6 +614,18 @@ Lista#   Nota Descripción     1420281 Note 1420281 - CO-OM tools: SE16N: Dea
  Sumar: + Resta: - División: / Multiplicación: * Elevar a la potencia: ** Obtener el resto: %  Ejemplos:
 d = a * b print(&amp;#34;Resultado&amp;#34;, d) d = ( a + b ) / a print(&amp;#34;Resultado:&amp;#34;, d) Resultado:
 Resultado 416.15999999999997Resultado: 3.89String#Con los string podemos contaner y incluso hacer que un caracter aparezca n veces.</description>
+    </item>
+    
+    <item>
+      <title>Procesamiento de datos con PCA</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 10. Procesamiento de datos (PCA). De este mismo video se extraerán fotos para aclarar mejor conceptos tal como hace el video.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+Explicación#La librería PCA se utiliza para principalmente dos cosas:
+ Reducir el ruido que hay en nuestros datos Poder ver los datos que están en muchas dimensiones en solo dos dimensiones.</description>
     </item>
     
     <item>

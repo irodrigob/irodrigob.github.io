@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Procesamiento de datos con PCA">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Procesamiento de datos con PCA" />
+<meta property="og:description" content="Procesamiento de datos con PCA" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/" />
+
+<title>Procesamiento de datos con PCA | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.9849246e446ba0b059baf00ffeb083a83634c0bed74e1980bb964a0370f8a410.js" integrity="sha256-mEkkbkRroLBZuvAP/rCDqDY0wL7XThmAu5ZKA3D4pBA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/" class="">Algoritmos de aprendizaje no supervisado</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/" class="">Ejemplo KMeans</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/" class="">Arbol de decisiones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" class="">Ejemplo básico</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/" class="">Explicación sobreajuste</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/estimador_incertidumbre/" class="">Estimador incertidumbre</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/guardar_modelos_entrenados/" class="">Guardar modelos entrenados</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/procesamiento_datos/" class="">Procesamiento de datos</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/" class="active">Procesamiento de datos con PCA</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/" class="">Redes neuronales</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/" class="">Ejemplo de redes neuronales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/" class="">Tipos de redes neuronales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/" class="">Ejemplo de conversión de palabras a números</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Procesamiento de datos con PCA</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#explicación">Explicación</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído del video 
+  <a href="https://www.youtube.com/watch?v=b1NGM3IbRcI">Machine Learning episodio 10. Procesamiento de datos (PCA)</a>. De este mismo video se extraerán fotos para aclarar mejor conceptos tal como hace el video.</p>
+<p>El ejemplo esta creado el <em>Jupiter Notebool</em> y se irá poniendo el código de las distintas celdas.</p>
+<h1 id="explicación">
+  Explicación
+  <a class="anchor" href="#explicaci%c3%b3n">#</a>
+</h1>
+<p>La librería PCA se utiliza para principalmente dos cosas:</p>
+<ol>
+<li>Reducir el ruido que hay en nuestros datos</li>
+<li>Poder ver los datos que están en muchas dimensiones en solo dos dimensiones. En muchos set de datos hay treinta características distintas que a nivel gráfico es muy complicado de ver y entender. Con PCA permite reducir las treinta dimensiones en tal solo dos lo que permite ver correlaciones que nos pueda interesar o entender mejor la información.</li>
+</ol>
+<p>Para enteder como funciona el algoritmo partimos de la siguiente imagen:</p>
+<p>
+  <img src="/images/python/machine_learning/procesamiento_datos/pca_datos_ejemplo.png" alt="Datos ejemolos" /></p>
+<p>Tenemos dos ejes que representan dos características. Lo primero que va hacer detectar PCA es en que dirección hay más variedad de datos que sería la siguiente:</p>
+<p>
+  <img src="/images/python/machine_learning/procesamiento_datos/pca_direccion_variedad_datos.png" alt="Dirección de variedad de datos" /></p>
+<p>Esta primera línea la llama <em>Principal component 1</em>(PCA1). Lo siguiente que va hacer es encontrar un eje ortoganal, es decir a 90º grados, el cual intentar maximizar la variedad de datos que sería el que se ve en la siguiente imagen en color verde:</p>
+<p>
+  <img src="/images/python/machine_learning/procesamiento_datos/pca_eje_ortogonal.png" alt="Eje ortogonal" /></p>
+<p>Este nueva dirección la va a llamar <em>PCA2</em>. Lo siguiente que hará PCA es tomar estos dos ejes como nuevos parámetros para poderlos mostrar gráficamente todos los puntos que existen. De esta manera va a poder hacer una representación abstracta de nuestros datos.</p>
+<h1 id="código">
+  Código
+  <a class="anchor" href="#c%c3%b3digo">#</a>
+</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import sklearn
+# Librería para representar gráficamente los datos
+import mglearn
+# Datos sobre el cancer donde tiene 30 características para
+# saber si un tumor es maligno o benigno
+from sklearn.datasets import load_breast_cancer
+# Librería para la representación gráfica
+import matplotlib.pyplot as plt
+# Algoritmo PCA
+from sklearn.decomposition import PCA
+# Permite ver las gráficas en nuestro editor jupyter
+%matplotlib inline
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Ejemplo de lo que hace PCA
+# En el recuadro &#34;original data&#34; se ve como encuentra los dos ejes
+# explicados anteriormente. El largo es el component 1 y el corto el 2
+# Aquí se ve mejor el eje ortogonal
+# En el recuadro &#34;transformed data&#34; lo que hace es ver los datos horizontalmente
+# lo que hace es retar el valor promedio a cada datos haciendo que los datos
+# se centren en el eje 0.
+# En el recuadro &#34;transformed data...&#34; lo que hace es representar los datos
+# con el eje horizontal del component 1. El segundo eje va ser las caracaterísticas
+# (feature 2) de la primera gráfica. Lo que se ve es una línea recta de los datos
+# que se ven la segunda gráfica al eje del component 1. 
+# En el recuadro &#34;back-rotation...&#34; lo que hace es sumar de nuevo el promedio
+# que le resto en la segunda gráfica y lo va rotar de nuevo. Con lo cual
+# queda como en la primera imagen pero eliminando el ruido que habia.
+mglearn.plots.plot_pca_illustration()
+</code></pre></div><p>Imagen con la imagen que devuelve el ejemplo:
+
+  <img src="/images/python/machine_learning/procesamiento_datos/pca_funcionamiento_algoritmo.png" alt="Funcionamiento algoritmo" /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Datos para entrenar el algoritmo
+cancer = load_breast_cancer()
+print(&#34;Valor de las características: &#34;, cancer.feature_names)
+print(&#34;Número de características: &#34;, cancer.feature_names.shape)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Algoritmo PCA donde se le indica el número de ejes. 
+# El eje 1 será el que más variedad de datos talc omo se ve en el gráfico
+# de ejemplo. El eje 2 que es el ortogonal.
+pca = PCA(n_components=2)
+
+# Datos para el entrenamiento algoritmo
+pca.fit(cancer.data)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Genera una variable con los datos transformados.
+# Es decir, transforma las 30 características a las 2 que se
+# le ha indicado
+transformada = pca.transform(cancer.data)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Comparativa de las características originales versus la transformada
+print(&#34;Mediciones, características de los datos originales: &#34;, cancer.data.shape)
+print(&#34;Mediciones, características de los datos procesados: &#34;, transformada.shape)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Al gráfico se le pasa como eje X los valores principal, y en el 1 las características
+mglearn.discrete_scatter(transformada[:,0],transformada[:,1], cancer.target)
+plt.legend(cancer.target_names,loc=&#39;best&#39;)
+plt.xlabel(&#34;PCA 1&#34;)
+plt.ylabel(&#34;PCA 2&#34;)
+</code></pre></div><p>El gráfico que aparecerá será el siguiente:
+
+  <img src="/images/python/machine_learning/procesamiento_datos/pca_resultados_datos_cancer.png" alt="Resultados datos del cancer" /></p>
+<p>Este gráfico es una abstracción de los datos. En el se puede ver un comportamiento en los datos. Los triangulos narajanjas son tumores benignos y están agrupados en el lado izquierdo. Los triangulos azules son los tumores malignos y están agrupados en el lado derecho pero más dispersos algunos puntos.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Para ver cuan de importante es procesar los datos y para ver 
+# se va usar la función MinMaxScaler que permitira ver los datos en una escalar similar, 
+# que será un rango de 0 a 1. De esta manera se puede validar que no se procesando datos
+# con valores muy pequeños contra valores muy grandes.
+from sklearn.preprocessing import MinMaxScaler
+escala = MinMaxScaler()
+# Pasamos los datos a la función
+escala.fit(cancer.data)
+# transformamos los datos para que todos los datos esten en rango similar, de 0 a 1.
+escalada = escala.transform(cancer.data)
+# Se le pasa los datos tratados al algoritmo PCA
+pca.fit(escalada)
+transformada=pca.transform(escalada)
+mglearn.discrete_scatter(transformada[:,0],transformada[:,1], cancer.target)
+plt.legend(cancer.target_names,loc=&#39;best&#39;)
+plt.gca()
+plt.xlabel(&#34;PCA 1&#34;)
+plt.ylabel(&#34;PCA 2&#34;)
+</code></pre></div><p>El resultado del gráfico es el siguiente:</p>
+<p>
+  <img src="/images/python/machine_learning/procesamiento_datos/pca_resultados_datos_rango_simiar.png" alt="Resultados datos con rango similar" /></p>
+<p>En este gráfico vemos que el rango del eje Y y X se han reducido respecto a los datos originales. Aquí también se puede ver que hay una correlación donde los tumores benignos están hacía la izquierda y los malignos a la derecha. Con lo cual los
+datos van a servir para hacer predicciones. A partir de aquí se puede decidir si el algoritmo lo entrenamos con la data real o con la transformada. Ya que si le enviamos los datos tratados claramente el algoritmo va trazar una línea que separe los datos de la izquierda y derecha para tratar los valores.</p>
+<p>Finalmente dos sentencias para ver los datos tratados versus los datos sin tratar.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Los datos escalados se verán que van siempre de 0 a 1.
+print(&#34;Ejemplo de datos escalados: &#34;, escalada)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Aquí los datos son más dispersos lo que puede afectar al tratamiento en los algoritmos de clasificación
+print(&#34;Ejemplo de datos sin escalar: &#34;, cancer.data)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#explicación">Explicación</a></li>
+    <li><a href="#código">Código</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

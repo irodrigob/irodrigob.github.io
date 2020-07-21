@@ -33,5 +33,16 @@ Entornos#Los entornos, creo que hasta tres entornos se pueden usar, permiten 
 Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
     </item>
     
+    <item>
+      <title>Guardar modelos entrenados</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/guardar_modelos_entrenados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/guardar_modelos_entrenados/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 9. Cómo guardar un modelo entrenado.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+En esta página veremos como se guardan los modelos entrenados para no tener que hacer entrenamientos cada vez que queremos hacer algo. En los ejemplos entrenar algoritmos se hace en segundos, pero en casos reales este entrenamiento puede durar dias o semnanas.</description>
+    </item>
+    
   </channel>
 </rss>
