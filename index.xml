@@ -75,15 +75,15 @@ Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git
     </item>
     
     <item>
-      <title>Librerias</title>
+      <title>Librerias y paquetes</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/librerias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/librerias/</guid>
-      <description>Introducción#Librerias para poder usar el Machine Learning.
+      <description>Introducción#Librerias y pawuetes para poder usar el Machine Learning.
 Los pasos para instalar las librerías esta explicado en la página de Anaconda.
 Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.
-Instalación#No se instalar porque viene incluido con Anaconda:</description>
+Instalación#No se instala porque viene incluido con Anaconda:</description>
     </item>
     
     <item>
@@ -650,6 +650,17 @@ Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se r
 Los string template son útiles porque simplifican el tratamiento de string o conversiones de campo.
 De momento voy a poner en enlace a la ayuda de SAP porque tiene muy buenos ejemplo. Los iré poniendo aquí porque a veces cuesta encontrarlos.
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.</description>
+    </item>
+    
+    <item>
+      <title>Subir datos propios</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/set_datos_propios/subir_datos_propios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/set_datos_propios/subir_datos_propios/</guid>
+      <description>Introducción#Ejemplo extraído del video Machine Learning episodio 11. ¿Cómo subir tu set de datos propio?.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+Explicación#En el video se muestra un excel con los datos iris con multidud de valores. Para este página se ha creado un excel sencillo con la misma estructura pero con datos limitados e inventados.</description>
     </item>
     
     <item>

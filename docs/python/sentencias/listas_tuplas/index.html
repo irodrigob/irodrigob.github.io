@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.9849246e446ba0b059baf00ffeb083a83634c0bed74e1980bb964a0370f8a410.js" integrity="sha256-mEkkbkRroLBZuvAP/rCDqDY0wL7XThmAu5ZKA3D4pBA="></script>
+<script defer src="/en.search.min.883521fa3e916e953afb4655186c30147681ca6464791805243c0733128f337b.js" integrity="sha256-iDUh&#43;j6RbpU6&#43;0ZVGGwwFHaBymRkeRgFJDwHMxKPM3s="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -348,7 +348,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/gateway/" class="">Gateway</a>
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
   
 
           
@@ -356,20 +356,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/docs/sap/gateway/informacion_general/" class="">Información general</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -624,6 +610,19 @@ print(&#34;Contenido &#34;, lista[3:5])
 print(&#34;Contenido &#34;, lista[:5])
 </code></pre></div><p>Resultado:</p>
 <pre><code>Contenido  [1, 2, 3, 4, 5]
+</code></pre><p>Si queremos leer todos los valores menos el último se puede hacer de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[1,2,3,4,5,6]
+print(&#34;Contenido &#34;, lista[:-1])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Contenido  [1, 2, 3, 4, 5]
+</code></pre><p>Si ponemos menos saldría <em>-2</em></p>
+<pre><code>Contenido  [1, 2, 3, 4]
+</code></pre><p>Y así hasta el inicio del vector.</p>
+<p>Si queremos leer el último registro se puede hacer así:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">lista=[1,2,3,4,5,6]
+print(&#34;Contenido &#34;, lista[-1])
+</code></pre></div><p>Resultado:</p>
+<pre><code>Contenido  6
 </code></pre><h2 id="tuplas">
   Tuplas
   <a class="anchor" href="#tuplas">#</a>
