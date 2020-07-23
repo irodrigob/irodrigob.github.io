@@ -54,7 +54,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/librerias/</loc>
-    <lastmod>2020-07-21T19:41:37+02:00</lastmod>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -153,6 +153,10 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/sap/BW/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/python/sentencias/cadenas/</loc>
     <lastmod>2020-07-11T17:57:46+02:00</lastmod>
   </url>
@@ -223,7 +227,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-07-21T19:41:37+02:00</lastmod>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -303,7 +307,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/gateway/</loc>
-    <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -329,6 +333,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/informacion_general/</loc>
     <lastmod>2020-07-06T18:06:11+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/sap/BW/informacion_general/</loc>
   </url>
   
   <url>
@@ -358,7 +366,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/</loc>
-    <lastmod>2020-07-15T18:08:54+02:00</lastmod>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -393,7 +401,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/procesamiento_datos/</loc>
-    <lastmod>2020-07-21T19:41:37+02:00</lastmod>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -438,6 +446,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/set_datos_propios/</loc>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -447,6 +456,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/set_datos_propios/subir_datos_propios/</loc>
+    <lastmod>2020-07-22T18:55:33+02:00</lastmod>
   </url>
   
   <url>
@@ -456,6 +466,10 @@
   
   <url>
     <loc>https://irodrigob.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/</loc>
   </url>
   
   <url>
@@ -481,6 +495,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</loc>
     <lastmod>2020-07-03T14:47:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</loc>
   </url>
   
   <url>

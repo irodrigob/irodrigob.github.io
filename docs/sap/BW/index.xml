@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BW on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/sap/BW/</link>
+    <description>Recent content in BW on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/sap/BW/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/BW/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/BW/informacion_general/</guid>
+      <description>Objetivo#Esta página contendrá información de general sobre BW que no se muy bien donde clasificar.
+Como probar un cubo en R/3#Normalmente los cubos se suelen utilizar desde herramientas de SAP que están fuera del SAP GUI. Pero puede ser interesante, poder probar el cubo para ver que datos tienes y que se puede hacer con él. El siguiente ejemplo de como hacerlo se basa en cubo generado con un CDS desde un sistema S/4 HANA.</description>
+    </item>
+    
+  </channel>
+</rss>

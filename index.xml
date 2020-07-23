@@ -501,6 +501,16 @@ Funciones#   Función Descripción     HR_READ_INFOTYPE_AUTHC_DISABLE Hace qu
     
     <item>
       <title>Información general</title>
+      <link>https://irodrigob.github.io/docs/sap/BW/informacion_general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/BW/informacion_general/</guid>
+      <description>Objetivo#Esta página contendrá información de general sobre BW que no se muy bien donde clasificar.
+Como probar un cubo en R/3#Normalmente los cubos se suelen utilizar desde herramientas de SAP que están fuera del SAP GUI. Pero puede ser interesante, poder probar el cubo para ver que datos tienes y que se puede hacer con él. El siguiente ejemplo de como hacerlo se basa en cubo generado con un CDS desde un sistema S/4 HANA.</description>
+    </item>
+    
+    <item>
+      <title>Información general</title>
       <link>https://irodrigob.github.io/docs/sap/gateway/informacion_general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -704,6 +714,17 @@ import math print(math.sqrt(20)) Resultado
       <description>Objetivo#Cajón de desastre de cosas que no se muy como clasificar.
 Hacks#Saltarse seguridad como desarrollador#Para saltarse la seguridad del usuario desarrollador
 URL# http://wiki.sdn.sap.com/wiki/display/Basis/Timezone+changes+best+practices &amp;ndash;&amp;gt; Best practices sobre los husos horarios  Rellenar campos con 0#data: l_char(50). TRANSLATE l_char USING &amp;#39; 0&amp;#39;. WRITE l_char. Truco para saber que BADIS se utilizan en un proceso#Hay que ir a la transacción SE24 informar la clase CL_EXITHANDLER metodo e ir al contenido del método GET_INSTANCE.</description>
+    </item>
+    
+    <item>
+      <title>Variables y sesiones</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</guid>
+      <description>Introducción#Ejemplo extraído del video TensorFlow: Variables y Sesiones. De este mismo video se extraerán fotos para aclarar mejor conceptos tal como hace el video.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+**NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 .</description>
     </item>
     
     <item>
