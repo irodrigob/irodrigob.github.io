@@ -18,8 +18,9 @@
       <guid>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</guid>
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 2. Algoritmos de regresión
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
-Código#Se cargan las librerias
-# Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.model_selection import train_test_split # Algoritmos de regresión linea y ridge from sklearn.</description>
+Código#Código fuente descargable
+Se cargan las librerias
+# Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.</description>
     </item>
     
   </channel>

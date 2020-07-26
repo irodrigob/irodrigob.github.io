@@ -317,7 +317,8 @@ Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. E
       <guid>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</guid>
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 3. Árboles de Decisiones
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
-Código#Carga de librerías
+Código#Código fuente descargable
+Carga de librerías
 # Clasificador de arbol de decisiones from sklearn.tree import DecisionTreeClassifier # Dos set de datos uno de cancer y otro de iris from sklearn.datasets import load_breast_cancer, load_iris # Librería para separar datos de entrenamiento y testing from sklearn.</description>
     </item>
     
@@ -343,8 +344,8 @@ Los token los obtendremos de las palabras no repetidas que son:
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 6. Redes neuronales.
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
 En este ejemplo se usa la librería Scikit learn(Sklearn) que según el video no es lo mejor para ello. Hay que mejores como TenserFlow pero requiere de más conocimientos de algebra lineal.
-Código#Librerias del proceso
-import sklearn # Set de datos from sklearn.</description>
+Código#Código fuente descargable
+Librerias del proceso</description>
     </item>
     
     <item>
@@ -366,8 +367,9 @@ Como ejemplo para ver el funcionamiento de Kmeans se va utilizar el set de datos
       <guid>https://irodrigob.github.io/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/</guid>
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 2. Algoritmos de regresión
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
-Código#Se cargan las librerias
-# Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.model_selection import train_test_split # Algoritmos de regresión linea y ridge from sklearn.</description>
+Código#Código fuente descargable
+Se cargan las librerias
+# Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.</description>
     </item>
     
     <item>
@@ -639,6 +641,17 @@ Explicación#La librería PCA se utiliza para principalmente dos cosas:
     </item>
     
     <item>
+      <title>Reconocimiento números escritos a mano</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</guid>
+      <description>Introducción#Ejemplo extraído del video Tensorflow: Cómo clasificar números escritos a mano.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 . Por lo tanto hay muchas cosas que no son compatibles. En el código habrá partes las principales que se indique que no se usa en TF20, pero el resto de partes se pondrá en código TF20 para no poner demasiada basura en el código</description>
+    </item>
+    
+    <item>
       <title>Relleno de valores</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/relleno_valores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -722,9 +735,9 @@ Hacks#Saltarse seguridad como desarrollador#Para saltarse la seguridad del
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</guid>
-      <description>Introducción#Ejemplo extraído del video TensorFlow: Variables y Sesiones. De este mismo video se extraerán fotos para aclarar mejor conceptos tal como hace el video.
+      <description>Introducción#Ejemplo extraído del video TensorFlow: Variables y Sesiones.
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
-**NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 .</description>
+NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 . Por lo tanto hay muchas cosas que no son compatibles. En el código habrá partes las principales que se indique que no se usa en TF20, pero el resto de partes se pondrá en código TF20 para no poner demasiada basura en el código</description>
     </item>
     
     <item>

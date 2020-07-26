@@ -18,7 +18,8 @@
       <guid>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</guid>
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 3. Árboles de Decisiones
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas
-Código#Carga de librerías
+Código#Código fuente descargable
+Carga de librerías
 # Clasificador de arbol de decisiones from sklearn.tree import DecisionTreeClassifier # Dos set de datos uno de cancer y otro de iris from sklearn.datasets import load_breast_cancer, load_iris # Librería para separar datos de entrenamiento y testing from sklearn.</description>
     </item>
     

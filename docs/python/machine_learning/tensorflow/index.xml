@@ -11,14 +11,25 @@
     
     
     <item>
+      <title>Reconocimiento números escritos a mano</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</guid>
+      <description>Introducción#Ejemplo extraído del video Tensorflow: Cómo clasificar números escritos a mano.
+El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
+NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 . Por lo tanto hay muchas cosas que no son compatibles. En el código habrá partes las principales que se indique que no se usa en TF20, pero el resto de partes se pondrá en código TF20 para no poner demasiada basura en el código</description>
+    </item>
+    
+    <item>
       <title>Variables y sesiones</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</guid>
-      <description>Introducción#Ejemplo extraído del video TensorFlow: Variables y Sesiones. De este mismo video se extraerán fotos para aclarar mejor conceptos tal como hace el video.
+      <description>Introducción#Ejemplo extraído del video TensorFlow: Variables y Sesiones.
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
-**NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 .</description>
+NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow que se ha instalado es la version 2.x, la llamaremos TF2.0 o TF20 . Por lo tanto hay muchas cosas que no son compatibles. En el código habrá partes las principales que se indique que no se usa en TF20, pero el resto de partes se pondrá en código TF20 para no poner demasiada basura en el código</description>
     </item>
     
   </channel>
