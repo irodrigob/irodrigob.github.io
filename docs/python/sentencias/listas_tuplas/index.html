@@ -9,12 +9,12 @@
 <meta property="og:description" content="Listas y tuplas" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/listas_tuplas/" />
-<meta property="article:modified_time" content="2020-07-22T18:55:33+02:00" />
+<meta property="article:modified_time" content="2020-07-26T18:55:00+02:00" />
 <title>Listas y tuplas | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.ca2cf3f271cd7b715eaa91153b52384d6e960812c8faf9f9f5a6ddc0344e8d56.js" integrity="sha256-yizz8nHNe3FeqpEVO1I4TW6WCBLI&#43;vn59abdwDROjVY="></script>
+<script defer src="/en.search.min.6c437985164438c49e407a6a4eef33e9f8cacca061328745ab91e15c3bde6c89.js" integrity="sha256-bEN5hRZEOMSeQHpqTu8z6fjKzKBhModFq5HhXDvebIk="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -510,6 +510,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#tuplas">Tuplas</a></li>
       </ul>
     </li>
+    <li><a href="#creación-de-rangos">Creación de rangos</a></li>
   </ul>
 </nav>
 
@@ -531,7 +532,7 @@ https://github.com/alex-shpak/hugo-book
 <p>Ejemplo de inicialización:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">tupla=(1,2,3,4,5,6,7)
 lista=[8,9,10,11,12]
-</code></pre></div><p>La diferencia en que la lista no puede ser modificada durante el programa pero una lista si que se puede. Salvo en las cadenas, que no pueden ser modificadas.</p>
+</code></pre></div><p>La diferencia en que la tupla no puede ser modificada durante el programa pero una lista si que se puede. Salvo en las cadenas, que no pueden ser modificadas.</p>
 <p>Un truco para obtener el último valor sin usar el <em>LEN</em> es usar el <em>-1</em>. Ejemplo:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">tupla=(1,2,3,4,5,6,7)
 lista=[8,9,10,11,12]
@@ -645,7 +646,32 @@ print(&#34;Contenido &#34;, lista[-1])
   <a class="anchor" href="#tuplas">#</a>
 </h2>
 <p>El acceso a los valores de las tuplas se hace igual que con las listas.</p>
-</article>
+<h1 id="creación-de-rangos">
+  Creación de rangos
+  <a class="anchor" href="#creaci%c3%b3n-de-rangos">#</a>
+</h1>
+<p>Es posible crear rangos con números preasignados que es útil para hacer contadores o cualquier otra cosa.</p>
+<p>Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">x = range(6)
+
+for n in x:
+   print(&#34;Valor: &#34;, n)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valor:  0
+Valor:  1
+Valor:  2
+Valor:  3
+Valor:  4
+Valor:  5
+</code></pre><p>Es posible indicarle el incremento en cada valor:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">x = range(0,6, 2)
+for n in x:
+   print(&#34;Valor: &#34;, n)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valor:  0
+Valor:  2
+Valor:  4
+</code></pre></article>
  
       
 
@@ -689,6 +715,7 @@ print(&#34;Contenido &#34;, lista[-1])
         <li><a href="#tuplas">Tuplas</a></li>
       </ul>
     </li>
+    <li><a href="#creación-de-rangos">Creación de rangos</a></li>
   </ul>
 </nav>
 

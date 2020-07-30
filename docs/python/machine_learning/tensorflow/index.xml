@@ -22,6 +22,17 @@ NOTA: El código del video esta basado en Tensor Flow 1.0. Pero el Tensor Flow q
     </item>
     
     <item>
+      <title>Usar dataset</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/usar_datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/usar_datasets/</guid>
+      <description>Introducción#Este articulo lo he tenido que hacer para aprender la base de como funciona los dataset en Tensor Flow, porque si no hay manera de entender los ejemplos más complejos. O ejemplos creados en versión 1.x de Tensor Flow que al usarlos en la versión 2.0 hay que migrarlos.
+Libreías de cada ejemplo#Las librérías que uso en cada ejemplo son las sigueintes:
+# Libreria tensor flowe import tensorflow as tf # Daset de datos con números escritos a manorom from tensorflow.</description>
+    </item>
+    
+    <item>
       <title>Variables y sesiones</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/variables_sesiones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
