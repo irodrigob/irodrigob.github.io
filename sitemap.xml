@@ -54,7 +54,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/librerias/</loc>
-    <lastmod>2020-07-23T18:57:05+02:00</lastmod>
+    <lastmod>2020-07-30T18:19:55+02:00</lastmod>
   </url>
   
   <url>
@@ -187,6 +187,10 @@
   </url>
   
   <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/como_funcionan_redes_neuronales/</loc>
+  </url>
+  
+  <url>
     <loc>https://irodrigob.github.io/docs/python/sentencias/condiciones/</loc>
     <lastmod>2020-07-11T17:57:46+02:00</lastmod>
   </url>
@@ -228,7 +232,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-07-26T18:55:00+02:00</lastmod>
+    <lastmod>2020-07-30T18:19:55+02:00</lastmod>
   </url>
   
   <url>
@@ -418,12 +422,16 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</loc>
-    <lastmod>2020-07-26T14:02:35+02:00</lastmod>
+    <lastmod>2020-07-30T18:19:55+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/recursos_humanos/</loc>
     <lastmod>2020-06-28T17:02:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/redes_convolucionales/</loc>
   </url>
   
   <url>

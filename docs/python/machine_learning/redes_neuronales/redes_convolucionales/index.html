@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Redes convolucionales">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Redes convolucionales" />
+<meta property="og:description" content="Redes convolucionales" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/redes_convolucionales/" />
+
+<title>Redes convolucionales | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.e5668f15b57d1a21a0010b804a6f954979d081b4c116881faf4b7fd265c38261.js" integrity="sha256-5WaPFbV9GiGgAQuASm&#43;VSXnQgbTBFogfr0t/0mXDgmE="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias y paquetes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/" class="">Algoritmos de aprendizaje no supervisado</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/" class="">Ejemplo KMeans</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/" class="">Arbol de decisiones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" class="">Ejemplo básico</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/" class="">Explicación sobreajuste</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/estimador_incertidumbre/" class="">Estimador incertidumbre</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/guardar_modelos_entrenados/" class="">Guardar modelos entrenados</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/procesamiento_datos/" class="">Procesamiento de datos</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/" class="">Procesamiento de datos con PCA</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/" class="">Redes neuronales</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/como_funcionan_redes_neuronales/" class="">Como funcionan las redes neuronales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/" class="">Ejemplo de redes neuronales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/redes_convolucionales/" class="active">Redes convolucionales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/" class="">Tipos de redes redes neuronales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/set_datos_propios/" class="">Set de datos propios</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/set_datos_propios/subir_datos_propios/" class="">Subir datos propios</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/" class="">Tensor Flow</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/" class="">Reconocimiento números escritos a mano</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/usar_datasets/" class="">Usar dataset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/variables_sesiones/" class="">Variables y sesiones</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/" class="">Ejemplo de conversión de palabras a números</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Redes convolucionales</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#explicación">Explicación</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído de 
+  <a href="https://www.youtube.com/watch?v=ns2L2T6wvAY">Redes neuronales convolucionales CNN (Clasificación de imagenes)</a>. Se pondrán imagens obtenidas del video para explicar mejor el funcionamiento tal como lo hace en el video.</p>
+<p>Como se explico en la página de 
+  <a href="/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/">tipos de redes neuronales</a> este tipo de red nace para procesar de una manera eficiente imagenes, aunque también se usa para procesamiento de texto. Pero realmente su fuerte es el procesamiento de imagenes.</p>
+<h1 id="explicación">
+  Explicación
+  <a class="anchor" href="#explicaci%c3%b3n">#</a>
+</h1>
+<p>La estructura de este tipo de redes es la siguiente:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_estructura.png" alt="Estructa" /></p>
+<p>Dentro de las capas ocultas se hacen dos tipos de operaciones:</p>
+<ol>
+<li><em>Pooling</em> o agrupación. Que lo hace es reducir el tamaño de la imagen para que cuando se pase a la siguiente capa sea menos pesado procesarla:</li>
+</ol>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_pooling.png" alt="Pooling" /></p>
+<ol start="2">
+<li><em>Convoluciones</em>. Diriamos que ir pasandole filtros a nuestra imagen para ir detectando ciertos patrones en la imagen:</li>
+</ol>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_convolucion.png" alt="Convolución" /></p>
+<p>Para entender mejor como funcionan vamos con el problema de clasificar imagenes. Se le pasa un animal y se tiene que identificar que es: perro, ave, etc.</p>
+<p>Por ejemplo tenemos la siguiente imagen de entrada:
+
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_imagen_ejemplo.png" alt="Imagen de entrada" /></p>
+<p>En una red neuronal DNN se mirará la longitud, altura y la profundidad (son 3 capas ya que hay 3 canales colores: RGB). Primero lo que haría es calcular el número de conexiones, si asumimos que la imagen es de 100x100 pixeles, que hay que multiplicar * 3 por el número de capas de colores, y la capa oculta tiene 100 neuronas. Esto haría 3 millones de conexiones. Además, este tipo de red no aprendería bien los animales, ya que lo que queremos es que si el animal esta arriba, abajo o donde sea de la imagen sea capaz de identificarlo. Y eso la red DNN no son capaces de hacerlo. Es cuando las redes CNN son más eficientes.</p>
+<p>Las red CNN no tomará de inicio los pixeles de la imagen y los comenzaría a procesar. Sino que va a empezar a convolucionar la imagen, es decir, para ir procesando la imagen por zonas. De esta manera al no procesar la imagen en su totalidad el número de conexiones es mucho menor. Lo que va haciendo en cada convolución:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_convolucion_paso1.png" alt="Convolución paso 1" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_convolucion_paso2.png" alt="Convolución paso 1" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_convolucion_paso3.png" alt="Convolución paso 1" /></p>
+<p>Es ir procesando partes de la imagen para generando nuevas imagenes de salida:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_convolucion_resultado_imagen.png" alt="Resultado de la imagen" /></p>
+<p>Donde serán más pequeñas tanto en el ancho como en el alto pero va aumentar en profundidad.</p>
+<p>El siguiente paso es el <em>pooling</em>. Este paso aún va a reducir más la altura y la anchura de la imagen pero va dejar intacta la profundidad.</p>
+<p>Los parámetro importantes de la capa convolucional son:</p>
+<ol>
+<li>Tamaño del filtro. Es el tamaño de la imagen que se va ir procesando en cada capa. Se indicará tanto la anchura como la altura.</li>
+<li>Profundidad de la capa. Es el número de filtros que se le va aplicar a nuestra imagen.</li>
+</ol>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_convolucion_profundidad_capa.png" alt="Profundida de la capa" /></p>
+<p>En la imagen el filtro 1 sería la capa roja, el filtro 2 la capa azul, el filtro 3 la capa verde y el filtro 4 la capa amarilla. Cada filtro que se aplica se genera una nueva imagen. Cada filtro se aplica sobre la imagen original pero aplicando otros patrones de búsqueda para detectar cosas que no han sido detectadas por los filtros anteriores. Un primer filtro puede detectar bordes, un segunfo filtro, sombras, etc. 
+Estos filtros son los que van a ir incrementando la profundida de la imagen, ya que son el número de filtros que se van aplicando.</p>
+<ol start="3">
+<li>Stride o Paso. Es como se va ir recorriendo la imagen en cada filtro.</li>
+</ol>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_stride.png" alt="Stride" /></p>
+<p>Es decir, cuantos pixeles, longitud y altitud, se van a ir procesando en cada filtro. Hay que tener en cuenta que contra más sea el <em>paso</em> más se va a reducir la imagen.</p>
+<p>El paso final de la convolución es el <em>pooling</em>. Este paso ya se ha indicado que reduce todavía más el tamaño de la imagen. El motivo son dos:</p>
+<ol>
+<li>Para quitar el número de conexiones y no sea tan pesado procesar la imagen.</li>
+<li>Y ayuda a no sobreajustar el modelo.</li>
+</ol>
+<p>Dentro del <em>pooling</em> hay dos tipos:</p>
+<ol>
+<li><em>Maxpooling</em>.</li>
+<li><em>average pooling</em></li>
+</ol>
+<p>Ambos lo que hacen toman los valores indicados en la longitud y latitud del filtro para:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_max_average_pooling.png" alt="Average y Max pooling" /></p>
+<p>En maxpooling toma el valor más alto de cada zona leída por el filtro. Mientras que el avergage toma el promedio de los valores de los pixeles. El resultado sirve para componer la siguiente imagen.</p>
+<p>El orden de ejecución es siempre primero <em>convolución</em> y segundo el <em>pooling</em>, así por cada capa oculta de la red.</p>
+<p>A medida que la red va llegando al final la <em>convolución</em> va aplicando filtros cada vez más elaborados. En los primeros filtros de la red se detectarán rayas, sombras colores pero a medida que avanza va identificando elementos más elaborados:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/red_cnn_identificacion_pasos.png" alt="Identificación pasos" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#explicación">Explicación</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

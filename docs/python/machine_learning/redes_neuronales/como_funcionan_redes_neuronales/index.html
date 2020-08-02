@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Como funcionan las redes neuronales">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Como funcionan las redes neuronales" />
+<meta property="og:description" content="Como funcionan las redes neuronales" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/redes_neuronales/como_funcionan_redes_neuronales/" />
+
+<title>Como funcionan las redes neuronales | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.e5668f15b57d1a21a0010b804a6f954979d081b4c116881faf4b7fd265c38261.js" integrity="sha256-5WaPFbV9GiGgAQuASm&#43;VSXnQgbTBFogfr0t/0mXDgmE="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/librerias/" class="">Librerias y paquetes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/" class="">Algoritmos de aprendizaje no supervisado</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/algoritmo_aprendizaje_no_supervisado/ejemplo_kmeans/" class="">Ejemplo KMeans</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/" class="">Arbol de decisiones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/" class="">Ejemplo básico</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/arbol_decisiones/explicacion_sobreajuste/" class="">Explicación sobreajuste</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/estimador_incertidumbre/" class="">Estimador incertidumbre</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/guardar_modelos_entrenados/" class="">Guardar modelos entrenados</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/procesamiento_datos/" class="">Procesamiento de datos</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/procesamiento_datos/procesamiento_datos_pca/" class="">Procesamiento de datos con PCA</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/" class="">Redes neuronales</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/como_funcionan_redes_neuronales/" class="active">Como funcionan las redes neuronales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/ejemplo_sklearn/" class="">Ejemplo de redes neuronales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/redes_convolucionales/" class="">Redes convolucionales</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/redes_neuronales/tipos_redes_neuronales/" class="">Tipos de redes redes neuronales</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/" class="">Regresion lineal</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/regresion_lineal/entrenar_algoritmo/" class="">Entrenar algoritmo de regresion lineal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/set_datos_propios/" class="">Set de datos propios</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/set_datos_propios/subir_datos_propios/" class="">Subir datos propios</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/" class="">Tensor Flow</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/" class="">Reconocimiento números escritos a mano</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/usar_datasets/" class="">Usar dataset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/tensorflow/variables_sesiones/" class="">Variables y sesiones</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/" class="">Ejemplo de conversión de palabras a números</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Como funcionan las redes neuronales</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#explicación">Explicación</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Ejemplo extraído de 
+  <a href="https://www.youtube.com/watch?v=IQMoglp-fBk">¿Como funcionan las redes neuronales?</a>. Se pondrán imagens obtenidas del video para explicar mejor el funcionamiento tal como lo hace en el video.</p>
+<h1 id="explicación">
+  Explicación
+  <a class="anchor" href="#explicaci%c3%b3n">#</a>
+</h1>
+<p>Como se explica en el índice de la página las redes neuronales se basan en la neuronas del cerebro humano. Una neurona esta interconectada con otras neuronas y responde cuando recibe un estimulo eléctrico. Cuando lo recibe decide si tiene que activarse o no. Si se activa, esa neurona enviará un impulso eléctrico a las neuronas que esta conectada. Si no se activa, no enviará información.</p>
+<p>Las redes neuronales lo que hacer es seguir el mismo principio.</p>
+<p>En el siguiente ejemplo basíco de funcionamiento de una red neuronal:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/tipo_redes_neuronal_diagrama_basico.png" alt="Ejemplo básico" /></p>
+<p>Es una diagrama que tienes tres capas:</p>
+<ol>
+<li>La capa que esta la izquierda del todo es la que recibe los datos. Será la capa que reciba los datos de entrenamiento.</li>
+<li>Laa capa que esta al derecha del todo es la que devuelve los resultados. Es la que recibe los datos de las capas ocultas y a partir de esos datos da un resultado.</li>
+<li>La capa en medio de ambas es la oculta, aunque en ejemplo solo hay una puede haber miles pero seguirán siendo la capa oculta. Serán las capas ocultas las encargadas de realizar todo el aprendizaje.</li>
+</ol>
+<p>Las neuronas de las capaz se conectan a las neuronas de la siguiente capa tal como se en la siguiente imagen:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/tipo_redes_neuronal_neuronas_conectadas.png" alt="Neuronas conectadas" /></p>
+<p>El proceso de entrenamiento es un proceso que irá enviando datos al algoritmo, este lo procesará y arrojará un resultado. Si el resultado contiene errores se ajustará los parámetros y se volverá a empezar. Si no hay errores entonces el algoritmo irá bien.</p>
+<p>El funciona a nivel de neurona se puede ver en la siguiente imagen
+
+  <img src="/images/python/machine_learning/redes_neuronales/tipo_redes_neuronal_funciona_neurona.png" alt="Funciona neurona" /></p>
+<p>Una neurona recibe de otras neuronas lo siguientes datos:</p>
+<ul>
+<li>x &ndash;&gt; Es valor a clasificar</li>
+<li>w &ndash;&gt; El peso de ese valor. El peso permite es que dar más importancia a una conexión que a otra. Es decir, si tenemos X=4 y w=30 y también recibe x=3 y w=40. Tendrá más importancia el valor de x=3.</li>
+</ul>
+<p>La neurona también tiene a nivel el valor <em>b</em>. <em>b</em> es el sesgo o bias(ingles). El sesgo indicará con que facilidad se activa la neurona sobre otras.</p>
+<p>Para que una neurona se active y envie información a otra debe cumplirse una formula de activación que es la siguiente:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/tipo_redes_neuronal_formula_activacion_neurona.png" alt="Formula activación" /></p>
+<p>En esta formula se hace el sumatario de (<em>valor</em> * <em>Peso</em>) y al resultado se le suma el <em>sesgo</em>, el resultado se guarda en la variable <em>y</em>. Es el valor de esta variable si supera cierto valor entonces la neurona se activará y enviará el valor <em>y</em>, que será el valor <em>x</em> de entrada de la siguientes neuronas que esta conectada.</p>
+<p>El proceso de entrenamiento es un proceso repetitivo donde se va repitiendo hasta que el resultado sea el esperado. En caso de volverse a repetir se ajustarán los valor de <em>w</em> y <em>b</em>. Para saber como de grande es el error se usará esta ecuación:</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/tipo_redes_neuronal_ecuacion_detectar_error.png" alt="Ecuación detectar error" /></p>
+<p>La ecuación se llama <em>Error cuadrático medio</em>, según entiendo del video.</p>
+<p>En esta formulario se hace el sumario de <em>y</em>(es el resultado que devuelve la neurona) menos <em>a</em>, valor que se espera, elevado al cuadrado. El resultado lo vamos a multiplicar por 1/2*n. Donde <em>n</em> es el número de elementos que se le mando a entrenar.</p>
+<p>Debajo hay una tabla donde tenemos el valor que devuelve, el valor que se espera y el resultado de la formula. El resultado de todos los valores es de 31. Este resultado se le aplicaría la siguiente formula: 31 * ( 1 / 2*n ). <em>n</em> en este caso es 4, porque son los valores que se le ha pasado para el entrenamiento, las filas de la tabla. Al final la formula sería 31 * (1/8) = 3,87. 3,87 es el error que se obtiene.</p>
+<p>Ahora que sabemos el error en la siguiente iteracción hay que cambiar el valor de <em>w</em> y/o <em>b</em> para que el error se reduzca.</p>
+<p>Para reducirlo se va utilizar el algoritmo <em>gradiente descendiente</em></p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/tipo_redes_neuronal_algoritmo_gradiente_descendiente.png" alt="Algoritmo gradiente descendiente" /></p>
+<p>En este diagrama tenemos 3 ejes:</p>
+<ol>
+<li>w2 &ndash;&gt; Es el equivalente a <em>b</em>, sesgo.</li>
+<li>w1 &ndash;&gt; Es el equivalente a <em>w</em>, peso</li>
+<li>e &ndash;&gt; Es el error que devuelve la formuala <em>Error cuadrático medio</em></li>
+</ol>
+<p>**NOTA: El video indica que modifica &ldquo;x&rdquo; pero no es correcto porque el valor de entrada no se modifica.</p>
+<p>Donde se quiere llegar es hasta el punto más bajo donde el error esta minimizado.</p>
+<p>El punto negro de la imagen supongamos que es donde esta el valor <em>e</em> que se ha obtenido en la formula. Ahora la formula, o algoritmo, va a derivar en ese punto la pendiente. Con el valor de la pendiente el algoritmo sabe donde se tiene que mover para llegar al mínimo global.
+Para ello irá ajustando los valores de <em>b</em> y/o <em>w</em> y relanzar de nuevo toda la red neuronal para comprobar el error que da.</p>
+<p>Una vez que se llega al mínimo de error, la red ya esta entrada. En ese momento se le puede volver a pasar más datos pero ya no volverá a realizar ecuaciones cuadráticas ni grandientes descendientes porque cada elemento de la red ya tiene su valor de peso, <em>w</em> y <em>b</em> en cada neurona.</p>
+<p>Cuando se entrena una red nosotros indicamos el número de iteraciones tiene. Esas iteracciones son las que se aplicarán la ecuación de error y gradientes descendiente. Si las iteracciones son bajas la corrección de error será baja y no hará buenas clasificaciones. Y si tenemos un número de iteracciones muy alto se corre el riesgo de sobreajuste. Con lo cual hay que ir cambiando el número de iteracciones, número de capas, etc. para ir ajustando los valores. Es decir, ir haciendo ensayo y error.</p>
+<p>
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" />
+
+  <img src="/images/python/machine_learning/redes_neuronales/" alt="" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#explicación">Explicación</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
