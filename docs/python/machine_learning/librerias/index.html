@@ -9,12 +9,12 @@
 <meta property="og:description" content="Librerias y paquetes" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/librerias/" />
-<meta property="article:modified_time" content="2020-07-30T18:19:55+02:00" />
+<meta property="article:modified_time" content="2020-08-03T13:38:43+02:00" />
 <title>Librerias y paquetes | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.a53f696f7508c930fd0101e382dff26a93439b6453d5df3869242a6833e84fd2.js" integrity="sha256-pT9pb3UIyTD9AQHjgt/yapNDm2RT1d84aSQqaDPoT9I="></script>
+<script defer src="/en.search.min.a84c0ba6cca25ea69731dd2e239038a469525b1f9026845df765c4dfb68a5b8a.js" integrity="sha256-qEwLpsyiXqaXMd0uI5A4pGlSWx&#43;QJoRd92XE37aKW4o="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -495,6 +495,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/python/machine_learning/usar_gpu/" class="">Uso GPU</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
   
 
@@ -736,82 +746,94 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#numpy">Numpy</a>
+    <li><a href="#tensor-flow">Tensor Flow</a>
       <ul>
         <li><a href="#qué-és">¿Qué és?</a></li>
         <li><a href="#instalación">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#scikit-learnsklearn">Scikit learn(Sklearn)</a>
+    <li><a href="#numpy">Numpy</a>
       <ul>
         <li><a href="#qué-és-1">¿Qué és?</a></li>
         <li><a href="#instalación-1">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#graphviz">Graphviz</a>
+    <li><a href="#scikit-learnsklearn">Scikit learn(Sklearn)</a>
       <ul>
         <li><a href="#qué-és-2">¿Qué és?</a></li>
         <li><a href="#instalación-2">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#matplotlib">Matplotlib</a>
+    <li><a href="#graphviz">Graphviz</a>
       <ul>
         <li><a href="#qué-és-3">¿Qué és?</a></li>
         <li><a href="#instalación-3">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#svm-support-vector-machine--maquina-de-vectores-de-soporte">SVM (Support Vector Machine / Maquina de vectores de soporte)</a>
+    <li><a href="#matplotlib">Matplotlib</a>
       <ul>
         <li><a href="#qué-és-4">¿Qué és?</a></li>
         <li><a href="#instalación-4">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#nltk">NLTK</a>
+    <li><a href="#svm-support-vector-machine--maquina-de-vectores-de-soporte">SVM (Support Vector Machine / Maquina de vectores de soporte)</a>
       <ul>
         <li><a href="#qué-és-5">¿Qué és?</a></li>
         <li><a href="#instalación-5">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#kmeans">KMeans</a>
+    <li><a href="#nltk">NLTK</a>
       <ul>
         <li><a href="#qué-és-6">¿Qué és?</a></li>
         <li><a href="#instalación-6">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#pcaprincipal-component-analysis">PCA(Principal component Analysis)</a>
+    <li><a href="#kmeans">KMeans</a>
       <ul>
         <li><a href="#qué-és-7">¿Qué és?</a></li>
         <li><a href="#instalación-7">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#mglearn">Mglearn</a>
+    <li><a href="#pcaprincipal-component-analysis">PCA(Principal component Analysis)</a>
       <ul>
         <li><a href="#qué-és-8">¿Qué és?</a></li>
         <li><a href="#instalación-8">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#mglearn-1">Mglearn</a>
+    <li><a href="#mglearn">Mglearn</a>
       <ul>
         <li><a href="#qué-és-9">¿Qué és?</a></li>
         <li><a href="#instalación-9">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#mglearn-2">Mglearn</a>
+    <li><a href="#mglearn-1">Mglearn</a>
       <ul>
         <li><a href="#qué-és-10">¿Qué és?</a></li>
         <li><a href="#instalación-10">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#keras">Keras</a>
+    <li><a href="#mglearn-2">Mglearn</a>
       <ul>
         <li><a href="#qué-és-11">¿Qué és?</a></li>
         <li><a href="#instalación-11">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#pylint">Pylint</a>
+    <li><a href="#keras">Keras</a>
       <ul>
         <li><a href="#qué-és-12">¿Qué és?</a></li>
         <li><a href="#instalación-12">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#pylint">Pylint</a>
+      <ul>
+        <li><a href="#qué-és-13">¿Qué és?</a></li>
+        <li><a href="#instalación-13">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#pillow">Pillow</a>
+      <ul>
+        <li><a href="#qué-és-14">¿Qué és?</a></li>
+        <li><a href="#instalación-14">Instalación</a></li>
       </ul>
     </li>
   </ul>
@@ -832,18 +854,36 @@ https://github.com/alex-shpak/hugo-book
 <p>Librerias y pawuetes para poder usar el Machine Learning.</p>
 <p>Los pasos para instalar las librerías esta explicado en la página de 
   <a href="/docs/python/anaconda.md">Anaconda</a>.</p>
-<h1 id="numpy">
-  Numpy
-  <a class="anchor" href="#numpy">#</a>
+<h1 id="tensor-flow">
+  Tensor Flow
+  <a class="anchor" href="#tensor-flow">#</a>
 </h1>
 <h2 id="qué-és">
   ¿Qué és?
   <a class="anchor" href="#qu%c3%a9-%c3%a9s">#</a>
 </h2>
-<p>Según la Wikipedia: <em>NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.</em></p>
+<p>Según la Wikipedia: <em>TensorFlow es una biblioteca de código abierto para aprendizaje automático a través de un rango de tareas, y desarrollado por Google para satisfacer sus necesidades de sistemas capaces de construir y entrenar redes neuronales para detectar y descifrar patrones y correlaciones, análogos al aprendizaje y razonamiento usados por los humanos.</em></p>
 <h2 id="instalación">
   Instalación
   <a class="anchor" href="#instalaci%c3%b3n">#</a>
+</h2>
+<p>La librería no esta instalada por defecto, lo más fácil es instalarla a través del anaconda navigator:</p>
+<p>
+  <img src="/images/python/machine_learning/anaconda/libreria_tensorflow.png" alt="Tensor Flow" /></p>
+<p>Como es la librería que permite realizar más cosas con Machine Learning se ha instalado tanto versión CPU, como GPU. GPU porque las tarjetas gráficas tienen más procesadores lo que permite hacen calculos más rapidos que si solo se usará la CPU.</p>
+<p>En la imagen hay librerías secundarías que se instalan al instalarse la principal.</p>
+<h1 id="numpy">
+  Numpy
+  <a class="anchor" href="#numpy">#</a>
+</h1>
+<h2 id="qué-és-1">
+  ¿Qué és?
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-1">#</a>
+</h2>
+<p>Según la Wikipedia: <em>NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.</em></p>
+<h2 id="instalación-1">
+  Instalación
+  <a class="anchor" href="#instalaci%c3%b3n-1">#</a>
 </h2>
 <p>No se instala porque viene incluido con Anaconda:</p>
 <p>
@@ -852,14 +892,14 @@ https://github.com/alex-shpak/hugo-book
   Scikit learn(Sklearn)
   <a class="anchor" href="#scikit-learnsklearn">#</a>
 </h1>
-<h2 id="qué-és-1">
+<h2 id="qué-és-2">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-1">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-2">#</a>
 </h2>
 <p>Según la Wikipedia: <em>Scikit-learn es una biblioteca para aprendizaje automático de software libre para el lenguaje de programación Python.​Incluye varios algoritmos de clasificación, regresión y análisis de grupos entre los cuales están máquinas de vectores de soporte, bosques aleatorios, Gradient boosting, K-means y DBSCAN.</em></p>
-<h2 id="instalación-1">
+<h2 id="instalación-2">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-1">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-2">#</a>
 </h2>
 <p>Por defecto no se encuentra instalada. En la página que habla 
   <a href="/docs/python/anaconda.md">Anaconda</a> en el apartado de instalación de paquetes mediante entorno gráfico explica como se hace la instalación.</p>
@@ -867,14 +907,14 @@ https://github.com/alex-shpak/hugo-book
   Graphviz
   <a class="anchor" href="#graphviz">#</a>
 </h1>
-<h2 id="qué-és-2">
+<h2 id="qué-és-3">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-2">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-3">#</a>
 </h2>
 <p>Según la Wikipedia: <em>Graphviz es un conjunto de herramientas de software para el diseño de diagramas definido en el lenguaje descriptivo DOT.​ Fue desarrollado por AT&amp;T Labs​ y liberado como software libre con licencie tipo Eclipse.​</em></p>
-<h2 id="instalación-2">
+<h2 id="instalación-3">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-2">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-3">#</a>
 </h2>
 <p>La instalación más sencilla es hacerlo a través de la interface gráfica de Anaconda:</p>
 <p>
@@ -887,44 +927,44 @@ https://github.com/alex-shpak/hugo-book
   Matplotlib
   <a class="anchor" href="#matplotlib">#</a>
 </h1>
-<h2 id="qué-és-3">
+<h2 id="qué-és-4">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-3">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-4">#</a>
 </h2>
 <p>Según la Wikipedia: <em>Matplotlib es una biblioteca para la generación de gráficos a partir de datos contenidos en listas o arrays en el lenguaje de programación Python y su extensión matemática NumPy. Proporciona una API, pylab, diseñada para recordar a la de MATLAB.</em></p>
-<h2 id="instalación-3">
+<h2 id="instalación-4">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-3">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-4">#</a>
 </h2>
 <p>Esta libreria ya viene instalada por defecto con Anaconda y no es necesario realizar ningún instalación</p>
 <h1 id="svm-support-vector-machine--maquina-de-vectores-de-soporte">
   SVM (Support Vector Machine / Maquina de vectores de soporte)
   <a class="anchor" href="#svm-support-vector-machine--maquina-de-vectores-de-soporte">#</a>
 </h1>
-<h2 id="qué-és-4">
+<h2 id="qué-és-5">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-4">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-5">#</a>
 </h2>
 <p>Según la Wikipedia: <em>Las máquinas de vectores de soporte o máquinas de vector soporte (Support Vector Machines, SVMs) son un conjunto de algoritmos de aprendizaje supervisado desarrollados por Vladimir Vapnik y su equipo en los laboratorios AT&amp;T.</em>
 <em>Estos métodos están propiamente relacionados con problemas de clasificación y regresión. Dado un conjunto de ejemplos de entrenamiento (de muestras) podemos etiquetar las clases y entrenar una SVM para construir un modelo que prediga la clase de una nueva muestra.</em></p>
-<h2 id="instalación-4">
+<h2 id="instalación-5">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-4">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-5">#</a>
 </h2>
 <p>Viene incluida en la librería <em>Scikit learn(Sklearn)</em></p>
 <h1 id="nltk">
   NLTK
   <a class="anchor" href="#nltk">#</a>
 </h1>
-<h2 id="qué-és-5">
+<h2 id="qué-és-6">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-5">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-6">#</a>
 </h2>
 <p>Según la Wikipedia: <em>El kit de herramientas de lenguaje natural, o más comúnmente NLTK, es un conjunto de bibliotecas y programas para el procesamiento del lenguaje natural (PLN) simbólico y estadísticos para el lenguaje de programación Python.</em></p>
 <p>Lo que hace el NLTK es eliminar lo que se llaman <em>stop words</em>. <em>stop words</em> son palabras mudas, o que no aportan valor para los algoritmos. Palabras como: en, la, el, una, etc. Son palabras que normalmente los algoritmos de búsqueda suelen ignorar.</p>
-<h2 id="instalación-5">
+<h2 id="instalación-6">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-5">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-6">#</a>
 </h2>
 <p>La librería no esta instalada por defecto, lo más fácil es instalarla a través del anaconda navigator:</p>
 <p>
@@ -933,45 +973,45 @@ https://github.com/alex-shpak/hugo-book
   KMeans
   <a class="anchor" href="#kmeans">#</a>
 </h1>
-<h2 id="qué-és-6">
+<h2 id="qué-és-7">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-6">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-7">#</a>
 </h2>
 <p>Según la Wikipedia: <em>Es un método de agrupamiento, que tiene como objetivo la partición de un conjunto de n observaciones en k grupos en el que cada observación pertenece al grupo cuyo valor medio es más cercano.</em></p>
 <p>KMens se utiliza en algoritmo de aprendizaje no supervisado.</p>
-<h2 id="instalación-6">
+<h2 id="instalación-7">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-6">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-7">#</a>
 </h2>
 <p>Viene incluida en la librería <em>Scikit learn(Sklearn)</em></p>
 <h1 id="pcaprincipal-component-analysis">
   PCA(Principal component Analysis)
   <a class="anchor" href="#pcaprincipal-component-analysis">#</a>
 </h1>
-<h2 id="qué-és-7">
+<h2 id="qué-és-8">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-7">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-8">#</a>
 </h2>
 <p>Según la Wikipedia: <em>En estadística, el análisis de componentes principales (en español ACP, en inglés, PCA) es una técnica utilizada para describir un conjunto de datos en términos de nuevas variables («componentes») no correlacionadas. Los componentes se ordenan por la cantidad de varianza original que describen, por lo que la técnica es útil para reducir la dimensionalidad de un conjunto de datos.</em></p>
 <p>Esta librería se usa para reducir ruido de los datos que se van a procesar y ver los datos de multiples dimension en dos dimensiones para poder analizarlos.</p>
-<h2 id="instalación-7">
+<h2 id="instalación-8">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-7">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-8">#</a>
 </h2>
 <p>Viene incluida en la librería <em>Scikit learn(Sklearn)</em></p>
 <h1 id="mglearn">
   Mglearn
   <a class="anchor" href="#mglearn">#</a>
 </h1>
-<h2 id="qué-és-8">
+<h2 id="qué-és-9">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-8">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-9">#</a>
 </h2>
 <p>Realmente no es una librería, es una paquete que tiene funciones de ayuda para el libro <em>Introduction to Machine Learning with Python</em>. En la siguiente 
   <a href="https://github.com/amueller/mglearn">dirección esta el detalle de dicho paquete</a></p>
-<h2 id="instalación-8">
+<h2 id="instalación-9">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-8">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-9">#</a>
 </h2>
 <p>La instalación hay que hacerla a través del paquete <em>PIP</em>, que ya viene instalado. Para hacerlo ha hacer lo siguiente:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;nombre entorno&gt;
@@ -981,9 +1021,9 @@ pip install mglearn
   Mglearn
   <a class="anchor" href="#mglearn-1">#</a>
 </h1>
-<h2 id="qué-és-9">
+<h2 id="qué-és-10">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-9">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-10">#</a>
 </h2>
 <p>Explicación extráido de 
   <a href="https://bioinf.comav.upv.es/courses/linux/python/pandas.html">Bioinformatics at COMAV</a></p>
@@ -1007,23 +1047,23 @@ pip install mglearn
 <li>DataFrame (tablas, 2D) y</li>
 <li>Panels (tablas 3D).</li>
 </ul>
-<h2 id="instalación-9">
+<h2 id="instalación-10">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-9">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-10">#</a>
 </h2>
 <p>Viene incluído en la librería <em>Numpy</em></p>
 <h1 id="mglearn-2">
   Mglearn
   <a class="anchor" href="#mglearn-2">#</a>
 </h1>
-<h2 id="qué-és-10">
+<h2 id="qué-és-11">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-10">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-11">#</a>
 </h2>
 <p>Según la Wikipedia: <em>TensorFlow es una biblioteca de código abierto para aprendizaje automático a través de un rango de tareas, y desarrollado por Google para satisfacer sus necesidades de sistemas capaces de construir y entrenar redes neuronales para detectar y descifrar patrones y correlaciones, análogos al aprendizaje y razonamiento usados por los humanos.</em></p>
-<h2 id="instalación-10">
+<h2 id="instalación-11">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-10">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-11">#</a>
 </h2>
 <p>Tensor flow no viene instalado por defecto pero justo en el página de 
   <a href="/docs/python/anaconda.md">Anaconda</a> en la sección de instalación de librerías, se explica como instalar Tensor Flow a modo de ejemplo.</p>
@@ -1031,14 +1071,14 @@ pip install mglearn
   Keras
   <a class="anchor" href="#keras">#</a>
 </h1>
-<h2 id="qué-és-11">
+<h2 id="qué-és-12">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-11">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-12">#</a>
 </h2>
 <p>Según la Wikipedia: <em>Keras es una biblioteca de Redes Neuronales de Código Abierto escrita en Python. Es capaz de ejecutarse sobre TensorFlow, Microsoft Cognitive Toolkit o Theano. Está especialmente diseñada para posibilitar la experimentación en más o menos poco tiempo con redes de Aprendizaje Profundo. Sus fuertes se centran en ser amigable para el usuario, modular y extensible.</em></p>
-<h2 id="instalación-11">
+<h2 id="instalación-12">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-11">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-12">#</a>
 </h2>
 <p>La librería no esta instalada por defecto, lo más fácil es instalarla a través del anaconda navigator:</p>
 <p>
@@ -1047,19 +1087,35 @@ pip install mglearn
   Pylint
   <a class="anchor" href="#pylint">#</a>
 </h1>
-<h2 id="qué-és-12">
+<h2 id="qué-és-13">
   ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-12">#</a>
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-13">#</a>
 </h2>
 <p>Es una libreria que analiza la calidad del código cuando se desarrolla programas en Python. Más información 
   <a href="https://www.pylint.org/">aquí</a></p>
-<h2 id="instalación-12">
+<h2 id="instalación-13">
   Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-12">#</a>
+  <a class="anchor" href="#instalaci%c3%b3n-13">#</a>
 </h2>
 <p>La librería no esta instalada por defecto, lo más fácil es instalarla a través del anaconda navigator:</p>
 <p>
-  <img src="/images/python/machine_learning/anaconda/libreria_pylint.png.png" alt="Libreria Pylibnt" /></p>
+  <img src="/images/python/machine_learning/anaconda/libreria_pylint.png" alt="Libreria Pylint" /></p>
+<h1 id="pillow">
+  Pillow
+  <a class="anchor" href="#pillow">#</a>
+</h1>
+<h2 id="qué-és-14">
+  ¿Qué és?
+  <a class="anchor" href="#qu%c3%a9-%c3%a9s-14">#</a>
+</h2>
+<p>Es una libreria que añade capacidad de procesamiento de imagenes</p>
+<h2 id="instalación-14">
+  Instalación
+  <a class="anchor" href="#instalaci%c3%b3n-14">#</a>
+</h2>
+<p>La librería no esta instalada por defecto, lo más fácil es instalarla a través del anaconda navigator:</p>
+<p>
+  <img src="/images/python/machine_learning/anaconda/libreria_pillow.png" alt="Libreria Pillow" /></p>
 </article>
  
       
@@ -1091,82 +1147,94 @@ pip install mglearn
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#numpy">Numpy</a>
+    <li><a href="#tensor-flow">Tensor Flow</a>
       <ul>
         <li><a href="#qué-és">¿Qué és?</a></li>
         <li><a href="#instalación">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#scikit-learnsklearn">Scikit learn(Sklearn)</a>
+    <li><a href="#numpy">Numpy</a>
       <ul>
         <li><a href="#qué-és-1">¿Qué és?</a></li>
         <li><a href="#instalación-1">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#graphviz">Graphviz</a>
+    <li><a href="#scikit-learnsklearn">Scikit learn(Sklearn)</a>
       <ul>
         <li><a href="#qué-és-2">¿Qué és?</a></li>
         <li><a href="#instalación-2">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#matplotlib">Matplotlib</a>
+    <li><a href="#graphviz">Graphviz</a>
       <ul>
         <li><a href="#qué-és-3">¿Qué és?</a></li>
         <li><a href="#instalación-3">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#svm-support-vector-machine--maquina-de-vectores-de-soporte">SVM (Support Vector Machine / Maquina de vectores de soporte)</a>
+    <li><a href="#matplotlib">Matplotlib</a>
       <ul>
         <li><a href="#qué-és-4">¿Qué és?</a></li>
         <li><a href="#instalación-4">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#nltk">NLTK</a>
+    <li><a href="#svm-support-vector-machine--maquina-de-vectores-de-soporte">SVM (Support Vector Machine / Maquina de vectores de soporte)</a>
       <ul>
         <li><a href="#qué-és-5">¿Qué és?</a></li>
         <li><a href="#instalación-5">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#kmeans">KMeans</a>
+    <li><a href="#nltk">NLTK</a>
       <ul>
         <li><a href="#qué-és-6">¿Qué és?</a></li>
         <li><a href="#instalación-6">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#pcaprincipal-component-analysis">PCA(Principal component Analysis)</a>
+    <li><a href="#kmeans">KMeans</a>
       <ul>
         <li><a href="#qué-és-7">¿Qué és?</a></li>
         <li><a href="#instalación-7">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#mglearn">Mglearn</a>
+    <li><a href="#pcaprincipal-component-analysis">PCA(Principal component Analysis)</a>
       <ul>
         <li><a href="#qué-és-8">¿Qué és?</a></li>
         <li><a href="#instalación-8">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#mglearn-1">Mglearn</a>
+    <li><a href="#mglearn">Mglearn</a>
       <ul>
         <li><a href="#qué-és-9">¿Qué és?</a></li>
         <li><a href="#instalación-9">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#mglearn-2">Mglearn</a>
+    <li><a href="#mglearn-1">Mglearn</a>
       <ul>
         <li><a href="#qué-és-10">¿Qué és?</a></li>
         <li><a href="#instalación-10">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#keras">Keras</a>
+    <li><a href="#mglearn-2">Mglearn</a>
       <ul>
         <li><a href="#qué-és-11">¿Qué és?</a></li>
         <li><a href="#instalación-11">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#pylint">Pylint</a>
+    <li><a href="#keras">Keras</a>
       <ul>
         <li><a href="#qué-és-12">¿Qué és?</a></li>
         <li><a href="#instalación-12">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#pylint">Pylint</a>
+      <ul>
+        <li><a href="#qué-és-13">¿Qué és?</a></li>
+        <li><a href="#instalación-13">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#pillow">Pillow</a>
+      <ul>
+        <li><a href="#qué-és-14">¿Qué és?</a></li>
+        <li><a href="#instalación-14">Instalación</a></li>
       </ul>
     </li>
   </ul>

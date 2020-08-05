@@ -82,8 +82,7 @@ Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git
       <guid>https://irodrigob.github.io/docs/python/machine_learning/librerias/</guid>
       <description>Introducción#Librerias y pawuetes para poder usar el Machine Learning.
 Los pasos para instalar las librerías esta explicado en la página de Anaconda.
-Numpy#¿Qué és?#Según la Wikipedia: NumPy es una extensión de Python, que le agrega mayor soporte para vectores y matrices, constituyendo una biblioteca de funciones matemáticas de alto nivel para operar con esos vectores o matrices.
-Instalación#No se instala porque viene incluido con Anaconda:</description>
+Tensor Flow#¿Qué és?#Según la Wikipedia: TensorFlow es una biblioteca de código abierto para aprendizaje automático a través de un rango de tareas, y desarrollado por Google para satisfacer sus necesidades de sistemas capaces de construir y entrenar redes neuronales para detectar y descifrar patrones y correlaciones, análogos al aprendizaje y razonamiento usados por los humanos.</description>
     </item>
     
     <item>
@@ -749,6 +748,18 @@ Libreías de cada ejemplo#Las librérías que uso en cada ejemplo son las sig
 Librerías propias o sencillas#Ejemplo de como usar la libreria matemática para calcular una raíz cuadrada:
 import math print(math.sqrt(20)) Resultado
 4.47213595499958Librerías dentro de paquetes#El siguiente ejemplo se recupera la libreria de regresión de KNN:</description>
+    </item>
+    
+    <item>
+      <title>Uso GPU</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/usar_gpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/usar_gpu/</guid>
+      <description>Introducción#El objetivo es explicar que he hecho para poder hacer utilizar la GPUs de la tarjeta gráfica para las operaciones del machine learning. El motivo, es que una tarjeta gráfica tiene muchos más cpus que se pueden usar paralelamente para los calculos.
+Se va explicar como se ha usado para TensorFlow pero puede servir para otras librerías.
+NOTA IMPORTANTE: El sistema operativo es Windows
+Tensor Flow#Lo primero que hay que hacer es mirar la documentación oficial para averiguar que versión de librerías es necesaria.</description>
     </item>
     
     <item>
