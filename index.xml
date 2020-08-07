@@ -332,6 +332,17 @@ Carga de librerías
     </item>
     
     <item>
+      <title>Ejemplo clasificador de imagenes</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/clasificador_imagenes_ejemplo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/clasificador_imagenes_ejemplo/</guid>
+      <description>Introducción#Ejemplo extraído de los videos (pt. 1/2) Cómo hacer un clasificador de imagenes desde cero con Tensorflow y (pt. 2/2) Cómo hacer un clasificador de imagenes desde cero con Tensorflow
+Y el modelo de datos de entrenamiento se puede en el repositorio del ejemplo de Alex Puig
+El ejemplo consta de dos archivos: el primero sirve para entrenar el algoritmo y el segundo para la predicción. Ambos ejemplos son ejemplo en código fuente de Python</description>
+    </item>
+    
+    <item>
       <title>Ejemplo de conversión de palabras a números</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -680,6 +691,16 @@ Como se explico en la página de tipos de redes neuronales este tipo de red nace
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.
 La sentencia estrella de esta página es la FOR. Pero ojo: que si usamos field-symbols/variable no tiene que estar declarada previamente.
 Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se rellenando los valores de ET_COND_CRUD con los datos de la estructura leída y de otras variables:</description>
+    </item>
+    
+    <item>
+      <title>Sistema</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/sistema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/sistema/</guid>
+      <description>Introducción#La librería os hay una serie de funciones de sistema que se pueden utilizar. Aquí se recopilan las que se van usando. Esta librería para utilizar hay que hacer lo siguiente al inicio del programa:
+import os Logs#Cuando se usán librerías de machine learning como Tensor Flow en programa de Python, si se usa Jupyter Notebooks se muestran una cantidad de logs, cientos de líneas, que desvirtuan lo que realmente se quiere mostrar.</description>
     </item>
     
     <item>
