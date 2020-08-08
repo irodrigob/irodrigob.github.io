@@ -4,20 +4,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vectorización">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Vectorización" />
-<meta property="og:description" content="Vectorización" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/" />
+<meta name="description" content="Transfer learning">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Ejemplo transfer learning" />
+<meta property="og:description" content="Transfer learning" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/machine_learning/tensorflow/ejemplo_transfer_learning/" />
 
-<title>Vectorización | Navi-developer</title>
+<title>Ejemplo transfer learning | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.036c1aeaf72b26433c971bb9eb68045681ac43e14bf619629ea6056462236881.js" integrity="sha256-A2wa6vcrJkM8lxu562gEVoGsQ&#43;FL9hlinqYFZGIjaIE="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/python/machine_learning/vectorizacion/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -470,7 +469,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/machine_learning/tensorflow/ejemplo_transfer_learning/" class="">Ejemplo transfer learning</a>
+    <a href="/docs/python/machine_learning/tensorflow/ejemplo_transfer_learning/" class="active">Ejemplo transfer learning</a>
   
 
         </li>
@@ -526,7 +525,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/machine_learning/vectorizacion/" class="active">Vectorización</a>
+    <a href="/docs/python/machine_learning/vectorizacion/" class="">Vectorización</a>
   
 
           
@@ -750,7 +749,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Vectorización</strong>
+  <strong>Ejemplo transfer learning</strong>
 
   <label for="toc-control">
     
@@ -767,7 +766,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#secciones">Secciones</a></li>
+    <li><a href="#código">Código</a></li>
   </ul>
 </nav>
 
@@ -783,25 +782,153 @@ https://github.com/alex-shpak/hugo-book
   Introducción
   <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>La vectorización es la que convertimos un grupo de textos a números. El motivo es que nuestros algoritmos procedan números, con lo que son más eficiente procesando una matriz o vector de números que a ún montón de palabras.</p>
-<p>Todo sobre la vectorización.</p>
-<h1 id="secciones">
-  Secciones
-  <a class="anchor" href="#secciones">#</a>
+<p>Ejemplo extraído del video 
+  <a href="https://www.youtube.com/watch?v=09_gmAeHIW0">Importar modelo para clasificar imágenes</a>.</p>
+<p>Y el modelo de datos de entrenamiento se puede descargar en el 
+  <a href="https://github.com/puigalex/AMP-Tech/blob/master/CNN%20desde%20cero/TransferLearning%28VGG16%29.ipynb">repositorio del ejemplo de Alex Puig</a>.</p>
+<p>El transfer learning o transferencia de aprendizaje es una técnica en la cual incorporamos un modelo ya pre-entrenado para utilizarlo para que clasifique lo que nosotros queramos.</p>
+<p>Estos modelos son más complejos a nivel de configuración de redes convolucionales como el número de datos usados para entrenarlos. La gracia de usarlos es porque la configurad de la red detecta formas, sombras, cambios de contrastes, etc. Es decir, todo lo necesario para detectar una imagen. Estos modelos para reentranalos haría falta mucha fuerza computacional que uno no tiene en casa.</p>
+<p>Keras tiene 
+  <a href="https://keras.io/api/applications/">modelos ya preentrenados</a> que se pueden utilizar en nuestras propias clasificaciones. En el ejemplo del video se usará el modelo 
+  <a href="https://keras.io/api/applications/vgg/#vgg16-function">VGG16</a> que contiene clasificación de mil imagenes distintas.</p>
+<p>En el ejemplo del video se base en el 
+  <a href="/docs/python/machine_learning/tensorflow/clasificador_imagenes_ejemplo/">clasificador de imagenes</a> por lo que las explicaciones que hace cada parte del código esta explicado en la página enlazada.</p>
+<p>Unas de las cosas que ha mejorado al usar la red VGG16 es que la precisión al clasificar las imagenes ha mejorado muchísimo. Salvo los gorilas que al haber pocas imagenes la tasa de acierto sigo siendo muy baja.</p>
+<p>El ejemplo esta creado el <em>Jupiter Notebool</em> y se irá poniendo el código de las distintas celdas. Pero para ver que tal ha mejorado la precisión hay que ejecutar el código de <em>predict.py</em> del clasificador de imagenes.</p>
+<p>** NOTA IMPORTANTE: El algoritmo esta entrenado para imagenes 224x224 pixeles. Por lo tanto el codigo utilizado en el clasificador de imagenes hay que cambiarlo para adaptarlo a dicho tamaño**</p>
+<h1 id="código">
+  Código
+  <a class="anchor" href="#c%c3%b3digo">#</a>
 </h1>
-<p>Las secciones son las siguientes:</p>
-<dl>
+<p>
+  <a href="/docs/python/machine_learning/tensor_flow/tf_ejemplo_transfer_learning.ipynb">Código fuente descargable</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import sys
+import os
+import tensorflow as tf
+import math
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># VGG16 es un modelo preentrenado que contiene multitud de imagenes.
+# Este modelo preentrado es uno de los muchos que tiene Keras
+vgg = tf.keras.applications.vgg16.VGG16()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Resumen de las capas que tiene la red neuronal VGG16
+vgg.summary()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Creación de la red convolucional
+cnn = tf.keras.Sequential()
 
-  <dt>
-    <a href="/docs/python/machine_learning/vectorizacion/conversion_palabra_a_numeros/">Ejemplo de conversión de palabras a números</a>
-  </dt>
-  <dd>
-    Ejemplo de conversión de palabras a números
-  </dd>
+# Se añaden las capas que se ha visto antes a nuestra propia red
+for capa in vgg.layers:
+    cnn.add(capa)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Resumen con las capas de nuestra propia red. Debe coincidir con el resumen
+# realizado en la red VGG16
+cnn.summary()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Con esto se elimina la capa de predicción. El pop elimina la ultima capa
+# del modelo. La ultima capa era la de &#34;predictions&#34; que tiene 1000 parámetros, tipos de imagenes,
+# que pued clasificar. Como queremos usarlo para el ejemplo de gatos, gorilas y perros, se quita dicha
+# capa para añadir una propia.
+cnn.pop()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Las capas que provienen del VGG16 no queremos entrenarlas porque ya lo han sido
+# en el pasado. Por lo tanto, indicamos que no es necesario entrenarlas.
+for layer in cnn.layers:
+    layer.trainable = False
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Añadimos una capa de predicción de softmax que tendrá 3 neuronas. Ya que se usará el ejemplo
+# de gatos, gorilas y perros.
+cnn.add(tf.keras.layers.Dense(3,activation=&#39;softmax&#39;))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Esta función encapsula lo que hemos hecho en el código anterior paso a paso.
+def modelo():
+    vgg=tf.keras.applications.vgg16.VGG16()
+    cnn=tf.keras.Sequential()
+    for capa in vgg.layers:
+        cnn.add(capa)
+    cnn.pop()
+    for layer in cnn.layers:
+        layer.trainable = False
+    cnn.add(tf.keras.layers.Dense(3,activation=&#39;softmax&#39;))
 
-</dl>
+    return cnn
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se limpia todas las variables, estado, etc. de sesión que hemos abierto de keras
+tf.keras.backend.clear_session()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Trozo de código del clasificador de imagenes pero aquí no se indicarán las capas convolucionales
+data_entrenamiento = &#34;K:/github/python_test/tensorflow/clasificador_imagenes/data/entrenamiento/&#34;
+data_validacion = &#34;K:/github/python_test/tensorflow/clasificador_imagenes/data/validacion/&#34;
 
-</article>
+# Parametros de la red neuronal
+# Número de veces que se iteran los datos en el entrenamiento
+epocas = 20
+# Tamaño de las imagenes. Este es el tamaño que espera la red VGG16, en la documentación
+# oficial lo indica.
+longitud, altura = 224, 224
+# Numero de imagenes que se procesan en cada paso
+batch_size = 32
+# Al final de cada época se harán 300 pasos con los datos de validación
+# para ir viendo como de bien va aprendiendo
+validation_steps = 32
+# Número de convoluciones o de capas(profundidad) que tendra la iamagen
+# Primera convolucion serán 32
+filtrosConv1 = 32
+# Segunda convolucion serán 64
+filtrosConv2 = 64
+# Anchura y altura que va a procesar en cada convolucion.
+tamano_filtro1 = (3, 3)
+tamano_filtro2 = (2, 2)
+# Tamaño que se va usar en el maxpooling
+tamano_pool = (2, 2)
+# Número de clases que hay en el set de datos: gatos, perros y gorilas
+clases = 3
+# Es el learning rate. Es decir, cuanto de grandes van a ser los ajustes en la red
+# para ajustarse para buscar una solución óptima.
+lr = 0.0004
+
+# Como se van a transformar las imagenes para poderlas pasar al procesao de entrenamiento
+entrenamiento_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
+    rescale=1. / 255,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True)
+
+# Lo mismo pero para los datos de test
+test_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
+    rescale=1. / 255)    
+
+# Proceso de lectura y transformación de los datos para los datos de entrenamiento
+entrenamiento_generador = entrenamiento_datagen.flow_from_directory(
+    data_entrenamiento,
+    target_size=(altura, longitud),
+    batch_size=batch_size,
+    class_mode=&#39;categorical&#39;)
+
+# Lo mismo para los datos de test
+validacion_generador = test_datagen.flow_from_directory(
+    data_validacion,
+    target_size=(altura, longitud),
+    batch_size=batch_size,
+    class_mode=&#39;categorical&#39;)    
+# Se llama a la función que devolverá el modelo adaptado basandonas en la red BGG16
+cnn = modelo()
+
+# Se indica como aprenderá el algoritmo
+cnn.compile(loss=&#39;categorical_crossentropy&#39;,
+            optimizer=tf.keras.optimizers.Adam(lr=lr),
+            metrics=[&#39;accuracy&#39;])
+# Calculo de pasos por epoca
+pasos = math.ceil( ( len(entrenamiento_generador.filenames) / batch_size ) )    
+
+cnn.fit(
+    entrenamiento_generador,
+    steps_per_epoch=pasos,
+    epochs=epocas,
+    validation_data=validacion_generador,
+    validation_steps=validation_steps )
+
+# Directorio donde se guardará el modelo
+target_dir = &#39;K:/github/python_test/tensorflow/clasificador_imagenes/modelo&#39;
+if not os.path.exists(target_dir):
+ os.mkdir(target_dir)
+
+# Grabación del modelo
+cnn.save(&#39;K:/github/python_test/tensorflow/clasificador_imagenes/modelo/modelo.h5&#39;)
+
+# Grabación de los pesos de cada una de las capas
+cnn.save_weights(&#39;K:/github/python_test/tensorflow/clasificador_imagenes/modelo/pesos.h5&#39;)   
+</code></pre></div></article>
  
       
 
@@ -832,7 +959,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#secciones">Secciones</a></li>
+    <li><a href="#código">Código</a></li>
   </ul>
 </nav>
 

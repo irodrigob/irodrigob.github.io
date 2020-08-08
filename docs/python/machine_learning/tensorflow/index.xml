@@ -22,6 +22,18 @@ El ejemplo consta de dos archivos: el primero sirve para entrenar el algoritmo y
     </item>
     
     <item>
+      <title>Ejemplo transfer learning</title>
+      <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/ejemplo_transfer_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/ejemplo_transfer_learning/</guid>
+      <description>Introducción#Ejemplo extraído del video Importar modelo para clasificar imágenes.
+Y el modelo de datos de entrenamiento se puede descargar en el repositorio del ejemplo de Alex Puig.
+El transfer learning o transferencia de aprendizaje es una técnica en la cual incorporamos un modelo ya pre-entrenado para utilizarlo para que clasifique lo que nosotros queramos.
+Estos modelos son más complejos a nivel de configuración de redes convolucionales como el número de datos usados para entrenarlos.</description>
+    </item>
+    
+    <item>
       <title>Reconocimiento números escritos a mano</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
