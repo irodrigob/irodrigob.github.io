@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.dcef4ea235e85dabf63b73ae9b753ed5dfa41ded6b35df45106882ee706b64ff.js" integrity="sha256-3O9OojXoXav2O3Oum3U&#43;1d&#43;kHe1rNd9FEGiC7nBrZP8="></script>
+<script defer src="/en.search.min.a7ca2ef9f9fe59736839cb2ed0840e130270f7ec954cb0886ab536480eb7cbae.js" integrity="sha256-p8ou&#43;fn&#43;WXNoOcsu0IQOEwJw9&#43;yVTLCIarU2SA63y64="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -235,6 +235,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/python/sentencias/constantes_internas/" class="">Constantes internas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/diccionario/" class="">Diccionario</a>
   
 
         </li>
@@ -509,7 +519,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#iteracciones">Iteracciones</a>
       <ul>
         <li><a href="#iteracciones-condicionales">Iteracciones condicionales</a></li>
-        <li><a href="#iteracciones-listas">Iteracciones listas</a></li>
+        <li><a href="#iteracciones-listas">Iteracciones listas</a>
+          <ul>
+            <li><a href="#usando-enumerate">Usando enumerate</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -586,7 +600,29 @@ for numero in numeros:
 Número:  4
 Número:  3
 Número:  2
-</code></pre></article>
+</code></pre><h3 id="usando-enumerate">
+  Usando enumerate
+  <a class="anchor" href="#usando-enumerate">#</a>
+</h3>
+<p><em>enumerate</em> permite recorre una lista recorriendo todos sus valores y devolviendo el índice y su valor. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">numeros = [5,4,3,2]
+for indice, valor in enumerate(numeros):
+    print(f&#34;indice: <span style="color:#75715e">{</span><span style="color:#a6e22e">indice</span><span style="color:#75715e">}</span> valor: <span style="color:#75715e">{</span><span style="color:#a6e22e">valor</span><span style="color:#75715e">}</span>&#34;)
+</code></pre></div><p>Resultado:</p>
+<pre><code>indice: 0 valor: 5
+indice: 1 valor: 4
+indice: 2 valor: 3
+indice: 3 valor: 2
+</code></pre><p>Lo que permite el <em>enumarete</em> es olvidarte de saber cuantos registros tiene la tabla y lo gestiona él.</p>
+<p>Yo esta sentencia la he usado junto a los <em>dictionary</em> para saber en que indice esta un valor:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">block_num_index = <span style="color:#75715e">{}</span>
+for index, value in enumerate(data[&#39;block_num&#39;]):
+    block_num_index.setdefault(value,[]).append(index)
+</code></pre></div><p>En debugging el <em>dictionary</em> quedaría así:</p>
+<p>
+  <img src="/images/python/sentencias/enumerate_junto_dictionary.png" alt="Resultado" /></p>
+<p>La clave son números, ya que son códigos de grupo, y el valor de cada clave es el índice donde aparecerá dicho grupo.</p>
+</article>
  
       
 
@@ -619,7 +655,11 @@ Número:  2
     <li><a href="#iteracciones">Iteracciones</a>
       <ul>
         <li><a href="#iteracciones-condicionales">Iteracciones condicionales</a></li>
-        <li><a href="#iteracciones-listas">Iteracciones listas</a></li>
+        <li><a href="#iteracciones-listas">Iteracciones listas</a>
+          <ul>
+            <li><a href="#usando-enumerate">Usando enumerate</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
