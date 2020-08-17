@@ -129,11 +129,11 @@ Mostrar un ALV como si fuera una dynpro pero sin dynpro# CL_GUI_CONTAINER=&am
     
     <item>
       <title>Anaconda</title>
-      <link>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</link>
+      <link>https://irodrigob.github.io/docs/python/anaconda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</guid>
-      <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python.
+      <guid>https://irodrigob.github.io/docs/python/anaconda/</guid>
+      <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python o cualquier otro paquete para proyectos en Pytjon..
 Entornos#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
 Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
     </item>
@@ -338,6 +338,17 @@ Yo suelo usar una clase general para agrupar determinaciones de un mismo nodo. E
       <description>Introducción#Son como las listas o tuplas pero al acceso a sus valores no se accede por un índice, sino que se accede por la clave asociada al valor.
 Por lo que he visto hay diccionarios simples que es una relación clave&amp;lt;-&amp;gt;valor y otros más complejos. De momento explicaré los simples para tener una base
 Simples#Crear un diccionario es muy simple tan sólo hay que usar la siguiente sentencia:</description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/</guid>
+      <description>Introducción#Django es un framework que permite realizar aplicaciones web de una manera sencilla y rápida.
+A esto hay que sumarle Django Rest Framework que permite crear servicios REST a través de Django
+En mi caso quiero usar Django + Django Rest Framework porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es SQLite3) de una manera bastante sencilla.</description>
     </item>
     
     <item>

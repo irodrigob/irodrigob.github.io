@@ -31,5 +31,16 @@ Python#El interprete del lenguaje hay que descargarlo de la página oficial.
 IDE de desarrollo#Uso el VS Code que tiene una ventaja cuando creas un programa con extensión &amp;ldquo;.py&amp;rdquo; (extensión que indica que es un lenguaje Python) te descarga el plugin para poder ejecutar directamente desde el VSCode.</description>
     </item>
     
+    <item>
+      <title>Anaconda</title>
+      <link>https://irodrigob.github.io/docs/python/anaconda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/anaconda/</guid>
+      <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python o cualquier otro paquete para proyectos en Pytjon..
+Entornos#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
+Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
+    </item>
+    
   </channel>
 </rss>

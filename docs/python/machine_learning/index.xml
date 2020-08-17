@@ -22,17 +22,6 @@ Tensor Flow#¿Qué és?#Según la Wikipedia: TensorFlow es una biblioteca 
     </item>
     
     <item>
-      <title>Anaconda</title>
-      <link>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/python/machine_learning/anaconda/</guid>
-      <description>Introducción#Tal como se ha explicado en la página de entorno de desarrollo, Anaconda permite la instalación de paquetes para usar el machine learning en Python.
-Entornos#Los entornos, creo que hasta tres entornos se pueden usar, permiten tener instalaciones separadas de paquetes según lo que se quiera hacer.
-Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
-    </item>
-    
-    <item>
       <title>Guardar modelos entrenados</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/guardar_modelos_entrenados/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
