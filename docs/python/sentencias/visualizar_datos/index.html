@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Variables">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Variables" />
-<meta property="og:description" content="Variables" />
+<meta name="description" content="Visualizar datos">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Visualizar datos" />
+<meta property="og:description" content="Visualizar datos" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/variables/" />
-<meta property="article:modified_time" content="2020-07-11T17:57:46+02:00" />
-<title>Variables | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/visualizar_datos/" />
+<meta property="article:modified_time" content="2020-08-15T18:15:46+02:00" />
+<title>Visualizar datos | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -194,7 +194,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/variables/" class="active">Variables</a>
+    <a href="/docs/python/sentencias/variables/" class="">Variables</a>
   
 
         </li>
@@ -334,7 +334,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/visualizar_datos/" class="">Visualizar datos</a>
+    <a href="/docs/python/sentencias/visualizar_datos/" class="active">Visualizar datos</a>
   
 
         </li>
@@ -520,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Variables</strong>
+  <strong>Visualizar datos</strong>
 
   <label for="toc-control">
     
@@ -536,9 +536,13 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#variables">Variables</a></li>
-    <li><a href="#convertir-variables">Convertir variables</a></li>
-    <li><a href="#borrar-contenido-de-variables">Borrar contenido de variables</a></li>
+    <li><a href="#visualizar-datos">Visualizar datos</a></li>
+    <li><a href="#print"><em>print</em></a>
+      <ul>
+        <li><a href="#hacer-operaciones">Hacer operaciones</a></li>
+        <li><a href="#mostrar-contenido-de-variables">Mostrar contenido de variables</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -550,42 +554,47 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="variables">
-  Variables
-  <a class="anchor" href="#variables">#</a>
+  <article class="markdown"><h1 id="visualizar-datos">
+  Visualizar datos
+  <a class="anchor" href="#visualizar-datos">#</a>
 </h1>
-<p>Existen tres tipos de variables, al menos por lo que he visto que son: string, enteras y flotantes.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Esta es integer
-a=23
-# Esta es float
-b=23.456
-# Esta es string
-c=&#34;hola mundo&#34;
-</code></pre></div><p>Para saber el tipo de variable en cualquier momento se puede usar la siguiente sentencia:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">type(c)
-</code></pre></div><h1 id="convertir-variables">
-  Convertir variables
-  <a class="anchor" href="#convertir-variables">#</a>
+<p>En todos los ejemplos se hace uso de la sentencia <em>print</em> a la hora de visualizar los datos. En esta página se recopila usos que se hace de ella y otras posibles formar de visualizar en pantalla</p>
+<h1 id="print">
+  <em>print</em>
+  <a class="anchor" href="#print">#</a>
 </h1>
-<p>Si queremos convertir el formato de una variable a otra. Como hay tres tipos de &ldquo;tipos&rdquo;, hay tres funciones que lo hace: <em>INT</em>, <em>FLOAT</em>, <em>STR</em></p>
-<p>Tenemos este ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">h=&#34;12&#34;
+<p>El <em>print</em> muestra los datos en la consola doned se esta ejecutando el programa. Aquí se recopilan formas de usarlo</p>
+<h2 id="hacer-operaciones">
+  Hacer operaciones
+  <a class="anchor" href="#hacer-operaciones">#</a>
+</h2>
+<p>Es posible mostrar el resultado de una operación que se pone directamente en la sentencia:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">h=12
+a=12
 print(&#34;Suma: &#34;,a+h)
-</code></pre></div><p>Al ejecutarlo nos dará esto:</p>
-<pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'
-</code></pre><p>Pero si hacemos cambiamos el código:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">h=&#34;12&#34;
-print(&#34;Suma: &#34;,a+int(h))
-</code></pre></div><p>Al ejecutarlo nos dará esto:</p>
+</code></pre></div><p>Resultado</p>
 <pre><code>Suma:  24
-</code></pre><p>No hay que decir que para poderlo el ejemplo anterior en la variable <em>h</em> tiene que haber un número. Si tuviese el valor <em>12r</em> daría un error porque hay un carácter que no es númerico.</p>
-<h1 id="borrar-contenido-de-variables">
-  Borrar contenido de variables
-  <a class="anchor" href="#borrar-contenido-de-variables">#</a>
-</h1>
-<p>Para borrar el contenido de una variable se usa la sentencia <em>DEL</em> ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">del KNN
-</code></pre></div></article>
+</code></pre><h2 id="mostrar-contenido-de-variables">
+  Mostrar contenido de variables
+  <a class="anchor" href="#mostrar-contenido-de-variables">#</a>
+</h2>
+<p>Opción más simple:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">n=20
+print(&#34;Valor de n: &#34;,n)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valor de n: 10
+</code></pre><p>O también poner directamente el valor del variables:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">n=20
+print(n)
+</code></pre></div><p>Resultado:</p>
+<pre><code>10
+</code></pre><p>Pero la <strong>opción que más me gusta</strong> por ser la más simple es estA::</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">n=20
+print(f&#34;Valor de n: <span style="color:#75715e">{</span><span style="color:#a6e22e">n</span><span style="color:#75715e">}</span>&#34;)
+</code></pre></div><p>Resultado:</p>
+<pre><code>Valor de n: 10
+</code></pre><p>Tan solo hay que poner el carácter <em>f</em> delante de las comillas dobles o simples, al gusto, y poner entre los carácteres <em>{}</em> la variable.</p>
+</article>
  
       
 
@@ -615,9 +624,13 @@ print(&#34;Suma: &#34;,a+int(h))
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#variables">Variables</a></li>
-    <li><a href="#convertir-variables">Convertir variables</a></li>
-    <li><a href="#borrar-contenido-de-variables">Borrar contenido de variables</a></li>
+    <li><a href="#visualizar-datos">Visualizar datos</a></li>
+    <li><a href="#print"><em>print</em></a>
+      <ul>
+        <li><a href="#hacer-operaciones">Hacer operaciones</a></li>
+        <li><a href="#mostrar-contenido-de-variables">Mostrar contenido de variables</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

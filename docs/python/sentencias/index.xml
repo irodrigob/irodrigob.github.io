@@ -77,6 +77,17 @@ ent = input(&amp;#39;Introduzca la Temperatura Fahrenheit:&amp;#39;) try: fahr =
     </item>
     
     <item>
+      <title>Crear paquetes y librerías</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/crear_paquetes_librerias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/crear_paquetes_librerias/</guid>
+      <description>Introducción#En la siguiente pagina se explica como usar librerías o paquetes. Aquí se explica como crearnos nuestras propías librerías y/o paquetes para utilizarlos.
+Para ello voy a usar un ejemplo de una aplicación que estoy montando. No se si será el mejor ejemplo pero leyendo de varios sitios creo que es una buena estructura.
+Ejemplo#La aplicación, que esta en una fase embrionaria, he creado una paquete cuya carpeta principal es lib donde estarán todas las librerias que se usarán en la aplicación.</description>
+    </item>
+    
+    <item>
       <title>Diccionario</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/diccionario/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -164,6 +175,17 @@ import os Logs#Cuando se usán librerías de machine learning como Tensor Flo
 Librerías propias o sencillas#Ejemplo de como usar la libreria matemática para calcular una raíz cuadrada:
 import math print(math.sqrt(20)) Resultado
 4.47213595499958Librerías dentro de paquetes#El siguiente ejemplo se recupera la libreria de regresión de KNN:</description>
+    </item>
+    
+    <item>
+      <title>Visualizar datos</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/visualizar_datos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/visualizar_datos/</guid>
+      <description>Visualizar datos#En todos los ejemplos se hace uso de la sentencia print a la hora de visualizar los datos. En esta página se recopila usos que se hace de ella y otras posibles formar de visualizar en pantalla
+print#El print muestra los datos en la consola doned se esta ejecutando el programa. Aquí se recopilan formas de usarlo
+Hacer operaciones#Es posible mostrar el resultado de una operación que se pone directamente en la sentencia:</description>
     </item>
     
   </channel>

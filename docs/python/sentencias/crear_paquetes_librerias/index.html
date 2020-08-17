@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Variables">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Variables" />
-<meta property="og:description" content="Variables" />
+<meta name="description" content="Crear paquetes y librerías propias">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Crear paquetes y librerías" />
+<meta property="og:description" content="Crear paquetes y librerías propias" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/variables/" />
-<meta property="article:modified_time" content="2020-07-11T17:57:46+02:00" />
-<title>Variables | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/sentencias/crear_paquetes_librerias/" />
+
+<title>Crear paquetes y librerías | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -194,7 +194,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/variables/" class="active">Variables</a>
+    <a href="/docs/python/sentencias/variables/" class="">Variables</a>
   
 
         </li>
@@ -244,7 +244,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/sentencias/crear_paquetes_librerias/" class="">Crear paquetes y librerías</a>
+    <a href="/docs/python/sentencias/crear_paquetes_librerias/" class="active">Crear paquetes y librerías</a>
   
 
         </li>
@@ -520,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Variables</strong>
+  <strong>Crear paquetes y librerías</strong>
 
   <label for="toc-control">
     
@@ -536,9 +536,8 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#variables">Variables</a></li>
-    <li><a href="#convertir-variables">Convertir variables</a></li>
-    <li><a href="#borrar-contenido-de-variables">Borrar contenido de variables</a></li>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#ejemplo">Ejemplo</a></li>
   </ul>
 </nav>
 
@@ -550,42 +549,54 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="variables">
-  Variables
-  <a class="anchor" href="#variables">#</a>
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>Existen tres tipos de variables, al menos por lo que he visto que son: string, enteras y flotantes.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Esta es integer
-a=23
-# Esta es float
-b=23.456
-# Esta es string
-c=&#34;hola mundo&#34;
-</code></pre></div><p>Para saber el tipo de variable en cualquier momento se puede usar la siguiente sentencia:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">type(c)
-</code></pre></div><h1 id="convertir-variables">
-  Convertir variables
-  <a class="anchor" href="#convertir-variables">#</a>
+<p>En la siguiente 
+  <a href="/docs/python/sentencias/usar_librerias/">pagina</a> se explica como usar librerías o paquetes. Aquí se explica como crearnos nuestras propías librerías y/o paquetes para utilizarlos.</p>
+<p>Para ello voy a usar un ejemplo de una aplicación que estoy montando. No se si será el mejor ejemplo pero leyendo de varios sitios creo que es una buena estructura.</p>
+<h1 id="ejemplo">
+  Ejemplo
+  <a class="anchor" href="#ejemplo">#</a>
 </h1>
-<p>Si queremos convertir el formato de una variable a otra. Como hay tres tipos de &ldquo;tipos&rdquo;, hay tres funciones que lo hace: <em>INT</em>, <em>FLOAT</em>, <em>STR</em></p>
-<p>Tenemos este ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">h=&#34;12&#34;
-print(&#34;Suma: &#34;,a+h)
-</code></pre></div><p>Al ejecutarlo nos dará esto:</p>
-<pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'
-</code></pre><p>Pero si hacemos cambiamos el código:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">h=&#34;12&#34;
-print(&#34;Suma: &#34;,a+int(h))
-</code></pre></div><p>Al ejecutarlo nos dará esto:</p>
-<pre><code>Suma:  24
-</code></pre><p>No hay que decir que para poderlo el ejemplo anterior en la variable <em>h</em> tiene que haber un número. Si tuviese el valor <em>12r</em> daría un error porque hay un carácter que no es númerico.</p>
-<h1 id="borrar-contenido-de-variables">
-  Borrar contenido de variables
-  <a class="anchor" href="#borrar-contenido-de-variables">#</a>
-</h1>
-<p>Para borrar el contenido de una variable se usa la sentencia <em>DEL</em> ejemplo:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">del KNN
-</code></pre></div></article>
+<p>La aplicación, que esta en una fase embrionaria, he creado una paquete cuya carpeta principal es <em>lib</em> donde estarán todas las librerias que se usarán en la aplicación. Actualmente tiene los siguientes niveles:</p>
+<pre><code>lib
+|--- __init__.py
+|--- image
+     |--- __init__.py
+     |--- constants.py
+     |--- image.py
+     |--- imagePreProcessing.py
+</code></pre><p>He optado por crear una carpeta llama <em>lib</em> y dentro de ella ir creando carpetas por cada tipo distinto de librería, quedando esta manera todo queda más organizado. Si hubiese creado cada librería en el directorio raíz de la aplcación quedaría desorganizado y no sabrías para que sirve cada carpeta.</p>
+<p>En los paquetes en cada carpeta tiene que crearse un archivo <em><strong>init</strong>.py</em>  para que cuando hagamos el <em>import</em>, python sepa que es una librería. Este fichero puede estar vacio no es necesario introducir nada.</p>
+<p>En mi caso los tengo informado de la siguiente manera:</p>
+<p>Para el <em><strong>init</strong>.py</em> del directorio raíz:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from lib.image import *
+</code></pre></div><p>Para el <em><strong>init</strong>.py</em> del directorio <em>lib</em>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from . import image
+from . import imagePreProcessing
+from . import constants
+</code></pre></div><p>Esto nos permite simplificar los import en los programa. Ejemplo, gracías al <em><strong>init</strong>.py</em> del directorio raíz se puede hacer esto directamente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import lib
+.
+.
+oImg = lib.image.clImage()
+</code></pre></div><p>Si dicho fichero estuviera vacio el código habría que cambiarlo por esto:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from lib.image import image
+.
+.
+oImg = image.clImage()
+</code></pre></div><p>Incluso es posible delimitar que librerías pueden usarse. Si el <em><strong>init</strong>.py</em> del directorio ráiz solo tenemos esto:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from lib.image import imagePreProcessing
+</code></pre></div><p>Este trozo de código nos daría error al no encontrar la librería:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import lib
+.
+.
+oImg = lib.image.clImage()
+</code></pre></div><p>Aunque, podríamos solucionarlo accedediendo directamente a la librería que queremos: <em>from lib.image import image</em></p>
+<p>En librerías pequeñas simplificar las llamadas pueden ser irrelevante porque mirando los directorios podemos encontrar la librería que nos interesa. Pero en libererías más complejas(solo hay que ver la de <em>numpy</em>) esto no es una opción, y es más comodo informar en los archivos <em><strong>init</strong>.py</em> que librerías se importan de manera automática al llamar a la librería. De esta manera <strong>se simplifica, y mucho</strong> las llamadas.</p>
+</article>
  
       
 
@@ -615,9 +626,8 @@ print(&#34;Suma: &#34;,a+int(h))
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#variables">Variables</a></li>
-    <li><a href="#convertir-variables">Convertir variables</a></li>
-    <li><a href="#borrar-contenido-de-variables">Borrar contenido de variables</a></li>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#ejemplo">Ejemplo</a></li>
   </ul>
 </nav>
 
