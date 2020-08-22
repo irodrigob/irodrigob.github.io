@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Envio, recepción y borrado de ficheros">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Servicios con ficheros" />
+<meta property="og:description" content="Envio, recepción y borrado de ficheros" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/" />
+
+<title>Servicios con ficheros | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.de326117f371074b9257022165c0732b772a3655972b18c4f63f289cad601295.js" integrity="sha256-3jJhF/NxB0uSVwIhZcBzK3cqNlWXKxjE9j8onK1gEpU="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/" class="collapsed ">Frameworks</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/" class="">Django</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/autentificacion_session/" class="">Autentificación por sesión</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/" class="">Configuración URLs aplicación</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/" class="">Equivalencia métodos HTTP y DRF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/" class="active">Servicios con ficheros</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Servicios con ficheros</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-introducción--">Pre-Introducción :-)</a></li>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#configuración-de-django">Configuración de Django</a>
+      <ul>
+        <li><a href="#configuración-general">Configuración general</a></li>
+        <li><a href="#configuración-de-urls">Configuración de URLs</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejemplo-de-recepción-del-fichero">Ejemplo de recepción del fichero</a>
+      <ul>
+        <li><a href="#modelo-de-datos">Modelo de datos</a></li>
+        <li><a href="#serializers">Serializers</a></li>
+        <li><a href="#views">Views</a></li>
+        <li><a href="#urls">URLs</a></li>
+        <li><a href="#testeo">Testeo</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejemplo-de-borrado-del-fichero">Ejemplo de borrado del fichero</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="pre-introducción--">
+  Pre-Introducción :-)
+  <a class="anchor" href="#pre-introducci%c3%b3n--">#</a>
+</h1>
+<p>Antes de nada explicar como se guardan los ficheros usando <em>Django</em>. Los ficheros en vez de guardarse en binario en un campo de la base de datos aquí por lo que que leído, se guardan en un directorio interno y en base de datos se guarda la ruta a dicha fichero. Por lo cual, cuando el servicio que devuelve el fichero no devuelve el contenido. Devuelve la url directamente.</p>
+<p>En SAP, que es lo que más experiencia tengo, los ficheros solo guardar el binario en una tabla. Pero si que es verdad que cuando lo devuelve lo hago a través de una URL. Esto es mucho más óptimo para todos, tanto backend como frontend.</p>
+<p>Otra nota importante. Es que cuando se lanza el servicio de borrado, se borra los datos en el modelo pero no el directorio que se guarda. Esto he léido es para garantizar integridad y bla bla. Yo lo veo, que en ese caso se tendría que tener un proceso de borrado de ficheros huerfanos.</p>
+<p>Otro punto es que si en el mismo path donde se guardan las imagenes hay un fichero con el mismo nombre le añade un sufijo final para distinguirlo. Eso esta muy bien.</p>
+<p>A modo de prueba personal, he intentado guardarme el binario en un campo del modelo pero me ha sido imposible conseguir. Consigo, eso creo, recuperar el binario en la petición HTTP pero no consigo grabarla en el modelo.</p>
+<h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>El objetivo es explicar como funcionan los servicios que operan con ficheros. Esto por si solo se puede ir haciendo con la documentación oficial, y algun que otro ejemplo encontrado por ahí. Pero hay dos cosas que me han obligado a hacerlo a medida:</p>
+<ol>
+<li>Cuando se recibe un fichero quiero guardar el nombre del fichero y tipo de fichero.</li>
+<li>Quiero borrar el fichero en el directorio donde se ha guardado cuando se lanze el proceso de borrado.</li>
+</ol>
+<p>Las vistas del ejemplo son las de tipo <em>viewSets</em> de <em>Django Rest Framework</em>, de aquí en adelante DRF. El mótivo es que este tipo de vistas implementan de manera automática los procesos CRUD sin necesidad de añadir código. Y a mi me interesa sobrecargar la creación y borrado, pero el de lectura y lista quiero seguir usando los que me ofrece DRF.</p>
+<p>Como apunte final las pruebas del servicio las he hecho con el postman.</p>
+<p>La estructura de Django es:</p>
+<ul>
+<li>Nombre de proyecto: backend</li>
+<li>Nombre de aplicación: invoices</li>
+</ul>
+<p>Con lo que a nivel de directorio tenemos:</p>
+<p>backend
+|&mdash;backend -&gt; Donde esta la configuración del proyecto
+|&mdash;invoices
+|&mdash;media -&gt; Carpeta donde se guardará los archivos</p>
+<h1 id="configuración-de-django">
+  Configuración de Django
+  <a class="anchor" href="#configuraci%c3%b3n-de-django">#</a>
+</h1>
+<h2 id="configuración-general">
+  Configuración general
+  <a class="anchor" href="#configuraci%c3%b3n-general">#</a>
+</h2>
+<p>Para poder usar ficheros a Django hay que decirle donde lo tiene que guardar. Para eso hay que localizar el fichero <em>settings.py</em> del proyecto (que esta en la carpeta, del mismo nombre, dentro de la carpeta del proyecto). En ese fichero hay que añadir la siguiente línea:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Directorio donde se guardan los archivos de imagen, video, eetc..
+MEDIA_URL = &#39;/media/&#39;
+MEDIA_ROOT = os.path.join(BASE_DIR, &#34;media&#34;)
+</code></pre></div><p>El primero indica la carpeta dentro del proyecto que se creará (no hace falta crearla de antemano, se crea de manera automática). Y al segunda el path completo donde estará la carpeta en el sistema operativo. Esto sirve para que cuando tengamos el objeto de campo <em>ImageField</em> habrá un atributo donde esta la ruta completa del fichero. Útil para borrar el fichero, leerlo, etc.</p>
+<h2 id="configuración-de-urls">
+  Configuración de URLs
+  <a class="anchor" href="#configuraci%c3%b3n-de-urls">#</a>
+</h2>
+<p>En el fichero <em>urls.py</em> del proyecto hay que añadir lo siguiente a las URLs que tengamos configuradas:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.contrib import admin
+from django.urls import path, include
+from invoices import urls
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path(&#39;admin/&#39;, admin.site.urls)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+</code></pre></div><p>Se añade el <em>+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)</em> para añadir en los archivos estáticos del proyecto el path de las imagenes</p>
+<h1 id="ejemplo-de-recepción-del-fichero">
+  Ejemplo de recepción del fichero
+  <a class="anchor" href="#ejemplo-de-recepci%c3%b3n-del-fichero">#</a>
+</h1>
+<h2 id="modelo-de-datos">
+  Modelo de datos
+  <a class="anchor" href="#modelo-de-datos">#</a>
+</h2>
+<p>En el fichero <em>models.py</em> de la aplicación se añade el siguiente modelo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import uuid
+from django.db import models
+from django.utils import timezone
+
+
+class invoiceImage(models.Model):
+    id_file = models.UUIDField(
+        default=uuid.uuid4, primary_key=True, editable=False)
+    file_name = models.CharField(max_length=100, default=&#39;&#39;)
+    file_type = models.CharField(max_length=100, default=&#39;&#39;)
+    created_date = models.DateTimeField(default=timezone.now)
+    file_path = models.ImageField(default=&#39;&#39;, upload_to=&#39;invoice/image/&#39;)
+</code></pre></div><p>Campos:</p>
+<ul>
+<li>id_file &ndash;&gt; ID único que se informa al grabar</li>
+<li>file_name &ndash;&gt; nombre del fichero que viene en el servicio</li>
+<li>file_type &ndash;&gt; Es el <em>content-type</em> del fichero del servicio</li>
+<li>created_date &ndash;&gt; Fecha de creación del fichero</li>
+<li>file_path &ndash;&gt; URL donde estará la imagen. Para que funcione la grabación de la imagen el tipo de fichero debe ser <em>ImageField</em>. Hay otro que se llama <em>FileField</em>, que funciona lo mismo(eso creo) pero con ficheros de todo tipo. En este tipo de fichero es posible añadir el path (que se añade al indicado de la configuración) donde se guarda el fichero. Esto permite clasificar las imagenes por directorios.</li>
+</ul>
+<h2 id="serializers">
+  Serializers
+  <a class="anchor" href="#serializers">#</a>
+</h2>
+<p>Para mi es el controlador, es que recibe los datos del modelo y los devuelve en formato JSON a la vista. El código que le he puesto en el fichero <em>serializers.py</em> es el siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from rest_framework import serializers
+from . import models
+
+
+class invoiceImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.invoiceImage
+        fields = (&#39;id_file&#39;, &#39;file_name&#39;, &#39;created_date&#39;,
+                  &#39;file_path&#39;, &#39;file_type&#39;)
+</code></pre></div><p>Es muy sencillo en la variable <em>model</em> se indica el modelo definido en el paso anterior. Y en <em>fields</em> los campos que queremos que vea la vista.</p>
+<h2 id="views">
+  Views
+  <a class="anchor" href="#views">#</a>
+</h2>
+<p>Aquí esta la parte más importante.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from rest_framework import parsers
+from rest_framework import response
+from rest_framework import status
+from rest_framework import viewsets
+from django.http import Http404
+import os
+from . import models
+from . import serializers
+
+class invoiceImageViewSet(viewsets.ModelViewSet):
+    queryset = models.invoiceImage.objects.all()
+    serializer_class = serializers.invoiceImageSerializer
+    parser_classes = [parsers.MultiPartParser]
+
+    &#34;&#34;&#34;
+    Este método se llamada al hacer la llamado POST 
+    &#34;&#34;&#34;
+
+    def create(self, request):
+        # Se recupera el objeto fichero que esta parseado por django rest framework
+        file_obj = request.data[&#39;content-file&#39;]
+        # Se inicializa el serializer pasando los valores del fichero: nombre, tipo y el propio objeto.
+        serializer = self.serializer_class(
+            data=<span style="color:#75715e">{</span><span style="color:#e6db74">&#39;file_name&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">request</span><span style="color:#f92672">.</span><span style="color:#a6e22e">data</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;content-file&#39;</span><span style="color:#f92672">].</span><span style="color:#a6e22e">name</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;file_path&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">file_obj</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;file_type&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">request</span><span style="color:#f92672">.</span><span style="color:#a6e22e">data</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;content-file&#39;</span><span style="color:#f92672">].</span><span style="color:#a6e22e">content_type</span><span style="color:#75715e">}</span>)
+
+        # Si los datos son correctos se graba el modelo, donde se autoinformará los campos automáticos como el: id, fecha de creación, etc.
+        if serializer.is_valid():
+            serializer.save()
+            return response.Response(serializer.data, status=status.HTTP_201_CREATED)
+        return response.Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+</code></pre></div><p>Cosas a tener en cuenta:</p>
+<ol>
+<li>Las variables <em>queryset</em> y <em>serializer_class</em> se ponen siempre. Es para que el resto de método de consulta funcionen</li>
+<li>La variable <em>parser_classes</em> hay que poner la que se indica. En los ejemplos de DRF aparece la <em>FileUploadParser</em> pero a mi no me funciona.</li>
+<li>Tal como se explica en las 
+  <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/">equivalencias HTTP</a> el método que se sobrecarga el <em>create</em>.</li>
+<li>En el apartado de testeo se verá pero la variable donde viaja el fichero se llama <em>content-file</em>. Iba usar la <em>file</em> pero el <em>Postman</em> me da un warning y el fichero no viajaba.</li>
+<li>Una vez grabado los datos en <em>serializer.data</em> se pueden acceder a todos los campos incluídos los que se autorellenan.</li>
+</ol>
+<h2 id="urls">
+  URLs
+  <a class="anchor" href="#urls">#</a>
+</h2>
+<p>En el archivo <em>urls.py</em> de la aplicación hay que registrar la nueva vista:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">
+from rest_framework import routers
+from . import views
+
+router = routers.DefaultRouter()
+router.register(r&#39;invoiceImage&#39;, views.invoiceImageViewSet)
+</code></pre></div><h2 id="testeo">
+  Testeo
+  <a class="anchor" href="#testeo">#</a>
+</h2>
+<p>Las pruebas se han hecho con el postman y esta es la llamada:</p>
+<p>
+  <img src="/images/python/framework/django/enviar_fichero_servicio.png" alt="Enviar fichero" /></p>
+<p>El resultado:</p>
+<pre><code>{
+    &quot;id_file&quot;: &quot;8fa3b1bc-975d-472a-b0ae-7f028fc26769&quot;,
+    &quot;file_name&quot;: &quot;DSC05753.JPG&quot;,
+    &quot;created_date&quot;: &quot;2020-08-22T18:39:55.165869+02:00&quot;,
+    &quot;file_path&quot;: &quot;/media/invoice/image/DSC05753_apEwEM9.JPG&quot;,
+    &quot;file_type&quot;: &quot;image/jpeg&quot;
+}
+</code></pre><h1 id="ejemplo-de-borrado-del-fichero">
+  Ejemplo de borrado del fichero
+  <a class="anchor" href="#ejemplo-de-borrado-del-fichero">#</a>
+</h1>
+<p>Siguiendo el ejemplo anterior vamos añadir como procesar el borrado para que nos haga el borrado físico de la imagen, aparte del borrado en el modelo. Nos basaremos en el ejemplo anterior por lo que solo hay que modificar el fichero <em>views.py</em> para añadir el siguiente método</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">    def destroy(self, request, pk=None):
+        try:
+
+            # Obtengo el objeto pasado
+            image = self.get_object()
+
+            # Se borra la imagen
+            image.delete()
+
+            # Finalmente se borra la imagen fisica
+            os.remove(image.file_path.path)
+
+        except Http404:  # Si no existe se lanza exepción
+            raise Http404
+
+        # Si no hay errores entonces se envia que ha ido bien el borrado
+        return response.Response(status=status.HTTP_204_NO_CONTENT)
+</code></pre></div><p>Cosas a tener en cuenta:</p>
+<ol>
+<li>La equivalencia de método HTTP DELETE es la función <em>destroy</em></li>
+<li>El <em>self.get_object()</em> nos recupera los datos del ID de la imagen pasada por parámetro. Si no existe se devuelve un error 404</li>
+<li>Se hace primero el borrado en el modelo por si hay cualquier error o excepción. Y finalmente el borrado físico. En el atributo <em>file_path.path</em> tenemos el path absoluto donde esta la imagen.</li>
+<li>Si todo va bien se devuelve el código HTTP 204 que no hay contenido.</li>
+</ol>
+<p>Para probarlo en <em>Postman</em> sería con la siguiente llamada:</p>
+<p>
+  <img src="/images/python/framework/django/borrar_fichero_servicio.png" alt="Borrado fichero" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-introducción--">Pre-Introducción :-)</a></li>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#configuración-de-django">Configuración de Django</a>
+      <ul>
+        <li><a href="#configuración-general">Configuración general</a></li>
+        <li><a href="#configuración-de-urls">Configuración de URLs</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejemplo-de-recepción-del-fichero">Ejemplo de recepción del fichero</a>
+      <ul>
+        <li><a href="#modelo-de-datos">Modelo de datos</a></li>
+        <li><a href="#serializers">Serializers</a></li>
+        <li><a href="#views">Views</a></li>
+        <li><a href="#urls">URLs</a></li>
+        <li><a href="#testeo">Testeo</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejemplo-de-borrado-del-fichero">Ejemplo de borrado del fichero</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

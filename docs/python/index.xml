@@ -32,6 +32,19 @@ IDE de desarrollo#Uso el VS Code que tiene una ventaja cuando creas un progra
     </item>
     
     <item>
+      <title>Extensiones</title>
+      <link>https://irodrigob.github.io/docs/python/extensiones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/extensiones/</guid>
+      <description>Introducción#Extensiones, sobretodo para VS Code, que son útiles para desarrollar
+Python-autopep8#¿Qué és?#Extensión que formatea en bonito y siguiendo best-practices el código que se desarrolla.
+Instalación#Se instala directamente desde las extensiones del visual code
+Pylint#¿Qué és?#Librería que verifica sintacticamente que el código sea correcto.
+Instalación#Se hace con Anaconda Power Shell en el entorno adecuado con lo siguiente:</description>
+    </item>
+    
+    <item>
       <title>Anaconda</title>
       <link>https://irodrigob.github.io/docs/python/anaconda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

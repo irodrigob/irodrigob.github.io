@@ -10,16 +10,5 @@
 	<atom:link href="https://irodrigob.github.io/docs/python/framework/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Django</title>
-      <link>https://irodrigob.github.io/docs/python/framework/django/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/python/framework/django/</guid>
-      <description>Introducción#Django es un framework que permite realizar aplicaciones web de una manera sencilla y rápida.
-A esto hay que sumarle Django Rest Framework que permite crear servicios REST a través de Django
-En mi caso quiero usar Django + Django Rest Framework porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es SQLite3) de una manera bastante sencilla.</description>
-    </item>
-    
   </channel>
 </rss>

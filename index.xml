@@ -64,6 +64,19 @@ ivan</description>
     </item>
     
     <item>
+      <title>Extensiones</title>
+      <link>https://irodrigob.github.io/docs/python/extensiones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/extensiones/</guid>
+      <description>Introducción#Extensiones, sobretodo para VS Code, que son útiles para desarrollar
+Python-autopep8#¿Qué és?#Extensión que formatea en bonito y siguiendo best-practices el código que se desarrolla.
+Instalación#Se instala directamente desde las extensiones del visual code
+Pylint#¿Qué és?#Librería que verifica sintacticamente que el código sea correcto.
+Instalación#Se hace con Anaconda Power Shell en el entorno adecuado con lo siguiente:</description>
+    </item>
+    
+    <item>
       <title>Generar clave RSA</title>
       <link>https://irodrigob.github.io/docs/github/generar_rsa_windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -147,6 +160,16 @@ Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el
       <description>Objetivo#La API de acceso al ABAP es siempre la misma por eso voy a poner los ejemplos de cada tipo de operación que se quiera hacer.
 Yo para estos casos me suelo crear un helper para simplificar las llamadas entre las clases del proceso y del BOPF.
 Instanciar variables para acceder al BOPF#Lo primero que se suele hacer es instanciar las variables necesarias para operar con los BOPF.</description>
+    </item>
+    
+    <item>
+      <title>Autentificación por sesión</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/autentificacion_session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/autentificacion_session/</guid>
+      <description>Introducción#A través de Django se puede autentificar a los servicios de varias maneras. No es el objetivo de explicarlos aquí, pero el que he configurado es el de Session. E
+Este tipo de autentificación hay un primer servicio que se le pasa el usuario y password y si es valido te genera una cookie de sesión que en los servicios siguientes no sea necesario pasar las credencilas. Se puede indicar el tiempo de expiración de la sessión para que de manera automática haga el logout.</description>
     </item>
     
     <item>
@@ -255,6 +278,17 @@ DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn
     </item>
     
     <item>
+      <title>Configuración URLs aplicación</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/configuracion_url_aplicacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/configuracion_url_aplicacion/</guid>
+      <description>Introducción#Cada aplicación dentro de un proyecto en Django tiene su propio archivo de URLs, urls.py donde se van incluyendo las vistas que se van añadiendo. Aquí explicaremos como configurar dicho archivo tanto a nivel de proyecto como de aplicación.
+Hay que saber que el punto de acceso de los servicios será el archivo urls.py a nivel de proyecto. Por ello yo lo que hago es:
+ Uso el fichero urls.</description>
+    </item>
+    
+    <item>
       <title>Constantes internas</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/constantes_internas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -341,17 +375,6 @@ Simples#Crear un diccionario es muy simple tan sólo hay que usar la siguient
     </item>
     
     <item>
-      <title>Django</title>
-      <link>https://irodrigob.github.io/docs/python/framework/django/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/python/framework/django/</guid>
-      <description>Introducción#Django es un framework que permite realizar aplicaciones web de una manera sencilla y rápida.
-A esto hay que sumarle Django Rest Framework que permite crear servicios REST a través de Django
-En mi caso quiero usar Django + Django Rest Framework porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es SQLite3) de una manera bastante sencilla.</description>
-    </item>
-    
-    <item>
       <title>Ejemplo básico</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/arbol_decisiones/ejemplo_basico/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -435,6 +458,16 @@ El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las 
 Código#Código fuente descargable
 Se cargan las librerias
 # Regresor de KNN o vecinos cercanos from sklearn.neighbors import KNeighborsRegressor # Set de datos de boston from sklearn.datasets import load_boston # Divide los datos entre entrenamiento y testing from sklearn.</description>
+    </item>
+    
+    <item>
+      <title>Equivalencia métodos HTTP y DRF</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/equivalencia_metodos_http_drf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/equivalencia_metodos_http_drf/</guid>
+      <description>Equivalencia en vistas de tipo ViewSet#En las vistas de tipo ViewSet si queremos sobrecargar algun tipo de llamada HTTP hay que saber que método sobrecargar. La equivalencia es la siguiente:
+   HTTP Método ViewSet     GET Si queremos una lista de datos el método es list. Si es un valor concreto el método es retrieve   POST create   PUT update   PATCH partial_update   DELETE destroy    </description>
     </item>
     
     <item>
@@ -736,6 +769,15 @@ Como se explico en la página de tipos de redes neuronales este tipo de red nace
 Estas sentencias se pueden utilizar para crear nuevas variables o ponerlas como entrada de parámetro en clases.
 La sentencia estrella de esta página es la FOR. Pero ojo: que si usamos field-symbols/variable no tiene que estar declarada previamente.
 Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se rellenando los valores de ET_COND_CRUD con los datos de la estructura leída y de otras variables:</description>
+    </item>
+    
+    <item>
+      <title>Servicios con ficheros</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</guid>
+      <description>Pre-Introducción :-)#Antes de nada explicar como se guardan los ficheros usando Django. Los ficheros en vez de guardarse en binario en un campo de la base de datos aquí por lo que que leído, se guardan en un directorio interno y en base de datos se guarda la ruta a dicha fichero. Por lo cual, cuando el servicio que devuelve el fichero no devuelve el contenido. Devuelve la url directamente.</description>
     </item>
     
     <item>

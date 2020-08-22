@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/python/framework/django/</link>
+    <description>Recent content in Django on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/python/framework/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Autentificación por sesión</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/autentificacion_session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/autentificacion_session/</guid>
+      <description>Introducción#A través de Django se puede autentificar a los servicios de varias maneras. No es el objetivo de explicarlos aquí, pero el que he configurado es el de Session. E
+Este tipo de autentificación hay un primer servicio que se le pasa el usuario y password y si es valido te genera una cookie de sesión que en los servicios siguientes no sea necesario pasar las credencilas. Se puede indicar el tiempo de expiración de la sessión para que de manera automática haga el logout.</description>
+    </item>
+    
+    <item>
+      <title>Configuración URLs aplicación</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/configuracion_url_aplicacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/configuracion_url_aplicacion/</guid>
+      <description>Introducción#Cada aplicación dentro de un proyecto en Django tiene su propio archivo de URLs, urls.py donde se van incluyendo las vistas que se van añadiendo. Aquí explicaremos como configurar dicho archivo tanto a nivel de proyecto como de aplicación.
+Hay que saber que el punto de acceso de los servicios será el archivo urls.py a nivel de proyecto. Por ello yo lo que hago es:
+ Uso el fichero urls.</description>
+    </item>
+    
+    <item>
+      <title>Equivalencia métodos HTTP y DRF</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/equivalencia_metodos_http_drf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/equivalencia_metodos_http_drf/</guid>
+      <description>Equivalencia en vistas de tipo ViewSet#En las vistas de tipo ViewSet si queremos sobrecargar algun tipo de llamada HTTP hay que saber que método sobrecargar. La equivalencia es la siguiente:
+   HTTP Método ViewSet     GET Si queremos una lista de datos el método es list. Si es un valor concreto el método es retrieve   POST create   PUT update   PATCH partial_update   DELETE destroy    </description>
+    </item>
+    
+    <item>
+      <title>Servicios con ficheros</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</guid>
+      <description>Pre-Introducción :-)#Antes de nada explicar como se guardan los ficheros usando Django. Los ficheros en vez de guardarse en binario en un campo de la base de datos aquí por lo que que leído, se guardan en un directorio interno y en base de datos se guarda la ruta a dicha fichero. Por lo cual, cuando el servicio que devuelve el fichero no devuelve el contenido. Devuelve la url directamente.</description>
+    </item>
+    
+  </channel>
+</rss>

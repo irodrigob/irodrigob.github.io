@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Autentificación por sesión">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Autentificación por sesión" />
+<meta property="og:description" content="Autentificación por sesión" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/framework/django/autentificacion_session/" />
+<meta property="article:modified_time" content="2020-08-21T18:01:11+02:00" />
+<title>Autentificación por sesión | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.de326117f371074b9257022165c0732b772a3655972b18c4f63f289cad601295.js" integrity="sha256-3jJhF/NxB0uSVwIhZcBzK3cqNlWXKxjE9j8onK1gEpU="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/" class="collapsed ">Frameworks</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/" class="">Django</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/autentificacion_session/" class="active">Autentificación por sesión</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/" class="">Configuración URLs aplicación</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/" class="">Equivalencia métodos HTTP y DRF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/" class="">Servicios con ficheros</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Autentificación por sesión</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#configuración">Configuración</a></li>
+    <li><a href="#serializadores">Serializadores</a></li>
+    <li><a href="#vistas">Vistas</a></li>
+    <li><a href="#urls">URLs</a></li>
+    <li><a href="#funcionamiento">Funcionamiento</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>A través de <em>Django</em> se puede autentificar a los servicios de varias maneras. No es el objetivo de explicarlos aquí, pero el que he configurado es el de <em>Session</em>. E</p>
+<p>Este tipo de autentificación hay un primer servicio que se le pasa el usuario y password y si es valido te genera una <em>cookie</em> de sesión que en los servicios siguientes no sea necesario pasar las credencilas. Se puede indicar el tiempo de expiración de la sessión para que de manera automática haga el logout.</p>
+<p>Como la documentación de <em>Django</em> y <em>Django Rest FrameWork</em> es muy teoríca y poco práctica, al final gracias a un ejemplo he conseguido hacerlo funcionar. Por ello voy a poner aquí los pasos.</p>
+<h1 id="configuración">
+  Configuración
+  <a class="anchor" href="#configuraci%c3%b3n">#</a>
+</h1>
+<p>Hay que ir al archivo <em>settings.py</em> que esta dentro de las dos carpetas del mismo nombre que se genera el inicio del todo. Cualquier duda recomiendo al 
+  <a href="/docs/python/framework/django/">índice</a> de <em>Django</em> para ver los primeros pasos.</p>
+<p>En este archivo haremos las siguientes tareas.</p>
+<ol>
+<li>Se añadira el tipo de autentificación en la variable <em>REST_FRAMEWORK</em>, bueno esta variable sirve para muchas cosas entre ellas la autentificación:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">REST_FRAMEWORK = <span style="color:#75715e">{</span>
+    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">Modo</span> <span style="color:#a6e22e">de</span> <span style="color:#a6e22e">autentificación</span> <span style="color:#a6e22e">global</span><span style="color:#f92672">.</span> <span style="color:#a6e22e">Será</span> <span style="color:#a6e22e">por</span> <span style="color:#a6e22e">sesión</span>
+    <span style="color:#e6db74">&#39;DEFAULT_AUTHENTICATION_CLASSES&#39;</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span>
+        <span style="color:#e6db74">&#39;rest_framework.authentication.SessionAuthentication&#39;</span>
+    <span style="color:#f92672">],</span>
+    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">Acceso</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">los</span> <span style="color:#a6e22e">servicios</span> <span style="color:#a6e22e">solo</span> <span style="color:#a6e22e">si</span> <span style="color:#a6e22e">están</span> <span style="color:#a6e22e">autentificados</span><span style="color:#f92672">.</span>
+    <span style="color:#e6db74">&#39;DEFAULT_PERMISSION_CLASSES&#39;</span><span style="color:#f92672">:</span> <span style="color:#f92672">(</span>
+        <span style="color:#e6db74">&#39;rest_framework.permissions.IsAuthenticated&#39;</span><span style="color:#f92672">,</span>
+    <span style="color:#f92672">)</span>
+<span style="color:#75715e">}</span>
+</code></pre></div><p><em>A modo informativo si no queremos que se haga ningún tipo de autentificación solo habría que poner:</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">REST_FRAMEWORK = <span style="color:#75715e">{</span>
+ <span style="color:#e6db74">&#39;DEFAULT_AUTHENTICATION_CLASSES&#39;</span><span style="color:#f92672">:</span> <span style="color:#f92672">[],</span>
+ <span style="color:#e6db74">&#39;DEFAULT_PERMISSION_CLASSES&#39;</span><span style="color:#f92672">:</span> <span style="color:#f92672">[],</span>
+ <span style="color:#e6db74">&#39;UNAUTHENTICATED_USER&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">None</span>
+<span style="color:#75715e">}</span>
+</code></pre></div><p>Al final del archivo he puesto las siguiente variables:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Evita que se puede acceder a la cookie mediante javascript
+# Más info: https://docs.djangoproject.com/en/dev/ref/settings/#session-cookie-httponly
+SESSION_COOKIE_HTTPONLY = True
+
+# Cuando se cierra el navegador la sesión caduca
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Tiempo de validez de la session. Son en segundos. Le he puesto 60 minutos.
+SESSION_COOKIE_AGE = 60*60
+</code></pre></div><p>Los comentarios son autosuficientes para entender para que se usan.</p>
+<h1 id="serializadores">
+  Serializadores
+  <a class="anchor" href="#serializadores">#</a>
+</h1>
+<p>El serializador, o el controlador como yo lo llamo, es el que nos va gestionar si el usuario introducido existe. Yo en este caso he creado a nivel de proyecto un serializador porque al final el login/logout afecta a todos los servicios de toda las aplicaciones del proyecto.</p>
+<p>Como el fichero <em>serializers.py</em> no existia lo he creado en la caperta donde tenemos el <em>settings.py</em> poniendo el siguiente código:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.contrib.auth import authenticate
+from rest_framework import serializers
+
+&#34;&#34;&#34;
+Clase que se encarga de validar que el usuario y password existen
+&#34;&#34;&#34;
+
+
+class LoginSerializer(serializers.Serializer):
+    user = serializers.CharField()
+    password = serializers.CharField()
+
+    def validate(self, attrs):
+        user = authenticate(
+            username=attrs[&#39;user&#39;], password=attrs[&#39;password&#39;])
+
+        if not user:
+            raise serializers.ValidationError(&#39;Incorrect user or password.&#39;)
+
+        if not user.is_active:
+            raise serializers.ValidationError(&#39;User is disabled.&#39;)
+
+        return <span style="color:#75715e">{</span><span style="color:#e6db74">&#39;user&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">user</span><span style="color:#75715e">}</span>
+</code></pre></div><p>Lo bueno de los serializers en <em>Django Rest Framework</em> es que pueden detener su propio modelo sin tener que declararlo en base de datos.</p>
+<h1 id="vistas">
+  Vistas
+  <a class="anchor" href="#vistas">#</a>
+</h1>
+<p>Las vistas es el endpoint donde accede el servicio. De nuevo, he creado el fichero <em>views.py</em> en la misma carpeta que el serializer.</p>
+<p>Las vistas usadas son las genéricas, las <em>APIView</em>. Supongo que usan ese tipo de vistas porque tienen que declarar los distintos métodos que quieres usar. Si llamas al servicio con un método <em>POST</em> pero solo tienes definido el <em>GET</em> te va a dar un error que el método usado no es válido.</p>
+<p>Si se usará las vistas <em>ViewSet</em> no se puede hacer porque automimplementan ellas mismas todos los métodos.</p>
+<p>El código es el siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.contrib.auth import login, logout
+from rest_framework.views import APIView
+from rest_framework import permissions
+from rest_framework import response
+from rest_framework import status
+from rest_framework import authentication
+from . import serializers
+
+&#34;&#34;&#34;
+Solo se usa para el login y logout y desactivan la validación Csrf para poder hacer generar
+la sesión o cancelarla.
+&#34;&#34;&#34;
+
+
+class CsrfExemptSessionAuthentication(authentication.SessionAuthentication):
+    def enforce_csrf(self, request):
+        return
+
+
+&#34;&#34;&#34;
+Se encarga del login, es el que hará la cookie de sesión.
+Se usa el tipo de visto APIView, porque es la que se tiene que definir cada método para que funcione.
+Ejemplo, tanto el login como logout cualquier llamada que no sea post devolverá un método no permitido.
+&#34;&#34;&#34;
+
+
+class LoginView(APIView):
+    permission_classes = (permissions.AllowAny,)
+    authentication_classes = (CsrfExemptSessionAuthentication,)
+
+    def post(self, request):
+        serializer = serializers.LoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data[&#39;user&#39;]
+        login(request, user)
+        return response.Response(status=status.HTTP_200_OK)
+
+
+class LogoutView(APIView):    
+
+    def get(self, request):
+        logout(request)
+        return response.Response()
+
+</code></pre></div><p>En la clase de <em>LoginView</em> hay varias cosas interesantes:</p>
+<ol>
+<li><em>permission_classes</em> indica que o tiene permisos o no tiene. Porque hay permisos que indica si no tiene permisos solo puedes acceder a solo lectura. Aquí nada.</li>
+<li><em>authentication_classes</em> se le pasa una clase para que no valide el <em>Csrf token</em> que es obligatorio la autentificación por sesión. Este token se generara en la sentencia <em>login</em></li>
+</ol>
+<p>En la clase <em>LogoutView</em> se habilitado el método HTTP <em>GET</em> porque no es necesario pasar nada en el body para hacerlo el proceso.</p>
+<h1 id="urls">
+  URLs
+  <a class="anchor" href="#urls">#</a>
+</h1>
+<p>A nivel de proyecto hay que añadir el acceso a las dos vistas creadas. Para ello hay que modificar el archivo <em>urls.py</em>, que este se genera al crear el proyecto, y se añaden las siguientes líneas:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">urlpatterns = [
+    path(&#39;admin/&#39;, admin.site.urls),
+    path(r&#39;login&#39;, views.LoginView.as_view(), name=&#39;login&#39;),
+    path(r&#39;logout&#39;, views.LogoutView.as_view(), name=&#39;logout&#39;)
+]
+</code></pre></div><p>El path de <em>admin</em> ya viene de serie y se añade las dos vistas de login y logout.</p>
+<h1 id="funcionamiento">
+  Funcionamiento
+  <a class="anchor" href="#funcionamiento">#</a>
+</h1>
+<p>Las pruebas se han hecho con el programa <em>POSTMAN</em>. Para hacer el login és con la siguiente url: 
+  <a href="http://localhost:8000/login">http://localhost:8000/login</a></p>
+<p>Al llamarlo a nivel de cabecera veremos las dos cookies que genera:</p>
+<p>
+  <img src="/images/python/framework/django/cookies_session.png" alt="Cookies sesión" /></p>
+<p>Para las siguiente llamadas hay que tener en cuenta que si son de tipo <em>POST</em> habrá que pasar informar en la cabecera de la llamada la variable <em>X-CSRFToken</em> con el valor devuelto en la cookie que tiene en el campo el literal <em>csrftoken=</em>, hay que coger todo la cadena de número hasta el <em>;</em>, sin incluirlo. Tal que así:</p>
+<p>
+  <img src="/images/python/framework/django/valor_x_csrftoken_header.png" alt="Pasando el X-CSRFToken" /></p>
+<p>Para los métodos <em>GET</em> no es necesario.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#configuración">Configuración</a></li>
+    <li><a href="#serializadores">Serializadores</a></li>
+    <li><a href="#vistas">Vistas</a></li>
+    <li><a href="#urls">URLs</a></li>
+    <li><a href="#funcionamiento">Funcionamiento</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

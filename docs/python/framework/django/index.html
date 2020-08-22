@@ -7,16 +7,17 @@
 <meta name="description" content="Djando y librerías asociadas">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Django" />
 <meta property="og:description" content="Djando y librerías asociadas" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/python/framework/django/" />
-<meta property="article:modified_time" content="2020-08-17T18:54:57+02:00" />
+
 <title>Django | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.b45b6d37ce8e9d99a3de413639717a135de8dc48893139e0ef0b8e3b0b8605d1.js" integrity="sha256-tFttN86OnZmj3kE2OXF6E13o3EiJMTng7wuOOwuGBdE="></script>
+<script defer src="/en.search.min.de326117f371074b9257022165c0732b772a3655972b18c4f63f289cad601295.js" integrity="sha256-3jJhF/NxB0uSVwIhZcBzK3cqNlWXKxjE9j8onK1gEpU="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/python/framework/django/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -152,6 +153,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/python/framework/" class="collapsed ">Frameworks</a>
   
 
@@ -168,6 +179,57 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/python/framework/django/" class="active">Django</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/autentificacion_session/" class="">Autentificación por sesión</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/" class="">Configuración URLs aplicación</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/" class="">Equivalencia métodos HTTP y DRF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/" class="">Servicios con ficheros</a>
+  
+
+        </li>
+      
+    
+  </ul>
   
 
         </li>
@@ -316,7 +378,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/sap/ventas/" class="">Ventas</a>
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
   
 
           
@@ -324,20 +386,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/docs/sap/ventas/informacion_general/" class="">Información general</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -424,6 +472,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#como-administrar-los-modelos-creados">Como administrar los modelos creados</a></li>
       </ul>
     </li>
+    <li><a href="#artículos-sobre-django">Artículos sobre Django</a></li>
   </ul>
 </nav>
 
@@ -442,8 +491,10 @@ https://github.com/alex-shpak/hugo-book
 <p>
   <a href="https://www.djangoproject.com/">Django</a> es un framework que permite realizar aplicaciones web de una manera sencilla y rápida.</p>
 <p>A esto hay que sumarle 
-  <a href="https://www.django-rest-framework.org/">Django Rest Framework</a> que permite crear servicios REST a través de <em>Django</em></p>
-<p>En mi caso quiero usar <em>Django</em> + <em>Django Rest Framework</em> porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es <em>SQLite3</em>) de una manera bastante sencilla.</p>
+  <a href="https://www.django-rest-framework.org/">Django Rest Framework</a>, de aquí en adelante DRF, que permite crear servicios REST a través de <em>Django</em></p>
+<p>En mi caso quiero usar <em>Django</em> + <em>Django Rest Framework</em> porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es <em>SQLite3</em>) de una manera bastante sencilla. Ya que usando las vistas de tipo <em>ViewSet</em> DRF se encarga de gestionar todo el CRUD de un modelo de datos sin añadir nada de código. 
+Además DRF usa la arquitectura MVC. Donde la M son los modelos que se crean en <em>Django</em>. La V son las <em>Views</em> de DRF. Y la C es el <em>serializer</em> de DRF. Esto hace posible 
+  <a href="/docs/python/framework/django/autentificacion_session/">crear servicios sin modelo</a> usando solo las <em>Views</em> y <em>Serializers</em> con DRF. Que no sé si esto con <em>Django</em> se puede hacer.</p>
 <p>A nivel de usarlo en nuestras aplicaciones <em>Django</em> se estructura en proyectos y aplicaciones. Y estos se creán dentro del directorio de nuestro proyecto.</p>
 <p>Muchos pasos hay que realizarlos desde el terminal de Windows. Que se puede usar tanto el <em>Anaconda PowerShell</em> como el VSCode si lo hemos abiertos a través del <em>Anaconda Navigator</em> con el entorno que queremos ya preseleccionado. El resultado en ambos casos es el mismo</p>
 <h1 id="instalar-las-librerías">
@@ -453,7 +504,7 @@ https://github.com/alex-shpak/hugo-book
 <p><em>Django</em> se puede instalar a través de 
   <a href="/docs/python/anaconda/">Anaconda</a>:</p>
 <p>
-  <img src="/images/python/framework/djando_anaconda.png" alt="Libreria Django Rest Framework" /></p>
+  <img src="/images/python/framework/django/djando_anaconda.png" alt="Libreria Django Rest Framework" /></p>
 <p><em>Django Rest Framework</em>  hay que instalarlo a través del <em>PiP</em>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;entorno&gt;
 pip install djangorestframework
@@ -542,6 +593,42 @@ class Image(models.Model):
   <a href="http://localhost:8000/admin/">página de administración</a> los modelos no aparecen automáticamente, se tienen que registrar. Para ello hay que ir al directorio donde esta la aplicación y editar el fichero <em>admin.py</em> y añadir la siguiente línea, o líneas según modelos creados:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">admin.site.register(Image)
 </code></pre></div><p>Donde <em>Image</em> es el nombre del modelo(es una clase) que esta definida en el archivo <em>models.py</em> del mismo directorio.</p>
+<h1 id="artículos-sobre-django">
+  Artículos sobre Django
+  <a class="anchor" href="#art%c3%adculos-sobre-django">#</a>
+</h1>
+<dl>
+
+  <dt>
+    <a href="/docs/python/framework/django/autentificacion_session/">Autentificación por sesión</a>
+  </dt>
+  <dd>
+    Autentificación por sesión
+  </dd>
+
+  <dt>
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/">Configuración URLs aplicación</a>
+  </dt>
+  <dd>
+    Configuración URLs aplicación
+  </dd>
+
+  <dt>
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/">Equivalencia métodos HTTP y DRF</a>
+  </dt>
+  <dd>
+    Equivalencia métodos HTTP y Djando Rest Framework
+  </dd>
+
+  <dt>
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/">Servicios con ficheros</a>
+  </dt>
+  <dd>
+    Envio, recepción y borrado de ficheros
+  </dd>
+
+</dl>
+
 </article>
  
       
@@ -583,6 +670,7 @@ class Image(models.Model):
         <li><a href="#como-administrar-los-modelos-creados">Como administrar los modelos creados</a></li>
       </ul>
     </li>
+    <li><a href="#artículos-sobre-django">Artículos sobre Django</a></li>
   </ul>
 </nav>
 
