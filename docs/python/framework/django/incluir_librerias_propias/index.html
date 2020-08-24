@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Extensiones VS Code">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Extensiones" />
-<meta property="og:description" content="Extensiones VS Code" />
+<meta name="description" content="Incluir librerías propias">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Incluir librerías propias" />
+<meta property="og:description" content="Incluir librerías propias" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/extensiones/" />
-<meta property="article:modified_time" content="2020-08-21T18:01:11+02:00" />
-<title>Extensiones | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/framework/django/incluir_librerias_propias/" />
+
+<title>Incluir librerías propias | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -152,7 +152,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/extensiones/" class="active">Extensiones</a>
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
   
 
         </li>
@@ -170,6 +170,81 @@ https://github.com/alex-shpak/hugo-book
   
   
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/" class="">Django</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/autentificacion_session/" class="">Autentificación por sesión</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/" class="">Configuración URLs aplicación</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/" class="">Equivalencia métodos HTTP y DRF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/incluir_librerias_propias/" class="active">Incluir librerías propias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/" class="">Servicios con ficheros</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
   
 
         </li>
@@ -389,7 +464,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Extensiones</strong>
+  <strong>Incluir librerías propias</strong>
 
   <label for="toc-control">
     
@@ -406,24 +481,8 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#python-autopep8">Python-autopep8</a>
-      <ul>
-        <li><a href="#qué-és">¿Qué és?</a></li>
-        <li><a href="#instalación">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-1">¿Qué és?</a></li>
-        <li><a href="#instalación-1">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint-1">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-2">¿Qué és?</a></li>
-        <li><a href="#instalación-2">Instalación</a></li>
-      </ul>
-    </li>
+    <li><a href="#librería-fuera-de-la-carpeta-del-proyecto">Librería fuera de la carpeta del proyecto</a></li>
+    <li><a href="#librería-dentro-de-la-carpeta-de-proyecto">Librería dentro de la carpeta de proyecto</a></li>
   </ul>
 </nav>
 
@@ -439,60 +498,52 @@ https://github.com/alex-shpak/hugo-book
   Introducción
   <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>Extensiones, sobretodo para VS Code, que son útiles para desarrollar</p>
-<h1 id="python-autopep8">
-  Python-autopep8
-  <a class="anchor" href="#python-autopep8">#</a>
+<p>Django arranca su propio <em>middleware</em>, o servidor, donde solo se puede trabajar con los archivos del proyecto y aplicaciones generadas. Pero no podemos usar librerías propias que tengamos la misma carpeta del proyecto, o en una carpeta dentro del proyecto de Django. El motivo es que no se incluyen dentro de las variables entorno y por lo tanto no las reconoce.</p>
+<p>La forma de solucionar son dos dependiendo de donde tengamos la carpeta con nuestra libreria.</p>
+<p>En ambos casos la solución se realiza en el archivo <em>setting.py</em> que esta dentro de la carpeta de configuración del proyecto Django. El motivo de hacerlo en dicho archivo porque es el que se lee cuando arranca el proceso de Django.</p>
+<h1 id="librería-fuera-de-la-carpeta-del-proyecto">
+  Librería fuera de la carpeta del proyecto
+  <a class="anchor" href="#librer%c3%ada-fuera-de-la-carpeta-del-proyecto">#</a>
 </h1>
-<h2 id="qué-és">
-  ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s">#</a>
-</h2>
-<p>Extensión que formatea en bonito y siguiendo <em>best-practices</em> el código que se desarrolla.</p>
-<h2 id="instalación">
-  Instalación
-  <a class="anchor" href="#instalaci%c3%b3n">#</a>
-</h2>
-<p>Se instala directamente desde las extensiones del visual code</p>
-<h1 id="pylint">
-  Pylint
-  <a class="anchor" href="#pylint">#</a>
+<p>Tenemos la siguiente estructura:</p>
+<p>Proyecto VS Code
+|&mdash; Proyecto Django
+|    |&mdash; Aplicación Django
+|&mdash; lib
+|    |&mdash; img
+|    |    |&mdash; image</p>
+<p>Hay que añadir las siguientes dos líneas:</p>
+<pre><code>EXTERNAL_LIBS_PATH = os.path.join(Path(__file__).parent.parent.parent, &quot;lib&quot;)
+sys.path = [&quot;&quot;, EXTERNAL_LIBS_PATH] + sys.path
+</code></pre><p>Aquí tenemos:</p>
+<ol>
+<li>La primera fila creamos una variable donde: 1) encontrados el directorio donde esta el proyecto de VS Code 2) A ese path se le concatena la carpeta, &ldquo;lib&rdquo;, con la librerias del proyecto</li>
+<li>Al path de las variables de entonro de python se le añade: el directorio raíz donde esta el archivo, la variable creada y las variables de entorno previa.</li>
+</ol>
+<p>Finalmente en nuestro fichero de django la librería se declaría de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from lib.img import image
+</code></pre></div><h1 id="librería-dentro-de-la-carpeta-de-proyecto">
+  Librería dentro de la carpeta de proyecto
+  <a class="anchor" href="#librer%c3%ada-dentro-de-la-carpeta-de-proyecto">#</a>
 </h1>
-<h2 id="qué-és-1">
-  ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-1">#</a>
-</h2>
-<p>
-  <a href="https://www.pylint.org/">Librería</a> que verifica sintacticamente que el código sea correcto.</p>
-<h2 id="instalación-1">
-  Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-1">#</a>
-</h2>
-<p>Se hace con <em>Anaconda Power Shell</em> en el entorno adecuado con lo siguiente:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;entorno&gt;
-pip install pylint
-</code></pre></div><h1 id="pylint-1">
-  Pylint
-  <a class="anchor" href="#pylint-1">#</a>
-</h1>
-<h2 id="qué-és-2">
-  ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-2">#</a>
-</h2>
-<p>
-  <a href="https://pypi.org/project/pylint-django/">Librería</a> que verifica sintacticamente que el código sea correcto cuando se usa la librería <em>Django</em></p>
-<h2 id="instalación-2">
-  Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-2">#</a>
-</h2>
-<p>Se hace con <em>Anaconda Power Shell</em> en el entorno adecuado con lo siguiente:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;entorno&gt;
-pip install pylpylint-django
-</code></pre></div><p>Luego hay que ir a VSCode y pulsar <em>CTRL+SHIFT+P</em> para abrir el <em>command palette</em> y escribir <em>Preferences: Configure Language Specific Settings</em>. Saldrá un desplegable con el lenguaje a seleccionar, se escoge <em>Python</em>. Y en la configuración añadir el siguiente código:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&#34;python.linting.pylintArgs&#34;: [
-        &#34;--load-plugins=pylint_django&#34;,
-    ]
-</code></pre></div></article>
+<p>Tenemos la siguiente estructura:</p>
+<p>Proyecto VS Code
+|&mdash; Proyecto Django
+|    |&mdash; Aplicación Django
+|    |&mdash; lib
+|    |    |&mdash; img
+|    |    |    |&mdash; image</p>
+<p>Hay que añadir las siguientes líneas:</p>
+<pre><code>BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+EXTERNAL_LIBS_PATH = os.path.join(BASE_DIR, &quot;lib&quot;)
+sys.path = [&quot;&quot;, EXTERNAL_LIBS_PATH] + sys.path
+</code></pre><p>Aquí tenemos:</p>
+<ol>
+<li>Una variable con el directorio del proyecto django</li>
+<li>Una variable que concatena el valor de la variable anterior + el directorio donde están las librerías</li>
+<li>Se añade la variable a la variante de entorno</li>
+</ol>
+</article>
  
       
 
@@ -523,24 +574,8 @@ pip install pylpylint-django
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#python-autopep8">Python-autopep8</a>
-      <ul>
-        <li><a href="#qué-és">¿Qué és?</a></li>
-        <li><a href="#instalación">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-1">¿Qué és?</a></li>
-        <li><a href="#instalación-1">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint-1">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-2">¿Qué és?</a></li>
-        <li><a href="#instalación-2">Instalación</a></li>
-      </ul>
-    </li>
+    <li><a href="#librería-fuera-de-la-carpeta-del-proyecto">Librería fuera de la carpeta del proyecto</a></li>
+    <li><a href="#librería-dentro-de-la-carpeta-de-proyecto">Librería dentro de la carpeta de proyecto</a></li>
   </ul>
 </nav>
 

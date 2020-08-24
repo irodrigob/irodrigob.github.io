@@ -278,6 +278,17 @@ DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn
     </item>
     
     <item>
+      <title>Configuración Pylint</title>
+      <link>https://irodrigob.github.io/docs/python/configuracion_pylint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/configuracion_pylint/</guid>
+      <description>Introducción#Pylint es una librería que se usa para verificiar que el código de Python que estamos escribiendo, para el entorno que tengamos activado, sea correcto.
+Pero hay veces que hay que tocar la configuración de Pylint para afinarlo.
+Evitar errores de librerías que no existen#Hay casos que Pylint dice que una librería no existe pero realmente si que existe. En mi caso me ha ocurrido al usar librerías creadas en el raíz del proyecto de VS Code, dentro de un proyecto de Django.</description>
+    </item>
+    
+    <item>
       <title>Configuración URLs aplicación</title>
       <link>https://irodrigob.github.io/docs/python/framework/django/configuracion_url_aplicacion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -565,6 +576,16 @@ Letra máxima: uLetra mínima:  LEN &amp;ndash;&amp;gt; Devuelve el numéro de 
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 9. Cómo guardar un modelo entrenado.
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
 En esta página veremos como se guardan los modelos entrenados para no tener que hacer entrenamientos cada vez que queremos hacer algo. En los ejemplos entrenar algoritmos se hace en segundos, pero en casos reales este entrenamiento puede durar dias o semnanas.</description>
+    </item>
+    
+    <item>
+      <title>Incluir librerías propias</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/incluir_librerias_propias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/incluir_librerias_propias/</guid>
+      <description>Introducción#Django arranca su propio middleware, o servidor, donde solo se puede trabajar con los archivos del proyecto y aplicaciones generadas. Pero no podemos usar librerías propias que tengamos la misma carpeta del proyecto, o en una carpeta dentro del proyecto de Django. El motivo es que no se incluyen dentro de las variables entorno y por lo tanto no las reconoce.
+La forma de solucionar son dos dependiendo de donde tengamos la carpeta con nuestra libreria.</description>
     </item>
     
     <item>

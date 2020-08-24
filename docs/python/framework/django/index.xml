@@ -42,6 +42,16 @@ Hay que saber que el punto de acceso de los servicios será el archivo urls.py a
     </item>
     
     <item>
+      <title>Incluir librerías propias</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/incluir_librerias_propias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/incluir_librerias_propias/</guid>
+      <description>Introducción#Django arranca su propio middleware, o servidor, donde solo se puede trabajar con los archivos del proyecto y aplicaciones generadas. Pero no podemos usar librerías propias que tengamos la misma carpeta del proyecto, o en una carpeta dentro del proyecto de Django. El motivo es que no se incluyen dentro de las variables entorno y por lo tanto no las reconoce.
+La forma de solucionar son dos dependiendo de donde tengamos la carpeta con nuestra libreria.</description>
+    </item>
+    
+    <item>
       <title>Servicios con ficheros</title>
       <link>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

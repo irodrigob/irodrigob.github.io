@@ -55,5 +55,16 @@ Entornos#Los entornos, creo que hasta tres entornos se pueden usar, permiten 
 Para hacer pruebas me he creado un ambiente llamado test que lo he creado con el Anaconda navigator yendo a la pestaña de Enviroments:</description>
     </item>
     
+    <item>
+      <title>Configuración Pylint</title>
+      <link>https://irodrigob.github.io/docs/python/configuracion_pylint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/configuracion_pylint/</guid>
+      <description>Introducción#Pylint es una librería que se usa para verificiar que el código de Python que estamos escribiendo, para el entorno que tengamos activado, sea correcto.
+Pero hay veces que hay que tocar la configuración de Pylint para afinarlo.
+Evitar errores de librerías que no existen#Hay casos que Pylint dice que una librería no existe pero realmente si que existe. En mi caso me ha ocurrido al usar librerías creadas en el raíz del proyecto de VS Code, dentro de un proyecto de Django.</description>
+    </item>
+    
   </channel>
 </rss>

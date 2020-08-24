@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Extensiones VS Code">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Extensiones" />
-<meta property="og:description" content="Extensiones VS Code" />
+<meta name="description" content="Configuración Pylint">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Configuración Pylint" />
+<meta property="og:description" content="Configuración Pylint" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/extensiones/" />
-<meta property="article:modified_time" content="2020-08-21T18:01:11+02:00" />
-<title>Extensiones | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/configuracion_pylint/" />
+
+<title>Configuración Pylint | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -152,7 +152,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/extensiones/" class="active">Extensiones</a>
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
   
 
         </li>
@@ -189,7 +189,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/python/configuracion_pylint/" class="">Configuración Pylint</a>
+    <a href="/docs/python/configuracion_pylint/" class="active">Configuración Pylint</a>
   
 
         </li>
@@ -389,7 +389,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Extensiones</strong>
+  <strong>Configuración Pylint</strong>
 
   <label for="toc-control">
     
@@ -406,24 +406,7 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#python-autopep8">Python-autopep8</a>
-      <ul>
-        <li><a href="#qué-és">¿Qué és?</a></li>
-        <li><a href="#instalación">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-1">¿Qué és?</a></li>
-        <li><a href="#instalación-1">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint-1">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-2">¿Qué és?</a></li>
-        <li><a href="#instalación-2">Instalación</a></li>
-      </ul>
-    </li>
+    <li><a href="#evitar-errores-de-librerías-que-no-existen">Evitar errores de librerías que no existen</a></li>
   </ul>
 </nav>
 
@@ -439,60 +422,20 @@ https://github.com/alex-shpak/hugo-book
   Introducción
   <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>Extensiones, sobretodo para VS Code, que son útiles para desarrollar</p>
-<h1 id="python-autopep8">
-  Python-autopep8
-  <a class="anchor" href="#python-autopep8">#</a>
+<p>Pylint es una librería que se usa para verificiar que el código de Python que estamos escribiendo, para el entorno que tengamos activado, sea correcto.</p>
+<p>Pero hay veces que hay que tocar la configuración de Pylint para afinarlo.</p>
+<h1 id="evitar-errores-de-librerías-que-no-existen">
+  Evitar errores de librerías que no existen
+  <a class="anchor" href="#evitar-errores-de-librer%c3%adas-que-no-existen">#</a>
 </h1>
-<h2 id="qué-és">
-  ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s">#</a>
-</h2>
-<p>Extensión que formatea en bonito y siguiendo <em>best-practices</em> el código que se desarrolla.</p>
-<h2 id="instalación">
-  Instalación
-  <a class="anchor" href="#instalaci%c3%b3n">#</a>
-</h2>
-<p>Se instala directamente desde las extensiones del visual code</p>
-<h1 id="pylint">
-  Pylint
-  <a class="anchor" href="#pylint">#</a>
-</h1>
-<h2 id="qué-és-1">
-  ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-1">#</a>
-</h2>
-<p>
-  <a href="https://www.pylint.org/">Librería</a> que verifica sintacticamente que el código sea correcto.</p>
-<h2 id="instalación-1">
-  Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-1">#</a>
-</h2>
-<p>Se hace con <em>Anaconda Power Shell</em> en el entorno adecuado con lo siguiente:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;entorno&gt;
-pip install pylint
-</code></pre></div><h1 id="pylint-1">
-  Pylint
-  <a class="anchor" href="#pylint-1">#</a>
-</h1>
-<h2 id="qué-és-2">
-  ¿Qué és?
-  <a class="anchor" href="#qu%c3%a9-%c3%a9s-2">#</a>
-</h2>
-<p>
-  <a href="https://pypi.org/project/pylint-django/">Librería</a> que verifica sintacticamente que el código sea correcto cuando se usa la librería <em>Django</em></p>
-<h2 id="instalación-2">
-  Instalación
-  <a class="anchor" href="#instalaci%c3%b3n-2">#</a>
-</h2>
-<p>Se hace con <em>Anaconda Power Shell</em> en el entorno adecuado con lo siguiente:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;entorno&gt;
-pip install pylpylint-django
-</code></pre></div><p>Luego hay que ir a VSCode y pulsar <em>CTRL+SHIFT+P</em> para abrir el <em>command palette</em> y escribir <em>Preferences: Configure Language Specific Settings</em>. Saldrá un desplegable con el lenguaje a seleccionar, se escoge <em>Python</em>. Y en la configuración añadir el siguiente código:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&#34;python.linting.pylintArgs&#34;: [
-        &#34;--load-plugins=pylint_django&#34;,
-    ]
-</code></pre></div></article>
+<p>Hay casos que Pylint dice que una librería no existe pero realmente si que existe. En mi caso me ha ocurrido al usar librerías creadas en el raíz del proyecto de VS Code, dentro de un proyecto de Django. Pero luego, en tiempo de ejecución no da problemas.</p>
+<p>El motivo es que esa librería propia no esta en las variables de entorno y esto provoca que Pylint piense que no existe.</p>
+<p>La solución es modificar el fichero <em>.pylintrc</em> que esta en el raíz del proyecto de VS Code. Si no existiera se puede crear mediante el siguiente comando:</p>
+<pre><code>pylint --generate-rcfile &gt; .pylintrc
+</code></pre><p>Una vez en el archivo hay que localizar la variable <em>init-hook</em> y añadir lo siguiente:</p>
+<pre><code>init-hook='import sys; sys.path.append(&quot;K:\github\ocr_invoices&quot;)'
+</code></pre><p>Donde se le añade el directorio del proyecto a las variables de entorno. De esta manera desaparecen ese tipo de errores.</p>
+</article>
  
       
 
@@ -523,24 +466,7 @@ pip install pylpylint-django
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#python-autopep8">Python-autopep8</a>
-      <ul>
-        <li><a href="#qué-és">¿Qué és?</a></li>
-        <li><a href="#instalación">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-1">¿Qué és?</a></li>
-        <li><a href="#instalación-1">Instalación</a></li>
-      </ul>
-    </li>
-    <li><a href="#pylint-1">Pylint</a>
-      <ul>
-        <li><a href="#qué-és-2">¿Qué és?</a></li>
-        <li><a href="#instalación-2">Instalación</a></li>
-      </ul>
-    </li>
+    <li><a href="#evitar-errores-de-librerías-que-no-existen">Evitar errores de librerías que no existen</a></li>
   </ul>
 </nav>
 
