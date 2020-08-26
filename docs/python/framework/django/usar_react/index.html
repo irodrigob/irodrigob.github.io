@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Como utilizar React como frontend">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Como utilizar React como frontend" />
+<meta property="og:description" content="Como utilizar React como frontend" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/framework/django/usar_react/" />
+
+<title>Como utilizar React como frontend | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.b4e53c470fa4e5855de4a69c09ed828670914de2658c6ef6bd80f5e612633613.js" integrity="sha256-tOU8Rw&#43;k5YVd5KacCe2ChnCRTeJljG72vYD15hJjNhM="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/" class="collapsed ">Frameworks</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/" class="">Django</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/autentificacion_session/" class="">Autentificación por sesión</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/usar_react/" class="active">Como utilizar React como frontend</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/" class="">Configuración URLs aplicación</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/" class="">Equivalencia métodos HTTP y DRF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/incluir_librerias_propias/" class="">Incluir librerías propias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/" class="">Servicios con ficheros</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/configuracion_pylint/" class="">Configuración Pylint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/" class="collapsed ">React</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Como utilizar React como frontend</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#react-dentro-de-django">React dentro de Django</a>
+      <ul>
+        <li><a href="#creación-de-la-aplicación-rest">Creación de la aplicación Rest</a></li>
+        <li><a href="#ajustando-el-gitignore">Ajustando el .gitignore</a></li>
+        <li><a href="#configurando-los-templates-en-django">Configurando los templates en Django</a></li>
+        <li><a href="#enlanzar-react-con-django">Enlanzar React con Django</a></li>
+        <li><a href="#arrancar">Arrancar</a></li>
+        <li><a href="#paso-para-desplegar-en-producción">Paso para desplegar en producción</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Lo primero es tener 
+  <a href="/docs/react/nwb/">nwb</a> instalado en la maquina.</p>
+<p>Según he léido en articulos hay como tres posiblidad de hacerlo:</p>
+<ol>
+<li>Tener la aplicación React y django por separado pero habría que usar 
+  <a href="https://jwt.io/">JWT</a> para poderse comunicar. Aunque yo no tengo tan claro si uno tiene el montaje de sesión como hice en este 
+  <a href="/docs/python/framework/django/autentificacion_session/">artículo</a>. Ya que el primer servicio que lanzas en React es para generar el token de sesión y luego lo vas usando para las distintas llamadas. Este indican que la configuración es complicada, y me lo creo con lo que me costo entender y hacer la de sesión</li>
+<li>Tener React dentro de django. Esta ponen que la dificultad es media.</li>
+<li>Usar componententes React en Django. Esta indican que la dificultad es fácil.</li>
+</ol>
+<p>Yo de momento voy a optar por la solución 2. De esta manera espero ahorrarme tener dos servidores corriendo.</p>
+<h1 id="react-dentro-de-django">
+  React dentro de Django
+  <a class="anchor" href="#react-dentro-de-django">#</a>
+</h1>
+<p>Todos los pasos que he hecho ha sido dentro de la pestaña de terminal del VS Code con el proyecto abierto.</p>
+<h2 id="creación-de-la-aplicación-rest">
+  Creación de la aplicación Rest
+  <a class="anchor" href="#creaci%c3%b3n-de-la-aplicaci%c3%b3n-rest">#</a>
+</h2>
+<p>La aplicación de React hay que hacerla dentro del proyecto de Django mediante el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">nwb react-app reactjs
+</code></pre></div><p>En la consola veremos los directorios y archivos que se generán</p>
+<h2 id="ajustando-el-gitignore">
+  Ajustando el .gitignore
+  <a class="anchor" href="#ajustando-el-gitignore">#</a>
+</h2>
+<p>Este punto no lo he encontrado en ningún sitio. Pero si nos fijamos en el resultado de la consola el comando anterior crear el <em>.gitignore</em> para los archivos que no se quieren subit a Git. El mótivo es que este comando crea la aplicación como su fuese standalone. Entonces lo que he hecho es añadir los archivos del archivo al <em>.gitignore</em> de directorio principal del proyecto en VS Code. Quedando así:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">**/dist
+**/node_modules
+**npm-debug.log*
+</code></pre></div><p>Le he puesto &ldquo;**&rdquo; delante para que los ignore independietemente del nivel de directorio donde este. De esta manera me evito poner todo el path</p>
+<h2 id="configurando-los-templates-en-django">
+  Configurando los templates en Django
+  <a class="anchor" href="#configurando-los-templates-en-django">#</a>
+</h2>
+<p>Las plantillas en Django permite crear páginas Web y que se renderizen en las vistas. Lo que se quiere conseguir es que la plantilla arranque la aplicación React.</p>
+<p>Para ello dentro del directorio del proyecto de Django se creará la carpeta <em>templates</em> y a continuación desde el VS Code se creará el archivo <em>index.html</em> con el el texto</p>
+<pre><code>Punto de acceso a React
+</code></pre><p>Esto es para probar que la configuración inicial funciona.</p>
+<p>Ahora hay que indicaré a Django donde están los templates. Para ello hay que modificar el archivo del proyecto Django llamado <em>settings.py</em> y buscar la variable <em>TEMPLATES</em> y ajustarla para que quede tal que así:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">TEMPLATES = [
+    <span style="color:#75715e">{</span>
+        <span style="color:#e6db74">&#39;BACKEND&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;django.template.backends.django.DjangoTemplates&#39;</span><span style="color:#f92672">,</span>
+        <span style="color:#e6db74">&#39;DIRS&#39;</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span>
+            <span style="color:#a6e22e">os</span><span style="color:#f92672">.</span><span style="color:#a6e22e">path</span><span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">(</span><span style="color:#a6e22e">BASE_DIR</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;templates&#39;</span><span style="color:#f92672">)</span>
+        <span style="color:#f92672">],</span>
+        <span style="color:#e6db74">&#39;APP_DIRS&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">True</span><span style="color:#f92672">,</span>
+        <span style="color:#e6db74">&#39;OPTIONS&#39;</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+            <span style="color:#e6db74">&#39;context_processors&#39;</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span>
+                <span style="color:#e6db74">&#39;django.template.context_processors.debug&#39;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#39;django.template.context_processors.request&#39;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#39;django.contrib.auth.context_processors.auth&#39;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#39;django.contrib.messages.context_processors.messages&#39;</span><span style="color:#f92672">,</span>
+            <span style="color:#f92672">],</span>
+        <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+    <span style="color:#75715e">}</span>,
+]
+</code></pre></div><p>Lo único que se añade es esta línea <em>os.path.join(BASE_DIR, &lsquo;templates&rsquo;)</em> ya que el resto ya viene informado al crear el proyecto.</p>
+<p>En la misma carpeta que están la configuración del proyecto hay que modificar las URLs del proyecto en el archivo <em>urls.py</em> añadiendo lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.views.generic import TemplateView
+path(r&#39;&#39;, TemplateView.as_view(template_name=&#34;index.html&#34;)),
+</code></pre></div><p>Esto indica que cuando se acceda al path inicial del servidor se redirigira al archivo <em>index.html</em></p>
+<p>Ahora hay que arrancar el servidor de Django y acceder a la URL inicial y si vemos el texto que se ha puesto en el fichero HTML es que la configuración es correcta.</p>
+<h2 id="enlanzar-react-con-django">
+  Enlanzar React con Django
+  <a class="anchor" href="#enlanzar-react-con-django">#</a>
+</h2>
+<p>El último paso es poder enlazar React con Django. Para ello se instalará a nivel local el plugin <em>
+  <a href="https://github.com/jantimon/html-webpack-plugin">html-webpack-plugin</a></em> y el <em>
+  <a href="https://github.com/jantimon/html-webpack-harddisk-plugin">html-webpack-harddisk-plugin</a></em>. Esto permite hacer uso de 
+  <a href="https://webpack.js.org/">Webpack</a> que permite encapsular todo el código en unos archivos que entienda Django.
+El segun plugin amplia la funcionalidad del primero para que siempre escriba en disco.</p>
+<p>Para instalarlo hay que ir al directorio de la aplicación React creada dentro del proyecto de Django y ejecutar el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm install --save-dev html-webpack-plugin
+npm install --save-dev html-webpack-harddisk-plugin
+</code></pre></div><p>Dara unos avisos de dependencias que hay instalar manualmente pero no hay que hacer nada porque ya estan incluidas con <em>nwb</em></p>
+<p>Ahora hay que editar el fichero <em>nwb.config.js</em> que esta en el directorio de la aplicación React y añadir lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">const HtmlWebpackHarddiskPlugin = require(&#34;html-webpack-harddisk-plugin&#34;);
+const path = require(&#34;path&#34;);
+const isPro = process.env.NODE_ENV === &#34;production&#34;;
+
+module.exports = <span style="color:#75715e">{</span>
+  <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;react-app&#34;</span><span style="color:#f92672">,</span>
+
+  <span style="color:#a6e22e">webpack</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+    <span style="color:#f92672">//</span> <span style="color:#a6e22e">dont</span> <span style="color:#a6e22e">forget</span> <span style="color:#a6e22e">delete</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">/</span><span style="color:#a6e22e">index</span><span style="color:#f92672">.</span><span style="color:#a6e22e">html</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">use</span> <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">config</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">mountid</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">favicon</span>
+    <span style="color:#a6e22e">html</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+      <span style="color:#a6e22e">mountId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;app&#34;</span><span style="color:#f92672">,</span>
+      <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;OCR Invoices&#34;</span><span style="color:#f92672">,</span>
+      <span style="color:#f92672">//</span> <span style="color:#a6e22e">favicon</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/favicon.ico&#39;</span>
+      <span style="color:#f92672">//</span><span style="color:#a6e22e">this</span> <span style="color:#a6e22e">setting</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">required</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">HtmlWebpackHarddiskPlugin</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">work</span>
+      <span style="color:#a6e22e">alwaysWriteToDisk</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span>
+      <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;index.html&#34;</span><span style="color:#f92672">,</span>
+    <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+    <span style="color:#a6e22e">publicPath</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">isPro</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;/static/&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://localhost:3000/&#34;</span><span style="color:#f92672">,</span>
+    <span style="color:#a6e22e">extra</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+      <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span>
+        <span style="color:#f92672">//</span> <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">will</span> <span style="color:#a6e22e">copy</span> <span style="color:#a6e22e">an</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#a6e22e">index</span><span style="color:#f92672">.</span><span style="color:#a6e22e">html</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">django</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">use</span>
+        <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">HtmlWebpackHarddiskPlugin</span><span style="color:#f92672">(</span><span style="color:#75715e">{</span>
+          <span style="color:#a6e22e">outputPath</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">.</span><span style="color:#a6e22e">resolve</span><span style="color:#f92672">(</span><span style="color:#a6e22e">__dirname</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/../&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;templates&#34;</span><span style="color:#f92672">),</span>
+        <span style="color:#75715e">}</span><span style="color:#f92672">),</span>
+      <span style="color:#f92672">],</span>
+    <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+    <span style="color:#a6e22e">config</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">function</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">config</span><span style="color:#f92672">)</span> <span style="color:#75715e">{</span>
+      <span style="color:#a6e22e">if</span> <span style="color:#f92672">(!</span><span style="color:#a6e22e">isPro</span><span style="color:#f92672">)</span> <span style="color:#75715e">{</span>
+        <span style="color:#a6e22e">config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">entry</span> <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
+          <span style="color:#e6db74">&#34;webpack-dev-server/client?http://localhost:3000&#34;</span><span style="color:#f92672">,</span>
+          <span style="color:#e6db74">&#34;webpack/hot/only-dev-server&#34;</span><span style="color:#f92672">,</span>
+          <span style="color:#e6db74">&#34;./src/index.js&#34;</span><span style="color:#f92672">,</span>
+        <span style="color:#f92672">];</span>
+      <span style="color:#75715e">}</span>
+
+      <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">config</span><span style="color:#f92672">;</span>
+    <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+  <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+  <span style="color:#a6e22e">devServer</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+    <span style="color:#f92672">//</span> <span style="color:#a6e22e">allow</span> <span style="color:#a6e22e">django</span> <span style="color:#a6e22e">host</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">case</span> <span style="color:#a6e22e">you</span> <span style="color:#a6e22e">use</span> <span style="color:#a6e22e">custom</span> <span style="color:#a6e22e">domain</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">django</span> <span style="color:#a6e22e">app</span>
+    <span style="color:#a6e22e">allowedHosts</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;localhost&#34;</span><span style="color:#f92672">],</span>
+  <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+<span style="color:#75715e">}</span>;
+</code></pre></div><h2 id="arrancar">
+  Arrancar
+  <a class="anchor" href="#arrancar">#</a>
+</h2>
+<p>Para arrancar React a nivel de la carpeta de la aplicación de React hay que lanzar el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm start
+</code></pre></div><p>Esto arranca el servidor React en el puerto 3000. Y lo que va hacer es sobreescribir el fichero <em>index.html</em> de la carpeta de <em>templates</em> para que se vea lo que hay en el servidor de React.</p>
+<p>Es decir. Que si accedemos a <em>http://localhost:8000/</em> veremos lo mismo que si accedemos a <em>http://localhost:3000/</em></p>
+<p>** NOTA IMPORTANTE INSTALACIÓN **</p>
+<p>Esto tal cual da un error porque el módulo <em>html-webpack-plugin</em> requiere del <em>webpack</em> instalado al mismo nivel que el plugin, es decir, a nivel de proyecto. Pero he hecho tantas instalaciones a nivel global, como local, que ahora no sé como me funciona.</p>
+<h2 id="paso-para-desplegar-en-producción">
+  Paso para desplegar en producción
+  <a class="anchor" href="#paso-para-desplegar-en-producci%c3%b3n">#</a>
+</h2>
+<p>Esta explicado en este 
+  <a href="https://tamhv.github.io/2018/05/14/Setup-django-with-react-using-nwb/">artículo</a> pero pongo aquí el texto por si el artículo se pierde cuando lo necesite:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm run build
+
+All js files should be ready in reactjs/dist. Check templates/react.html to see the changes.
+
+Now we need to tell django go to collectstatic
+
+Edit settings.py
+
+1
+2
+3
+4
+STATIC_ROOT = os.path.join(BASE_DIR, &#39;static_dist&#39;)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, &#39;reactjs/dist&#39;),
+]
+Restart django app and check again http://127.0.0.1:8000/, react js is served by django static
+
+commit dist or not! it doesn’t matter
+We will want to fix reactjs/.gitignore if we want to commit dist, otherwise our CI server must do yarn build first, then collectstatic
+
+Now we have an app with react at frontend, backend by django, next step is add django rest framework,…etc
+
+Github: https://github.com/tamhv/djangoreact
+</code></pre></div><p><strong>Nota: he cambiado el modo es que se producen los archivos para su distribución</strong></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#react-dentro-de-django">React dentro de Django</a>
+      <ul>
+        <li><a href="#creación-de-la-aplicación-rest">Creación de la aplicación Rest</a></li>
+        <li><a href="#ajustando-el-gitignore">Ajustando el .gitignore</a></li>
+        <li><a href="#configurando-los-templates-en-django">Configurando los templates en Django</a></li>
+        <li><a href="#enlanzar-react-con-django">Enlanzar React con Django</a></li>
+        <li><a href="#arrancar">Arrancar</a></li>
+        <li><a href="#paso-para-desplegar-en-producción">Paso para desplegar en producción</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

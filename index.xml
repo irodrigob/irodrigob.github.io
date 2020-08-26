@@ -256,6 +256,17 @@ Explicación#Como se explica en el índice de la página las redes neuronales
     </item>
     
     <item>
+      <title>Como utilizar React como frontend</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/usar_react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/usar_react/</guid>
+      <description>Introducción#Lo primero es tener nwb instalado en la maquina.
+Según he léido en articulos hay como tres posiblidad de hacerlo:
+ Tener la aplicación React y django por separado pero habría que usar JWT para poderse comunicar. Aunque yo no tengo tan claro si uno tiene el montaje de sesión como hice en este artículo. Ya que el primer servicio que lanzas en React es para generar el token de sesión y luego lo vas usando para las distintas llamadas.</description>
+    </item>
+    
+    <item>
       <title>Condiciones</title>
       <link>https://irodrigob.github.io/docs/python/sentencias/condiciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
