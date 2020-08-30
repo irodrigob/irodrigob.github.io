@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NextJS on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/react/nextjs/</link>
+    <description>Recent content in NextJS on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/react/nextjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Traducciones</title>
+      <link>https://irodrigob.github.io/docs/react/nextjs/traducciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/nextjs/traducciones/</guid>
+      <description>Introducción#Por defecto ni React ni NextJS permite hacer textos multiidioma. Pero al ser un sistema abierto alguien se ha trabajado una serie de plug-in para conseguirlo. El objetivo es explicar como hacerlo.
+Los pasos vamos a dividirlo en dos:
+ Será la instalación, configuración y funcionamiento del Next-i18n para poder los textos multiidioma. Detectar el idioma para pasarselo al Next-i18n.  Instalación y configuración del Next-i18n#Instalación#Hay que instalar el paquete next-i18next:</description>
+    </item>
+    
+  </channel>
+</rss>

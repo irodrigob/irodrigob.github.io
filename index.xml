@@ -858,6 +858,17 @@ En el video habla de los siguientes tipos:
     </item>
     
     <item>
+      <title>Traducciones</title>
+      <link>https://irodrigob.github.io/docs/react/nextjs/traducciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/nextjs/traducciones/</guid>
+      <description>Introducción#Por defecto ni React ni NextJS permite hacer textos multiidioma. Pero al ser un sistema abierto alguien se ha trabajado una serie de plug-in para conseguirlo. El objetivo es explicar como hacerlo.
+Los pasos vamos a dividirlo en dos:
+ Será la instalación, configuración y funcionamiento del Next-i18n para poder los textos multiidioma. Detectar el idioma para pasarselo al Next-i18n.  Instalación y configuración del Next-i18n#Instalación#Hay que instalar el paquete next-i18next:</description>
+    </item>
+    
+    <item>
       <title>Transacciones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/transacciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
