@@ -9,12 +9,12 @@
 <meta property="og:description" content="Traducciones" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/react/nextjs/traducciones/" />
-
+<meta property="article:modified_time" content="2020-08-30T23:58:24+02:00" />
 <title>Traducciones | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.f25e19a3c0406d8e2a8d15ebc40d3d5a064990efbe61ef17203fcec2d846a213.js" integrity="sha256-8l4Zo8BAbY4qjRXrxA09WgZJkO&#43;&#43;Ye8XID/OwthGohM="></script>
+<script defer src="/en.search.min.fd62f30cdd2a2ef6f58e20d8d1b2f30cf97ded917bb46866a46d2684e1e34cda.js" integrity="sha256-/WLzDN0qLvb1jiDY0bLzDPl97ZF7tGhmpG0mhOHjTNo="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -377,7 +377,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#funcionamiento">Funcionamiento</a>
           <ul>
             <li><a href="#archivos-locales">Archivos <em>locales</em></a></li>
-            <li><a href="#usando-en-páginas">Usando en páginas</a></li>
+            <li><a href="#usando-en-páginas-y-componentes">Usando en páginas y componentes</a></li>
           </ul>
         </li>
       </ul>
@@ -463,13 +463,14 @@ const OCRApp = (<span style="color:#75715e">{</span> <span style="color:#a6e22e"
   <span style="color:#f92672">);</span>
 <span style="color:#75715e">}</span>;
 
-OCRApp.getServerSideProps = async (appContext) =&gt; <span style="color:#75715e">{</span>
+OCRApp.getInitialProps = async (appContext) =&gt; <span style="color:#75715e">{</span>
   <span style="color:#a6e22e">const</span> <span style="color:#a6e22e">appProps</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">App</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getInitialProps</span><span style="color:#f92672">(</span><span style="color:#a6e22e">appContext</span><span style="color:#f92672">);</span>
   <span style="color:#a6e22e">return</span> <span style="color:#75715e">{</span> <span style="color:#f92672">...</span><span style="color:#a6e22e">appProps</span> <span style="color:#75715e">}</span><span style="color:#f92672">;</span>
 <span style="color:#75715e">}</span>;
 
 export default appWithTranslation(OCRApp);
-</code></pre></div><p>Este archivo es un poco distinto a lo que explican en el ejemplo del paquete. Porque a declarar la aplicación <em>OCRApp</em> faltaba el <em>return</em>. Luego se cambia el método <em>getInitialProps</em>, que indica que es <em>deprecated</em> pero sigue funcionado, por su sustituto. En este caso uso el <em>getServerSideProps</em> porque si cambio un fichero de traducción me lo recoge automáticamente cada vez que lo cambio. Si usará el <em>getStaticProps</em> que es el que recomienda <em>NextJS</em> habría que reiniciar el servidor cada vez. En entornos de producción puede ser conviente <em>getStaticProps</em> para que no lo este leyendo una y otra vez..</p>
+</code></pre></div><p>Este archivo es un poco distinto a lo que explican en el ejemplo del paquete, porque a declarar la aplicación <em>OCRApp</em> faltaba el <em>return</em>.</p>
+<p>Aunque NextJS recomienda no usar el <em>getInitialProps</em>, hay que usarlo por necesidad ya que el paquete no funciona bien con los <em>getServerSideProps</em> o <em>getStaticProps</em>, no falla, pero da un warning en consola constantemente sobre que falta declarar el <em>namespacesRequired</em>. Cosa que no ocurre si se usa el <em>getInitialProps</em>.</p>
 <h2 id="funcionamiento">
   Funcionamiento
   <a class="anchor" href="#funcionamiento">#</a>
@@ -491,12 +492,13 @@ export default appWithTranslation(OCRApp);
     <span style="color:#e6db74">&#34;loginLblPassword&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Password&#34;</span>
 <span style="color:#75715e">}</span>
 </code></pre></div><p>El nombre del las etiquetas no puede tener ni &ldquo;.&rdquo; ni &ldquo;_&rdquo;, ni supongo que otros carácteres, ya que sino no funciona. Probado personalmente porque en <em>Open UI5</em> suelo usar el &ldquo;.&rdquo; para separar cada parte de la etiqueta.</p>
-<p><strong>NOTA IMPORTANTE:</strong> Se pueden crear ficheros con otros nombres, pero el <em>common</em> es el que ira a buscar por defecto. Será en las páginas/componentes donde se indique el fichero que se quiere leer.</p>
-<h3 id="usando-en-páginas">
-  Usando en páginas
-  <a class="anchor" href="#usando-en-p%c3%a1ginas">#</a>
+<p><strong>NOTA IMPORTANTE:</strong> Se pueden crear ficheros con otros nombres, pero el <em>common</em> es el que ira a buscar por defecto. Será en las páginas/componentes donde se indique el fichero que se quiere leer.
+<strong>NOTA IMPORTANTE 2:</strong> Los cambios que se hagan en los ficheros de traducción implica tener que reiniciar el servidor para tomar los cambios.</p>
+<h3 id="usando-en-páginas-y-componentes">
+  Usando en páginas y componentes
+  <a class="anchor" href="#usando-en-p%c3%a1ginas-y-componentes">#</a>
 </h3>
-<p>Un ejemplo de como usarlo en una página es el siguiente:</p>
+<p>Un ejemplo de como usarlo en una página o componentes es el siguiente:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import PropTypes from &#34;prop-types&#34;;
 import <span style="color:#75715e">{</span> <span style="color:#a6e22e">i18n</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">Link</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">withTranslation</span> <span style="color:#75715e">}</span> from &#34;i18n&#34;;
 
@@ -525,21 +527,21 @@ export default withTranslation(&#34;common&#34;)(login);
 <ul>
 <li>El <em>{t}</em> que son los parámetros de la vista siempre será <em>t</em> ya que es el que se pasa al hacer <em>withTranslation(&ldquo;common&rdquo;)(login)</em></li>
 <li>El texto se recupera usando <em>{t(&ldquo;<nombre de la etiqueta>&rdquo;)}</em></li>
-</ul>
-<p>Cosas que tengo pendientes de probar con más calma:</p>
-<ul>
-<li>El <em>.propTypes</em> es una validación para que el parámetro <em>t</em> sea obligatorio. Pero tengo claro que sea necesarioa.</li>
 <li>El <em>namespacesRequired</em> se pone porque lo indica la 
   <a href="https://github.com/isaachinman/next-i18next#4-declaring-namespace-dependencies">docu oficial</a> para temas de rendimiento. Ya que sino se indica se lee todos los ficheros posibles, penalizando el rendimiento. Aun poniendolo me da el warning en la consola del servidor <em>NextJS</em>.</li>
+</ul>
+<p>Cosas que que no tengo claras:</p>
+<ul>
+<li>El <em>.propTypes</em> es una validación para que el parámetro <em>t</em> sea obligatorio. Pero tengo claro que sea necesarioa. Ya que poniendolo, como si no, funciona todo bien. Y parámetro o props <em>t</em> se tienen que poner si o si.</li>
 </ul>
 <h1 id="detectar-el-idioma">
   Detectar el idioma
   <a class="anchor" href="#detectar-el-idioma">#</a>
 </h1>
-<ul>
-<li>
-  <a href="https://github.com/i18next/i18next-browser-languageDetector">i18next-browser-languageDetector</a> que detecta el idioma del navegador</li>
-</ul>
+<p>Hay que instalar el paquete: 
+  <a href="https://github.com/i18next/i18next-browser-languageDetector">i18next-browser-languageDetector</a> mediante el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm install i18next-browser-languagedetector
+</code></pre></div><p><strong>NOTA:NO SOY CAPAZ DE HACERLO FUNCIONAR DIRECTAMENTE CON NEXT-I18NEXT</strong> Encontrará soluciones alternativas.</p>
 </article>
  
       
@@ -578,7 +580,7 @@ export default withTranslation(&#34;common&#34;)(login);
         <li><a href="#funcionamiento">Funcionamiento</a>
           <ul>
             <li><a href="#archivos-locales">Archivos <em>locales</em></a></li>
-            <li><a href="#usando-en-páginas">Usando en páginas</a></li>
+            <li><a href="#usando-en-páginas-y-componentes">Usando en páginas y componentes</a></li>
           </ul>
         </li>
       </ul>
