@@ -63,6 +63,18 @@ La forma de solucionar son dos dependiendo de donde tengamos la carpeta con nues
     </item>
     
     <item>
+      <title>Permitir CORS</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/permitir_cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/permitir_cors/</guid>
+      <description>Objetivo#Habilitar la opción del CORS en Django. Es decir, permitir que Django reciba peticiones desde otros origines distintos.
+Para ello hay que instalar en el proyecto de Django el paquete django-cors-headers mediante el siguiente comando:
+pip install django-cors-headers A continuación hay que editar el fichero &amp;ldquo;settings.py&amp;rdquo; del proyecto y realizar lo siguiente:
+ En la variable INSTALLED_APPS hay que añadir &amp;lsquo;corsheaders&amp;rsquo; En la variable MIDDLEWARE hay que añadir al principio de todo lo siguiente:  &amp;#39;corsheaders.</description>
+    </item>
+    
+    <item>
       <title>Servicios con ficheros</title>
       <link>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
