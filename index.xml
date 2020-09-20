@@ -783,6 +783,17 @@ Explicación#La librería PCA se utiliza para principalmente dos cosas:
     </item>
     
     <item>
+      <title>Queries en modelo de datos</title>
+      <link>https://irodrigob.github.io/docs/python/framework/django/queries_modelo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/framework/django/queries_modelo/</guid>
+      <description>Introducción#Es poner información de como realizar consultas al modelo de datos. La documentación oficial de la versión 3.1 esta bien pero alguna cosa he tenido que buscar por internet. Así que, aquí recojo todo lo que he ido haciendo.
+Los ejemplos sirven para cualquier modelo ya que el funcionamiento es igual para todo tipo de modelo, ya sea propio de Django o creado por nosotros.
+Recuperar todos los registros#En este ejemplo se basa en recuperar todos los permisos globales configurados.</description>
+    </item>
+    
+    <item>
       <title>Reconocimiento números escritos a mano</title>
       <link>https://irodrigob.github.io/docs/python/machine_learning/tensorflow/reconocimiento_numeros_escrito_mano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

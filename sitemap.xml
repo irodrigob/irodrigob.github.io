@@ -144,7 +144,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/framework/django/autentificacion_session/</loc>
-    <lastmod>2020-08-22T19:12:34+02:00</lastmod>
+    <lastmod>2020-09-05T18:59:53+02:00</lastmod>
   </url>
   
   <url>
@@ -293,7 +293,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/</loc>
-    <lastmod>2020-09-01T22:02:02+02:00</lastmod>
+    <lastmod>2020-09-05T18:59:53+02:00</lastmod>
   </url>
   
   <url>
@@ -488,6 +488,7 @@
   
   <url>
     <loc>https://irodrigob.github.io/docs/python/framework/django/permitir_cors/</loc>
+    <lastmod>2020-09-05T18:59:53+02:00</lastmod>
   </url>
   
   <url>
@@ -503,6 +504,10 @@
   <url>
     <loc>https://irodrigob.github.io/docs/sap/abap/programas/</loc>
     <lastmod>2020-06-27T17:08:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://irodrigob.github.io/docs/python/framework/django/queries_modelo/</loc>
   </url>
   
   <url>

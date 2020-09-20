@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Queries en modelo de datos">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Queries en modelo de datos" />
+<meta property="og:description" content="Queries en modelo de datos" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/python/framework/django/queries_modelo/" />
+
+<title>Queries en modelo de datos | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.a0248baad2496f2101fb65ffb481cc29f82c074be4ea9285d4bd2deb9b4a81c0.js" integrity="sha256-oCSLqtJJbyEB&#43;2X/tIHMKfgsB0vk6pKF1L0t65tKgcA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/extensiones/" class="">Extensiones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/" class="collapsed ">Frameworks</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/" class="">Django</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/autentificacion_session/" class="">Autentificación por sesión</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/usar_react/" class="">Como utilizar React como frontend</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/configuracion_url_aplicacion/" class="">Configuración URLs aplicación</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/equivalencia_metodos_http_drf/" class="">Equivalencia métodos HTTP y DRF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/incluir_librerias_propias/" class="">Incluir librerías propias</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/permitir_cors/" class="">Permitir CORS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/queries_modelo/" class="active">Queries en modelo de datos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/framework/django/publicar_servicio_ficheros/" class="">Servicios con ficheros</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/anaconda/" class="">Anaconda</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/configuracion_pylint/" class="">Configuración Pylint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/" class="collapsed ">React</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Queries en modelo de datos</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#recuperar-todos-los-registros">Recuperar todos los registros</a></li>
+    <li><a href="#fitrando-por-un-patron">Fitrando por un patron</a>
+      <ul>
+        <li><a href="#en-cualquier-parte-del-campo">En cualquier parte del campo</a></li>
+        <li><a href="#al-inicio-del-campo">Al inicio del campo</a></li>
+        <li><a href="#filtrado-normal-por-un-campo">Filtrado normal por un campo</a></li>
+      </ul>
+    </li>
+    <li><a href="#construyendo-condiciones-complejas">Construyendo condiciones complejas</a>
+      <ul>
+        <li><a href="#condición-a-partir-de-un-array">Condición a partir de un array</a></li>
+      </ul>
+    </li>
+    <li><a href="#recuperar-y-procesar-datos">Recuperar y procesar datos</a>
+      <ul>
+        <li><a href="#recuperar-datos-de-un-_serializer_-a-medida">Recuperar datos de un <em>serializer</em> a medida</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Es poner información de como realizar consultas al modelo de datos. La 
+  <a href="https://docs.djangoproject.com/en/3.1/topics/db/queries/">documentación oficial de la versión 3.1</a> esta bien pero alguna cosa he tenido que buscar por internet. Así que, aquí recojo todo lo que he ido haciendo.</p>
+<p>Los ejemplos sirven para cualquier modelo ya que el funcionamiento es igual para todo tipo de modelo, ya sea propio de Django o creado por nosotros.</p>
+<h1 id="recuperar-todos-los-registros">
+  Recuperar todos los registros
+  <a class="anchor" href="#recuperar-todos-los-registros">#</a>
+</h1>
+<p>En este ejemplo se basa en recuperar todos los permisos globales configurados.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">
+from django.contrib.auth import models
+
+permisos_global = models.Permission.objects.all()
+for permiso in permisos_global:
+    print(permiso.codename)
+</code></pre></div><p>Recuperar todos los datos siempre es con <em>.objects.all</em>. Luego se recorre cada registro con un <em>for</em>.</p>
+<h1 id="fitrando-por-un-patron">
+  Fitrando por un patron
+  <a class="anchor" href="#fitrando-por-un-patron">#</a>
+</h1>
+<p>Hay varias comandos para buscar por patrones.</p>
+<h2 id="en-cualquier-parte-del-campo">
+  En cualquier parte del campo
+  <a class="anchor" href="#en-cualquier-parte-del-campo">#</a>
+</h2>
+<p>Este ejemplo es el equivalente a este select: <em>SELECT &hellip; FROM modelo WHERE campo LIKE &lsquo;%OCR%'</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.contrib.auth import models
+
+permisos_filtros = models.Permission.objects.filter(
+            codename__contains=&#39;OCR&#39;)
+
+for permiso in permisos_filtros:
+            print(&#34;Permiso filtrado: &#34;, permiso)
+
+</code></pre></div><p>Cuando se quiere filtrar por patron hay que poner <em>__contains</em> al nombre de campo e indicar el valor, sin poner <em>%</em>.</p>
+<h2 id="al-inicio-del-campo">
+  Al inicio del campo
+  <a class="anchor" href="#al-inicio-del-campo">#</a>
+</h2>
+<p>Si tomamos el ejemplo anterior la equivalencia a: <em>SELECT &hellip; FROM modelo WHERE campo LIKE &lsquo;OCR%'</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.contrib.auth import models
+
+permisos_filtros = models.Permission.objects.filter(
+            codename__startswith=&#39;OCR&#39;)
+
+for permiso in permisos_filtros:
+            print(&#34;Permiso filtrado: &#34;, permiso)
+
+</code></pre></div><h2 id="filtrado-normal-por-un-campo">
+  Filtrado normal por un campo
+  <a class="anchor" href="#filtrado-normal-por-un-campo">#</a>
+</h2>
+<p>En este ejemplo sería un filtrado normal. Como hacer: <em>SELECT &hellip; FROM modelo WHERE campo = &lsquo;OCR&rsquo;</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.contrib.auth import models
+
+permisos_filtros = models.Permission.objects.filter(
+            codenames=&#39;OCR&#39;)
+
+for permiso in permisos_filtros:
+    print(&#34;Permiso filtrado: &#34;, permiso)
+</code></pre></div><h1 id="construyendo-condiciones-complejas">
+  Construyendo condiciones complejas
+  <a class="anchor" href="#construyendo-condiciones-complejas">#</a>
+</h1>
+<p>En Django la búsqueda con el <em>filter</em> realiza consultas con <em>AND</em> si queremos realizar consultas más complejas o usar el <em>OR</em> tenemos que usar el objeto <strong>Q</strong> que esta en al librería:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">from django.db.models import Q
+</code></pre></div><p>El objeto <strong>Q</strong> permite las mismas operaciones que se harían con el <em>filter</em></p>
+<h2 id="condición-a-partir-de-un-array">
+  Condición a partir de un array
+  <a class="anchor" href="#condici%c3%b3n-a-partir-de-un-array">#</a>
+</h2>
+<p>El siguiente ejemplo tengo una array de valores que los quiero buscar como un patron, la manera en que lo he hecho ha sido de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Se construye la condición a buscar en base al array con los roles
+condition = Q(codename__startswith=dc.tilesRoles[0])
+for role in dc.tilesRoles[1:]:
+    # el |= hace un OR si se quiere un &amp;=
+    condition |= Q(codename__startswith=role)
+
+query = models.Permission.objects.filter(condition).values()
+</code></pre></div><p>La condición se inicializa con el primer registro del array. Luego se recorre el array a partir del segundo registros(los arrays en python comienzan por 0) y se van añadiendo como un <em>OR</em>, por eso se pone el <em>|=</em>.</p>
+<p>Finalmente el objeto <strong>Q</strong> se pasa al <em>filter</em> para realizar la búsqueda.</p>
+<h1 id="recuperar-y-procesar-datos">
+  Recuperar y procesar datos
+  <a class="anchor" href="#recuperar-y-procesar-datos">#</a>
+</h1>
+<p>He visto multitud de maneras recuperar y procesar la información que se obtiene al hacer un <em>filter</em> de un modelo. Yo aquí pondré aquí lo que me ha ido bien, que no quiere decir, que sea la mejor. Simplemente me va bien para lo que yo quiero hacer.</p>
+<h2 id="recuperar-datos-de-un-_serializer_-a-medida">
+  Recuperar datos de un <em>serializer</em> a medida
+  <a class="anchor" href="#recuperar-datos-de-un-_serializer_-a-medida">#</a>
+</h2>
+<p>En el siguiente ejemplo tengo un serializer a medida porque quiero recuperar los permisos globales de django cuyo nombre técnico del rol comienza por los valores de un array. Como no quiero devolver el modelo estándar de permisos lo que he hecho es un <em>serializer</em> a medida para devolver los datos que yo quiero.</p>
+<p><strong>NOTA:</strong> Este ejemplo muy posiblmente se puede hacer en menos pasos, pero cuando lo hice era novato y prefiero dividirlo y que sea legible.</p>
+<p>El serializer es el siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">class tilesRoles(serializers.Serializer):
+    name = serializers.CharField(required=False, max_length=100)
+    description = serializers.CharField(required=False, max_length=255)
+
+    def get(self):
+</code></pre></div><p>Tiene dos campos y el método <em>get</em> es el que se llama desde la vista para recuperar los datos.</p>
+<p>La búsqueda de datos de datos es la siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Lista que guardará los datos de la consulta para luego pasarlo
+# al serializer
+listaRoles = list()
+
+# Se construye la condición a buscar en base al array con los roles
+condition = Q(codename__startswith=dc.tilesRoles[0])
+for role in dc.tilesRoles[1:]:
+    # el |= hace un OR si se quiere un &amp;=
+    condition |= Q(codename__startswith=role)
+
+    # Se lanza la query.
+    query = models.Permission.objects.filter(condition).values()
+</code></pre></div><p>Después del <em>filter</em> le añado el <em>values()</em> porque quiero recuperar los datos en formato <em>queryset</em> este formato es el que permite ir recorriendo los datos y procesarlo como uno quiero</p>
+<p>El siguiente paso es pasar los datos a una lista con los campos que yo quiero que luego me permitirá
+instanciar la clase del <em>serializer</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">for role in query:
+    listaRoles.append(<span style="color:#75715e">{</span><span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;codename&#34;</span><span style="color:#f92672">),</span>
+                        <span style="color:#e6db74">&#34;description&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">)</span><span style="color:#75715e">}</span>)
+</code></pre></div><p>Se recorre la query guardando cada registro en un objeto que luego con el método <em>get</em> me va a permitir recuperar del valor del campo.</p>
+<p>Ahora se crea el &ldquo;serializador&rdquo; con los datos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">serializador = tilesRoles(listaRoles, many=True)
+</code></pre></div><p>Se le pasa la lista y se le añade la opción <em>many=True</em> para indicarle que van a ver muchos valores. La ventaja de pasarlo al formato <em>serializer</em> es que luego en la vista es muy sencillo devolver los datos al formato JSON. Si pasaremos directamente la lista en la vista habría que convertirla a JSON.</p>
+<p>La vista quedaría así de simple:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">def get(self, request, *args, **kwargs):
+    # Se instancia el serializer donde se recuperan los valores
+    controlador = self.serializers_class()
+
+    # Se devuelve el resultado de la búsqueda
+    return response.Response(controlador.get().data)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#recuperar-todos-los-registros">Recuperar todos los registros</a></li>
+    <li><a href="#fitrando-por-un-patron">Fitrando por un patron</a>
+      <ul>
+        <li><a href="#en-cualquier-parte-del-campo">En cualquier parte del campo</a></li>
+        <li><a href="#al-inicio-del-campo">Al inicio del campo</a></li>
+        <li><a href="#filtrado-normal-por-un-campo">Filtrado normal por un campo</a></li>
+      </ul>
+    </li>
+    <li><a href="#construyendo-condiciones-complejas">Construyendo condiciones complejas</a>
+      <ul>
+        <li><a href="#condición-a-partir-de-un-array">Condición a partir de un array</a></li>
+      </ul>
+    </li>
+    <li><a href="#recuperar-y-procesar-datos">Recuperar y procesar datos</a>
+      <ul>
+        <li><a href="#recuperar-datos-de-un-_serializer_-a-medida">Recuperar datos de un <em>serializer</em> a medida</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
