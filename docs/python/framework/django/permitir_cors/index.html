@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.a0248baad2496f2101fb65ffb481cc29f82c074be4ea9285d4bd2deb9b4a81c0.js" integrity="sha256-oCSLqtJJbyEB&#43;2X/tIHMKfgsB0vk6pKF1L0t65tKgcA="></script>
+<script defer src="/en.search.min.e793c074ff82f889f867de71b1a0c0d783770cfdf0877bf3cc22f33c89460352.js" integrity="sha256-55PAdP&#43;C&#43;In4Z95xsaDA14N3DP3wh3vzzCLzPIlGA1I="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -547,21 +547,25 @@ https://github.com/alex-shpak/hugo-book
 <p>Para ello hay que instalar en el proyecto de Django el paquete 
   <a href="https://github.com/adamchainz/django-cors-headers">django-cors-headers</a> mediante el siguiente comando:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">pip install django-cors-headers
-</code></pre></div><p>A continuación hay que editar el fichero &ldquo;settings.py&rdquo; del proyecto y realizar lo siguiente:</p>
+</code></pre></div><p>A continuación hay que editar el fichero <em>settings.py</em> del proyecto y realizar lo siguiente:</p>
 <ol>
 <li>En la variable <em>INSTALLED_APPS</em> hay que añadir <em>&lsquo;corsheaders&rsquo;</em></li>
-<li>En la variable <em>MIDDLEWARE</em> hay que añadir al <strong>principio de todo</strong> lo siguiente:</li>
+<li>En la variable <em>MIDDLEWARE</em> hay que añadir antes de <em>django.middleware.common.CommonMiddleware</em> y después de <em>django.middleware.security.SecurityMiddleware</em> lo siguiente:</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">    &#39;corsheaders.middleware.CorsMiddleware&#39;,
-    &#39;django.middleware.common.CommonMiddleware&#39;,
-</code></pre></div><p>El middleware, al menos en mi caso, <em>django.middleware.common.CommonMiddleware</em> ya estaba definido pero lo he movido a la segunda posición. El motivo de ponerlo al principio estos middleware es para que pueda añadir la cabecera de CORS en las peticiones.</p>
+</code></pre></div><p>El motivo de poner después del <em>django.middleware.security.SecurityMiddleware</em> es porque estoy usando autentificación con CSRF y tiene que estar después. Y tiene que estar antes de <em>django.middleware.common.CommonMiddleware</em> porque se debe añadir en cabecera del CORS justo antes de cualquier respuesta que pueda dar Django.</p>
 <ol start="3">
 <li>Se añade las URLS donde va a recibir las peticiones. Se puede hacer para todas las URLs, mirar la documentación del paquete para más información, pero en mi caso lo voy acotar al servidor de React NextJS:</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">CORS_ALLOWED_ORIGINS = [
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># Servidores donde se permite que hagan llamadas a django
+CORS_ALLOWED_ORIGINS = [
     &#34;http://localhost:3000&#34;
 ]
-</code></pre></div></article>
+
+# Servidores donde se permite el funcionamiento de CSRF.
+CSRF_TRUSTED_ORIGINS = [&#39;localhost:3000&#39;]
+</code></pre></div><p>En la primera variable permitimos llamadas desde cualquier página de NextJS. Y la segunda permitimos autentificación CSRF entre NextJs y Django. Si no se pusiera las cookie de sesión y CSRF no se generarían correctamente.</p>
+</article>
  
       
 

@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.a0248baad2496f2101fb65ffb481cc29f82c074be4ea9285d4bd2deb9b4a81c0.js" integrity="sha256-oCSLqtJJbyEB&#43;2X/tIHMKfgsB0vk6pKF1L0t65tKgcA="></script>
+<script defer src="/en.search.min.e793c074ff82f889f867de71b1a0c0d783770cfdf0877bf3cc22f33c89460352.js" integrity="sha256-55PAdP&#43;C&#43;In4Z95xsaDA14N3DP3wh3vzzCLzPIlGA1I="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -533,6 +533,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#vistas">Vistas</a></li>
     <li><a href="#urls">URLs</a></li>
     <li><a href="#funcionamiento">Funcionamiento</a></li>
+    <li><a href="#validación-en-el-resto-de-vistas">Validación en el resto de vistas</a></li>
   </ul>
 </nav>
 
@@ -586,7 +587,15 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Tiempo de validez de la session. Son en segundos. Le he puesto 60 minutos.
+
+# Tiempo de validez de la session. Son en segundos. Le he puesto 60 minutos.
+# Es el tiempo de la cookie llamada &#34;sessionid&#34; que es la que informará a Django del
+# usuario de conexión
 SESSION_COOKIE_AGE = 60*60
+
+# Servidores donde se permite el funcionamiento de CSRF.
+CSRF_TRUSTED_ORIGINS = [&#39;localhost:3000&#39;]
+
 </code></pre></div><p>Los comentarios son autosuficientes para entender para que se usan.</p>
 <h1 id="serializadores">
   Serializadores
@@ -664,7 +673,7 @@ class LoginView(APIView):
         return response.Response(status=status.HTTP_200_OK)
 
 
-class LogoutView(APIView):    
+class LogoutView(APIView):
 
     def get(self, request):
         logout(request)
@@ -700,7 +709,23 @@ class LogoutView(APIView):
 <p>
   <img src="/images/python/framework/django/valor_x_csrftoken_header.png" alt="Pasando el X-CSRFToken" /></p>
 <p>Para los métodos <em>GET</em> no es necesario.</p>
-</article>
+<h1 id="validación-en-el-resto-de-vistas">
+  Validación en el resto de vistas
+  <a class="anchor" href="#validaci%c3%b3n-en-el-resto-de-vistas">#</a>
+</h1>
+<p>La cookie <em>sessionid</em> permite desde Django saber el usuario que se ha logueado. Esa información viene en el parámetro <em>request.user</em>.</p>
+<p>En las vistas se puede validar que el usuario esta logeado de dos manera el login del usuario uno con la sentencia: <em>request.user.is_authenticated</em> o con el decorador <em>login_required</em>. Yo he optado por la segunda, ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">class CustomObtainAuthToken(APIView):
+    permission_classes = (permissions.AllowAny,)
+    serializers_class = serializers.tilesRoles
+
+    @method_decorator(login_required)
+    def get(self, request, *args, **kwargs):
+        print(&#34;empty&#34;)
+</code></pre></div><p>Este decorador tiene una serie de opciones. Entre ellas poder redireccionar a una url en caso de no tener permisos. Esta url se puede indicar en el propio decorador o en el archivo <em>settings.py</em> del proyecto:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># URL que navergará si se llaman a servicios sin estar logeado
+LOGIN_URL = &#39;http://localhost:3000/login&#39;
+</code></pre></div></article>
  
       
 
@@ -736,6 +761,7 @@ class LogoutView(APIView):
     <li><a href="#vistas">Vistas</a></li>
     <li><a href="#urls">URLs</a></li>
     <li><a href="#funcionamiento">Funcionamiento</a></li>
+    <li><a href="#validación-en-el-resto-de-vistas">Validación en el resto de vistas</a></li>
   </ul>
 </nav>
 

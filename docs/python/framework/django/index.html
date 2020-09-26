@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.a0248baad2496f2101fb65ffb481cc29f82c074be4ea9285d4bd2deb9b4a81c0.js" integrity="sha256-oCSLqtJJbyEB&#43;2X/tIHMKfgsB0vk6pKF1L0t65tKgcA="></script>
+<script defer src="/en.search.min.e793c074ff82f889f867de71b1a0c0d783770cfdf0877bf3cc22f33c89460352.js" integrity="sha256-55PAdP&#43;C&#43;In4Z95xsaDA14N3DP3wh3vzzCLzPIlGA1I="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/python/framework/django/index.xml" title="Navi-developer" />
@@ -559,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://www.djangoproject.com/">Django</a> es un framework que permite realizar aplicaciones web de una manera sencilla y rápida.</p>
 <p>A esto hay que sumarle 
   <a href="https://www.django-rest-framework.org/">Django Rest Framework</a>, de aquí en adelante DRF, que permite crear servicios REST a través de <em>Django</em></p>
-<p>En mi caso quiero usar <em>Django</em> + <em>Django Rest Framework</em> porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es <em>SQLite3</em>) de una manera bastante sencilla. Ya que usando las vistas de tipo <em>ViewSet</em> DRF se encarga de gestionar todo el CRUD de un modelo de datos sin añadir nada de código. 
+<p>En mi caso quiero usar <em>Django</em> + <em>Django Rest Framework</em> porque me permite publicar servicios web y guardar determinada información en una base de datos (inicialmente estoy usando la que viene por defecto que es <em>SQLite3</em>) de una manera bastante sencilla. Ya que usando las vistas de tipo <em>ViewSet</em> DRF se encarga de gestionar todo el CRUD de un modelo de datos sin añadir nada de código.
 Además DRF usa la arquitectura MVC. Donde la M son los modelos que se crean en <em>Django</em>. La V son las <em>Views</em> de DRF. Y la C es el <em>serializer</em> de DRF. Esto hace posible 
   <a href="/docs/python/framework/django/autentificacion_session/">crear servicios sin modelo</a> usando solo las <em>Views</em> y <em>Serializers</em> con DRF. Que no sé si esto con <em>Django</em> se puede hacer.</p>
 <p>A nivel de usarlo en nuestras aplicaciones <em>Django</em> se estructura en proyectos y aplicaciones. Y estos se creán dentro del directorio de nuestro proyecto.</p>
@@ -572,7 +572,7 @@ Además DRF usa la arquitectura MVC. Donde la M son los modelos que se crean en 
   <a href="/docs/python/anaconda/">Anaconda</a>:</p>
 <p>
   <img src="/images/python/framework/django/djando_anaconda.png" alt="Libreria Django Rest Framework" /></p>
-<p><em>Django Rest Framework</em>  hay que instalarlo a través del <em>PiP</em>:</p>
+<p><em>Django Rest Framework</em> hay que instalarlo a través del <em>PiP</em>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">conda activate &lt;entorno&gt;
 pip install djangorestframework
 </code></pre></div><h1 id="creación-del-proyecto">
@@ -585,7 +585,7 @@ pip install djangorestframework
 <p><strong>IMPORTANTE: Los siguientes pasos hay que hacerlos estando en el directorio de la aplicación. Como he usado el VSCode ya estaba en dicho directorio</strong></p>
 <p>Ahora se crea el proyecto:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">D:\Users\ivan\anaconda3\envs\ocr\Lib\site-packages\django\bin\django-admin.py startproject rest_api # Importante hay que poner la ruta completa donde esta el django-admin.py
-</code></pre></div><p>** AVISO: Como estaba en el directorio de la aplicación he tenido que poner la ruta completa donde esta el script: djando-admin.py**</p>
+</code></pre></div><p><strong>AVISO: Como estaba en el directorio de la aplicación he tenido que poner la ruta completa donde esta el script: djando-admin.py</strong></p>
 <p>El nombre del proyecto es <em>rest_api</em>. Con esto nos ha creado un directorio <em>rest_api</em> y a su vez dentro habrá otro directorio con el mismo nombre al cual tenemos que acceder para:</p>
 <ol>
 <li>Modificar el fichero <em>settings.py</em> que se tiene que modificar:</li>
@@ -596,7 +596,7 @@ pip install djangorestframework
 <li>Localizar la variable <em>TIME_ZONE</em> y cambiar el valor por <em>Europe/Berlin</em></li>
 </ul>
 <ol start="2">
-<li>Vamos a crear la base de datos inicial. Para ellos hay que volver al directorio del proyecto creado <em>rest_api</em>  y lanzar el comando</li>
+<li>Vamos a crear la base de datos inicial. Para ellos hay que volver al directorio del proyecto creado <em>rest_api</em> y lanzar el comando</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">manage.py migrate
 </code></pre></div><p>El fichero <em>manage.py</em> se va utilizar para muchos procesos.</p>
