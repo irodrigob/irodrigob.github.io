@@ -937,6 +937,16 @@ Tensor Flow#Lo primero que hay que hacer es mirar la documentación oficial p
     </item>
     
     <item>
+      <title>Utilidades</title>
+      <link>https://irodrigob.github.io/docs/sap/abap/funciones/utilidades/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/abap/funciones/utilidades/</guid>
+      <description>Objetivo#Utilidades a la hora de usar o llamar a las funciones
+Capturar RAISE en las funciones#Las excepciones de las funciones se capturan con la opción EXCEPTIONS, si usamos el botón de Patrón ya se inserta. Hay una excepción que se añade siempre cuando se usa la opción de Patrón que es la OTHERS con valor 99. Esta excepción permite captura cualquier excepción que no hayamos declarado en EXCEPTIONS.</description>
+    </item>
+    
+    <item>
       <title>Utilidades generales</title>
       <link>https://irodrigob.github.io/docs/sap/abap/utilidades_generales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
