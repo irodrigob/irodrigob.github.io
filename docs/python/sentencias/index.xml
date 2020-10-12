@@ -95,7 +95,7 @@ Ejemplo#La aplicación, que esta en una fase embrionaria, he creado una paque
       <guid>https://irodrigob.github.io/docs/python/sentencias/diccionario/</guid>
       <description>Introducción#Son como las listas o tuplas pero al acceso a sus valores no se accede por un índice, sino que se accede por la clave asociada al valor.
 Por lo que he visto hay diccionarios simples que es una relación clave&amp;lt;-&amp;gt;valor y otros más complejos. De momento explicaré los simples para tener una base
-Simples#Crear un diccionario es muy simple tan sólo hay que usar la siguiente sentencia:</description>
+Como saber si un variables es tipo dict#Hay dos maneras:</description>
     </item>
     
     <item>
