@@ -27,7 +27,7 @@
       <guid>https://irodrigob.github.io/docs/github/generar_rsa_windows/</guid>
       <description>Motivo#El motivo de crear una clave RSA es poder hacer deploy a Github mediante consola y evitar el siguiente error:
 Digo consola porque es el único momento que lo he necesitado, ya que usando VS Code o la propia aplicación de Github no lo he necesitado.
-Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git para windos y al pulsar la tecla win y al escribir git aparecerá la opción:  En el terminal que aparecerá escribir: ssh-key -t rsa -b 4096 -C &amp;ldquo;mail que nos hemos registrado en github&amp;rdquo; y al pulsar enter nos aparecerá esto:  Pulsaremos Enter</description>
+Pasos a seguir# Abrir el git Bash. Para eso hay que tener el instalado el Git para windos y al pulsar la tecla win y al escribir git aparecerá la opción:  En el terminal que aparecerá escribir: ssh-keygen -t rsa -b 4096 -C &amp;ldquo;mail que nos hemos registrado en github&amp;rdquo; y al pulsar enter nos aparecerá esto:  Pulsaremos Enter</description>
     </item>
     
   </channel>

@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.62e15939b80007b33230ed5628202c053e34f9ef60efc6b90981e73c1abe2e25.js" integrity="sha256-YuFZObgAB7MyMO1WKCAsBT40&#43;e9g78a5CYHnPBq&#43;LiU="></script>
+<script defer src="/en.search.min.d08d4691f52753530d8e8ccce5c7db53cc42cb8fae2e9b93bcf221a46891a8c5.js" integrity="sha256-0I1GkfUnU1MNjozM5cfbU8xCy4&#43;uLpuTvPIhpGiRqMU="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -374,7 +374,7 @@ https://github.com/alex-shpak/hugo-book
 <p>
   <img src="/images/github/generar_clave_rsa/abrir_git_bash.png" alt="Abrir Git Bash" /></p>
 <ol start="2">
-<li>En el terminal que aparecerá escribir: ssh-key -t rsa -b 4096 -C &ldquo;mail que nos hemos registrado en github&rdquo; y al pulsar enter nos aparecerá esto:</li>
+<li>En el terminal que aparecerá escribir: ssh-keygen -t rsa -b 4096 -C &ldquo;mail que nos hemos registrado en github&rdquo; y al pulsar enter nos aparecerá esto:</li>
 </ol>
 <p>
   <img src="/images/github/generar_clave_rsa/generar_rsa.png" alt="Generar RSA" /></p>
@@ -384,7 +384,7 @@ https://github.com/alex-shpak/hugo-book
   <img src="/images/github/generar_clave_rsa/introducir_frase.png" alt="Introducir frase" /></p>
 <p>La frase se dejará en blanco para no tener que introducirla en todos los sitios que se haga push.</p>
 <ol start="3">
-<li>Ahora hay que añadir la clave generada al ssh-agent. Pero para eso primero hay que valir que este en marcha. Para ello hay que introducir: 	eval $(ssh-agent –s):</li>
+<li>Ahora hay que añadir la clave generada al ssh-agent. Pero para eso primero hay que validar que este en marcha. Para ello hay que introducir: 	eval $(ssh-agent –s):</li>
 </ol>
 <p>
   <img src="/images/github/generar_clave_rsa/ssh_agent.png" alt="SSH Agent" /></p>
