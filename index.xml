@@ -322,6 +322,16 @@ Hay que saber que el punto de acceso de los servicios será el archivo urls.py a
     
     <item>
       <title>Conversiones</title>
+      <link>https://irodrigob.github.io/docs/python/sentencias/conversiones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/python/sentencias/conversiones/</guid>
+      <description>De un objeto a string#Con la sentencia str se puede convertir de un objeto a un string. Ejemplo:
+id = uuid.uuid1() filename = str(id)+&amp;#34;_&amp;#34;+secure_filename(file.filename) </description>
+    </item>
+    
+    <item>
+      <title>Conversiones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/conversiones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
