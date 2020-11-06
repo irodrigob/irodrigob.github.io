@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Configuración Pylint">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Configuración Pylint" />
-<meta property="og:description" content="Configuración Pylint" />
+<meta name="description" content="Extensiones para VSCode que uso React">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Extensiones para VS Code" />
+<meta property="og:description" content="Extensiones para VSCode que uso React" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/python/configuracion_pylint/" />
-<meta property="article:modified_time" content="2020-08-24T13:55:30+02:00" />
-<title>Configuración Pylint | Navi-developer</title>
+<meta property="og:url" content="https://irodrigob.github.io/docs/react/extensiones_vscode/" />
+
+<title>Extensiones para VS Code | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
@@ -126,111 +126,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/enlaces_interes/" class="">Enlaces de interes</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/entorno_desarrollo/" class="">Entorno de desarrollo</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/extensiones/" class="">Extensiones</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/framework/" class="collapsed ">Frameworks</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/anaconda/" class="">Anaconda</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/configuracion_pylint/" class="active">Configuración Pylint</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/machine_learning/" class="collapsed ">Machine learning</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/python/sentencias/" class="collapsed ">Sentencias</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-  </ul>
-  
 
         </li>
       
@@ -247,6 +142,54 @@ https://github.com/alex-shpak/hugo-book
   
   
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/nextjs/" class="collapsed ">NextJS</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/nwb/" class="collapsed ">nwb</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/extensiones_vscode/" class="active">Extensiones para VS Code</a>
+  
+
+        </li>
+      
+    
+  </ul>
   
 
         </li>
@@ -406,7 +349,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Configuración Pylint</strong>
+  <strong>Extensiones para VS Code</strong>
 
   <label for="toc-control">
     
@@ -423,7 +366,9 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#evitar-errores-de-librerías-que-no-existen">Evitar errores de librerías que no existen</a></li>
+    <li><a href="#error-lens">Error Lens</a></li>
+    <li><a href="#nextjs-snippets">Next.js snippets</a></li>
+    <li><a href="#prettier---code-formatter">Prettier - code formatter</a></li>
   </ul>
 </nav>
 
@@ -439,20 +384,35 @@ https://github.com/alex-shpak/hugo-book
   Introducción
   <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>Pylint es una librería que se usa para verificiar que el código de Python que estamos escribiendo, para el entorno que tengamos activado, sea correcto.</p>
-<p>Pero hay veces que hay que tocar la configuración de Pylint para afinarlo.</p>
-<h1 id="evitar-errores-de-librerías-que-no-existen">
-  Evitar errores de librerías que no existen
-  <a class="anchor" href="#evitar-errores-de-librer%c3%adas-que-no-existen">#</a>
+<p>El objetivo es poner la extensiones que uso en VSCode para desarrollar React, aunque alguna de ellas son multilenguaje.</p>
+<h1 id="error-lens">
+  Error Lens
+  <a class="anchor" href="#error-lens">#</a>
 </h1>
-<p>Hay casos que Pylint dice que una librería no existe pero realmente si que existe. En mi caso me ha ocurrido al usar librerías creadas en el raíz del proyecto de VS Code, dentro de un proyecto de Django. Pero luego, en tiempo de ejecución no da problemas.</p>
-<p>El motivo es que esa librería propia no esta en las variables de entorno y esto provoca que Pylint piense que no existe.</p>
-<p>La solución es modificar el fichero <em>.pylintrc</em> que esta en el raíz del proyecto de VS Code. Si no existiera se puede crear mediante el siguiente comando:</p>
-<pre><code>pylint --generate-rcfile &gt; .pylintrc
-</code></pre><p>Una vez en el archivo hay que localizar la variable <em>init-hook</em> y añadir lo siguiente:</p>
-<pre><code>init-hook='import sys; sys.path.append(&quot;K:\github\ocr_invoices&quot;)'
-</code></pre><p>Donde se le añade el directorio del proyecto a las variables de entorno. De esta manera desaparecen ese tipo de errores.</p>
-</article>
+<p>Esta extensión muestra los mensaje de error, warning, informativos, etc.. al lado de la línea de código. Es muy practico ya que no hay que mirar en la pestaña de <em>Problems</em> para saber que errores tenemos.</p>
+<p>Más info en este 
+  <a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">enlace</a> del market place.</p>
+<h1 id="nextjs-snippets">
+  Next.js snippets
+  <a class="anchor" href="#nextjs-snippets">#</a>
+</h1>
+<p>Aunque es para next.js, hay otra parecida para React, esta xtensión abilita un conjunto de macros que simplifican a la hora de introducidar sentencias como funciones, componentes, etc..</p>
+<p>La verdad es que no desarrollo tan habitual como quería se me olvidan las macros, o las tengo que tener un notepad los atajos, lo que no lo hace muy práctico.</p>
+<h1 id="prettier---code-formatter">
+  Prettier - code formatter
+  <a class="anchor" href="#prettier---code-formatter">#</a>
+</h1>
+<p>Es la extensión que uso para que formatear el código. Creo que para este extensión tuve que tocar directamente la configuración del VSCode para asociarla el lenguaje a la extensión. Ahora mismo lo tengo así:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&#34;[html]&#34;: <span style="color:#75715e">{</span>
+    <span style="color:#e6db74">&#34;editor.defaultFormatter&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;esbenp.prettier-vscode&#34;</span>
+<span style="color:#75715e">}</span>,
+&#34;[css]&#34;: <span style="color:#75715e">{</span>
+  <span style="color:#e6db74">&#34;editor.defaultFormatter&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;esbenp.prettier-vscode&#34;</span>
+<span style="color:#75715e">}</span>,
+&#34;[javascript]&#34;: <span style="color:#75715e">{</span>
+  <span style="color:#e6db74">&#34;editor.defaultFormatter&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;esbenp.prettier-vscode&#34;</span>
+<span style="color:#75715e">}</span>
+</code></pre></div></article>
  
       
 
@@ -483,7 +443,9 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#evitar-errores-de-librerías-que-no-existen">Evitar errores de librerías que no existen</a></li>
+    <li><a href="#error-lens">Error Lens</a></li>
+    <li><a href="#nextjs-snippets">Next.js snippets</a></li>
+    <li><a href="#prettier---code-formatter">Prettier - code formatter</a></li>
   </ul>
 </nav>
 

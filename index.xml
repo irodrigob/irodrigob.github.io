@@ -525,6 +525,17 @@ El sobreajuste se produce cuando se entrena el algoritmo ya que intenta generar 
     </item>
     
     <item>
+      <title>Extensiones para VS Code</title>
+      <link>https://irodrigob.github.io/docs/react/extensiones_vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/extensiones_vscode/</guid>
+      <description>Introducción#El objetivo es poner la extensiones que uso en VSCode para desarrollar React, aunque alguna de ellas son multilenguaje.
+Error Lens#Esta extensión muestra los mensaje de error, warning, informativos, etc.. al lado de la línea de código. Es muy practico ya que no hay que mirar en la pestaña de Problems para saber que errores tenemos.
+Más info en este enlace del market place.</description>
+    </item>
+    
+    <item>
       <title>Fecha / Hora</title>
       <link>https://irodrigob.github.io/docs/sap/abap/funciones/fecha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
