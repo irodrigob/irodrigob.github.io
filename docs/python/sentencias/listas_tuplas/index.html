@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.204f81339c09589db29d9867cffb690ecadec9a95e86fd96dd760563e2435840.js" integrity="sha256-IE&#43;BM5wJWJ2ynZhnz/tpDsreyalehv2W3XYFY&#43;JDWEA="></script>
+<script defer src="/en.search.min.ca0097deee2552425106c7ae7996ba2571d70165af63a3f7cef57c846ead6c1f.js" integrity="sha256-ygCX3u4lUkJRBseueZa6JXHXAWWvY6P3zvV8hG6tbB8="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -603,6 +603,7 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#modificar-valores">Modificar valores</a></li>
             <li><a href="#borrar-valores">Borrar valores</a></li>
             <li><a href="#añadir-valores">Añadir valores</a></li>
+            <li><a href="#buscar-valores">Buscar valores</a></li>
             <li><a href="#sublistas">Sublistas</a></li>
             <li><a href="#segmentos">Segmentos</a></li>
           </ul>
@@ -705,7 +706,13 @@ print(&#34;Valores después:&#34;, lista)
 </code></pre></div><p>Resultado:</p>
 <pre><code>Valores antes: [8, 9, 10, 11, 12]
 Valores después: [8, 9, 10, 11, 12, 13]
-</code></pre><h3 id="sublistas">
+</code></pre><h3 id="buscar-valores">
+  Buscar valores
+  <a class="anchor" href="#buscar-valores">#</a>
+</h3>
+<p>La opción más simple de buscar valores es con la claúsula <em>in</em>, ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">3 in [1, 2, 3] # =&gt; True
+</code></pre></div><h3 id="sublistas">
   Sublistas
   <a class="anchor" href="#sublistas">#</a>
 </h3>
@@ -808,6 +815,7 @@ Valor:  4
             <li><a href="#modificar-valores">Modificar valores</a></li>
             <li><a href="#borrar-valores">Borrar valores</a></li>
             <li><a href="#añadir-valores">Añadir valores</a></li>
+            <li><a href="#buscar-valores">Buscar valores</a></li>
             <li><a href="#sublistas">Sublistas</a></li>
             <li><a href="#segmentos">Segmentos</a></li>
           </ul>
