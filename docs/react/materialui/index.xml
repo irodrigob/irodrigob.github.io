@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Material-UI on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/react/materialui/</link>
+    <description>Recent content in Material-UI on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/react/materialui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Estilos</title>
+      <link>https://irodrigob.github.io/docs/react/materialui/estilos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/materialui/estilos/</guid>
+      <description>Introducción#Aquí viene los estilos o CSS que tanto me dan por saco. Recopilización de trucos o utilidades que he usado y no quiero perderlas.
+Combinar dos clases en un mismo className#Tenia una necesidad de poner en un mismo className dos estilos distintos, porque no sabía, ni sé, como crear un estilo que herede de otro o combinarlos. Todo esto para no tener que duplicar estilos.</description>
+    </item>
+    
+  </channel>
+</rss>

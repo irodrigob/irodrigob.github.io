@@ -512,6 +512,16 @@ Se cargan las librerias
     </item>
     
     <item>
+      <title>Estilos</title>
+      <link>https://irodrigob.github.io/docs/react/materialui/estilos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/materialui/estilos/</guid>
+      <description>Introducción#Aquí viene los estilos o CSS que tanto me dan por saco. Recopilización de trucos o utilidades que he usado y no quiero perderlas.
+Combinar dos clases en un mismo className#Tenia una necesidad de poner en un mismo className dos estilos distintos, porque no sabía, ni sé, como crear un estilo que herede de otro o combinarlos. Todo esto para no tener que duplicar estilos.</description>
+    </item>
+    
+    <item>
       <title>Estructuras</title>
       <link>https://irodrigob.github.io/docs/sap/abap/rtts/estructuras/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
