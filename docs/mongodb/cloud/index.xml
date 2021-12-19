@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MongoDB en cloud on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/mongodb/cloud/</link>
+    <description>Recent content in MongoDB en cloud on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/mongodb/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud.mongdb</title>
+      <link>https://irodrigob.github.io/docs/mongodb/cloud/cloudmongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/cloud/cloudmongodb/</guid>
+      <description>Introducción#La página oficial de mongodb tiene su propia versión cloud para poder desarrollar.
+Te puedes loguearte con tu mails o usar con tu cuenta de google. En mi caso he usado la cuenta de google, es más comodo.
+Plannes y precios#Hay varias modalidades y precios. Cuando entras por primera vez te sale que es lo que quieres hacer. Te saldrá una página como esta:</description>
+    </item>
+    
+  </channel>
+</rss>

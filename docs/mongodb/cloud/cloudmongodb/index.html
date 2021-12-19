@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="cloud.mongdb">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="cloud.mongdb" />
+<meta property="og:description" content="cloud.mongdb" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/mongodb/cloud/cloudmongodb/" />
+
+<title>cloud.mongdb | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.6621f88d8efebb545a5c52efe26e35cb8216a2b472846082f868ee9269fbaf57.js" integrity="sha256-ZiH4jY7&#43;u1RaXFLv4m41y4IWorRyhGCC&#43;Gjukmn7r1c="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/" class="">MongoDB</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/cloud/" class="collapsed ">MongoDB en cloud</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/cloud/cloudmongodb/" class="active">cloud.mongdb</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/" class="collapsed ">React</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>cloud.mongdb</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#plannes-y-precios">Plannes y precios</a></li>
+    <li><a href="#opción-gratuita">Opción gratuita</a></li>
+    <li><a href="#cluster-inicial">Cluster inicial.</a>
+      <ul>
+        <li><a href="#creación-de-usuarios">Creación de usuarios</a></li>
+        <li><a href="#registringir-por-ip">Registringir por IP</a></li>
+        <li><a href="#conexión-con-aplicaciones">Conexión con aplicaciones</a></li>
+        <li><a href="#accediendo-a-la-base-de-datos">Accediendo a la base de datos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>La página oficial de 
+  <a href="https://www.mongodb.com/">mongodb</a> tiene su propia versión 
+  <a href="https://cloud.mongodb.com/">cloud</a> para poder desarrollar.</p>
+<p>Te puedes loguearte con tu mails o usar con tu cuenta de google. En mi caso he usado la cuenta de google, es más comodo.</p>
+<h1 id="plannes-y-precios">
+  Plannes y precios
+  <a class="anchor" href="#plannes-y-precios">#</a>
+</h1>
+<p>Hay varias modalidades y precios. Cuando entras por primera vez te sale que es lo que quieres hacer. Te saldrá una página como esta:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/planesyprecios.png" alt="Planes y precios" /></p>
+<p>Esta página es la que te saldrá si quieres crearte un nuevo cluster.</p>
+<h1 id="opción-gratuita">
+  Opción gratuita
+  <a class="anchor" href="#opci%c3%b3n-gratuita">#</a>
+</h1>
+<p>El plan que uso es el que se demonia <em>Shared</em>, que es la ideal para crear proyectos personales o para ir aprendiendo.</p>
+<p>La versión gratuita solo puedes tener un cluster por proyecto, no se tiene la última versión de mongodb y no es escalable. Pero para temas personales es irrelevante.</p>
+<h1 id="cluster-inicial">
+  Cluster inicial.
+  <a class="anchor" href="#cluster-inicial">#</a>
+</h1>
+<p>Cuando se crea por primera vez la versión grauita te crea por defecto el <em>Project 0</em> con el <em>cluster0</em>:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/proyectoclusterinicial.png" alt="proyecto y cluster inicial" /></p>
+<h2 id="creación-de-usuarios">
+  Creación de usuarios
+  <a class="anchor" href="#creaci%c3%b3n-de-usuarios">#</a>
+</h2>
+<p>Ahora hay que crear un usuario para poder conectarnos a la base de datos. La primera vez como hay un asistente te indicaré como crearlo. Pero si quieres crear otros usuarios en el menú de la derechaz tenemos la opción <em>Database Access</em>:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/databasaccess.png" alt="Database access" /></p>
+<p>Este primer usuario tendrá permisos administrador y es el que usaremos para podernos conectarnos a nuestro proyecto.</p>
+<h2 id="registringir-por-ip">
+  Registringir por IP
+  <a class="anchor" href="#registringir-por-ip">#</a>
+</h2>
+<p>En el asistente de creación inicial un paso es limitar el acceso por IP, en el asistente no hay botón que permita indicarle que no registra por IP. Yo me salte ese paso y lo he hecho a mano.</p>
+<p>Justo debajo donde hemos creado los permisos de usuario tenemos la opción <em>Network access</em>:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/networkaccess.png" alt="Network access" /></p>
+<p>Al pulsar el botón <em>Add IP Address</em> saldra esta ventana:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/add_ip_access.png" alt="Add ip access" /></p>
+<p>Aquí se le pulsa al botón <em>Allow access from anywhere</em> y confirmar. Con esto ya tenemos que cualquier pueda acceder a nuestra base de datos.</p>
+<h2 id="conexión-con-aplicaciones">
+  Conexión con aplicaciones
+  <a class="anchor" href="#conexi%c3%b3n-con-aplicaciones">#</a>
+</h2>
+<p>El siguiente paso es saber como conectarnos desde nuestra aplicación. Para ello hay que pulsar el botón <em>Connect</em> y aparecerá esta pantalla:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/connectcluster.png" alt="Connect" /></p>
+<p>En esta ventana escogeremos la opción <em>Connect your application</em> y nos aparecerá lo siguiente:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/connectyouapplication.png" alt="Connect your application" /></p>
+<p>Yo he escogido la opción nodejs porque lo voy utilizar en una aplicación de Nextjs.</p>
+<p>Aquí lo importante es el string que devuelve:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">mongodb+srv://&lt;usuaurio&gt;:&lt;password&gt;@cluster0.6huz7.mongodb.net/myFirstDatabase?retryWrites=true&amp;w=majority
+</code></pre></div><p>Donde pone <em>usuario</em> es el usuario que hemos creado en la opción <em>Database access</em>. En <em>password</em> el password que le hemos puesto. Y donde pone <em>myFirstDatabase</em> hay que poner el nombre de la base de datos, que en este caso se llamará <em>Cluster0</em>.</p>
+<p>Con esto ya podemos conectarnos con nuestra aplicación javascript o cualquier otro programa, como veremos, que permite conectarse a dicha base de datos.</p>
+<h2 id="accediendo-a-la-base-de-datos">
+  Accediendo a la base de datos
+  <a class="anchor" href="#accediendo-a-la-base-de-datos">#</a>
+</h2>
+<p>En la pantalla inicial de nuestro proyecto si pulsamos sobre <em>Cluster0</em> se navegará al detalle de la base de datos o cluster, o como se llame. Porque digo eso porque si vamos a la pestaña <em>Collections</em> vemos lo siguiente:</p>
+<p>
+  <img src="/images/mongodb/cloudmongodb/tab_collections_database.png" alt="Collections database" />.</p>
+<p>Aquí vemos que tengo una base de datos llamada <em>transporttooldb</em> que dentro de ella tiene un <em>collections</em>. Un collection sería una tabla en las bases de datos relacionales.</p>
+<p>Mi confusión es porque aunque hay un botón que se llama <em>+Create database</em> yo creo que es más bien para crear un namespace o algo parecido.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#plannes-y-precios">Plannes y precios</a></li>
+    <li><a href="#opción-gratuita">Opción gratuita</a></li>
+    <li><a href="#cluster-inicial">Cluster inicial.</a>
+      <ul>
+        <li><a href="#creación-de-usuarios">Creación de usuarios</a></li>
+        <li><a href="#registringir-por-ip">Registringir por IP</a></li>
+        <li><a href="#conexión-con-aplicaciones">Conexión con aplicaciones</a></li>
+        <li><a href="#accediendo-a-la-base-de-datos">Accediendo a la base de datos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

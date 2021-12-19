@@ -120,6 +120,15 @@ type(c) Convertir variables#Si queremos convertir el formato de una variable 
     </item>
     
     <item>
+      <title></title>
+      <link>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Acciones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/acciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -243,6 +252,17 @@ ent = input(&amp;#39;Introduzca la Temperatura Fahrenheit:&amp;#39;) try: fahr =
       <guid>https://irodrigob.github.io/docs/sap/abap/clases_desarrollo/</guid>
       <description>Objetivo#Recopilar clases de desarrollo que son interesante para tener ejemplos
 Lista#   Clase desarrollo Descripción     SST_DEMO Ejemplos de hojas de transformación simple   SABAPDEMOS Ejemplos de todo tipo sobre ABAP. Desde rendimiento, CDS, push, etc..    </description>
+    </item>
+    
+    <item>
+      <title>cloud.mongdb</title>
+      <link>https://irodrigob.github.io/docs/mongodb/cloud/cloudmongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/cloud/cloudmongodb/</guid>
+      <description>Introducción#La página oficial de mongodb tiene su propia versión cloud para poder desarrollar.
+Te puedes loguearte con tu mails o usar con tu cuenta de google. En mi caso he usado la cuenta de google, es más comodo.
+Plannes y precios#Hay varias modalidades y precios. Cuando entras por primera vez te sale que es lo que quieres hacer. Te saldrá una página como esta:</description>
     </item>
     
     <item>

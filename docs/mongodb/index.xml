@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MongoDB on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/mongodb/</link>
+    <description>Recent content in MongoDB on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
