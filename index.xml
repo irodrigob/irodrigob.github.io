@@ -120,15 +120,6 @@ type(c) Convertir variables#Si queremos convertir el formato de una variable 
     </item>
     
     <item>
-      <title></title>
-      <link>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Acciones</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/acciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -656,6 +647,17 @@ Letra máxima: uLetra mínima:  LEN &amp;ndash;&amp;gt; Devuelve el numéro de 
       <description>Introducción#Ejemplo extraído del video Machine Learning episodio 9. Cómo guardar un modelo entrenado.
 El ejemplo esta creado el Jupiter Notebool y se irá poniendo el código de las distintas celdas.
 En esta página veremos como se guardan los modelos entrenados para no tener que hacer entrenamientos cada vez que queremos hacer algo. En los ejemplos entrenar algoritmos se hace en segundos, pero en casos reales este entrenamiento puede durar dias o semnanas.</description>
+    </item>
+    
+    <item>
+      <title>GUI para acceder al cloud de mongo DB</title>
+      <link>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/</guid>
+      <description>Introducción#Supongo que habrá muchos GUI para poder interacturar con MongoDB pero conoci Robo en un video para aprender como funciona. La versión que tengo instalada es la Robo 3T que es gratuíta que para lo que necesito es suficiente.
+Conexión con la base de datos#Una vez se entra al Robo 3T nos sale esta ventana:
+Para crear una nueva conexión hay que pulsar sobre el enlace Create</description>
     </item>
     
     <item>
