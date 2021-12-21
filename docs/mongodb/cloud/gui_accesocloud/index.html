@@ -9,12 +9,12 @@
 <meta property="og:description" content="Programa GUI para acceder al cloud de mongo DB" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/" />
-<meta property="article:modified_time" content="2021-12-19T22:38:28+01:00" />
+<meta property="article:modified_time" content="2021-12-20T22:42:55+01:00" />
 <title>GUI para acceder al cloud de mongo DB | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.efca4de3df3e91500b8768cb689293bd4b43d712f54286572c6dd10140a22e68.js" integrity="sha256-78pN498&#43;kVALh2jLaJKTvUtD1xL1QoZXLG3RAUCiLmg="></script>
+<script defer src="/en.search.min.cca39754bca52925cd51da6125819e902530d47530493a82e13ab59c0eb070fc.js" integrity="sha256-zKOXVLylKSXNUdphJYGekCUw1HUwSTqC4Tq1nA6wcPw="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -382,6 +382,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#conexión-con-la-base-de-datos">Conexión con la base de datos</a></li>
     <li><a href="#creación-de-la-base-de-datos-y-collection">Creación de la base de datos y collection</a></li>
+    <li><a href="#añadiendo-registros-a-la-collection">Añadiendo registros a la collection</a></li>
   </ul>
 </nav>
 
@@ -424,10 +425,42 @@ https://github.com/alex-shpak/hugo-book
 <p>Para activar el shell para empezar a trabajar hay que hacer doble click sobre un nodo que aparecerá en la carpeta <em>Replica set</em>, al hacer nos saldrá a la derecha lo siguiente:</p>
 <p>
   <img src="/images/mongodb/gui/robo_connection_shell.png" alt="Shell inicial de la connection" /></p>
+<p><strong>IMPORTANTE: Cuando se escriba los comandos en el shell para que se ejecuten hay que pulsar CTRL+ENTER. Si se pulsar solo ENTER solo hará un salto de línea.</strong></p>
 <h1 id="creación-de-la-base-de-datos-y-collection">
   Creación de la base de datos y collection
   <a class="anchor" href="#creaci%c3%b3n-de-la-base-de-datos-y-collection">#</a>
 </h1>
+<p>Para crear o usar una de datos hay que usar el comando <em>use</em>. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+</code></pre></div><p>En el shell nos dirá que se ha cambiado la base de datos.</p>
+<p>
+  <img src="/images/mongodb/gui/robo_command_shell_1.png" alt="Creacion/cambio base de datos" /></p>
+<p>El mensaje será el mismo tanto si la base de datos existe como si no. Si la base de datos no existe no se creará hasta que no se cree una <em>collection</em>.</p>
+<p><strong>IMPORTANTE:</strong> A partir de ahora todos los comados para hacer cualquier operación con la base de datos tiene que empezar por <em>DB</em>.</p>
+<p>Para crear la collection se puede hacer de dos maneras:</p>
+<ol>
+<li>Insertar directamente un valor:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">db.myNewCollection2.insertOne( <span style="color:#75715e">{</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">}</span> )
+</code></pre></div><ol start="2">
+<li>Creando directamente el collection, que es como me gusta más.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">db.createCollection(&#39;mitabla&#39;) 
+</code></pre></div><p>Una ejecutado la sentencia nos aparecerá una ventana debajo:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_command_shell_2.png" alt="Creando una collection" /></p>
+<p><strong>Importante:</strong> Si no se pone el <em>use</em> la collection se creará en la base de datos por defecto que es <em>Cluster0</em>. Por ello el use hay que dejarlo siempre.</p>
+<p>Donde vemos la definición de la <em>collection</em> creada. Lo que sale no lo puedo llamar campos porque después veremos que puedes insertar cualquier tipo de datos. Vamos que un registro que añadas y otro pueden ser completamente distintos, lo malo que cuando se consulte no es viable tener estructuras distintas, pero realmente se puede hacer.</p>
+<p>La ventana que sale yo la desacoplo y lo reduzco y lo pongo a un lado para seguir viendo el shell.</p>
+<p>Una vez creada la collection la base de datos se crea, si no lo estuviera previamente. Eso lo podemos ver en la propia web:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_collection_creada_cloud.png" alt="Collection creada en el cloud" /></p>
+<h1 id="añadiendo-registros-a-la-collection">
+  Añadiendo registros a la collection
+  <a class="anchor" href="#a%c3%b1adiendo-registros-a-la-collection">#</a>
+</h1>
+<p>Si queremos ver todas las posibilidades de las operaciones CRUD lo mejor es ir a la documentación 
+  <a href="https://docs.mongodb.com/v5.0/crud/">oficial</a>, yo explicaré las opciones básicas.</p>
 </article>
  
       
@@ -461,6 +494,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#conexión-con-la-base-de-datos">Conexión con la base de datos</a></li>
     <li><a href="#creación-de-la-base-de-datos-y-collection">Creación de la base de datos y collection</a></li>
+    <li><a href="#añadiendo-registros-a-la-collection">Añadiendo registros a la collection</a></li>
   </ul>
 </nav>
 
