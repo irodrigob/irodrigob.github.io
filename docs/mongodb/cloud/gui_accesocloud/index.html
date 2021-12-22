@@ -9,12 +9,12 @@
 <meta property="og:description" content="Programa GUI para acceder al cloud de mongo DB" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/" />
-<meta property="article:modified_time" content="2021-12-20T22:42:55+01:00" />
+<meta property="article:modified_time" content="2021-12-21T22:55:01+01:00" />
 <title>GUI para acceder al cloud de mongo DB | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.cca39754bca52925cd51da6125819e902530d47530493a82e13ab59c0eb070fc.js" integrity="sha256-zKOXVLylKSXNUdphJYGekCUw1HUwSTqC4Tq1nA6wcPw="></script>
+<script defer src="/en.search.min.7c65380b6af564dcf5e8bd37ef48df46496560547fc3cae3a3a6473c12e7c84f.js" integrity="sha256-fGU4C2r1ZNz16L0370jfRkllYFR/w8rjo6ZHPBLnyE8="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -382,7 +382,17 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#conexión-con-la-base-de-datos">Conexión con la base de datos</a></li>
     <li><a href="#creación-de-la-base-de-datos-y-collection">Creación de la base de datos y collection</a></li>
-    <li><a href="#añadiendo-registros-a-la-collection">Añadiendo registros a la collection</a></li>
+    <li><a href="#operacion-crud">Operacion CRUD</a>
+      <ul>
+        <li><a href="#inserción-de-documentos">Inserción de documentos</a></li>
+        <li><a href="#consulta-de-documentos">Consulta de documentos</a>
+          <ul>
+            <li><a href="#buscar-todos-los-documentos">Buscar todos los documentos</a></li>
+            <li><a href="#filtrando-por-campos">Filtrando por campos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -455,12 +465,80 @@ https://github.com/alex-shpak/hugo-book
 <p>Una vez creada la collection la base de datos se crea, si no lo estuviera previamente. Eso lo podemos ver en la propia web:</p>
 <p>
   <img src="/images/mongodb/gui/robo_collection_creada_cloud.png" alt="Collection creada en el cloud" /></p>
-<h1 id="añadiendo-registros-a-la-collection">
-  Añadiendo registros a la collection
-  <a class="anchor" href="#a%c3%b1adiendo-registros-a-la-collection">#</a>
+<h1 id="operacion-crud">
+  Operacion CRUD
+  <a class="anchor" href="#operacion-crud">#</a>
 </h1>
-<p>Si queremos ver todas las posibilidades de las operaciones CRUD lo mejor es ir a la documentación 
-  <a href="https://docs.mongodb.com/v5.0/crud/">oficial</a>, yo explicaré las opciones básicas.</p>
+<p>Si queremos ver todas las posibilidades de las operaciones CRUD lo mejor es ir a la 
+  <a href="https://docs.mongodb.com/v5.0/crud/">documentación oficial</a>, yo explicaré las opciones básicas.</p>
+<h2 id="inserción-de-documentos">
+  Inserción de documentos
+  <a class="anchor" href="#inserci%c3%b3n-de-documentos">#</a>
+</h2>
+<p>En la siguiente 
+  <a href="https://docs.mongodb.com/v5.0/tutorial/insert-documents/">documentación oficial</a> podemos ver más en detalle las posibilidades.</p>
+<p>Para insertar un registro simple hacemos lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.insertOne(<span style="color:#75715e">{{</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;mesa&#34;</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;madrea&#34;</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">medidas</span><span style="color:#f92672">:</span><span style="color:#75715e">{</span><span style="color:#a6e22e">altura</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span><span style="color:#f92672">,</span><span style="color:#a6e22e">anchura</span><span style="color:#f92672">:</span><span style="color:#ae81ff">30</span><span style="color:#f92672">,</span><span style="color:#a6e22e">unidad</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;cm&#34;</span><span style="color:#75715e">}</span><span style="color:#f92672">)</span>
+</code></pre></div><p>El formato para introducir los registros es similar, o practicamente igual, al formato JSON.
+Una vez ejecutado la sentencia veremos el siguiente resultado:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_insercion_collection.png" alt="Inserción registros" /></p>
+<p>Es importante mencionar que siempre se inserta un campo llamado <em>_ID</em>. Este campo es que tendrá la clave única del registro. En la imagen lo podemos ver en la rama <em>insertedID</em>.</p>
+<p>Si queremos insertar multiples registros a la vez podemos usar la opción <em>insertMany</em> poniendo un <em>[{<campos>}]</em>. Vamos un array de JSON. Ejemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.insertMany([<span style="color:#75715e">{</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;mesa&#34;</span><span style="color:#f92672">,</span> 
+                        <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;madera&#34;</span><span style="color:#f92672">,</span> 
+                        <span style="color:#a6e22e">medidas</span><span style="color:#f92672">:</span><span style="color:#75715e">{</span><span style="color:#a6e22e">altura</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span><span style="color:#f92672">,</span><span style="color:#a6e22e">anchura</span><span style="color:#f92672">:</span><span style="color:#ae81ff">30</span><span style="color:#f92672">,</span><span style="color:#a6e22e">unidad</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;cm&#34;</span><span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+                        <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;blanco&#34;</span><span style="color:#75715e">}</span>,
+                        <span style="color:#75715e">{</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;silla&#34;</span><span style="color:#f92672">,</span> 
+                        <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;madera&#34;</span><span style="color:#f92672">,</span> 
+                        <span style="color:#a6e22e">medidas</span><span style="color:#f92672">:</span><span style="color:#75715e">{</span><span style="color:#a6e22e">altura</span><span style="color:#f92672">:</span><span style="color:#ae81ff">40</span><span style="color:#f92672">,</span><span style="color:#a6e22e">anchura</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span><span style="color:#f92672">,</span><span style="color:#a6e22e">unidad</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;cm&#34;</span><span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+                        <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;gris&#34;</span><span style="color:#75715e">}</span>])
+</code></pre></div><p>El resultado en el log de la consola sería el siguiente:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_insercion_collection2.png" alt="Inserción registros" /></p>
+<p>De nuevo en la rama <em>insertedID</em> se pueden ver los <em>_ID</em> que se han insertado.</p>
+<p>Un detalle es que en esta inserción de varios documentos he añadido un campo nuevo, <em>COLOR</em> que no estaba en el primer registro que he añadido. Esto es posible en este tipo de base de datos, aunque personalmente no lo recomiendo porque entonces no hay manera de tener una uniformidad de campos en los registros.</p>
+<h2 id="consulta-de-documentos">
+  Consulta de documentos
+  <a class="anchor" href="#consulta-de-documentos">#</a>
+</h2>
+<p>En la 
+  <a href="https://docs.mongodb.com/v5.0/tutorial/query-documents/">documentación oficial</a> encontraremos todas las opción disponibles.</p>
+<h3 id="buscar-todos-los-documentos">
+  Buscar todos los documentos
+  <a class="anchor" href="#buscar-todos-los-documentos">#</a>
+</h3>
+<p>La búsqueda de documentos es muy simple con la siguiente opción:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.find(<span style="color:#75715e">{}</span>)
+</code></pre></div><p>El resultado sería el siguiente:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_consulta_docs.png" alt="Consulta todos los documentos" /></p>
+<h3 id="filtrando-por-campos">
+  Filtrando por campos
+  <a class="anchor" href="#filtrando-por-campos">#</a>
+</h3>
+<p>El filtro de documentos es muy simple:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.find(<span style="color:#75715e">{</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;mesa&#34;</span><span style="color:#75715e">}</span>)
+</code></pre></div><p>El resultado:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_consulta_docs2.png" alt="Filtro de documento" /></p>
+<p>Existe la posibilidad de usar operadores,&ldquo;=,&gt;=,etc&rdquo;, para poder hacer comparaciones. En la 
+  <a href="https://docs.mongodb.com/v5.0/reference/operator/query/#std-label-query-selectors">documentación oficial</a> podemos ver los que hay y sus posibilidades.</p>
+<p>Para poder filtrar por campos dentro de otros campos, como el que he usado en <em>medidas</em>, se hace de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.find(<span style="color:#75715e">{</span><span style="color:#e6db74">&#34;medidas.anchura&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">30</span><span style="color:#75715e">}</span>)
+</code></pre></div><p>Y el resultado:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_consulta_docs3.png" alt="Filtro de campos dentro de documentos" /></p>
 </article>
  
       
@@ -494,7 +572,17 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#conexión-con-la-base-de-datos">Conexión con la base de datos</a></li>
     <li><a href="#creación-de-la-base-de-datos-y-collection">Creación de la base de datos y collection</a></li>
-    <li><a href="#añadiendo-registros-a-la-collection">Añadiendo registros a la collection</a></li>
+    <li><a href="#operacion-crud">Operacion CRUD</a>
+      <ul>
+        <li><a href="#inserción-de-documentos">Inserción de documentos</a></li>
+        <li><a href="#consulta-de-documentos">Consulta de documentos</a>
+          <ul>
+            <li><a href="#buscar-todos-los-documentos">Buscar todos los documentos</a></li>
+            <li><a href="#filtrando-por-campos">Filtrando por campos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
