@@ -9,12 +9,12 @@
 <meta property="og:description" content="Conector Mongoose" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/" />
-<meta property="article:modified_time" content="2021-12-27T19:22:58+01:00" />
+<meta property="article:modified_time" content="2021-12-27T19:27:35+01:00" />
 <title>Mongoose | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.1d460a6f007e12fff1a2977414f45204c57f4724ca4b75018f8551346ca8c1cb.js" integrity="sha256-HUYKbwB&#43;Ev/xopd0FPRSBMV/RyTKS3UBj4VRNGyowcs="></script>
+<script defer src="/en.search.min.cd0a9e9946f7c44a6aeb62cef2d290f7d3d3524e9b25a22fbba862a746997c43.js" integrity="sha256-zQqemUb3xEpq62LO8tKQ99PTUk6bJaIvu6hip0aZfEM="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -405,6 +405,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#instalando-mongoose-en-una-aplicación-nodejs">Instalando Mongoose en una aplicación NodeJS</a></li>
+    <li><a href="#creando-el-modelo">Creando el modelo</a></li>
   </ul>
 </nav>
 
@@ -446,11 +447,17 @@ export const connectDb = async () =&gt; <span style="color:#75715e">{</span>
     <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;db success connect&#34;</span><span style="color:#f92672">);</span>
   <span style="color:#75715e">}</span> <span style="color:#a6e22e">catch</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">err</span><span style="color:#f92672">)</span> <span style="color:#75715e">{</span>
     <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;error connecting to database&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#a6e22e">err</span><span style="color:#f92672">);</span>
-    <span style="color:#a6e22e">process</span><span style="color:#f92672">.</span><span style="color:#a6e22e">exit</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
+    <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#a6e22e">err</span><span style="color:#f92672">);</span>    
   <span style="color:#75715e">}</span>
 <span style="color:#75715e">}</span>;
-</code></pre></div></article>
+</code></pre></div><p>Para el ejemplo voy a conectarme a la versión cloud que tiene MongoDB, en este 
+  <a href="https://irodrigob.github.io/docs/mongodb/cloud/">artículo</a> se da más detalle de como hacerlo, por ello la URI la tengo en una variable de entorno ya que contiene usuario y contraseña. Pero la URL que se usa esta explicada en este 
+  <a href="https://irodrigob.github.io/docs/mongodb/cloud/gui_accesocloud/">artículo</a>.</p>
+<h1 id="creando-el-modelo">
+  Creando el modelo
+  <a class="anchor" href="#creando-el-modelo">#</a>
+</h1>
+</article>
  
       
 
@@ -482,6 +489,7 @@ export const connectDb = async () =&gt; <span style="color:#75715e">{</span>
   <ul>
     <li><a href="#introducción">Introducción</a></li>
     <li><a href="#instalando-mongoose-en-una-aplicación-nodejs">Instalando Mongoose en una aplicación NodeJS</a></li>
+    <li><a href="#creando-el-modelo">Creando el modelo</a></li>
   </ul>
 </nav>
 
