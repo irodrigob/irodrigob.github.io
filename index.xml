@@ -797,6 +797,18 @@ Ejemplo 1#La clase CL_ABAP_CORRESPONDING permite crear mapeos entre tablas y 
     </item>
     
     <item>
+      <title>Mongoose</title>
+      <link>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</guid>
+      <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
+Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
+Para poder usar mongoDB en una aplicación hay que instalar mediante:
+npm install mongoose Una vez instalado he creado un carpeta en el raíz del proyecto llamada db donde he creado el archivo db.</description>
+    </item>
+    
+    <item>
       <title>Nomenclaturas</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -925,18 +937,6 @@ Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se r
       <description>Introducción#Este artículo esta basado es este artículo.Puede ser que los pasos que haga difieran un poco del artículo pero es lo que tiene basarse en un artículo de hace un año, y más como avanza de rápido estos lenguajes.
 En este artículo haremos la instalación básica del servidor de GraphQL.
 Instalación#Antes de hacer la instalación he creado la siguiente estructura de carpetas en mi proyecto:</description>
-    </item>
-    
-    <item>
-      <title>Servidor GraphQL</title>
-      <link>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</guid>
-      <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
-Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
-Para poder usar mongoDB en una aplicación hay que instalar mediante:
-npm install mongoose Una vez instalado he creado un carpeta en el raíz del proyecto llamada db donde he creado el archivo db.</description>
     </item>
     
     <item>
