@@ -898,12 +898,45 @@ Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se r
     </item>
     
     <item>
+      <title>Schemas</title>
+      <link>https://irodrigob.github.io/docs/GraphQL/schemas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/GraphQL/schemas/</guid>
+      <description>Introducción#Los schemas es la definición principal de los vas a poder hacer en GraphQL, es decir, se definen:
+ Los tipos de datos que puedes usar Las querys que puedes llamar y como llamarlas. Las operaciones de edición, crear o modificar, que puedes crear.  Si hago un simil con SAP Gateway es la definción de las Entitys cuando se crea un servicio oData. Todo los ejemplos que explicaré se basan en NodeJS usando el framework de React llamado Nextjs.</description>
+    </item>
+    
+    <item>
       <title>Servicios con ficheros</title>
       <link>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</guid>
       <description>Pre-Introducción :-)#Antes de nada explicar como se guardan los ficheros usando Django. Los ficheros en vez de guardarse en binario en un campo de la base de datos aquí por lo que que leído, se guardan en un directorio interno y en base de datos se guarda la ruta a dicha fichero. Por lo cual, cuando el servicio que devuelve el fichero no devuelve el contenido. Devuelve la url directamente.</description>
+    </item>
+    
+    <item>
+      <title>Servidor GraphQL</title>
+      <link>https://irodrigob.github.io/docs/GraphQL/servidor_graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/GraphQL/servidor_graphql/</guid>
+      <description>Introducción#Este artículo esta basado es este artículo.Puede ser que los pasos que haga difieran un poco del artículo pero es lo que tiene basarse en un artículo de hace un año, y más como avanza de rápido estos lenguajes.
+En este artículo haremos la instalación básica del servidor de GraphQL.
+Instalación#Antes de hacer la instalación he creado la siguiente estructura de carpetas en mi proyecto:</description>
+    </item>
+    
+    <item>
+      <title>Servidor GraphQL</title>
+      <link>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</guid>
+      <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
+Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
+Para poder usar mongoDB en una aplicación hay que instalar mediante:
+npm install mongoose Una vez instalado he creado un carpeta en el raíz del proyecto llamada db donde he creado el archivo db.</description>
     </item>
     
     <item>
@@ -949,17 +982,6 @@ Explicación#En el video se muestra un excel con los datos iris con multidud 
 En el video habla de los siguientes tipos:
  Profundas, o DNN. Convolucionales, o CNN. Recurrente, o RNN.  Deep Neural Net(DNN)#Es una red versátil que permite procesas:
  Texto Imagenes pequeñas Datos númericos. Como el set de datos de Iris.</description>
-    </item>
-    
-    <item>
-      <title>Traducciones</title>
-      <link>https://irodrigob.github.io/docs/react/nextjs/traducciones/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/react/nextjs/traducciones/</guid>
-      <description>Introducción#Por defecto ni React ni NextJS permite hacer textos multiidioma. Pero al ser un sistema abierto alguien se ha trabajado una serie de plug-in para conseguirlo. El objetivo es explicar como hacerlo.
-Los pasos vamos a dividirlo en dos:
- Será la instalación, configuración y funcionamiento del Next-i18n para poder los textos multiidioma. Detectar el idioma para pasarselo al Next-i18n.  Instalación y configuración del Next-i18n#Instalación#Hay que instalar el paquete next-i18next:</description>
     </item>
     
     <item>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Servidor GraphQL">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Servidor GraphQL" />
+<meta property="og:description" content="Servidor GraphQL" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/" />
+
+<title>Servidor GraphQL | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.0f3e417883f3cf764b48fc57b812ecfbbcbbd8c7fea82593998c676d2457e120.js" integrity="sha256-Dz5BeIPzz3ZLSPxXuBLs&#43;7y72Mf&#43;qCWTmYxnbSRX4SA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/GraphQL/" class="collapsed ">GraphQL</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/" class="">MongoDB</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/usando_app/" class="">MongoDB en Aplicación</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/usando_app/mongoose/" class="active">Servidor GraphQL</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/cloud/" class="collapsed ">MongoDB en cloud</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/" class="collapsed ">React</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Servidor GraphQL</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#instalando-mongoose-en-una-aplicación-nodejs">Instalando Mongoose en una aplicación NodeJS</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>
+  <a href="https://mongoosejs.com/">Mongoose</a> es un conector que permite conectar nuestras aplicación con MongoDB.</p>
+<h1 id="instalando-mongoose-en-una-aplicación-nodejs">
+  Instalando Mongoose en una aplicación NodeJS
+  <a class="anchor" href="#instalando-mongoose-en-una-aplicaci%c3%b3n-nodejs">#</a>
+</h1>
+<p>Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.</p>
+<p>Para poder usar mongoDB en una aplicación hay que instalar mediante:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npm install mongoose
+</code></pre></div><p>Una vez instalado he creado un carpeta en el raíz del proyecto llamada <em>db</em> donde he creado el archivo <em>db.js</em> donde he añadido lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import mongoose from &#34;mongoose&#34;;
+
+const MongoDb = process.env.MONGODB_URI;
+
+export const connectDb = async () =&gt; <span style="color:#75715e">{</span>
+  <span style="color:#f92672">//</span> <span style="color:#a6e22e">La</span> <span style="color:#a6e22e">configuración</span> <span style="color:#a6e22e">es</span> <span style="color:#a6e22e">una</span> <span style="color:#a6e22e">por</span> <span style="color:#a6e22e">defecto</span> <span style="color:#a6e22e">que</span> <span style="color:#a6e22e">he</span> <span style="color:#a6e22e">visto</span> <span style="color:#a6e22e">que</span> <span style="color:#a6e22e">evita</span> <span style="color:#a6e22e">que</span> <span style="color:#a6e22e">salte</span> <span style="color:#a6e22e">warnings</span><span style="color:#f92672">.</span>
+  <span style="color:#a6e22e">try</span> <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">mongoose</span><span style="color:#f92672">.</span><span style="color:#a6e22e">connect</span><span style="color:#f92672">(</span><span style="color:#a6e22e">MongoDb</span><span style="color:#f92672">,</span> <span style="color:#75715e">{</span>
+      <span style="color:#a6e22e">useNewUrlParser</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span>
+      <span style="color:#a6e22e">useUnifiedTopology</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span>
+      <span style="color:#a6e22e">useFindAndModify</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">,</span>
+      <span style="color:#a6e22e">useCreateIndex</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span>
+    <span style="color:#75715e">}</span><span style="color:#f92672">);</span>
+    <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;db success connect&#34;</span><span style="color:#f92672">);</span>
+  <span style="color:#75715e">}</span> <span style="color:#a6e22e">catch</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">err</span><span style="color:#f92672">)</span> <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;error connecting to database&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#a6e22e">console</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span><span style="color:#f92672">(</span><span style="color:#a6e22e">err</span><span style="color:#f92672">);</span>
+    <span style="color:#a6e22e">process</span><span style="color:#f92672">.</span><span style="color:#a6e22e">exit</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
+  <span style="color:#75715e">}</span>
+<span style="color:#75715e">}</span>;
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#instalando-mongoose-en-una-aplicación-nodejs">Instalando Mongoose en una aplicación NodeJS</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MongoDB en Aplicación on Navi-developer</title>
+    <link>https://irodrigob.github.io/docs/mongodb/usando_app/</link>
+    <description>Recent content in MongoDB en Aplicación on Navi-developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    
+	<atom:link href="https://irodrigob.github.io/docs/mongodb/usando_app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Servidor GraphQL</title>
+      <link>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</guid>
+      <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
+Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
+Para poder usar mongoDB en una aplicación hay que instalar mediante:
+npm install mongoose Una vez instalado he creado un carpeta en el raíz del proyecto llamada db donde he creado el archivo db.</description>
+    </item>
+    
+  </channel>
+</rss>
