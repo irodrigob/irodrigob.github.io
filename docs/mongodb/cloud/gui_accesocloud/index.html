@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.cd0a9e9946f7c44a6aeb62cef2d290f7d3d3524e9b25a22fbba862a746997c43.js" integrity="sha256-zQqemUb3xEpq62LO8tKQ99PTUk6bJaIvu6hip0aZfEM="></script>
+<script defer src="/en.search.min.eae2f63bf2e94c7d93feb02c90d8d0bc333c8dcadb8f298f6acf6c8fd3621888.js" integrity="sha256-6uL2O/LpTH2T/rAskNjQvDM8jcrbjymPas9sj9NiGIg="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -441,6 +441,7 @@ https://github.com/alex-shpak/hugo-book
           </ul>
         </li>
         <li><a href="#actualización-de-documentos">Actualización de documentos</a></li>
+        <li><a href="#borrado-de-documentos">Borrado de documentos</a></li>
       </ul>
     </li>
   </ul>
@@ -620,13 +621,13 @@ db.mitabla.find(<span style="color:#75715e">{</span><span style="color:#a6e22e">
 
 db.mitabla.find(<span style="color:#75715e">{</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;mesa&#34;</span><span style="color:#75715e">}</span>,<span style="color:#75715e">{</span><span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span><span style="color:#75715e">}</span>)
 </code></pre></div><p>Más información el 
-  <a href="https://docs.mongodb.com/v5.0/tutorial/project-fields-from-query-results/">documentación oficial</a></p>
+  <a href="https://docs.mongodb.com/v5.0/tutorial/project-fields-from-query-results/">documentación oficial</a>.</p>
 <h2 id="actualización-de-documentos">
   Actualización de documentos
   <a class="anchor" href="#actualizaci%c3%b3n-de-documentos">#</a>
 </h2>
 <p>En la 
-  <a href="https://docs.mongodb.com/v5.0/tutorial/update-documents/">documentación oficial</a> podremos obtener todas las opción en la actualización.</p>
+  <a href="https://docs.mongodb.com/v5.0/tutorial/update-documents/">documentación oficial</a> podremos obtener todas las opciones de la actualización.</p>
 <p>Ejemplo vamos actualizar a filtrar los documentos que son <em>mesa</em> para poner que el tipo de material es <em>madera</em>, hay u</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
 
@@ -642,7 +643,29 @@ db.mitabla.find(<span style="color:#75715e">{</span><span style="color:#a6e22e">
 </code></pre></div><p>Veremos los registros actualizados:</p>
 <p>
   <img src="/images/mongodb/gui/robo_update_collection.png" alt="Campos en el filtro" /></p>
-</article>
+<h2 id="borrado-de-documentos">
+  Borrado de documentos
+  <a class="anchor" href="#borrado-de-documentos">#</a>
+</h2>
+<p>En la 
+  <a href="https://docs.mongodb.com/v5.0/tutorial/remove-documents/">documentación oficial</a> podremos obtener todas las opciones del borrado.</p>
+<p>Para el borrado tenemos dos opciones:</p>
+<ul>
+<li>db.collection.deleteOne()</li>
+<li>db.collection.deleteMany()</li>
+</ul>
+<p>La primera solo borrará el primer registro que cumpla la condición:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.deleteOne(<span style="color:#75715e">{</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;mesa&#39;</span><span style="color:#75715e">}</span>)
+</code></pre></div><p>Veremos el registro que se borra:</p>
+<p>
+  <img src="/images/mongodb/gui/robo_delete_collection.png" alt="Borrado de un solo registro" /></p>
+<p>Para borrar varios registros que cumplan la condición es con la opción <em>deleteMany</em>. Y si queremos borrar todos los registros hay que hacer lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">use ejemplo
+
+db.mitabla.deleteMany(<span style="color:#75715e">{}</span>)
+</code></pre></div></article>
  
       
 
@@ -686,6 +709,7 @@ db.mitabla.find(<span style="color:#75715e">{</span><span style="color:#a6e22e">
           </ul>
         </li>
         <li><a href="#actualización-de-documentos">Actualización de documentos</a></li>
+        <li><a href="#borrado-de-documentos">Borrado de documentos</a></li>
       </ul>
     </li>
   </ul>
