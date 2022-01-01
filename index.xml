@@ -130,6 +130,18 @@ Yo suelo usar una clase general para agrupar acciones de un mismo nodo. En algun
     </item>
     
     <item>
+      <title>Activar debugging de Next JS en VS Code</title>
+      <link>https://irodrigob.github.io/docs/react/nextjs/activar_debugging_vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/nextjs/activar_debugging_vscode/</guid>
+      <description>Introducción#Es explicar los pasos para poder activar el debugging mediate VS Code.
+Primer paso instalar el paquete de variables de entorno#Hay que instalar el siguiente paquete:
+npm install -g win-node-env Este paquete habilita poder usar variables de entorno en los scripts NPM en Windows. Para otros sistemas operativos esta este otro:
+npm install -g node-env Modificar archivo package.json#En el raíz de nuestro proyecto tendremos el archivo package.</description>
+    </item>
+    
+    <item>
       <title>ALV</title>
       <link>https://irodrigob.github.io/docs/sap/abap/alv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
