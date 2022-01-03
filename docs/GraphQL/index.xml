@@ -1,44 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GraphQL on Navi-developer</title>
-    <link>https://irodrigob.github.io/docs/graphql/</link>
-    <description>Recent content in GraphQL on Navi-developer</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    
-	<atom:link href="https://irodrigob.github.io/docs/graphql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Resolvers</title>
-      <link>https://irodrigob.github.io/docs/graphql/resolvers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/graphql/resolvers/</guid>
-      <description>Introducción#Los resolver son los ejecutores de lo que se ha definido</description>
-    </item>
-    
-    <item>
-      <title>Schemas</title>
-      <link>https://irodrigob.github.io/docs/graphql/schemas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/graphql/schemas/</guid>
-      <description>Introducción#Los schemas es la definición principal de los vas a poder hacer en GraphQL, es decir, se definen:
- Los tipos de datos que puedes usar Las querys que puedes llamar y como llamarlas. Las operaciones de edición, crear o modificar, que puedes realizar.  Si hago un simil con SAP Gateway es la definción de las Entitys cuando se crea un servicio oData. Todo los ejemplos que explicaré se basan en NodeJS usando el framework de React llamado Nextjs.</description>
-    </item>
-    
-    <item>
-      <title>Servidor GraphQL</title>
-      <link>https://irodrigob.github.io/docs/graphql/servidor_graphql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/graphql/servidor_graphql/</guid>
-      <description>Introducción#Este artículo esta basado es este artículo.Puede ser que los pasos que haga difieran un poco del artículo pero es lo que tiene basarse en un artículo de hace un año, y más como avanza de rápido estos lenguajes.
-En este artículo haremos la instalación básica del servidor de GraphQL.
-Instalación#Antes de hacer la instalación he creado la siguiente estructura de carpetas en mi proyecto:</description>
-    </item>
-    
-  </channel>
-</rss>
