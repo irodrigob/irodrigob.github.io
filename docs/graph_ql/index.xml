@@ -16,7 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/graph_ql/resolvers/</guid>
-      <description>Introducción#Los resolver son los ejecutores de lo que se ha definido</description>
+      <description>Introducción#Los resolver son los ejecutores de lo que se ha definido en los schemas.
+Aunque para estos ejemplos se podría haber puesto todo el código en el mismo fichero que el schema pero lo correcto es tenerlo separado por carpetas:
+|- pages |--- api |----- graphql.js |----- resolvers |------- index.js |----- schemas |------- index.js </description>
     </item>
     
     <item>
