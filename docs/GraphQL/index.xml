@@ -17,7 +17,7 @@
       
       <guid>https://irodrigob.github.io/docs/graphql/schemas/</guid>
       <description>Introducción#Los schemas es la definición principal de los vas a poder hacer en GraphQL, es decir, se definen:
- Los tipos de datos que puedes usar Las querys que puedes llamar y como llamarlas. Las operaciones de edición, crear o modificar, que puedes crear.  Si hago un simil con SAP Gateway es la definción de las Entitys cuando se crea un servicio oData. Todo los ejemplos que explicaré se basan en NodeJS usando el framework de React llamado Nextjs.</description>
+ Los tipos de datos que puedes usar Las querys que puedes llamar y como llamarlas. Las operaciones de edición, crear o modificar, que puedes realizar.  Si hago un simil con SAP Gateway es la definción de las Entitys cuando se crea un servicio oData. Todo los ejemplos que explicaré se basan en NodeJS usando el framework de React llamado Nextjs.</description>
     </item>
     
     <item>

@@ -19,7 +19,8 @@
       <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
 Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
 Para poder usar mongoDB en una aplicación hay que instalar mediante:
-npm install mongoose Una vez instalado he creado un carpeta en el raíz del proyecto llamada db donde he creado el archivo db.</description>
+npm install mongoose Una vez instalado he creado la siguiente estructura de carpetas:
+|- db |--- config |----- index.js |--- models |----- Product.</description>
     </item>
     
   </channel>
