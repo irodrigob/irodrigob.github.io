@@ -4,20 +4,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GraphQL">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="GraphQL" />
-<meta property="og:description" content="GraphQL" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://irodrigob.github.io/docs/graphql/" />
+<meta name="description" content="Resolvers">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Resolvers" />
+<meta property="og:description" content="Resolvers" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/graphql/resolvers/" />
 
-<title>GraphQL | Navi-developer</title>
+<title>Resolvers | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
 <script defer src="/en.search.min.feb9557c939cbe871b4c77d344ca77d3cf0ef1155f6d87fcafbaaa427d419af3.js" integrity="sha256-/rlVfJOcvocbTHfTRMp3088O8RVfbYf8r7qqQn1BmvM="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://irodrigob.github.io/docs/graphql/index.xml" title="Navi-developer" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -87,7 +86,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/graphql/" class="collapsed active">GraphQL</a>
+    <a href="/docs/graphql/" class="collapsed ">GraphQL</a>
   
 
           
@@ -102,7 +101,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/graphql/resolvers/" class="">Resolvers</a>
+    <a href="/docs/graphql/resolvers/" class="active">Resolvers</a>
   
 
         </li>
@@ -422,7 +421,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>GraphQL</strong>
+  <strong>Resolvers</strong>
 
   <label for="toc-control">
     
@@ -439,9 +438,6 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#objetivo">Objetivo</a></li>
-    <li><a href="#aplicación">Aplicación</a></li>
-    <li><a href="#artículos">Artículos</a></li>
   </ul>
 </nav>
 
@@ -457,57 +453,7 @@ https://github.com/alex-shpak/hugo-book
   Introducción
   <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
-<p>
-  <a href="https://graphql.org/">GraphQL</a> es un lenguaje que permite hacer consultas y operaciones (o mutaciones: añadir, actualizar, etc.) ¿Y con que podemos hacer eso? Pues con cualquier cosa: Desde ficheros JSON, base de datos como MongoDB o llamadas API Rest.</p>
-<p>Este lenguaje es una alternativa a las típicas de API Rest ya que permite la obtención de datos desde varias fuentes de datos con una sola consulta. Esto con API Rest no es posible. 
-Por lo que he estado leyendo GrapQL fui inventado por Facebook para reducir el numero de llamadas que se hacían para obtener información. Para lo que hacemos API Rest, en mi caso en SAP, entendemos el problema de muchas búsquedas para buscar datos de varios sitios.</p>
-<p>En este 
-  <a href="https://www.paradigmadigital.com/dev/graphql-todos-uno-uno-todos/">artículo</a> hay una explicación muy buena, y en castellano, de como es y como funciona GraphQL.</p>
-<h1 id="objetivo">
-  Objetivo
-  <a class="anchor" href="#objetivo">#</a>
-</h1>
-<p>El objetivo principal de los artículos es hacer una guía básica que explique como consultar y añadir/actualizar datos en una base de datos 
-  <a href="https://cloud.mongodb.com/">MongoDB en el cloud</a> desde una aplicación NextJS. Lo hago NextJS porque es el framework que uso actualmente para hacer aplicación en React. Pero seguramente todo lo que explique puede usarse en otros framework de React.</p>
-<p>En este 
-  <a href="https://irodrigob.github.io/docs/mongodb/cloud/">artículo</a> explico como he configurado mi base de datos en el cloud. Y usaremos la base de datos y collection creada como campo de pruebas.</p>
-<h1 id="aplicación">
-  Aplicación
-  <a class="anchor" href="#aplicaci%c3%b3n">#</a>
-</h1>
-<p>La aplicación de ejemplo la tengo públicada en 
-  <a href="https://github.com/irodrigob/nextjs-graphql-sample">Github</a> por si alguien le quiere echar un vistazo.</p>
-<p>En este página se explica como crear una aplicación NextJS pero por si caso pongo las sentencia necesaria:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">npx create-next-app nextjs-graphaql-sample
-</code></pre></div><h1 id="artículos">
-  Artículos
-  <a class="anchor" href="#art%c3%adculos">#</a>
-</h1>
-<dl>
-
-  <dt>
-    <a href="/docs/graphql/resolvers/">Resolvers</a>
-  </dt>
-  <dd>
-    Resolvers
-  </dd>
-
-  <dt>
-    <a href="/docs/graphql/schemas/">Schemas</a>
-  </dt>
-  <dd>
-    Schemas GraphQL
-  </dd>
-
-  <dt>
-    <a href="/docs/graphql/servidor_graphql/">Servidor GraphQL</a>
-  </dt>
-  <dd>
-    Servidor GraphQL
-  </dd>
-
-</dl>
-
+<p>Los resolver son los ejecutores de lo que se ha definido</p>
 </article>
  
       
@@ -539,9 +485,6 @@ Por lo que he estado leyendo GrapQL fui inventado por Facebook para reducir el n
   <nav id="TableOfContents">
   <ul>
     <li><a href="#introducción">Introducción</a></li>
-    <li><a href="#objetivo">Objetivo</a></li>
-    <li><a href="#aplicación">Aplicación</a></li>
-    <li><a href="#artículos">Artículos</a></li>
   </ul>
 </nav>
 

@@ -923,6 +923,15 @@ Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se r
     </item>
     
     <item>
+      <title>Resolvers</title>
+      <link>https://irodrigob.github.io/docs/graphql/resolvers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/graphql/resolvers/</guid>
+      <description>Introducción#Los resolver son los ejecutores de lo que se ha definido</description>
+    </item>
+    
+    <item>
       <title>Schemas</title>
       <link>https://irodrigob.github.io/docs/graphql/schemas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
