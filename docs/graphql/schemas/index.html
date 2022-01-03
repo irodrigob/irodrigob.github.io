@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Schemas GraphQL">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Schemas" />
+<meta property="og:description" content="Schemas GraphQL" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/graphql/schemas/" />
+
+<title>Schemas | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.feb9557c939cbe871b4c77d344ca77d3cf0ef1155f6d87fcafbaaa427d419af3.js" integrity="sha256-/rlVfJOcvocbTHfTRMp3088O8RVfbYf8r7qqQn1BmvM="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graphql/" class="collapsed ">GraphQL</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graphql/resolvers/" class="">Resolvers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graphql/schemas/" class="active">Schemas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graphql/servidor_graphql/" class="">Servidor GraphQL</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/" class="">MongoDB</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/usando_app/" class="">MongoDB en aplicaciones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/usando_app/mongoose/" class="">Mongoose</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/cloud/" class="collapsed ">MongoDB en cloud</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/" class="collapsed ">React</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Schemas</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#tipos-de-datos">Tipos de datos</a></li>
+    <li><a href="#básicos">Básicos</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Los schemas es la definición principal de los vas a poder hacer en GraphQL, es decir, se definen:</p>
+<ul>
+<li>Los tipos de datos que puedes usar</li>
+<li>Las querys que puedes llamar y como llamarlas.</li>
+<li>Las operaciones de edición, crear o modificar, que puedes realizar.</li>
+</ul>
+<p>Si hago un simil con SAP Gateway es la definción de las Entitys cuando se crea un servicio oData. Todo los ejemplos que explicaré se basan en NodeJS usando el framework de React llamado Nextjs.</p>
+<p>Ejemplo de schema:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import <span style="color:#75715e">{</span> <span style="color:#a6e22e">gql</span> <span style="color:#75715e">}</span> from &#34;apollo-server-micro&#34;;
+
+export const typeDefs = gql`
+  type Medidas <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">altura</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Int</span>
+    <span style="color:#a6e22e">anchura</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Int</span>
+    <span style="color:#a6e22e">unidad</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span>
+  <span style="color:#75715e">}</span>
+  type Product <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ID</span>
+    <span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">!</span>
+    <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span>
+    <span style="color:#a6e22e">medidas</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Medidas</span>
+  <span style="color:#75715e">}</span>
+  type Query <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">getAll</span><span style="color:#f92672">:</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">Product</span><span style="color:#f92672">]</span>
+    <span style="color:#a6e22e">getMuebles</span><span style="color:#f92672">(</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">!):</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">Product</span><span style="color:#f92672">]</span>
+    <span style="color:#a6e22e">getSingleMueble</span><span style="color:#f92672">(</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">!):</span> <span style="color:#a6e22e">Product</span>
+  <span style="color:#75715e">}</span>
+
+  type Mutation <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">newProduct</span><span style="color:#f92672">(</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">!,</span> <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">):</span> <span style="color:#a6e22e">Product</span>
+  <span style="color:#75715e">}</span>
+`;
+</code></pre></div><p>Todo lo que se define en GraphQL tiene que ir dentro de <em>gql``</em>. Y la estructura es como la de un JSON.</p>
+<p>Para conocer más en detalle como funciona lo mejor es ir 
+  <a href="https://graphql.org/learn/schema/">documentación oficial</a>.</p>
+<h1 id="tipos-de-datos">
+  Tipos de datos
+  <a class="anchor" href="#tipos-de-datos">#</a>
+</h1>
+<p>Los tipos de datos es lo primero que se define porque luego se usarán para definir que datos devuelve las consultas o las mutaciones. Además, es posible indicar si un campo va ser obligatorio (se indica usando el singo <em>!</em> después del tipo de datos).</p>
+<h1 id="básicos">
+  Básicos
+  <a class="anchor" href="#b%c3%a1sicos">#</a>
+</h1>
+<p>Tomamos como base este schema:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">const typeDefs = gql`
+  type Medidas <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">altura</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Int</span>
+    <span style="color:#a6e22e">anchura</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Int</span>
+    <span style="color:#a6e22e">unidad</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span>
+  <span style="color:#75715e">}</span>
+  type Product <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">ID</span>
+    <span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">!</span>
+    <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span>
+    <span style="color:#a6e22e">medidas</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Medidas</span>
+  <span style="color:#75715e">}</span>
+`;
+</code></pre></div><p>Tenemos dos tipos definidos: Medidas y Product. El tipo principal sería <em>Product</em> que tiene los campos:</p>
+<ul>
+<li>_id -&gt; Es el campo que añade mongoDB a los documentos que se insertan en una collection. El tipo de datos es ID porque es que indica a GraphQL que es un campo de ID único. Más info en la docu oficial.</li>
+<li>mueble -&gt; De tipo de string pero le he puesto el signo <em>!</em> al final del tipo de campo para indicarle que este campo no puede ser <em>null</em>, es decir, que habrá que ponerlo en cualquier operación donde se use el tipo definido.</li>
+<li>material -&gt; Campo string</li>
+<li>medidas -&gt; Que es un campo que se basa en otro tipo de datos.</li>
+</ul>
+<p>El tipo <em>Medidas</em> tendrá tres campos y que se usará como definición de un campo del tipo <em>Product</em>. Este campo servirá para ver como podemos datos dentro de un campo sin usar tablas relacionados como haríamos en base de datos SQL.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#tipos-de-datos">Tipos de datos</a></li>
+    <li><a href="#básicos">Básicos</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
