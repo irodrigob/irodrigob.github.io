@@ -312,6 +312,19 @@ DATA(lv_updkz) = COND #( WHEN is_header-negotiation_code IS INITIAL THEN zif_rtn
     </item>
     
     <item>
+      <title>Conector Mongoose</title>
+      <link>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</guid>
+      <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
+Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
+Para poder usar mongoDB en una aplicación hay que instalar mediante:
+npm install mongoose Una vez instalado he creado la siguiente estructura de carpetas:
+|- db |--- config |----- index.js |--- models |----- Product.</description>
+    </item>
+    
+    <item>
       <title>Configuración Pylint</title>
       <link>https://irodrigob.github.io/docs/python/configuracion_pylint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -331,6 +344,17 @@ Evitar errores de librerías que no existen#Hay casos que Pylint dice que una
       <description>Introducción#Cada aplicación dentro de un proyecto en Django tiene su propio archivo de URLs, urls.py donde se van incluyendo las vistas que se van añadiendo. Aquí explicaremos como configurar dicho archivo tanto a nivel de proyecto como de aplicación.
 Hay que saber que el punto de acceso de los servicios será el archivo urls.py a nivel de proyecto. Por ello yo lo que hago es:
  Uso el fichero urls.</description>
+    </item>
+    
+    <item>
+      <title>Configurando servidor GraphQL</title>
+      <link>https://irodrigob.github.io/docs/graph_ql/servidor_graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/graph_ql/servidor_graphql/</guid>
+      <description>Introducción#Este artículo esta basado es este artículo.Puede ser que los pasos que haga difieran un poco del artículo pero es lo que tiene basarse en un artículo de hace un año, y más como avanza de rápido estos lenguajes.
+En este artículo haremos la instalación básica del servidor de GraphQL.
+Instalación#Antes de hacer la instalación he creado la siguiente estructura de carpetas en mi proyecto:</description>
     </item>
     
     <item>
@@ -809,19 +833,6 @@ Ejemplo 1#La clase CL_ABAP_CORRESPONDING permite crear mapeos entre tablas y 
     </item>
     
     <item>
-      <title>Mongoose</title>
-      <link>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/</guid>
-      <description>Introducción#Mongoose es un conector que permite conectar nuestras aplicación con MongoDB.
-Instalando Mongoose en una aplicación NodeJS#Este ejemplo es para poder conectar una aplicación hecha en NextJS con la versión MongoDB cloud.
-Para poder usar mongoDB en una aplicación hay que instalar mediante:
-npm install mongoose Una vez instalado he creado la siguiente estructura de carpetas:
-|- db |--- config |----- index.js |--- models |----- Product.</description>
-    </item>
-    
-    <item>
       <title>Nomenclaturas</title>
       <link>https://irodrigob.github.io/docs/sap/abap/bopf/nomenclaturas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -864,6 +875,17 @@ Resultado 416.15999999999997Resultado: 3.89String#Con los string podemos co
 Para ello hay que instalar en el proyecto de Django el paquete django-cors-headers mediante el siguiente comando:
 pip install django-cors-headers A continuación hay que editar el fichero settings.py del proyecto y realizar lo siguiente:
  En la variable INSTALLED_APPS hay que añadir &amp;lsquo;corsheaders&amp;rsquo; En la variable MIDDLEWARE hay que añadir antes de django.</description>
+    </item>
+    
+    <item>
+      <title>Probando servidor GraphQL</title>
+      <link>https://irodrigob.github.io/docs/graph_ql/testing_servidor_graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/graph_ql/testing_servidor_graphql/</guid>
+      <description>Introducción#Una vez se tenga el schema definido, el resolver, y el servidor configurado y conectado con MongoDB es momento de probarlo. En el artículo donde se explica como configurar el servidor se indica que para acceder al sandbox para probar el servidor hay que ir a la siguiente URL:
+http://localhost:3000/api/graphqlEl puerto 3000 es porque estamos usando NextJS para las pruebas.
+Estado inicial MongoDB#La foto inicial que tenemos en MongoDB es la siguiente:</description>
     </item>
     
     <item>
@@ -928,9 +950,7 @@ Ejemplo 1#Se recorren los datos de MT_TIPPQPS filtrando por dos campos y se r
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://irodrigob.github.io/docs/graph_ql/resolvers/</guid>
-      <description>Introducción#Los resolver son los ejecutores de lo que se ha definido en los schemas.
-Aunque para estos ejemplos se podría haber puesto todo el código en el mismo fichero que el schema pero lo correcto es tenerlo separado por carpetas:
-|- pages |--- api |----- graphql.js |----- resolvers |------- index.js |----- schemas |------- index.js </description>
+      <description>Introducción#Los resolver son los ejecutores de lo que se ha definido en los schemas. En el resolver es donde se llama al sistema donde obtendremos, o actualizaremos, los datos que necesitemos, en nuestro caso la conexión con MongoDB. La potencia que tiene graphQL que es el sistema donde están los datos es irrelevantes porque al final se puede conectar a donde sea, como si es un fichero plano.</description>
     </item>
     
     <item>
@@ -950,17 +970,6 @@ Aunque para estos ejemplos se podría haber puesto todo el código en el mismo f
       
       <guid>https://irodrigob.github.io/docs/python/framework/django/publicar_servicio_ficheros/</guid>
       <description>Pre-Introducción :-)#Antes de nada explicar como se guardan los ficheros usando Django. Los ficheros en vez de guardarse en binario en un campo de la base de datos aquí por lo que que leído, se guardan en un directorio interno y en base de datos se guarda la ruta a dicha fichero. Por lo cual, cuando el servicio que devuelve el fichero no devuelve el contenido. Devuelve la url directamente.</description>
-    </item>
-    
-    <item>
-      <title>Servidor GraphQL</title>
-      <link>https://irodrigob.github.io/docs/graph_ql/servidor_graphql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://irodrigob.github.io/docs/graph_ql/servidor_graphql/</guid>
-      <description>Introducción#Este artículo esta basado es este artículo.Puede ser que los pasos que haga difieran un poco del artículo pero es lo que tiene basarse en un artículo de hace un año, y más como avanza de rápido estos lenguajes.
-En este artículo haremos la instalación básica del servidor de GraphQL.
-Instalación#Antes de hacer la instalación he creado la siguiente estructura de carpetas en mi proyecto:</description>
     </item>
     
     <item>

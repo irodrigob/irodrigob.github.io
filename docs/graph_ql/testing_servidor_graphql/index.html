@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Probando el servidor GraphQL">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Probando servidor GraphQL" />
+<meta property="og:description" content="Probando el servidor GraphQL" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irodrigob.github.io/docs/graph_ql/testing_servidor_graphql/" />
+
+<title>Probando servidor GraphQL | Navi-developer</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
+<script defer src="/en.search.min.9bf7534fafd10be6a0d2b375c3ec47108747e5944b9cbd8ad7feba95b2dc7a77.js" integrity="sha256-m/dTT6/RC&#43;ag0rN1w&#43;xHEIdH5ZRLnL2K1/66lbLcenc="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Navi-developer</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/github/" class="collapsed ">Github</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graph_ql/" class="collapsed ">GraphQL</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graph_ql/servidor_graphql/" class="">Configurando servidor GraphQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graph_ql/testing_servidor_graphql/" class="active">Probando servidor GraphQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graph_ql/resolvers/" class="">Resolvers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graph_ql/schemas/" class="">Schemas</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/" class="">Hugo</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/hugo/publicar_web_github/" class="">Publicar Web Github</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/" class="">MongoDB</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/usando_app/" class="">MongoDB en aplicaciones</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/usando_app/mongoose/" class="">Conector Mongoose</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/mongodb/cloud/" class="collapsed ">MongoDB en cloud</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/python/" class="collapsed ">Python</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/react/" class="collapsed ">React</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/" class="">SAP</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/abap/" class="collapsed ">ABAP</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/BW/" class="collapsed ">BW</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/gateway/" class="collapsed ">Gateway</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ui5/" class="collapsed ">UI5</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/sap/ventas/" class="collapsed ">Ventas</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/irodrigob" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Probando servidor GraphQL</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#estado-inicial-mongodb">Estado inicial MongoDB</a></li>
+    <li><a href="#realizando-la-primera-consulta">Realizando la primera consulta</a></li>
+    <li><a href="#añadiendo-datos">Añadiendo datos</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h1>
+<p>Una vez se tenga el 
+  <a href="https://irodrigob.github.io/docs/graph_ql/schemas/">schema</a> definido, el 
+  <a href="https://irodrigob.github.io/docs/graph_ql/resolvers/">resolver</a>, y el 
+  <a href="https://irodrigob.github.io/docs/graph_ql/servidor_graphql/">servidor</a> configurado y conectado con 
+  <a href="https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/">MongoDB</a> es momento de probarlo. En el artículo donde se explica como configurar el servidor se indica que para acceder al sandbox para probar el servidor hay que ir a la siguiente URL:</p>
+<pre><code>http://localhost:3000/api/graphql
+</code></pre><p>El puerto 3000 es porque estamos usando NextJS para las pruebas.</p>
+<h1 id="estado-inicial-mongodb">
+  Estado inicial MongoDB
+  <a class="anchor" href="#estado-inicial-mongodb">#</a>
+</h1>
+<p>La foto inicial que tenemos en MongoDB es la siguiente:</p>
+<p>
+  <img src="/images/graphql/servidor/mongo_estado_inicial.png" alt="mongodb estado inicial" /></p>
+<p>No hay nada creado.</p>
+<h1 id="realizando-la-primera-consulta">
+  Realizando la primera consulta
+  <a class="anchor" href="#realizando-la-primera-consulta">#</a>
+</h1>
+<p>Desde Apollo studio te guarda lo último que has hecho y ejecutado pero creo que la primera te sale directamente en la operaciones de <em>Query</em>, por ello para no liarse lo mejor es desmarca todo y tener esta imagen inicial:</p>
+<p>
+  <img src="/images/graphql/servidor/sandbox_operacion_inicial.png" alt="Operaciones iniciales" /></p>
+<p>No voy a entrar mucho en detalle porque la página es bastante intuitiva pero para los avezados pueden escribir directamente las consultas en la <em>Operations</em>, pero yo uso el asistente. El asistente consiste en utilizar este icono 
+  <img src="/images/graphql/servidor/icono_anyadir.png" alt="icono añador" /> para ir añadiendo campos o las operaciones que deseamos. En este caso vamos a darle al icono al lado de <em>Query</em> con lo que nos aparecerá lo siguiente:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_query_seleccionada.png" alt="Operacion query seleccionada" /></p>
+<p>Ahora si damos al icono de añadir al lado de <em>getAll</em> se nos añadirá la opción:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_query_seleccionada2.png" alt="Operacion query seleccionada2" /></p>
+<p>Ahora solo falta añadir los campos de nuevo con el icono de añadir. Donde nos quedará lo siguiente:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_query_seleccionada3.png" alt="Operacion query seleccionada3" /></p>
+<p>El paso final es ejecutar la query: 
+  <img src="/images/graphql/servidor/boton_ejecutar_query.png" alt="Ejecutar query" /></p>
+<p>
+  <img src="/images/graphql/servidor/operacion_query_seleccionada4.png" alt="Operacion query seleccionada4" /></p>
+<h1 id="añadiendo-datos">
+  Añadiendo datos
+  <a class="anchor" href="#a%c3%b1adiendo-datos">#</a>
+</h1>
+<p>Vamos aprovechar que se pueden crear pestaña con este icono: 
+  <img src="/images/graphql/servidor/boton_anyadir_pestanya.png" alt="Añadir pestaña" /> para añadir la mutation <em>newProduct</em>:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_mutation1.png" alt="Operacion mutation" /></p>
+<p>Por defecto en los parámetros nos ha colocado el campo <em>mueble</em> porque en el <em>schema</em> lo hemos definido como obligatorio.  En el panel de la izquierda tenemos dos secciones: <em>Arguments</em> y <em>Fields</em>. La primera son los parámetros de entrada del mutation, y el segundo son los campos de salida una vez el registro se haya insertado (es como lo que hemos hecho en la query). Si añadimos todos los campos necesarios tenemos lo siguiente:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_mutation2.png" alt="Operacion mutation2" /></p>
+<p>Ahora falta añadir los valores. Los valores se pueden añadir, o bien, en la pestaña de <em>Variables</em>, o bien, en la propia consulta.  Lo vamos hacer de las dos maneras para verlas. La primera es través de las <em>Variables</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{</span>
+  <span style="color:#e6db74">&#34;mueble&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;mesa&#34;</span><span style="color:#f92672">,</span>
+  <span style="color:#e6db74">&#34;material&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;madera&#34;</span>
+<span style="color:#75715e">}</span>
+</code></pre></div><p>Al pulsar el botón de ejecutar 
+  <img src="/images/graphql/servidor/boton_ejecutar_mutation.png" alt="Boton ejecutar" /> tendremos el siguiente resultado:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_mutation3.png" alt="Operacion mutation3" /></p>
+<p>Si lo hacemos directamente en la mutation lo que hago es quitar el contenido en la pestaña de <em>Variables</em> y poner lo siguiente en la propia consulta:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">mutation Mutation($mueble: String!, $material: String) <span style="color:#75715e">{</span>
+  <span style="color:#a6e22e">newProduct</span><span style="color:#f92672">(</span><span style="color:#a6e22e">mueble</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;silla&#34;</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">material</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;plastico&#34;</span><span style="color:#f92672">)</span> <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">mueble</span>
+    <span style="color:#a6e22e">material</span>
+  <span style="color:#75715e">}</span>
+<span style="color:#75715e">}</span>
+</code></pre></div><p>Al ejecutar la consulta obtendremos el siguiente resultado:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_mutation4.png" alt="Operacion mutation4" /></p>
+<p>Ahora, si volvemos a la pestaña donde tenemos la consulta y la ejecutamos veremos los dos registros insertados:</p>
+<p>
+  <img src="/images/graphql/servidor/operacion_query_seleccionada5.png" alt="Operacion query seleccionada5" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#estado-inicial-mongodb">Estado inicial MongoDB</a></li>
+    <li><a href="#realizando-la-primera-consulta">Realizando la primera consulta</a></li>
+    <li><a href="#añadiendo-datos">Añadiendo datos</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

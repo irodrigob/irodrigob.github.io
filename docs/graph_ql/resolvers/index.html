@@ -9,12 +9,12 @@
 <meta property="og:description" content="Resolvers" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/graph_ql/resolvers/" />
-<meta property="article:modified_time" content="2022-01-03T20:17:15+01:00" />
+<meta property="article:modified_time" content="2022-01-03T20:22:35+01:00" />
 <title>Resolvers | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.131764c3d2a6fc609ba927a2ca718658fe79b25566e244b147c6827a6198de6a.js" integrity="sha256-Exdkw9Km/GCbqSeiynGGWP55slVm4kSxR8aCemGY3mo="></script>
+<script defer src="/en.search.min.9bf7534fafd10be6a0d2b375c3ec47108747e5944b9cbd8ad7feba95b2dc7a77.js" integrity="sha256-m/dTT6/RC&#43;ag0rN1w&#43;xHEIdH5ZRLnL2K1/66lbLcenc="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -101,6 +101,26 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/graph_ql/servidor_graphql/" class="">Configurando servidor GraphQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/graph_ql/testing_servidor_graphql/" class="">Probando servidor GraphQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/graph_ql/resolvers/" class="active">Resolvers</a>
   
 
@@ -112,16 +132,6 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/docs/graph_ql/schemas/" class="">Schemas</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/graph_ql/servidor_graphql/" class="">Servidor GraphQL</a>
   
 
         </li>
@@ -198,7 +208,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/mongodb/usando_app/mongoose/" class="">Mongoose</a>
+    <a href="/docs/mongodb/usando_app/mongoose/" class="">Conector Mongoose</a>
   
 
         </li>
@@ -454,8 +464,8 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#introducci%c3%b3n">#</a>
 </h1>
 <p>Los resolver son los ejecutores de lo que se ha definido en los 
-  <a href="https://irodrigob.github.io/docs/graph_ql/schemas/">schemas</a>.</p>
-<p>Aunque para estos ejemplos se podría haber puesto todo el código en el mismo fichero que el <em>schema</em> pero lo correcto es tenerlo separado por carpetas:</p>
+  <a href="https://irodrigob.github.io/docs/graph_ql/schemas/">schemas</a>. En el resolver es donde se llama al sistema donde obtendremos, o actualizaremos, los datos que necesitemos, en nuestro caso la conexión con MongoDB. La potencia que tiene graphQL que es el sistema donde están los datos es irrelevantes porque al final se puede conectar a donde sea, como si es un fichero plano. Es más, se podría obtener la información desde dos, o más, sistemas distintos.</p>
+<p>Aunque para estos ejemplos se podría haber puesto todo el código en el mismo fichero que el <em>schema</em> y el fichero <em>graphql.js</em>, conexión con el servidor, pero lo correcto es tenerlo separado por carpetas tal como ya se explico en otro artículo:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">|- pages
 |--- api
 |----- graphql.js
@@ -463,7 +473,33 @@ https://github.com/alex-shpak/hugo-book
 |------- index.js
 |----- schemas
 |------- index.js
-</code></pre></div></article>
+</code></pre></div><p>Siguiendo el schema indicado en la 
+  <a href="https://irodrigob.github.io/docs/graph_ql/schemas/#introducci%c3%b3n">introducción de este artículo</a> se ha definido el siguiente resolver:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import Product from &#34;db/models/product.js&#34;;
+
+export const resolvers = <span style="color:#75715e">{</span>
+  <span style="color:#a6e22e">Query</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+    <span style="color:#f92672">//</span> <span style="color:#a6e22e">products</span>
+    <span style="color:#a6e22e">getAll</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">async</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">root</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">=&gt;</span> <span style="color:#75715e">{</span>
+      <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">Product</span><span style="color:#f92672">.</span><span style="color:#a6e22e">find</span><span style="color:#f92672">(</span><span style="color:#75715e">{}</span><span style="color:#f92672">);</span>
+    <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+  <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+  <span style="color:#a6e22e">Mutation</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
+    <span style="color:#a6e22e">newProduct</span><span style="color:#f92672">:</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">root</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">args</span><span style="color:#f92672">)</span> <span style="color:#f92672">=&gt;</span> <span style="color:#75715e">{</span>
+      <span style="color:#a6e22e">const</span> <span style="color:#a6e22e">row</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Product</span><span style="color:#f92672">(</span><span style="color:#75715e">{</span> <span style="color:#f92672">...</span><span style="color:#a6e22e">args</span> <span style="color:#75715e">}</span><span style="color:#f92672">);</span>
+      <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">row</span><span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">();</span>
+    <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+  <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
+<span style="color:#75715e">}</span>;
+</code></pre></div><p>En este resolver lo primero es importar el modelo de Mongoose para poder hacer las peticiones. La estructura del resolver es prácticamente la misma que la que se indica en el <em>schema</em>, la diferencia que aquí no hay tipos. 
+El caso de las querys son funciones <em>async</em> para permitir esperarse al resultado del proceso.</p>
+<p>En cualquier caso, en todas las funciones tienen que devolver algo. Ese algo será un objeto que GraphQL mapeará a los campos del schema definido. Por ello un punto es que los campos del schema y del sistema al cual se accede tienen que tener los mismos nombres.</p>
+<p>Otro detalle es que en las funciones tienen dos argumentos:</p>
+<ul>
+<li>root -&gt; Son los datos de la función padre. Esto se usa cuando vas construyendo consultas anidadas o quieres quieres formatear campos a partir de los obtenidos. Tengo pendiente de un ejemplo para ver como funciona.</li>
+<li>args -&gt; Argumentos de la función. Esto va ligado con el parámetro <em>root</em>, ya que creo que se pasan los datos de la función superior, y también va ligado en las mutation porque son los parámetros que se definen en los schemas.</li>
+</ul>
+</article>
  
       
 
