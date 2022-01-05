@@ -9,12 +9,12 @@
 <meta property="og:description" content="Conector Mongoose para MongoDB" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://irodrigob.github.io/docs/mongodb/usando_app/mongoose/" />
-<meta property="article:modified_time" content="2022-01-04T19:37:52+01:00" />
+<meta property="article:modified_time" content="2022-01-05T20:18:11+01:00" />
 <title>Conector Mongoose | Navi-developer</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.76359aaddaf532689efd8dd1fd943fabe4fc3e49eb9800d9e43c7d6aa20772d3.js" integrity="sha256-djWardr1Mmie/Y3R/ZQ/q&#43;T8PknrmADZ5Dx9aqIHctM="></script>
+<script defer src="/en.search.min.65354edd9fa5290d768fef619061cd423b52241cba10a8766a4760b345eaf1bd.js" integrity="sha256-ZTVO3Z&#43;lKQ12j&#43;9hkGHNQjtSJBy6EKh2akdgs0Xq8b0="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -490,7 +490,9 @@ const ProductSchema = new mongoose.Schema(<span style="color:#75715e">{</span>
     <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">,</span>
   <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
   <span style="color:#a6e22e">medidas</span><span style="color:#f92672">:</span> <span style="color:#75715e">{</span>
-    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">,</span>
+    <span style="color:#a6e22e">altura</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Number</span><span style="color:#f92672">,</span>
+    <span style="color:#a6e22e">anchura</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Number</span><span style="color:#f92672">,</span>
+    <span style="color:#a6e22e">unidad</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">String</span><span style="color:#f92672">,</span>
   <span style="color:#75715e">}</span><span style="color:#f92672">,</span>
 <span style="color:#75715e">}</span>);
 
@@ -501,10 +503,15 @@ let Product =
   mongoose.models.Product || mongoose.model(&#34;Product&#34;, ProductSchema);
 export default Product;
 
-</code></pre></div><p>En la colección he definido los siguientes campos:</p>
+</code></pre></div><p>En la colección he definido los siguientes campos de dos maneras posibles.</p>
 <ul>
 <li>name -&gt; Que será será de tipo <em>String</em> y como es un campo importe le he indicado que sea obligatorio y con valor único.</li>
-<li>material y medidas que será de tipo <em>String</em>.</li>
+<li>material -&gt; Es un campo string.</li>
+<li>medidas -&gt; Es un campo estructurado, es decir, un campo que puede tener otro documento asociado. Esto en una base de datos relacional habría que crear dos tablas y relacionarlas, en MongoDB, al ser no-SQL, podemos poner otro documento en un campo. Podemos ir tantos niveles com queramos.
+<ul>
+<li>Dentro de medidas tenemos tres campos que los definimos directamente sin necesidad de abrir <em>{}</em> para indicar los atributos del campo.</li>
+</ul>
+</li>
 </ul>
 <p>He añadido un plugin que da más detalle, o da mejor detalle según he leído, cuando hay duplicados cuando detecta que un campo tiene el atributo <em>unique: true</em>.</p>
 <p>Para evitar el error: <em>OverwriteModelError: Cannot overwrite <code>Product</code> model once compiled</em> pone en la definición de la variable <em>Product</em> que si el modelo ha sido creado previamente devuelva el método y no lo vuelve a crear.</p>
