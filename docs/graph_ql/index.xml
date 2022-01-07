@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Cliente/servidor GraphQL</title>
+      <link>https://irodrigob.github.io/docs/graph_ql/cliente_servidor_graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/graph_ql/cliente_servidor_graphql/</guid>
+      <description>Introducción#En este artículo se comenzaba a explicar como configurar el servidor GraphQL para conectarlo contra una base de datos MongoDB en el cloud. Ahora vamos usar el mismo proyecto para configurar el cliente para consumir en la aplicación los datos. Esta configuración puede servir para consumir datos de un servidor externo de GraphQL.
+Como en el servidor vamos a usar NextJS para instalar y probar los ejemplos.</description>
+    </item>
+    
+    <item>
       <title>Configurando servidor GraphQL</title>
       <link>https://irodrigob.github.io/docs/graph_ql/servidor_graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
