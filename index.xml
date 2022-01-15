@@ -142,6 +142,16 @@ npm install -g node-env Modificar archivo package.json#En el raíz de nuestro
     </item>
     
     <item>
+      <title>Activar debugging de Next JS en VS Code</title>
+      <link>https://irodrigob.github.io/docs/react/nextjs/variables_entorn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/react/nextjs/variables_entorn/</guid>
+      <description>Funcionamiento#Las variables de entorno permite tener una configuración a nivel de servidor. Que quiero decir, que son variables que no podrán ser uasadas en lado cliente. Para que las uso yo: Definir URL de conexión a una base de datos, usuarios y password. No soy ningún experto pero pongo lo que he visto y probado.
+Las variables se leen cuando se inicia el proyecto, por lo tanto, cualquier cambio que se haga habrá que parar el proyecto e iniciarlo.</description>
+    </item>
+    
+    <item>
       <title>ALV</title>
       <link>https://irodrigob.github.io/docs/sap/abap/alv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
