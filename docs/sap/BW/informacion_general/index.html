@@ -14,7 +14,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e40449dffab36960ca7d6bac529d52d7ab9f9d230ffe5de1799e29cb61bc0cb7.css" integrity="sha256-5ARJ3/qzaWDKfWusUp1S16ufnSMP/l3heZ4py2G8DLc=">
-<script defer src="/en.search.min.9c399886ccbc58a4aff3c97c343eebf5aa9d06b2ccfc2a580c0961b7cc8738ae.js" integrity="sha256-nDmYhsy8WKSv88l8ND7r9aqdBrLM/CpYDAlht8yHOK4="></script>
+<script defer src="/en.search.min.093c7d6c188aaafc53f043123730a46520d8e4b3be756855810f49ff85791112.js" integrity="sha256-CTx9bBiKqvxT8EMSNzCkZSDY5LO&#43;dWhVgQ9J/4V5ERI="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -284,6 +284,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/docs/sap/BW/BPC/" class="">BPC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/docs/sap/BW/informacion_general/" class="active">Información general</a>
   
 
@@ -420,6 +430,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#objetivo">Objetivo</a></li>
     <li><a href="#como-probar-una-query-en-r3">Como probar una query en R/3</a></li>
     <li><a href="#variables-del-query-designer">Variables del query designer</a></li>
+    <li><a href="#como-llamar-a-querys-creadas-en-el-query-designer">Como llamar a Querys creadas en el Query Designer</a></li>
   </ul>
 </nav>
 
@@ -457,6 +468,12 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#variables-del-query-designer">#</a>
 </h1>
 <p>En el query designer para poder hacer filtros variables, es decir que se pasan los datos a filtrar por parámetro, hay que crear variable y asignarsela al campo. Pues una vez se crea la variable no es posible editarla o borrar, la única manera de hacerlo es a través de la tabla <em>RSZGLOBV</em>. En esta tabla filtrando por el campo <em>VNAM</em> por la variable obtenemos los datos de la variable, se podrá borrar o modificar la configuración de las variables.</p>
+<h1 id="como-llamar-a-querys-creadas-en-el-query-designer">
+  Como llamar a Querys creadas en el Query Designer
+  <a class="anchor" href="#como-llamar-a-querys-creadas-en-el-query-designer">#</a>
+</h1>
+<p>En mi github he creado un 
+  <a href="https://github.com/irodrigob/ABAP_BW_UTILS">repositorio de utilidades de BW</a>. En este repositorio esta la clase <em>ZCL_CA_BW_QUERY_BEX</em> que encapsula las llamadas de querys creados en el Query Designer.</p>
 </article>
  
       
@@ -490,6 +507,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#objetivo">Objetivo</a></li>
     <li><a href="#como-probar-una-query-en-r3">Como probar una query en R/3</a></li>
     <li><a href="#variables-del-query-designer">Variables del query designer</a></li>
+    <li><a href="#como-llamar-a-querys-creadas-en-el-query-designer">Como llamar a Querys creadas en el Query Designer</a></li>
   </ul>
 </nav>
 

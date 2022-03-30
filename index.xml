@@ -215,6 +215,17 @@ Lista#Generales#   Función Descripción     SXO_IMPL_DELETE Borra la impl
     </item>
     
     <item>
+      <title>BPC</title>
+      <link>https://irodrigob.github.io/docs/sap/BW/BPC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://irodrigob.github.io/docs/sap/BW/BPC/</guid>
+      <description>Objetivo#Como hago poco de BPC agruparé en esta página lo que haga de dicho módulo.
+Cambiar variables de secuencias de planificación en BPC#En este programa cambia los valores de variables para secuencias de planificación.
+*&amp;amp;---------------------------------------------------------------------* *&amp;amp; Report ZRTC_CUSTOM_PROCESS *&amp;amp;---------------------------------------------------------------------* *&amp;amp; Programa de ejemplo para actualizar las variantes de secuencias de *&amp;amp; planificacion que se definen en la transacción RSPLAN. *&amp;amp;---------------------------------------------------------------------* REPORT zrtc_custom_process. TABLES: /bi0/pfiscper. CONSTANTS cv_period_variable TYPE rsr_s_var_id VALUE &amp;#39;ZVAR_RTC_PF_PERIOD&amp;#39;.</description>
+    </item>
+    
+    <item>
       <title>Bucles</title>
       <link>https://irodrigob.github.io/docs/sap/abap/sentencias_74/bucles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
