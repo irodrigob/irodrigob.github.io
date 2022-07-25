@@ -18,7 +18,7 @@
       <guid>https://irodrigob.github.io/docs/sap/BW/BPC/</guid>
       <description>Objetivo#Como hago poco de BPC agruparé en esta página lo que haga de dicho módulo.
 Cambiar variables de secuencias de planificación en BPC#En este programa cambia los valores de variables para secuencias de planificación.
-*&amp;amp;---------------------------------------------------------------------* *&amp;amp; Report ZRTC_CUSTOM_PROCESS *&amp;amp;---------------------------------------------------------------------* *&amp;amp; Programa de ejemplo para actualizar las variantes de secuencias de *&amp;amp; planificacion que se definen en la transacción RSPLAN. *&amp;amp;---------------------------------------------------------------------* REPORT zrtc_custom_process. TABLES: /bi0/pfiscper. CONSTANTS cv_period_variable TYPE rsr_s_var_id VALUE &amp;#39;ZVAR_RTC_PF_PERIOD&amp;#39;.</description>
+*&amp;amp;---------------------------------------------------------------------* *&amp;amp; Report ZRTC_CUSTOM_PROCESS *&amp;amp;---------------------------------------------------------------------* *&amp;amp; *&amp;amp;---------------------------------------------------------------------* REPORT zrtc_custom_process. TABLES: /bi0/pfiscper. CONSTANTS cv_period_variable TYPE rsr_s_var_id VALUE &amp;#39;ZVAR_RTC_PF_PERIOD&amp;#39;. TYPES: BEGIN OF ts_result_data, seqnam TYPE rspls_seqnm, variant TYPE rsr_s_para_catalog-paramnm, variant_desc TYPE rsr_s_para_catalog-txtlg, msg_type TYPE bapiret2-type, message TYPE bapiret2-message, END OF ts_result_data.</description>
     </item>
     
     <item>
